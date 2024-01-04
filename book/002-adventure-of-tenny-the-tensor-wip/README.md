@@ -1,3 +1,5 @@
+❗️This is a work in progress. Please refrain from reading sections labeled 'WIP' or 'Work in Progress.' This designation indicates that I am actively refining these parts. Once I have fully developed the content and removed the 'WIP' label, it will be ready for you. Delving into these sections prematurely may lead to misunderstandings or confusion due to their unfinished and unpolished state.
+
 # The Adventure of Tenny, the Tensor - WIP
 
 Once upon a time in the computational universe, there was a singular point named Tenny. Tenny was a 0-dimensional (0D) entity, a singular value without companions in the form of a Python list. As a 0D being, Tenny was simply `[5]`, representing a point with neither length, width, nor height — just a solitary value with boundless potential.

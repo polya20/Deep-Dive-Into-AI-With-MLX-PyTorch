@@ -1,3 +1,13 @@
+✏️If you want to provide feedback, please submit an issue instead of a pull request. I won't be able to merge your requests. Thank you for your understanding.
+
+Notes on Contributions
+----------------------
+[CONTRIBUTING.md](../CONTRIBUTING.md)
+
+Notes on Pull Requests and Issues
+---------------------------------
+[NOTES_ON_PULL_REQUESTS_AND_ISSUES.md](../NOTES_ON_PULL_REQUESTS_AND_ISSUES.md)
+
 # Welcome to "Hello AI World"
 
 Deep Learning is a subset of Machine Learning, which is essentially a neural network with three or more layers. These neural networks attempt to simulate the behavior of the human brain—albeit far from matching its ability—in order to 'learn' from large amounts of data. While a neural network with a single layer can still make approximate predictions as in the simple AI hello world example, additional hidden layers can help optimize the accuracy.

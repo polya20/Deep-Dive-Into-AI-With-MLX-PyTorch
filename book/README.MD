@@ -4,6 +4,10 @@ Notes on Contributions
 ----------------------
 [CONTRIBUTING.md](../CONTRIBUTING.md)
 
+Notes on Pull Requests and Issues
+---------------------------------
+[NOTES_ON_PULL_REQUESTS_AND_ISSUES.md](../NOTES_ON_PULL_REQUESTS_AND_ISSUES.md)
+
 # Dive into AI with MLX and PyTorch - The Book
 
 [Prolog - Hello AI World](000-hello-ai-world/README.md)

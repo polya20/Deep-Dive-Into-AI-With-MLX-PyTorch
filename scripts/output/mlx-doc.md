@@ -418,6 +418,69 @@ set by calling :meth:`freeze`.
     model.in_proj.weight = model.in_proj.weight * 2
     mx.eval(model.parameters())
                 
+## mlx.nn.BatchNorm
+                Applies Batch Normalization over a 2D or 3D input.
+
+Computes
+
+.. math::
+
+    y = \frac{x - E[x]}{\sqrt{Var[x]} + \epsilon} \gamma + \beta,
+
+where :math:`\gamma` and :math:`\beta` are learned per feature dimension
+parameters initialized at 1 and 0 respectively.
+
+The input shape is specified as ``NC`` or ``NLC``, where ``N`` is the
+batch, ``C`` is the number of features or channels, and ``L`` is the
+sequence length. The output has the same shape as the input. For
+four-dimensional arrays, the shape is ``NHWC``, where ``H`` and ``W`` are
+the height and width respectively.
+
+For more information on Batch Normalization, see the original paper `Batch
+Normalization: Accelerating Deep Network Training by Reducing Internal
+Covariate Shift <https://arxiv.org/abs/1502.03167>`_.
+
+Args:
+    num_features (int): The feature dimension to normalize over.
+    eps (float, optional): A small additive constant for numerical
+        stability. Default: ``1e-5``.
+    momentum (float, optional): The momentum for updating the running
+        mean and variance. Default: ``0.1``.
+    affine (bool, optional): If ``True``, apply a learned affine
+        transformation after the normalization. Default: ``True``.
+    track_running_stats (bool, optional): If ``True``, track the
+        running mean and variance. Default: ``True``.
+
+Examples:
+    >>> import mlx.core as mx
+    >>> import mlx.nn as nn
+    >>> x = mx.random.normal((5, 4))
+    >>> bn = nn.BatchNorm(num_features=4, affine=True)
+    >>> output = bn(x)
+                
+## mlx.nn.Bilinear
+                Applies a bilinear transformation to the inputs.
+
+Concretely:
+
+.. math::
+
+    y_i = x_1^\top W_i x_2 + b_i
+
+where:
+:math:`W` has shape ``[output_dims, input1_dims, input2_dims]``, :math:`b` has shape ``[output_dims ]``,
+and :math:`i` indexes the output dimension.
+
+The values are initialized from the uniform distribution :math:`\mathcal{U}(-{k}, {k})`,
+where :math:`k = \frac{1}{\sqrt{D_1}}` and :math:`D_1` is ``input1_dims``.
+
+Args:
+    input1_dims (int): The dimensionality of the input1 features
+    input2_dims (int): The dimensionality of the input2 features
+    output_dims (int): The dimensionality of the output features
+    bias (bool, optional): If set to ``False`` then the layer will
+      not use a bias. Default is ``True``.
+                
 ## mlx.nn.CELU
                 Applies the Continuously Differentiable Exponential Linear Unit.
     Applies :math:`\max(0, x) + \min(0, \alpha * (\exp(x / \alpha) - 1))`
@@ -470,12 +533,52 @@ Args:
 ## mlx.nn.Dropout
                 Randomly zero a portion of the elements during training.
 
-The remaining elements are multiplied with :math:`rac{1}{1-p}` where
+The remaining elements are multiplied with :math:`\frac{1}{1-p}` where
 :math:`p` is the probability of zeroing an element. This is done so the
 expected value of a given element will remain the same.
 
 Args:
     p (float): The probability to zero an element
+                
+## mlx.nn.Dropout2d
+                Apply 2D channel-wise dropout during training.
+
+Randomly zero out entire channels independently with probability :math:`p`.
+This layer expects the channels to be last, i.e. the input shape should be
+``NWHC`` or ``WHC`` where:``N`` is the batch dimension,``H`` is the input
+image height,``W`` is the input image width, and``C`` is the number of
+input channels
+
+The remaining channels are scaled by :math:`\frac{1}{1-p}` to
+maintain the expected value of each element. Unlike traditional dropout,
+which zeros individual entries, this layer zeros entire channels. This is
+beneficial for early convolution layers where adjacent pixels are
+correlated. In such case, traditional dropout may not effectively
+regularize activations. For more details, see [1].
+
+[1]: Thompson, J., Goroshin, R., Jain, A., LeCun, Y. and Bregler C., 2015.
+Efficient Object Localization Using Convolutional Networks. CVPR 2015.
+
+Args:
+    p (float): Probability of zeroing a channel during training.
+                
+## mlx.nn.Dropout3d
+                Apply 3D channel-wise dropout during training.
+
+Randomly zero out entire channels independently with probability :math:`p`.
+This layer expects the channels to be last, i.e., the input shape should be
+`NDHWC` or `DHWC` where: `N` is the batch dimension, `D` is the depth,
+`H` is the input image height, `W` is the input image width, and `C` is
+the number of input channels.
+
+The remaining channels are scaled by :math:`\frac{1}{1-p}` to
+maintain the expected value of each element. Unlike traditional dropout,
+which zeros individual entries, this layer zeros entire channels. This is
+often beneficial for convolutional layers processing 3D data, like in
+medical imaging or video processing.
+
+Args:
+    p (float): Probability of zeroing a channel during training.
                 
 ## mlx.nn.ELU
                 Applies the Exponential Linear Unit.
@@ -548,6 +651,51 @@ Args:
     pytorch_compatible (bool): If True perform the group normalization in
         the same order/grouping as PyTorch.
                 
+## mlx.nn.Hardswish
+                Applies the hardswish function, element-wise.
+
+.. math::
+    \text{Hardswish}(x) = x * \min(\max(x + 3, 0), 6) / 6
+                
+## mlx.nn.Identity
+                A placeholder identity operator that is argument-insensitive.
+
+Args:
+    args: any argument (unused)
+    kwargs: any keyword argument (unused)
+                
+## mlx.nn.InstanceNorm
+                Applies instance normalization [1] on the inputs.
+
+Computes
+
+.. math::
+
+    y = \frac{x - \mathrm{E}[x]}{ \sqrt{\mathrm{Var}[x] + \epsilon}} * \gamma + \beta,
+
+where :math:`\gamma` and :math:`\beta` are learned per feature dimension
+parameters initialized at 1 and 0 respectively. Both are of size :attr:`dims`,
+if :attr:`affine` is ``True``.
+
+Args:
+    dims (int): The number of features of the input.
+    eps (float): A value added to the denominator for numerical stability. Default: ``1e-5``.
+    affine (bool): Default: ``False``.
+
+Shape:
+  - Input: :math:`(..., C)` where :math:`C` is equal to :attr:`dims`.
+  - Output: Same shape as the input.
+
+Examples:
+    >>> import mlx.core as mx
+    >>> import mlx.nn as nn
+    >>> x = mx.random.normal((8, 4, 4, 16))
+    >>> inorm = nn.InstanceNorm(dims=16)
+    >>> output = inorm(x)
+
+References:
+    [1]: https://arxiv.org/abs/1607.08022
+                
 ## mlx.nn.LayerNorm
                 Applies layer normalization [1] on the inputs.
 
@@ -583,20 +731,29 @@ Concretely:
 
 .. math::
 
-    y = W^\top x + b
+    y = x W^\top + b
 
-where :math:`W` has shape ``[output_dims, input_dims]``.
+where:
+where :math:`W` has shape ``[output_dims, input_dims]`` and :math:`b` has shape ``[output_dims]``.
+
+The values are initialized from the uniform distribution :math:`\mathcal{U}(-{k}, {k})`,
+where :math:`k = \frac{1}{\sqrt{D_i}}` and :math:`D_i` is equal to ``input_dims``.
 
 Args:
     input_dims (int): The dimensionality of the input features
     output_dims (int): The dimensionality of the output features
     bias (bool, optional): If set to ``False`` then the layer will
-      not use a bias. Default ``True``.
+      not use a bias. Default is ``True``.
                 
 ## mlx.nn.LogSigmoid
                 Applies the Log Sigmoid function.
 
 Applies :math:`\log(\sigma(x)) = -\log(1 + e^{-x})` element wise.
+                
+## mlx.nn.LogSoftmax
+                Applies the Log Softmax function.
+
+Applies :math:`x + \log \sum_i e^{x_i}` element wise.
                 
 ## mlx.nn.Mish
                 Applies the Mish function, element-wise.
@@ -656,72 +813,45 @@ set by calling :meth:`freeze`.
 ## mlx.nn.MultiHeadAttention
                 Implements the scaled dot product attention with multiple heads.
 
-Given inputs for queries, keys and values the ``MultiHeadAttention`` produces
-new values by aggregating information from the input values according to
-the similarities of the input queries and keys.
+Given inputs for queries, keys and values the ``MultiHeadAttention``
+produces new values by aggregating information from the input values
+according to the similarities of the input queries and keys.
 
-All inputs as well as the output are linearly projected without biases.
+All inputs as well as the output are linearly projected without biases by
+default.
 
-MultiHeadAttention also expects an additive attention mask that should be
-broadcastable with (batch, num_heads, # queries, # keys). The mask should
-have ``-inf`` or very negative numbers to the positions that should *not* be
-attended to.
+``MultiHeadAttention`` also takes an optional additive attention mask that
+should be broadcastable with ``(batch, num_heads, # queries, # keys)``. The
+mask should have ``-inf`` or very large negative numbers at the positions
+that should *not* be attended to.
 
 Args:
-    dims (int): The model dimensions. If no other dims are provided then
-        dims is used for queries, keys, values and the output.
-    num_heads (int): How many attention heads to use
-    query_input_dims (int, optional): The input dimensions of the queries (default: dims).
-    key_input_dims (int, optional): The input dimensions of the keys (default: dims).
-    value_input_dims (int, optional): The input dimensions of the values (default: key_input_dims).
-    value_dims (int, optional): The dimensions of the values after the projection (default: dims).
-    value_output_dims (int, optional): The dimensions the new values will be projected to (default: dims).
+    dims (int): The model dimensions. This is also the default
+        value for the queries, keys, values, and the output.
+    num_heads (int): The number of attention heads to use.
+    query_input_dims (int, optional): The input dimensions of the queries.
+        Default: ``dims``.
+    key_input_dims (int, optional): The input dimensions of the keys.
+        Default: ``dims``.
+    value_input_dims (int, optional): The input dimensions of the values.
+        Default: ``key_input_dims``.
+    value_dims (int, optional): The dimensions of the values after the
+        projection. Default: ``dims``.
+    value_output_dims (int, optional): The dimensions the new values will
+        be projected to. Default: ``dims``.
+    bias (bool, optional): Whether or not to use a bias in the projections.
+        Default: ``False``.
                 
 ## mlx.nn.PReLU
-                Base class for building neural networks with MLX.
+                Applies the element-wise parametric ReLU.
+    Applies :math:`\max(0, x) + a * \min(0, x)` element wise, where :math:`a`
+    is an array.
 
-All the layers provided in :mod:`mlx.nn.layers` subclass this class and
-your models should do the same.
+See :func:`prelu`, for the functional equivalent.
 
-A ``Module`` can contain other ``Module`` instances or :class:`mlx.core.array`
-instances in arbitrary nesting of python lists or dicts. The ``Module``
-then allows recursively extracting all the :class:`mlx.core.array` instances
-using :meth:`mlx.nn.Module.parameters`.
-
-In addition, the ``Module`` has the concept of trainable and non trainable
-parameters (called "frozen"). When using :func:`mlx.nn.value_and_grad`
-the gradients are returned only with respect to the trainable parameters.
-All arrays in a module are trainable unless they are added in the "frozen"
-set by calling :meth:`freeze`.
-
-.. code-block:: python
-
-    import mlx.core as mx
-    import mlx.nn as nn
-
-    class MyMLP(nn.Module):
-        def __init__(self, in_dims: int, out_dims: int, hidden_dims: int = 16):
-            super().__init__()
-
-            self.in_proj = nn.Linear(in_dims, hidden_dims)
-            self.out_proj = nn.Linear(hidden_dims, out_dims)
-
-        def __call__(self, x):
-            x = self.in_proj(x)
-            x = mx.maximum(x, 0)
-            return self.out_proj(x)
-
-    model = MyMLP(2, 1)
-
-    # All the model parameters are created but since MLX is lazy by
-    # default, they are not evaluated yet. Calling `mx.eval` actually
-    # allocates memory and initializes the parameters.
-    mx.eval(model.parameters())
-
-    # Setting a parameter to a new value is as simply as accessing that
-    # parameter and assigning a new array to it.
-    model.in_proj.weight = model.in_proj.weight * 2
-    mx.eval(model.parameters())
+Args:
+    num_parameters: number of :math:`a` to learn. Default: 1
+    init: the initial value of :math:`a`. Default: 0.25
                 
 ## mlx.nn.QuantizedLinear
                 Applies an affine transformation to the input using a quantized weight matrix.
@@ -777,21 +907,23 @@ Simply ``mx.maximum(x, 0)``.
 Applies :math:`\min(\max(x, 0), 6)` element wise.
                 
 ## mlx.nn.RoPE
-                Implements the rotary positional encoding [1].
+                Implements the rotary positional encoding.
 
 The traditional implementation rotates consecutive pairs of elements in the
 feature dimension while the default implementation rotates pairs with
 stride half the feature dimensions for efficiency.
 
-[1]: https://arxiv.org/abs/2104.09864
+For more details see `RoFormer: Enhanced Transformer with Rotary Position
+Embedding <https://arxiv.org/abs/2104.09864>`_.
 
 Args:
     dims (int): The feature dimensions to be rotated. If the input feature
         is larger than dims then the rest is left unchanged.
     traditional (bool, optional): If set to True choose the traditional
-        implementation which is slightly less efficient. Default: ``False``
+        implementation which is slightly less efficient. Default: ``False``.
     base (float, optional): The base used to compute angular frequency for
-        each dimension in the positional encodings. Default: ``10000``
+        each dimension in the positional encodings. Default: ``10000``.
+    scale (float, optional): The scale used to scale the positions. Default: ``1.0``.
                 
 ## mlx.nn.SELU
                 Applies the Scaled Exponential Linear Unit.
@@ -823,24 +955,38 @@ Applies :math:`x \sigma(x)` element wise, where :math:`\sigma(\cdot)` is
 the logistic sigmoid.
                 
 ## mlx.nn.SinusoidalPositionalEncoding
-                Implements sinusoidal positional encoding similar to [1].
+                Implements sinusoidal positional encoding.
 
-[1]: https://arxiv.org/abs/1706.03762
+For more details see the paper `Attention Is All You Need
+<https://arxiv.org/abs/1706.03762>`_.
 
 Args:
     dims (int): The dimensionality of the resulting positional embeddings.
-    min_freq (float): The minimum frequency expected (default: 0.0001)
-    max_freq (float): The maximum frequency expected (default: 1)
-    scale (float): Scale the embeddings by that number (default: sqrt(dims//2))
-    cos_first (bool): If set to True embed using ``[cos(x); sin(x)]``
-        instead of the other way around (default: False)
-    full_turns (bool): If set to True multiply the frequencies
-        with ``2 pi`` (default: False)
+    min_freq (float, optional): The minimum frequency expected. Default:
+        ``0.0001``.
+    max_freq (float, optional): The maximum frequency expected. Default:
+        ``1``.
+    scale (float, optional): A multiplicative scale for the embeddings.
+        Default: ``sqrt(dims//2)``.
+    cos_first (bool, optional): If ``True`` embed using ``[cos(x); sin(x)]``
+        instead of the reverse. Default: ``False``.
+    full_turns (bool, optional): If ``True`` multiply the frequencies with
+        :math:`2\pi`. Default: ``False``.
+                
+## mlx.nn.Softmax
+                Applies the Softmax function.
+
+Applies :math:`\frac{e^{x_i}}{\sum_j e^{x_j}}` element wise.
                 
 ## mlx.nn.Softplus
                 Applies the Softplus function.
 
 Applies :math:`\log(1 + \exp(x))` element wise.
+                
+## mlx.nn.Softsign
+                Applies the Softsign function.
+
+Applies :math:`\frac{x}{1 + |x|}` element wise.
                 
 ## mlx.nn.Step
                 Applies the Step Activation Function.
@@ -856,6 +1002,47 @@ to 1 if the input is greater than a specified threshold, and 0 otherwise.
 
 Args:
     threshold: The value to threshold at.
+                
+## mlx.nn.Tanh
+                Applies the hyperbolic tangent function.
+
+Simply ``mx.tanh(x)``.
+                
+## mlx.nn.Transformer
+                Implements a standard Transformer model.
+
+The implementation is based on `Attention Is All You Need
+<https://arxiv.org/abs/1706.03762>`_.
+
+The Transformer model contains an encoder and a decoder. The encoder
+processes the input sequence and the decoder generates the output sequence.
+The interaction between encoder and decoder happens through the attention
+mechanism.
+
+Args:
+    dims (int, optional): The number of expected features in the
+        encoder/decoder inputs. Default: ``512``.
+    num_heads (int, optional): The number of attention heads. Default:
+        ``8``.
+    num_encoder_layers (int, optional): The number of encoder layers in the
+        Transformer encoder. Default: ``6``.
+    num_decoder_layers (int, optional): The number of decoder layers in the
+        Transformer decoder. Default: ``6``.
+    mlp_dims (int, optional): The hidden dimension of the MLP block in each
+        Transformer layer. Defaults to ``4*dims`` if not provided. Default:
+        ``None``.
+    dropout (float, optional): The dropout value for the Transformer
+        encoder and decoder. Dropout is used after each attention layer and
+        the activation in the MLP layer. Default: ``0.0``.
+    activation (function, optional): the activation function for the MLP
+        hidden layer. Default: :func:`mlx.nn.relu`.
+    custom_encoder (nn.Module, optional): A custom encoder to replace the
+        standard Transformer encoder. Default: ``None``.
+    custom_decoder (nn.Module, optional): A custom decoder to replace the
+        standard Transformer decoder. Default: ``None``.
+    norm_first (bool, optional): if ``True``, encoder and decoder layers
+        will perform layer normalization before attention and MLP
+        operations, otherwise after. Default: ``False``.
                 
 ## mlx.nn.TransformerEncoder
                 Base class for building neural networks with MLX.
@@ -990,6 +1177,12 @@ functional equivalents and information regarding error bounds.
 Args:
     approx ('none' | 'precise' | 'fast'): Which approximation to gelu to use if any.
                 
+## mlx.nn.layers.activations.Hardswish
+                Applies the hardswish function, element-wise.
+
+.. math::
+    \text{Hardswish}(x) = x * \min(\max(x + 3, 0), 6) / 6
+                
 ## mlx.nn.layers.activations.LeakyReLU
                 Applies the Leaky Rectified Linear Unit.
 
@@ -1002,6 +1195,11 @@ Args:
                 Applies the Log Sigmoid function.
 
 Applies :math:`\log(\sigma(x)) = -\log(1 + e^{-x})` element wise.
+                
+## mlx.nn.layers.activations.LogSoftmax
+                Applies the Log Softmax function.
+
+Applies :math:`x + \log \sum_i e^{x_i}` element wise.
                 
 ## mlx.nn.layers.activations.Mish
                 Applies the Mish function, element-wise.
@@ -1059,50 +1257,15 @@ set by calling :meth:`freeze`.
     mx.eval(model.parameters())
                 
 ## mlx.nn.layers.activations.PReLU
-                Base class for building neural networks with MLX.
+                Applies the element-wise parametric ReLU.
+    Applies :math:`\max(0, x) + a * \min(0, x)` element wise, where :math:`a`
+    is an array.
 
-All the layers provided in :mod:`mlx.nn.layers` subclass this class and
-your models should do the same.
+See :func:`prelu`, for the functional equivalent.
 
-A ``Module`` can contain other ``Module`` instances or :class:`mlx.core.array`
-instances in arbitrary nesting of python lists or dicts. The ``Module``
-then allows recursively extracting all the :class:`mlx.core.array` instances
-using :meth:`mlx.nn.Module.parameters`.
-
-In addition, the ``Module`` has the concept of trainable and non trainable
-parameters (called "frozen"). When using :func:`mlx.nn.value_and_grad`
-the gradients are returned only with respect to the trainable parameters.
-All arrays in a module are trainable unless they are added in the "frozen"
-set by calling :meth:`freeze`.
-
-.. code-block:: python
-
-    import mlx.core as mx
-    import mlx.nn as nn
-
-    class MyMLP(nn.Module):
-        def __init__(self, in_dims: int, out_dims: int, hidden_dims: int = 16):
-            super().__init__()
-
-            self.in_proj = nn.Linear(in_dims, hidden_dims)
-            self.out_proj = nn.Linear(hidden_dims, out_dims)
-
-        def __call__(self, x):
-            x = self.in_proj(x)
-            x = mx.maximum(x, 0)
-            return self.out_proj(x)
-
-    model = MyMLP(2, 1)
-
-    # All the model parameters are created but since MLX is lazy by
-    # default, they are not evaluated yet. Calling `mx.eval` actually
-    # allocates memory and initializes the parameters.
-    mx.eval(model.parameters())
-
-    # Setting a parameter to a new value is as simply as accessing that
-    # parameter and assigning a new array to it.
-    model.in_proj.weight = model.in_proj.weight * 2
-    mx.eval(model.parameters())
+Args:
+    num_parameters: number of :math:`a` to learn. Default: 1
+    init: the initial value of :math:`a`. Default: 0.25
                 
 ## mlx.nn.layers.activations.ReLU
                 Applies the Rectified Linear Unit.
@@ -1133,10 +1296,20 @@ See also :func:`elu`.
 Applies :math:`x \sigma(x)` element wise, where :math:`\sigma(\cdot)` is
 the logistic sigmoid.
                 
+## mlx.nn.layers.activations.Softmax
+                Applies the Softmax function.
+
+Applies :math:`\frac{e^{x_i}}{\sum_j e^{x_j}}` element wise.
+                
 ## mlx.nn.layers.activations.Softplus
                 Applies the Softplus function.
 
 Applies :math:`\log(1 + \exp(x))` element wise.
+                
+## mlx.nn.layers.activations.Softsign
+                Applies the Softsign function.
+
+Applies :math:`\frac{x}{1 + |x|}` element wise.
                 
 ## mlx.nn.layers.activations.Step
                 Applies the Step Activation Function.
@@ -1208,6 +1381,12 @@ This function approximates ``gelu`` with a maximum absolute error :math:`<
 
 where :math:`\sigma(\cdot)` is the logistic sigmoid.
                 
+## mlx.nn.layers.activations.hardswish
+                Applies the hardswish function, element-wise.
+
+.. math::
+    \text{Hardswish}(x) = x * \min(\max(x + 3, 0), 6) / 6
+                
 ## mlx.nn.layers.activations.leaky_relu
                 Applies the Leaky Rectified Linear Unit.
 
@@ -1217,6 +1396,11 @@ Simply ``mx.maximum(negative_slope * x, x)``.
                 Applies the Log Sigmoid function.
 
 Applies :math:`\log(\sigma(x)) = -\log(1 + e^{-x})` element wise.
+                
+## mlx.nn.layers.activations.log_softmax
+                Applies the Log Softmax function.
+
+Applies :math:`x + \log \sum_i e^{x_i}` element wise.
                 
 ## mlx.nn.layers.activations.mish
                 Applies the Mish function, element-wise.
@@ -1228,12 +1412,12 @@ Reference: https://arxiv.org/abs/1908.08681
     \text{Mish}(x) = x * \text{Tanh}(\text{Softplus}(x))
                 
 ## mlx.nn.layers.activations.prelu
-                Applies the element-wise function:
+                Applies the element-wise parametric ReLU.
 
 .. math::
     \text{PReLU}(x) = \max(0,x) + a * \min(0,x)
 
-Here :math:`a` is an array.
+where :math:`a` is an array.
                 
 ## mlx.nn.layers.activations.relu
                 Applies the Rectified Linear Unit.
@@ -1270,10 +1454,20 @@ See also :func:`elu`.
 Applies :math:`x \sigma(x)` element wise, where :math:`\sigma(\cdot)` is
 the logistic sigmoid.
                 
+## mlx.nn.layers.activations.softmax
+                Applies the Softmax function.
+
+Applies :math:`\frac{e^{x_i}}{\sum_j e^{x_j}}` element wise.
+                
 ## mlx.nn.layers.activations.softplus
                 Applies the Softplus function.
 
 Applies :math:`\log(1 + \exp(x))` element wise.
+                
+## mlx.nn.layers.activations.softsign
+                Applies the Softsign function.
+
+Applies :math:`\frac{x}{1 + |x|}` element wise.
                 
 ## mlx.nn.layers.activations.step
                 Applies the Step Activation Function.
@@ -1549,12 +1743,52 @@ set by calling :meth:`freeze`.
 ## mlx.nn.layers.dropout.Dropout
                 Randomly zero a portion of the elements during training.
 
-The remaining elements are multiplied with :math:`rac{1}{1-p}` where
+The remaining elements are multiplied with :math:`\frac{1}{1-p}` where
 :math:`p` is the probability of zeroing an element. This is done so the
 expected value of a given element will remain the same.
 
 Args:
     p (float): The probability to zero an element
+                
+## mlx.nn.layers.dropout.Dropout2d
+                Apply 2D channel-wise dropout during training.
+
+Randomly zero out entire channels independently with probability :math:`p`.
+This layer expects the channels to be last, i.e. the input shape should be
+``NWHC`` or ``WHC`` where:``N`` is the batch dimension,``H`` is the input
+image height,``W`` is the input image width, and``C`` is the number of
+input channels
+
+The remaining channels are scaled by :math:`\frac{1}{1-p}` to
+maintain the expected value of each element. Unlike traditional dropout,
+which zeros individual entries, this layer zeros entire channels. This is
+beneficial for early convolution layers where adjacent pixels are
+correlated. In such case, traditional dropout may not effectively
+regularize activations. For more details, see [1].
+
+[1]: Thompson, J., Goroshin, R., Jain, A., LeCun, Y. and Bregler C., 2015.
+Efficient Object Localization Using Convolutional Networks. CVPR 2015.
+
+Args:
+    p (float): Probability of zeroing a channel during training.
+                
+## mlx.nn.layers.dropout.Dropout3d
+                Apply 3D channel-wise dropout during training.
+
+Randomly zero out entire channels independently with probability :math:`p`.
+This layer expects the channels to be last, i.e., the input shape should be
+`NDHWC` or `DHWC` where: `N` is the batch dimension, `D` is the depth,
+`H` is the input image height, `W` is the input image width, and `C` is
+the number of input channels.
+
+The remaining channels are scaled by :math:`\frac{1}{1-p}` to
+maintain the expected value of each element. Unlike traditional dropout,
+which zeros individual entries, this layer zeros entire channels. This is
+often beneficial for convolutional layers processing 3D data, like in
+medical imaging or video processing.
+
+Args:
+    p (float): Probability of zeroing a channel during training.
                 
 ## mlx.nn.layers.dropout.Module
                 Base class for building neural networks with MLX.
@@ -1703,6 +1937,12 @@ This function approximates ``gelu`` with a maximum absolute error :math:`<
 
 where :math:`\sigma(\cdot)` is the logistic sigmoid.
                 
+## mlx.nn.hardswish
+                Applies the hardswish function, element-wise.
+
+.. math::
+    \text{Hardswish}(x) = x * \min(\max(x + 3, 0), 6) / 6
+                
 ## mlx.nn.layers.ALiBi
                 Base class for building neural networks with MLX.
 
@@ -1748,6 +1988,69 @@ set by calling :meth:`freeze`.
     # parameter and assigning a new array to it.
     model.in_proj.weight = model.in_proj.weight * 2
     mx.eval(model.parameters())
+                
+## mlx.nn.layers.BatchNorm
+                Applies Batch Normalization over a 2D or 3D input.
+
+Computes
+
+.. math::
+
+    y = \frac{x - E[x]}{\sqrt{Var[x]} + \epsilon} \gamma + \beta,
+
+where :math:`\gamma` and :math:`\beta` are learned per feature dimension
+parameters initialized at 1 and 0 respectively.
+
+The input shape is specified as ``NC`` or ``NLC``, where ``N`` is the
+batch, ``C`` is the number of features or channels, and ``L`` is the
+sequence length. The output has the same shape as the input. For
+four-dimensional arrays, the shape is ``NHWC``, where ``H`` and ``W`` are
+the height and width respectively.
+
+For more information on Batch Normalization, see the original paper `Batch
+Normalization: Accelerating Deep Network Training by Reducing Internal
+Covariate Shift <https://arxiv.org/abs/1502.03167>`_.
+
+Args:
+    num_features (int): The feature dimension to normalize over.
+    eps (float, optional): A small additive constant for numerical
+        stability. Default: ``1e-5``.
+    momentum (float, optional): The momentum for updating the running
+        mean and variance. Default: ``0.1``.
+    affine (bool, optional): If ``True``, apply a learned affine
+        transformation after the normalization. Default: ``True``.
+    track_running_stats (bool, optional): If ``True``, track the
+        running mean and variance. Default: ``True``.
+
+Examples:
+    >>> import mlx.core as mx
+    >>> import mlx.nn as nn
+    >>> x = mx.random.normal((5, 4))
+    >>> bn = nn.BatchNorm(num_features=4, affine=True)
+    >>> output = bn(x)
+                
+## mlx.nn.layers.Bilinear
+                Applies a bilinear transformation to the inputs.
+
+Concretely:
+
+.. math::
+
+    y_i = x_1^\top W_i x_2 + b_i
+
+where:
+:math:`W` has shape ``[output_dims, input1_dims, input2_dims]``, :math:`b` has shape ``[output_dims ]``,
+and :math:`i` indexes the output dimension.
+
+The values are initialized from the uniform distribution :math:`\mathcal{U}(-{k}, {k})`,
+where :math:`k = \frac{1}{\sqrt{D_1}}` and :math:`D_1` is ``input1_dims``.
+
+Args:
+    input1_dims (int): The dimensionality of the input1 features
+    input2_dims (int): The dimensionality of the input2 features
+    output_dims (int): The dimensionality of the output features
+    bias (bool, optional): If set to ``False`` then the layer will
+      not use a bias. Default is ``True``.
                 
 ## mlx.nn.layers.CELU
                 Applies the Continuously Differentiable Exponential Linear Unit.
@@ -1801,12 +2104,52 @@ Args:
 ## mlx.nn.layers.Dropout
                 Randomly zero a portion of the elements during training.
 
-The remaining elements are multiplied with :math:`rac{1}{1-p}` where
+The remaining elements are multiplied with :math:`\frac{1}{1-p}` where
 :math:`p` is the probability of zeroing an element. This is done so the
 expected value of a given element will remain the same.
 
 Args:
     p (float): The probability to zero an element
+                
+## mlx.nn.layers.Dropout2d
+                Apply 2D channel-wise dropout during training.
+
+Randomly zero out entire channels independently with probability :math:`p`.
+This layer expects the channels to be last, i.e. the input shape should be
+``NWHC`` or ``WHC`` where:``N`` is the batch dimension,``H`` is the input
+image height,``W`` is the input image width, and``C`` is the number of
+input channels
+
+The remaining channels are scaled by :math:`\frac{1}{1-p}` to
+maintain the expected value of each element. Unlike traditional dropout,
+which zeros individual entries, this layer zeros entire channels. This is
+beneficial for early convolution layers where adjacent pixels are
+correlated. In such case, traditional dropout may not effectively
+regularize activations. For more details, see [1].
+
+[1]: Thompson, J., Goroshin, R., Jain, A., LeCun, Y. and Bregler C., 2015.
+Efficient Object Localization Using Convolutional Networks. CVPR 2015.
+
+Args:
+    p (float): Probability of zeroing a channel during training.
+                
+## mlx.nn.layers.Dropout3d
+                Apply 3D channel-wise dropout during training.
+
+Randomly zero out entire channels independently with probability :math:`p`.
+This layer expects the channels to be last, i.e., the input shape should be
+`NDHWC` or `DHWC` where: `N` is the batch dimension, `D` is the depth,
+`H` is the input image height, `W` is the input image width, and `C` is
+the number of input channels.
+
+The remaining channels are scaled by :math:`\frac{1}{1-p}` to
+maintain the expected value of each element. Unlike traditional dropout,
+which zeros individual entries, this layer zeros entire channels. This is
+often beneficial for convolutional layers processing 3D data, like in
+medical imaging or video processing.
+
+Args:
+    p (float): Probability of zeroing a channel during training.
                 
 ## mlx.nn.layers.ELU
                 Applies the Exponential Linear Unit.
@@ -1879,6 +2222,51 @@ Args:
     pytorch_compatible (bool): If True perform the group normalization in
         the same order/grouping as PyTorch.
                 
+## mlx.nn.layers.Hardswish
+                Applies the hardswish function, element-wise.
+
+.. math::
+    \text{Hardswish}(x) = x * \min(\max(x + 3, 0), 6) / 6
+                
+## mlx.nn.layers.Identity
+                A placeholder identity operator that is argument-insensitive.
+
+Args:
+    args: any argument (unused)
+    kwargs: any keyword argument (unused)
+                
+## mlx.nn.layers.InstanceNorm
+                Applies instance normalization [1] on the inputs.
+
+Computes
+
+.. math::
+
+    y = \frac{x - \mathrm{E}[x]}{ \sqrt{\mathrm{Var}[x] + \epsilon}} * \gamma + \beta,
+
+where :math:`\gamma` and :math:`\beta` are learned per feature dimension
+parameters initialized at 1 and 0 respectively. Both are of size :attr:`dims`,
+if :attr:`affine` is ``True``.
+
+Args:
+    dims (int): The number of features of the input.
+    eps (float): A value added to the denominator for numerical stability. Default: ``1e-5``.
+    affine (bool): Default: ``False``.
+
+Shape:
+  - Input: :math:`(..., C)` where :math:`C` is equal to :attr:`dims`.
+  - Output: Same shape as the input.
+
+Examples:
+    >>> import mlx.core as mx
+    >>> import mlx.nn as nn
+    >>> x = mx.random.normal((8, 4, 4, 16))
+    >>> inorm = nn.InstanceNorm(dims=16)
+    >>> output = inorm(x)
+
+References:
+    [1]: https://arxiv.org/abs/1607.08022
+                
 ## mlx.nn.layers.LayerNorm
                 Applies layer normalization [1] on the inputs.
 
@@ -1914,20 +2302,29 @@ Concretely:
 
 .. math::
 
-    y = W^\top x + b
+    y = x W^\top + b
 
-where :math:`W` has shape ``[output_dims, input_dims]``.
+where:
+where :math:`W` has shape ``[output_dims, input_dims]`` and :math:`b` has shape ``[output_dims]``.
+
+The values are initialized from the uniform distribution :math:`\mathcal{U}(-{k}, {k})`,
+where :math:`k = \frac{1}{\sqrt{D_i}}` and :math:`D_i` is equal to ``input_dims``.
 
 Args:
     input_dims (int): The dimensionality of the input features
     output_dims (int): The dimensionality of the output features
     bias (bool, optional): If set to ``False`` then the layer will
-      not use a bias. Default ``True``.
+      not use a bias. Default is ``True``.
                 
 ## mlx.nn.layers.LogSigmoid
                 Applies the Log Sigmoid function.
 
 Applies :math:`\log(\sigma(x)) = -\log(1 + e^{-x})` element wise.
+                
+## mlx.nn.layers.LogSoftmax
+                Applies the Log Softmax function.
+
+Applies :math:`x + \log \sum_i e^{x_i}` element wise.
                 
 ## mlx.nn.layers.Mish
                 Applies the Mish function, element-wise.
@@ -1987,72 +2384,45 @@ set by calling :meth:`freeze`.
 ## mlx.nn.layers.MultiHeadAttention
                 Implements the scaled dot product attention with multiple heads.
 
-Given inputs for queries, keys and values the ``MultiHeadAttention`` produces
-new values by aggregating information from the input values according to
-the similarities of the input queries and keys.
+Given inputs for queries, keys and values the ``MultiHeadAttention``
+produces new values by aggregating information from the input values
+according to the similarities of the input queries and keys.
 
-All inputs as well as the output are linearly projected without biases.
+All inputs as well as the output are linearly projected without biases by
+default.
 
-MultiHeadAttention also expects an additive attention mask that should be
-broadcastable with (batch, num_heads, # queries, # keys). The mask should
-have ``-inf`` or very negative numbers to the positions that should *not* be
-attended to.
+``MultiHeadAttention`` also takes an optional additive attention mask that
+should be broadcastable with ``(batch, num_heads, # queries, # keys)``. The
+mask should have ``-inf`` or very large negative numbers at the positions
+that should *not* be attended to.
 
 Args:
-    dims (int): The model dimensions. If no other dims are provided then
-        dims is used for queries, keys, values and the output.
-    num_heads (int): How many attention heads to use
-    query_input_dims (int, optional): The input dimensions of the queries (default: dims).
-    key_input_dims (int, optional): The input dimensions of the keys (default: dims).
-    value_input_dims (int, optional): The input dimensions of the values (default: key_input_dims).
-    value_dims (int, optional): The dimensions of the values after the projection (default: dims).
-    value_output_dims (int, optional): The dimensions the new values will be projected to (default: dims).
+    dims (int): The model dimensions. This is also the default
+        value for the queries, keys, values, and the output.
+    num_heads (int): The number of attention heads to use.
+    query_input_dims (int, optional): The input dimensions of the queries.
+        Default: ``dims``.
+    key_input_dims (int, optional): The input dimensions of the keys.
+        Default: ``dims``.
+    value_input_dims (int, optional): The input dimensions of the values.
+        Default: ``key_input_dims``.
+    value_dims (int, optional): The dimensions of the values after the
+        projection. Default: ``dims``.
+    value_output_dims (int, optional): The dimensions the new values will
+        be projected to. Default: ``dims``.
+    bias (bool, optional): Whether or not to use a bias in the projections.
+        Default: ``False``.
                 
 ## mlx.nn.layers.PReLU
-                Base class for building neural networks with MLX.
+                Applies the element-wise parametric ReLU.
+    Applies :math:`\max(0, x) + a * \min(0, x)` element wise, where :math:`a`
+    is an array.
 
-All the layers provided in :mod:`mlx.nn.layers` subclass this class and
-your models should do the same.
+See :func:`prelu`, for the functional equivalent.
 
-A ``Module`` can contain other ``Module`` instances or :class:`mlx.core.array`
-instances in arbitrary nesting of python lists or dicts. The ``Module``
-then allows recursively extracting all the :class:`mlx.core.array` instances
-using :meth:`mlx.nn.Module.parameters`.
-
-In addition, the ``Module`` has the concept of trainable and non trainable
-parameters (called "frozen"). When using :func:`mlx.nn.value_and_grad`
-the gradients are returned only with respect to the trainable parameters.
-All arrays in a module are trainable unless they are added in the "frozen"
-set by calling :meth:`freeze`.
-
-.. code-block:: python
-
-    import mlx.core as mx
-    import mlx.nn as nn
-
-    class MyMLP(nn.Module):
-        def __init__(self, in_dims: int, out_dims: int, hidden_dims: int = 16):
-            super().__init__()
-
-            self.in_proj = nn.Linear(in_dims, hidden_dims)
-            self.out_proj = nn.Linear(hidden_dims, out_dims)
-
-        def __call__(self, x):
-            x = self.in_proj(x)
-            x = mx.maximum(x, 0)
-            return self.out_proj(x)
-
-    model = MyMLP(2, 1)
-
-    # All the model parameters are created but since MLX is lazy by
-    # default, they are not evaluated yet. Calling `mx.eval` actually
-    # allocates memory and initializes the parameters.
-    mx.eval(model.parameters())
-
-    # Setting a parameter to a new value is as simply as accessing that
-    # parameter and assigning a new array to it.
-    model.in_proj.weight = model.in_proj.weight * 2
-    mx.eval(model.parameters())
+Args:
+    num_parameters: number of :math:`a` to learn. Default: 1
+    init: the initial value of :math:`a`. Default: 0.25
                 
 ## mlx.nn.layers.QuantizedLinear
                 Applies an affine transformation to the input using a quantized weight matrix.
@@ -2108,21 +2478,23 @@ Simply ``mx.maximum(x, 0)``.
 Applies :math:`\min(\max(x, 0), 6)` element wise.
                 
 ## mlx.nn.layers.RoPE
-                Implements the rotary positional encoding [1].
+                Implements the rotary positional encoding.
 
 The traditional implementation rotates consecutive pairs of elements in the
 feature dimension while the default implementation rotates pairs with
 stride half the feature dimensions for efficiency.
 
-[1]: https://arxiv.org/abs/2104.09864
+For more details see `RoFormer: Enhanced Transformer with Rotary Position
+Embedding <https://arxiv.org/abs/2104.09864>`_.
 
 Args:
     dims (int): The feature dimensions to be rotated. If the input feature
         is larger than dims then the rest is left unchanged.
     traditional (bool, optional): If set to True choose the traditional
-        implementation which is slightly less efficient. Default: ``False``
+        implementation which is slightly less efficient. Default: ``False``.
     base (float, optional): The base used to compute angular frequency for
-        each dimension in the positional encodings. Default: ``10000``
+        each dimension in the positional encodings. Default: ``10000``.
+    scale (float, optional): The scale used to scale the positions. Default: ``1.0``.
                 
 ## mlx.nn.layers.SELU
                 Applies the Scaled Exponential Linear Unit.
@@ -2154,24 +2526,38 @@ Applies :math:`x \sigma(x)` element wise, where :math:`\sigma(\cdot)` is
 the logistic sigmoid.
                 
 ## mlx.nn.layers.SinusoidalPositionalEncoding
-                Implements sinusoidal positional encoding similar to [1].
+                Implements sinusoidal positional encoding.
 
-[1]: https://arxiv.org/abs/1706.03762
+For more details see the paper `Attention Is All You Need
+<https://arxiv.org/abs/1706.03762>`_.
 
 Args:
     dims (int): The dimensionality of the resulting positional embeddings.
-    min_freq (float): The minimum frequency expected (default: 0.0001)
-    max_freq (float): The maximum frequency expected (default: 1)
-    scale (float): Scale the embeddings by that number (default: sqrt(dims//2))
-    cos_first (bool): If set to True embed using ``[cos(x); sin(x)]``
-        instead of the other way around (default: False)
-    full_turns (bool): If set to True multiply the frequencies
-        with ``2 pi`` (default: False)
+    min_freq (float, optional): The minimum frequency expected. Default:
+        ``0.0001``.
+    max_freq (float, optional): The maximum frequency expected. Default:
+        ``1``.
+    scale (float, optional): A multiplicative scale for the embeddings.
+        Default: ``sqrt(dims//2)``.
+    cos_first (bool, optional): If ``True`` embed using ``[cos(x); sin(x)]``
+        instead of the reverse. Default: ``False``.
+    full_turns (bool, optional): If ``True`` multiply the frequencies with
+        :math:`2\pi`. Default: ``False``.
+                
+## mlx.nn.layers.Softmax
+                Applies the Softmax function.
+
+Applies :math:`\frac{e^{x_i}}{\sum_j e^{x_j}}` element wise.
                 
 ## mlx.nn.layers.Softplus
                 Applies the Softplus function.
 
 Applies :math:`\log(1 + \exp(x))` element wise.
+                
+## mlx.nn.layers.Softsign
+                Applies the Softsign function.
+
+Applies :math:`\frac{x}{1 + |x|}` element wise.
                 
 ## mlx.nn.layers.Step
                 Applies the Step Activation Function.
@@ -2187,6 +2573,47 @@ to 1 if the input is greater than a specified threshold, and 0 otherwise.
 
 Args:
     threshold: The value to threshold at.
+                
+## mlx.nn.layers.Tanh
+                Applies the hyperbolic tangent function.
+
+Simply ``mx.tanh(x)``.
+                
+## mlx.nn.layers.Transformer
+                Implements a standard Transformer model.
+
+The implementation is based on `Attention Is All You Need
+<https://arxiv.org/abs/1706.03762>`_.
+
+The Transformer model contains an encoder and a decoder. The encoder
+processes the input sequence and the decoder generates the output sequence.
+The interaction between encoder and decoder happens through the attention
+mechanism.
+
+Args:
+    dims (int, optional): The number of expected features in the
+        encoder/decoder inputs. Default: ``512``.
+    num_heads (int, optional): The number of attention heads. Default:
+        ``8``.
+    num_encoder_layers (int, optional): The number of encoder layers in the
+        Transformer encoder. Default: ``6``.
+    num_decoder_layers (int, optional): The number of decoder layers in the
+        Transformer decoder. Default: ``6``.
+    mlp_dims (int, optional): The hidden dimension of the MLP block in each
+        Transformer layer. Defaults to ``4*dims`` if not provided. Default:
+        ``None``.
+    dropout (float, optional): The dropout value for the Transformer
+        encoder and decoder. Dropout is used after each attention layer and
+        the activation in the MLP layer. Default: ``0.0``.
+    activation (function, optional): the activation function for the MLP
+        hidden layer. Default: :func:`mlx.nn.relu`.
+    custom_encoder (nn.Module, optional): A custom encoder to replace the
+        standard Transformer encoder. Default: ``None``.
+    custom_decoder (nn.Module, optional): A custom decoder to replace the
+        standard Transformer decoder. Default: ``None``.
+    norm_first (bool, optional): if ``True``, encoder and decoder layers
+        will perform layer normalization before attention and MLP
+        operations, otherwise after. Default: ``False``.
                 
 ## mlx.nn.layers.TransformerEncoder
                 Base class for building neural networks with MLX.
@@ -2330,10 +2757,57 @@ This function approximates ``gelu`` with a maximum absolute error :math:`<
 
 where :math:`\sigma(\cdot)` is the logistic sigmoid.
                 
+## mlx.nn.layers.hardswish
+                Applies the hardswish function, element-wise.
+
+.. math::
+    \text{Hardswish}(x) = x * \min(\max(x + 3, 0), 6) / 6
+                
 ## mlx.nn.layers.leaky_relu
                 Applies the Leaky Rectified Linear Unit.
 
 Simply ``mx.maximum(negative_slope * x, x)``.
+                
+## mlx.nn.layers.linear.Any
+                Special type indicating an unconstrained type.
+
+- Any is compatible with every type.
+- Any assumed to have all methods.
+- All values assumed to be instances of Any.
+
+Note that all the above statements are true from the point of view of
+static type checkers. At runtime, Any should not be used with instance
+checks.
+                
+## mlx.nn.layers.linear.Bilinear
+                Applies a bilinear transformation to the inputs.
+
+Concretely:
+
+.. math::
+
+    y_i = x_1^\top W_i x_2 + b_i
+
+where:
+:math:`W` has shape ``[output_dims, input1_dims, input2_dims]``, :math:`b` has shape ``[output_dims ]``,
+and :math:`i` indexes the output dimension.
+
+The values are initialized from the uniform distribution :math:`\mathcal{U}(-{k}, {k})`,
+where :math:`k = \frac{1}{\sqrt{D_1}}` and :math:`D_1` is ``input1_dims``.
+
+Args:
+    input1_dims (int): The dimensionality of the input1 features
+    input2_dims (int): The dimensionality of the input2 features
+    output_dims (int): The dimensionality of the output features
+    bias (bool, optional): If set to ``False`` then the layer will
+      not use a bias. Default is ``True``.
+                
+## mlx.nn.layers.linear.Identity
+                A placeholder identity operator that is argument-insensitive.
+
+Args:
+    args: any argument (unused)
+    kwargs: any keyword argument (unused)
                 
 ## mlx.nn.layers.linear.Linear
                 Applies an affine transformation to the input.
@@ -2342,15 +2816,19 @@ Concretely:
 
 .. math::
 
-    y = W^\top x + b
+    y = x W^\top + b
 
-where :math:`W` has shape ``[output_dims, input_dims]``.
+where:
+where :math:`W` has shape ``[output_dims, input_dims]`` and :math:`b` has shape ``[output_dims]``.
+
+The values are initialized from the uniform distribution :math:`\mathcal{U}(-{k}, {k})`,
+where :math:`k = \frac{1}{\sqrt{D_i}}` and :math:`D_i` is equal to ``input_dims``.
 
 Args:
     input_dims (int): The dimensionality of the input features
     output_dims (int): The dimensionality of the output features
     bias (bool, optional): If set to ``False`` then the layer will
-      not use a bias. Default ``True``.
+      not use a bias. Default is ``True``.
                 
 ## mlx.nn.layers.linear.Module
                 Base class for building neural networks with MLX.
@@ -2403,6 +2881,11 @@ set by calling :meth:`freeze`.
 
 Applies :math:`\log(\sigma(x)) = -\log(1 + e^{-x})` element wise.
                 
+## mlx.nn.layers.log_softmax
+                Applies the Log Softmax function.
+
+Applies :math:`x + \log \sum_i e^{x_i}` element wise.
+                
 ## mlx.nn.layers.mish
                 Applies the Mish function, element-wise.
 Mish: A Self Regularized Non-Monotonic Neural Activation Function.
@@ -2411,6 +2894,46 @@ Reference: https://arxiv.org/abs/1908.08681
 
 .. math::
     \text{Mish}(x) = x * \text{Tanh}(\text{Softplus}(x))
+                
+## mlx.nn.layers.normalization.BatchNorm
+                Applies Batch Normalization over a 2D or 3D input.
+
+Computes
+
+.. math::
+
+    y = \frac{x - E[x]}{\sqrt{Var[x]} + \epsilon} \gamma + \beta,
+
+where :math:`\gamma` and :math:`\beta` are learned per feature dimension
+parameters initialized at 1 and 0 respectively.
+
+The input shape is specified as ``NC`` or ``NLC``, where ``N`` is the
+batch, ``C`` is the number of features or channels, and ``L`` is the
+sequence length. The output has the same shape as the input. For
+four-dimensional arrays, the shape is ``NHWC``, where ``H`` and ``W`` are
+the height and width respectively.
+
+For more information on Batch Normalization, see the original paper `Batch
+Normalization: Accelerating Deep Network Training by Reducing Internal
+Covariate Shift <https://arxiv.org/abs/1502.03167>`_.
+
+Args:
+    num_features (int): The feature dimension to normalize over.
+    eps (float, optional): A small additive constant for numerical
+        stability. Default: ``1e-5``.
+    momentum (float, optional): The momentum for updating the running
+        mean and variance. Default: ``0.1``.
+    affine (bool, optional): If ``True``, apply a learned affine
+        transformation after the normalization. Default: ``True``.
+    track_running_stats (bool, optional): If ``True``, track the
+        running mean and variance. Default: ``True``.
+
+Examples:
+    >>> import mlx.core as mx
+    >>> import mlx.nn as nn
+    >>> x = mx.random.normal((5, 4))
+    >>> bn = nn.BatchNorm(num_features=4, affine=True)
+    >>> output = bn(x)
                 
 ## mlx.nn.layers.normalization.GroupNorm
                 Applies Group Normalization [1] to the inputs.
@@ -2440,6 +2963,38 @@ Args:
         normalization.
     pytorch_compatible (bool): If True perform the group normalization in
         the same order/grouping as PyTorch.
+                
+## mlx.nn.layers.normalization.InstanceNorm
+                Applies instance normalization [1] on the inputs.
+
+Computes
+
+.. math::
+
+    y = \frac{x - \mathrm{E}[x]}{ \sqrt{\mathrm{Var}[x] + \epsilon}} * \gamma + \beta,
+
+where :math:`\gamma` and :math:`\beta` are learned per feature dimension
+parameters initialized at 1 and 0 respectively. Both are of size :attr:`dims`,
+if :attr:`affine` is ``True``.
+
+Args:
+    dims (int): The number of features of the input.
+    eps (float): A value added to the denominator for numerical stability. Default: ``1e-5``.
+    affine (bool): Default: ``False``.
+
+Shape:
+  - Input: :math:`(..., C)` where :math:`C` is equal to :attr:`dims`.
+  - Output: Same shape as the input.
+
+Examples:
+    >>> import mlx.core as mx
+    >>> import mlx.nn as nn
+    >>> x = mx.random.normal((8, 4, 4, 16))
+    >>> inorm = nn.InstanceNorm(dims=16)
+    >>> output = inorm(x)
+
+References:
+    [1]: https://arxiv.org/abs/1607.08022
                 
 ## mlx.nn.layers.normalization.LayerNorm
                 Applies layer normalization [1] on the inputs.
@@ -2618,44 +3173,50 @@ set by calling :meth:`freeze`.
     mx.eval(model.parameters())
                 
 ## mlx.nn.layers.positional_encoding.RoPE
-                Implements the rotary positional encoding [1].
+                Implements the rotary positional encoding.
 
 The traditional implementation rotates consecutive pairs of elements in the
 feature dimension while the default implementation rotates pairs with
 stride half the feature dimensions for efficiency.
 
-[1]: https://arxiv.org/abs/2104.09864
+For more details see `RoFormer: Enhanced Transformer with Rotary Position
+Embedding <https://arxiv.org/abs/2104.09864>`_.
 
 Args:
     dims (int): The feature dimensions to be rotated. If the input feature
         is larger than dims then the rest is left unchanged.
     traditional (bool, optional): If set to True choose the traditional
-        implementation which is slightly less efficient. Default: ``False``
+        implementation which is slightly less efficient. Default: ``False``.
     base (float, optional): The base used to compute angular frequency for
-        each dimension in the positional encodings. Default: ``10000``
+        each dimension in the positional encodings. Default: ``10000``.
+    scale (float, optional): The scale used to scale the positions. Default: ``1.0``.
                 
 ## mlx.nn.layers.positional_encoding.SinusoidalPositionalEncoding
-                Implements sinusoidal positional encoding similar to [1].
+                Implements sinusoidal positional encoding.
 
-[1]: https://arxiv.org/abs/1706.03762
+For more details see the paper `Attention Is All You Need
+<https://arxiv.org/abs/1706.03762>`_.
 
 Args:
     dims (int): The dimensionality of the resulting positional embeddings.
-    min_freq (float): The minimum frequency expected (default: 0.0001)
-    max_freq (float): The maximum frequency expected (default: 1)
-    scale (float): Scale the embeddings by that number (default: sqrt(dims//2))
-    cos_first (bool): If set to True embed using ``[cos(x); sin(x)]``
-        instead of the other way around (default: False)
-    full_turns (bool): If set to True multiply the frequencies
-        with ``2 pi`` (default: False)
+    min_freq (float, optional): The minimum frequency expected. Default:
+        ``0.0001``.
+    max_freq (float, optional): The maximum frequency expected. Default:
+        ``1``.
+    scale (float, optional): A multiplicative scale for the embeddings.
+        Default: ``sqrt(dims//2)``.
+    cos_first (bool, optional): If ``True`` embed using ``[cos(x); sin(x)]``
+        instead of the reverse. Default: ``False``.
+    full_turns (bool, optional): If ``True`` multiply the frequencies with
+        :math:`2\pi`. Default: ``False``.
                 
 ## mlx.nn.layers.prelu
-                Applies the element-wise function:
+                Applies the element-wise parametric ReLU.
 
 .. math::
     \text{PReLU}(x) = \max(0,x) + a * \min(0,x)
 
-Here :math:`a` is an array.
+where :math:`a` is an array.
                 
 ## mlx.nn.layers.quantized.Linear
                 Applies an affine transformation to the input.
@@ -2664,15 +3225,19 @@ Concretely:
 
 .. math::
 
-    y = W^\top x + b
+    y = x W^\top + b
 
-where :math:`W` has shape ``[output_dims, input_dims]``.
+where:
+where :math:`W` has shape ``[output_dims, input_dims]`` and :math:`b` has shape ``[output_dims]``.
+
+The values are initialized from the uniform distribution :math:`\mathcal{U}(-{k}, {k})`,
+where :math:`k = \frac{1}{\sqrt{D_i}}` and :math:`D_i` is equal to ``input_dims``.
 
 Args:
     input_dims (int): The dimensionality of the input features
     output_dims (int): The dimensionality of the output features
     bias (bool, optional): If set to ``False`` then the layer will
-      not use a bias. Default ``True``.
+      not use a bias. Default is ``True``.
                 
 ## mlx.nn.layers.quantized.Module
                 Base class for building neural networks with MLX.
@@ -2837,10 +3402,20 @@ See also :func:`elu`.
 Applies :math:`x \sigma(x)` element wise, where :math:`\sigma(\cdot)` is
 the logistic sigmoid.
                 
+## mlx.nn.layers.softmax
+                Applies the Softmax function.
+
+Applies :math:`\frac{e^{x_i}}{\sum_j e^{x_j}}` element wise.
+                
 ## mlx.nn.layers.softplus
                 Applies the Softplus function.
 
 Applies :math:`\log(1 + \exp(x))` element wise.
+                
+## mlx.nn.layers.softsign
+                Applies the Softsign function.
+
+Applies :math:`\frac{x}{1 + |x|}` element wise.
                 
 ## mlx.nn.layers.step
                 Applies the Step Activation Function.
@@ -2857,6 +3432,11 @@ to 1 if the input is greater than a specified threshold, and 0 otherwise.
 Args:
     threshold: The value to threshold at.
                 
+## mlx.nn.layers.tanh
+                Applies the hyperbolic tangent function.
+
+Simply ``mx.tanh(x)``.
+                
 ## mlx.nn.layers.transformer.Any
                 Special type indicating an unconstrained type.
 
@@ -2867,6 +3447,16 @@ Args:
 Note that all the above statements are true from the point of view of
 static type checkers. At runtime, Any should not be used with instance
 checks.
+                
+## mlx.nn.layers.transformer.Dropout
+                Randomly zero a portion of the elements during training.
+
+The remaining elements are multiplied with :math:`\frac{1}{1-p}` where
+:math:`p` is the probability of zeroing an element. This is done so the
+expected value of a given element will remain the same.
+
+Args:
+    p (float): The probability to zero an element
                 
 ## mlx.nn.layers.transformer.LayerNorm
                 Applies layer normalization [1] on the inputs.
@@ -2895,15 +3485,19 @@ Concretely:
 
 .. math::
 
-    y = W^\top x + b
+    y = x W^\top + b
 
-where :math:`W` has shape ``[output_dims, input_dims]``.
+where:
+where :math:`W` has shape ``[output_dims, input_dims]`` and :math:`b` has shape ``[output_dims]``.
+
+The values are initialized from the uniform distribution :math:`\mathcal{U}(-{k}, {k})`,
+where :math:`k = \frac{1}{\sqrt{D_i}}` and :math:`D_i` is equal to ``input_dims``.
 
 Args:
     input_dims (int): The dimensionality of the input features
     output_dims (int): The dimensionality of the output features
     bias (bool, optional): If set to ``False`` then the layer will
-      not use a bias. Default ``True``.
+      not use a bias. Default is ``True``.
                 
 ## mlx.nn.layers.transformer.Module
                 Base class for building neural networks with MLX.
@@ -2954,72 +3548,70 @@ set by calling :meth:`freeze`.
 ## mlx.nn.layers.transformer.MultiHeadAttention
                 Implements the scaled dot product attention with multiple heads.
 
-Given inputs for queries, keys and values the ``MultiHeadAttention`` produces
-new values by aggregating information from the input values according to
-the similarities of the input queries and keys.
+Given inputs for queries, keys and values the ``MultiHeadAttention``
+produces new values by aggregating information from the input values
+according to the similarities of the input queries and keys.
 
-All inputs as well as the output are linearly projected without biases.
+All inputs as well as the output are linearly projected without biases by
+default.
 
-MultiHeadAttention also expects an additive attention mask that should be
-broadcastable with (batch, num_heads, # queries, # keys). The mask should
-have ``-inf`` or very negative numbers to the positions that should *not* be
-attended to.
+``MultiHeadAttention`` also takes an optional additive attention mask that
+should be broadcastable with ``(batch, num_heads, # queries, # keys)``. The
+mask should have ``-inf`` or very large negative numbers at the positions
+that should *not* be attended to.
 
 Args:
-    dims (int): The model dimensions. If no other dims are provided then
-        dims is used for queries, keys, values and the output.
-    num_heads (int): How many attention heads to use
-    query_input_dims (int, optional): The input dimensions of the queries (default: dims).
-    key_input_dims (int, optional): The input dimensions of the keys (default: dims).
-    value_input_dims (int, optional): The input dimensions of the values (default: key_input_dims).
-    value_dims (int, optional): The dimensions of the values after the projection (default: dims).
-    value_output_dims (int, optional): The dimensions the new values will be projected to (default: dims).
+    dims (int): The model dimensions. This is also the default
+        value for the queries, keys, values, and the output.
+    num_heads (int): The number of attention heads to use.
+    query_input_dims (int, optional): The input dimensions of the queries.
+        Default: ``dims``.
+    key_input_dims (int, optional): The input dimensions of the keys.
+        Default: ``dims``.
+    value_input_dims (int, optional): The input dimensions of the values.
+        Default: ``key_input_dims``.
+    value_dims (int, optional): The dimensions of the values after the
+        projection. Default: ``dims``.
+    value_output_dims (int, optional): The dimensions the new values will
+        be projected to. Default: ``dims``.
+    bias (bool, optional): Whether or not to use a bias in the projections.
+        Default: ``False``.
                 
 ## mlx.nn.layers.transformer.Transformer
-                Base class for building neural networks with MLX.
+                Implements a standard Transformer model.
 
-All the layers provided in :mod:`mlx.nn.layers` subclass this class and
-your models should do the same.
+The implementation is based on `Attention Is All You Need
+<https://arxiv.org/abs/1706.03762>`_.
 
-A ``Module`` can contain other ``Module`` instances or :class:`mlx.core.array`
-instances in arbitrary nesting of python lists or dicts. The ``Module``
-then allows recursively extracting all the :class:`mlx.core.array` instances
-using :meth:`mlx.nn.Module.parameters`.
+The Transformer model contains an encoder and a decoder. The encoder
+processes the input sequence and the decoder generates the output sequence.
+The interaction between encoder and decoder happens through the attention
+mechanism.
 
-In addition, the ``Module`` has the concept of trainable and non trainable
-parameters (called "frozen"). When using :func:`mlx.nn.value_and_grad`
-the gradients are returned only with respect to the trainable parameters.
-All arrays in a module are trainable unless they are added in the "frozen"
-set by calling :meth:`freeze`.
-
-.. code-block:: python
-
-    import mlx.core as mx
-    import mlx.nn as nn
-
-    class MyMLP(nn.Module):
-        def __init__(self, in_dims: int, out_dims: int, hidden_dims: int = 16):
-            super().__init__()
-
-            self.in_proj = nn.Linear(in_dims, hidden_dims)
-            self.out_proj = nn.Linear(hidden_dims, out_dims)
-
-        def __call__(self, x):
-            x = self.in_proj(x)
-            x = mx.maximum(x, 0)
-            return self.out_proj(x)
-
-    model = MyMLP(2, 1)
-
-    # All the model parameters are created but since MLX is lazy by
-    # default, they are not evaluated yet. Calling `mx.eval` actually
-    # allocates memory and initializes the parameters.
-    mx.eval(model.parameters())
-
-    # Setting a parameter to a new value is as simply as accessing that
-    # parameter and assigning a new array to it.
-    model.in_proj.weight = model.in_proj.weight * 2
-    mx.eval(model.parameters())
+Args:
+    dims (int, optional): The number of expected features in the
+        encoder/decoder inputs. Default: ``512``.
+    num_heads (int, optional): The number of attention heads. Default:
+        ``8``.
+    num_encoder_layers (int, optional): The number of encoder layers in the
+        Transformer encoder. Default: ``6``.
+    num_decoder_layers (int, optional): The number of decoder layers in the
+        Transformer decoder. Default: ``6``.
+    mlp_dims (int, optional): The hidden dimension of the MLP block in each
+        Transformer layer. Defaults to ``4*dims`` if not provided. Default:
+        ``None``.
+    dropout (float, optional): The dropout value for the Transformer
+        encoder and decoder. Dropout is used after each attention layer and
+        the activation in the MLP layer. Default: ``0.0``.
+    activation (function, optional): the activation function for the MLP
+        hidden layer. Default: :func:`mlx.nn.relu`.
+    custom_encoder (nn.Module, optional): A custom encoder to replace the
+        standard Transformer encoder. Default: ``None``.
+    custom_decoder (nn.Module, optional): A custom decoder to replace the
+        standard Transformer decoder. Default: ``None``.
+    norm_first (bool, optional): if ``True``, encoder and decoder layers
+        will perform layer normalization before attention and MLP
+        operations, otherwise after. Default: ``False``.
                 
 ## mlx.nn.layers.transformer.TransformerDecoder
                 Base class for building neural networks with MLX.
@@ -3205,6 +3797,11 @@ set by calling :meth:`freeze`.
     model.in_proj.weight = model.in_proj.weight * 2
     mx.eval(model.parameters())
                 
+## mlx.nn.layers.transformer.relu
+                Applies the Rectified Linear Unit.
+
+Simply ``mx.maximum(x, 0)``.
+                
 ## mlx.nn.leaky_relu
                 Applies the Leaky Rectified Linear Unit.
 
@@ -3214,6 +3811,11 @@ Simply ``mx.maximum(negative_slope * x, x)``.
                 Applies the Log Sigmoid function.
 
 Applies :math:`\log(\sigma(x)) = -\log(1 + e^{-x})` element wise.
+                
+## mlx.nn.log_softmax
+                Applies the Log Softmax function.
+
+Applies :math:`x + \log \sum_i e^{x_i}` element wise.
                 
 ## mlx.nn.losses.Module
                 Base class for building neural networks with MLX.
@@ -3296,6 +3898,45 @@ Args:
 Returns:
     array: The computed cross entropy loss.
                 
+## mlx.nn.losses.hinge_loss
+                Computes the hinge loss between inputs and targets.
+
+.. math::
+
+   \text{hinge}(y, y_{\text{pred}}) = \max(0, 1 - y \cdot y_{\text{pred}})
+
+
+Args:
+    inputs (array): The predicted values.
+    targets (array): The target values. They should be -1 or 1.
+    reduction (str, optional): Specifies the reduction to apply to the output:
+      ``'none'`` | ``'mean'`` | ``'sum'``. Default: ``'none'``.
+
+Returns:
+    array: The computed hinge loss.
+                
+## mlx.nn.losses.huber_loss
+                Computes the Huber loss between inputs and targets.
+
+.. math::
+
+    L_{\delta}(a) =
+    \left\{ \begin{array}{ll}
+        \frac{1}{2} a^2 & \text{for } |a| \leq \delta, \\
+        \delta \left( |a| - \frac{1}{2} \delta \right) & \text{otherwise.}
+    \end{array} \right.
+
+Args:
+    inputs (array): The predicted values.
+    targets (array): The target values.
+    delta (float, optional): The threshold at which to change between L1 and L2 loss.
+      Default: ``1.0``.
+    reduction (str, optional): Specifies the reduction to apply to the output:
+      ``'none'`` | ``'mean'`` | ``'sum'``. Default: ``'none'``.
+
+Returns:
+    array: The computed Huber loss.
+                
 ## mlx.nn.losses.kl_div_loss
                 Computes the Kullback-Leibler divergence loss.
 
@@ -3326,6 +3967,29 @@ Args:
 
 Returns:
     array: The computed L1 loss.
+                
+## mlx.nn.losses.log_cosh_loss
+                Computes the log cosh loss between inputs and targets.
+
+Logcosh acts like L2 loss for small errors, ensuring stable gradients,
+and like the L1 loss for large errors, reducing sensitivity to outliers. This
+dual behavior offers a balanced, robust approach for regression tasks.
+
+.. math::
+
+   \text{logcosh}(y_{\text{true}}, y_{\text{pred}}) =
+        \frac{1}{n} \sum_{i=1}^{n}
+        \log(\cosh(y_{\text{pred}}^{(i)} - y_{\text{true}}^{(i)}))
+
+
+Args:
+    inputs (array): The predicted values.
+    targets (array): The target values.
+    reduction (str, optional): Specifies the reduction to apply to the output:
+      ``'none'`` | ``'mean'`` | ``'sum'``. Default: ``'none'``.
+
+Returns:
+    array: The computed log cosh loss.
                 
 ## mlx.nn.losses.mse_loss
                 Computes the mean squared error loss.
@@ -3413,12 +4077,12 @@ Reference: https://arxiv.org/abs/1908.08681
     \text{Mish}(x) = x * \text{Tanh}(\text{Softplus}(x))
                 
 ## mlx.nn.prelu
-                Applies the element-wise function:
+                Applies the element-wise parametric ReLU.
 
 .. math::
     \text{PReLU}(x) = \max(0,x) + a * \min(0,x)
 
-Here :math:`a` is an array.
+where :math:`a` is an array.
                 
 ## mlx.nn.relu
                 Applies the Rectified Linear Unit.
@@ -3449,10 +4113,20 @@ See also :func:`elu`.
 Applies :math:`x \sigma(x)` element wise, where :math:`\sigma(\cdot)` is
 the logistic sigmoid.
                 
+## mlx.nn.softmax
+                Applies the Softmax function.
+
+Applies :math:`\frac{e^{x_i}}{\sum_j e^{x_j}}` element wise.
+                
 ## mlx.nn.softplus
                 Applies the Softplus function.
 
 Applies :math:`\log(1 + \exp(x))` element wise.
+                
+## mlx.nn.softsign
+                Applies the Softsign function.
+
+Applies :math:`\frac{x}{1 + |x|}` element wise.
                 
 ## mlx.nn.step
                 Applies the Step Activation Function.
@@ -3468,6 +4142,11 @@ to 1 if the input is greater than a specified threshold, and 0 otherwise.
 
 Args:
     threshold: The value to threshold at.
+                
+## mlx.nn.tanh
+                Applies the hyperbolic tangent function.
+
+Simply ``mx.tanh(x)``.
                 
 ## mlx.nn.utils.value_and_grad
                 Transform the passed function ``fn`` to a function that computes the
@@ -3516,7 +4195,7 @@ Args:
     rho (float, optional): The coefficient :math:`\rho` used for computing a
         running average of squared gradients. Default: ``0.9``
     eps (float, optional): The term :math:`\epsilon` added to the denominator to improve
-      numerical stability. Ddefault: `1e-8`
+      numerical stability. Default: `1e-8`
                 
 ## mlx.optimizers.Adagrad
                 Implementation of the Adagrad optimizer [1].
@@ -3719,6 +4398,15 @@ Args:
 
 Returns:
     A python tree with the new values returned by ``fn``.
+                
+## mlx.utils.defaultdict
+                defaultdict(default_factory=None, /, [...]) --> dict with default factory
+
+The default factory is called without arguments to produce
+a new value when a key is not present, in __getitem__ only.
+A defaultdict compares equal to a dict with the same items.
+All remaining arguments are treated the same as if they were
+passed to the dict constructor, including keyword arguments.
                 
 ## mlx.utils.tree_flatten
                 Flattens a python tree to a list of key, value tuples.

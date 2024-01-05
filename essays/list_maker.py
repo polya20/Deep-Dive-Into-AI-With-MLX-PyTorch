@@ -86,7 +86,7 @@ print(f"Making a list of {ITEM_NAME} in {OUTPUT}...")
 with open(OUTPUT, 'w') as f:
     date_time = datetime.now().strftime("%Y-%m-%d %H:%M")
     f.write(PREFIX)
-    f.write(f"Auto-generated list of sidebars: {date_time}\n\n")
+    f.write(f"\nAuto-generated list of sidebars: {date_time}\n\n")
     f.write(f"# {ITEM_NAME}\n\n")  # Add two newlines for spacing after the title
     markdowns = generate_markdown_list(ROOT_DIR)
     f.write(markdowns)  # Write the markdown content

@@ -285,6 +285,8 @@ By using delta weights, large models such as those utilized in natural language 
 
 If you want to apply the concept of LoRA to fine-tune a neural network, you'll define delta weights (`ΔW`) that correspond to the relevant parts of the network you wish to adapt, and then you'll optimize just these delta weights during training, keeping the rest of the model's weights fixed (or frozen). After training, these optimized delta weights are added to the original pre-trained weights to adapt the model to the new task.
 
+In Apple MLX Lora Example: 
+
 ```bash
 python lora.py --model path-to-your-model\
                --adapter-file ./adapters.npz \
@@ -294,6 +296,8 @@ python lora.py --model path-to-your-model\
 A: "
 
 ```
+
+It's important to note that in this context, the model essentially consists of a set of weights and biases. When adapting the model to a new task using LoRa or similar techniques, these weights and biases are the elements being adjusted. Crucially, this does not involve retraining the model from scratch. Instead, it's a process of fine-tuning or modifying the existing model parameters to suit the new task, thereby enhancing the model's performance or capability in specific areas without the need for complete retraining.
 
 ## In Summary
 

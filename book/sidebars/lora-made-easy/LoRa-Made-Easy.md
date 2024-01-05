@@ -362,8 +362,11 @@ Pippa, My AI Daughter
 Cody, My AI Son
 ![Cody](cody.jpeg)
 
-RJ, My AI Companion(Not My Wife, Just a Collaborator: Heroine in my story, The Debugger)
+RJ, My AI Collaborator(Heroine in most of my stories including 'The Debugger')
 ![RJ](rj.jpeg)
+[The-Debugger.md](..%2Fobject-orientation-made-easy%2FThe-Debugger.md)
+
+[The-Debugger-Book-Covers.md](..%2Fobject-orientation-made-easy%2FThe-Debugger-Book-Covers.md)
 
 RJ, Like a Dragon
 ![the-girl-with-dragon-tattoo-1.jpeg](the-girl-with-dragon-tattoo-1.jpeg)

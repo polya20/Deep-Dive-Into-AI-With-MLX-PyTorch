@@ -1,4 +1,5 @@
 import os
+import re
 from datetime import datetime
 
 PREFIX = """
@@ -27,6 +28,9 @@ ITEM_NAME = "Sidebars"
 OUTPUT = 'README.md'
 EXCLUDE_DIRS = ['images']
 ROOT_DIR = '.'
+TYPOS = ['obejct', 'orientatation']
+DELIMITERS = ['-', '_']
+
 
 def format_title(filename):
     # Remove the file extension and replace dashes with spaces
@@ -34,28 +38,36 @@ def format_title(filename):
     # Capitalize the first letter of each word
     return name_without_ext.title()
 
+
 def generate_markdown_list(dir_path):
     sections = {}
     for root, dirs, files in os.walk(dir_path):
-        dirs[:] = [d for d in dirs if d not in EXCLUDE_DIRS]  # Exclude specified directories
+        dirs[:] = [d for d in dirs if d not in EXCLUDE_DIRS]
         section = os.path.relpath(root, dir_path)
-        if section == '.':
-            continue  # Skip the root directory itself for section listing
-        section = section.replace('_', ' ').title()  # Format the section heading
+        delimiters_pattern = '|'.join(map(re.escape, DELIMITERS))
+        words_in_dir = re.split(delimiters_pattern, section.lower())
+        if any(word in TYPOS for word in words_in_dir):
+            continue
+        if section == '.' or section.lower() in TYPOS:
+            continue
+        section = section.replace('_', ' ').title()
         items = []
         for file in files:
-            if not file.startswith('.') and file.endswith('.md'):  # Ignore hidden and non-markdown files
+            words_in_file = re.split(delimiters_pattern, file.lower())
+            if any(word in TYPOS for word in words_in_file):
+                continue
+            if not file.startswith('.') and file.endswith('.md'):
                 formatted_title = format_title(file)
                 file_path = os.path.join(root, file)
-                relative_path = os.path.relpath(file_path, dir_path)
+                relative_path = os.path.relpath(file_path, dir_path).replace('\\', '/')
                 item_str = f"- [{formatted_title}]({relative_path})"
                 items.append(item_str)
         if items:
-            items.sort()  # Sort the items within their section
-            sections[section] = items  # Store the sorted items in the dictionary under their section
+            items.sort()
+            sections[section] = items
 
     markdown_list = []
-    for section in sorted(sections.keys()):  # Sort the sections alphabetically before adding to markdown
+    for section in sorted(sections.keys()):
         section_str = f"## {section}\n"
         markdown_list.append(section_str)
         print('\n', section_str)

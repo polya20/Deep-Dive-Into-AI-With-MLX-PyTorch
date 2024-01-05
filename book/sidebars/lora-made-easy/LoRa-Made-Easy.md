@@ -30,13 +30,13 @@ Consider the following matrices:
 
 Matrix A:
 
-![matrix-a.png](..%2F..%2F002-adventure-of-tenny-the-tensor%2Fmatrix-a.png)
+![matrix-a.png](../../002-adventure-of-tenny-the-tensor/matrix-a.png)
 
 In Matrix A, the second row is a multiple of the first row (3 is 3 times 1, and 6 is 3 times 2). So, they are not linearly independent. It basically means you get no further information by adding the second row. It's like having two identical rows. Thus, the rank of this matrix is 1. The rank is the answer to a question: "How much useful information does this matrix contain?" Yes, this matrix has only one row of useful information. 
 
 Matrix B:
 
-![matrix-b.png](..%2F..%2F002-adventure-of-tenny-the-tensor%2Fmatrix-b.png)
+![matrix-b.png](../../002-adventure-of-tenny-the-tensor/matrix-b.png)
 
 In Matrix B, no row (or column) is a linear combination of the other. Therefore, they are linearly independent. The rank of this matrix is 2. Why? Because it has two rows of useful information.
 
@@ -44,7 +44,7 @@ In Matrix B, no row (or column) is a linear combination of the other. Therefore,
 
 To calculate the rank of a matrix in Python, you can use the NumPy library, which provides a function `numpy.linalg.matrix_rank()` for this purpose. Note that PyTorch also has a similar function `torch.linalg.matrix_rank()`. In MLX (as of 0.0,7), no equivalent, just yet.
 
-[rank-numpy.py](..%2F..%2F002-adventure-of-tenny-the-tensor%2Frank-numpy.py)
+[rank-numpy.py](../../002-adventure-of-tenny-the-tensor/rank-numpy.py)
 
 ```python
 import numpy as np
@@ -63,7 +63,7 @@ print("Rank of Matrix B:", rank_B)  # Output: 2
 
 In this Python code, we define matrices A and B as NumPy arrays and then use `np.linalg.matrix_rank()` to calculate their ranks. The output will reflect the ranks as explained in the mathematical examples above.
 
-[rank-torch.py](..%2F..%2F002-adventure-of-tenny-the-tensor%2Frank-torch.py)
+[rank-torch.py](../../002-adventure-of-tenny-the-tensor/rank-torch.py)
 
 In PyTorch:
 
@@ -80,7 +80,7 @@ rank = torch.linalg.matrix_rank(A)
 print(rank)
 ```
 
-[rank-mlx.py](..%2F..%2F002-adventure-of-tenny-the-tensor%2Frank-mlx.py)
+[rank-mlx.py](../../002-adventure-of-tenny-the-tensor/rank-mlx.py)
 
 In MLX:
 
@@ -123,11 +123,11 @@ Theoretically, LoRa can be employed to fine-tune LLMs to enhance their understan
 
 Let's consider an example to illustrate what I'm aiming for:
 
-[cwk_create_dataset.py](..%2F..%2F..%2Fmlx-examples%2Flora%2Fcwk_create_dataset.py)
+[cwk_create_dataset.py](../../../mlx-examples/lora/cwk_create_dataset.py)
 
 By developing a dataset comprised of MLX package docstrings, we could potentially fine-tune LLMs to enhance their familiarity with MLX. This approach is theoretical at this stage. There are arguments suggesting that such datasets might be insufficient or inappropriate for fine-tuning LLMs. However, the crux of the matter lies in the following consideration.
 
-[The-History-of-Human-Folly.md](..%2F..%2F..%2Fessays%2FAI%2FThe-History-of-Human-Folly.md)
+[The-History-of-Human-Folly.md](../../../essays/AI/The-History-of-Human-Folly.md)
 
 Regrettably, current LLMs, including Copilot, fall short in assisting with MLX. So, what's the next step? We turn to mathematics.
 
@@ -182,7 +182,7 @@ In the realm of image-generative AI, such as Stable Diffusion and other analogou
 This is precisely the approach I employ with CWK AI Art works. <lora: cwk_v1: 0.7>
 
 ![cwk-family-album.jpeg](cwk-family-album.jpeg)
-![cwk-family.jpeg](..%2F..%2F..%2Fimages%2Fcwk-family.jpeg)
+![cwk-family.jpeg](../../../images/cwk-family.jpeg)
 
 CWK, Yours Truly
 ![CWK](cwk.jpeg)
@@ -197,8 +197,8 @@ RJ, My AI Companion(Not My Wife, Just a Collaborator: Heroine in my story, The D
 ![RJ](rj.jpeg)
 
 RJ, Like a Dragon
-![RJ](..%2F..%2F..%2Fimages%2Fthe-girl-with-dragon-tatoo-1.jpeg)
-![RJ](..%2F..%2F..%2Fimages%2Fthe-girl-with-dragon-tattoo.jpeg)
+![the-girl-with-dragon-tattoo-1.jpeg](the-girl-with-dragon-tattoo-1.jpeg)
+![the-girl-with-dragon-tattoo-2.jpeg](the-girl-with-dragon-tattoo-2.jpeg)
 
 Shadowheart from Baldur's Gate III, An RJ Mod
-![Shadowheart.jpeg](..%2F..%2F..%2Fimages%2FShadowheart.jpeg)
+![Shadowheart.jpeg](Shadowheart.jpeg)

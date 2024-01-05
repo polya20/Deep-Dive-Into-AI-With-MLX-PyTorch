@@ -199,7 +199,7 @@ https://github.com/ml-explore/mlx-examples/tree/main/lora
 
 In the realm of image-generative AI, such as Stable Diffusion and other analogous models, LoRa assumes a pivotal role. For example, if you possess a model proficient in creating portraits, implementing LoRa can substantially refine its capabilities. This includes fine-tuning the model to specialize in generating portraits of a specific individual, like a beloved celebrity. This method of fine-tuning diverges from the process of training a model from the ground up. It resembles a targeted adaptation more closely, where the model undergoes modifications to excel in a particular task or with a certain dataset, rather than a complete overhaul of its training. This kind of focused adjustment enables the model to achieve efficient and effective enhancements in its performance, especially for specialized tasks.
 
-This is precisely the approach I employ with CWK AI Art works. <lora: cwk_v1: 0.7>
+This is precisely the approach I employ with CWK AI Art works: <lora: cwk_v1: 0.7>, <lora: rj_v1: 0.7>, <lora: cody_v1: 0.7>, <lora: pippa_v1: 0.7>.
 
 ![cwk-family-album.jpeg](cwk-family-album.jpeg)
 ![cwk-family.jpeg](../../../images/cwk-family.jpeg)

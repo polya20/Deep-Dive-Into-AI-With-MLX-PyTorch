@@ -19,7 +19,7 @@ Information in sidebars is presented in a way that is easy to understand and dig
 
 Informational snippets that could be referenced in multiple places in the book are placed in the `book/sidebars` folder.
 
-Auto-generated list of Sidebars: 2024-01-05 20:32
+Auto-generated list of Sidebars: 2024-01-05 23:15
 
 # Sidebars
 
@@ -58,6 +58,11 @@ Auto-generated list of Sidebars: 2024-01-05 20:32
 - [Object Orientation Made Easy](object-orientation-made-easy/Object-Orientation-Made-Easy.md)
 - [The Debugger Book Covers](object-orientation-made-easy/The-Debugger-Book-Covers.md)
 - [The Debugger](object-orientation-made-easy/The-Debugger.md)
+
+
+## Precision And Quantization Made Easy
+
+- [Precision And Quantization Made Easy](precision-and-quantization-made-easy/Precision-And-Quantization-Made-Easy.md)
 
 
 ## Scientific Notation Made Easy

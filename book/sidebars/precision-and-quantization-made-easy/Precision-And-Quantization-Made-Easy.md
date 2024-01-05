@@ -167,7 +167,7 @@ Now you understand why I place such strong emphasis on the four pillars of objec
 
 ## Digital vs. Analog
 
-Can you define what digital and analog mean? You might have thought you new, but if you do, define them using your own own words, without looking them up.
+Can you define what digital and analog mean? You might have thought you knew, but if you do, define them using your own own words, without looking them up.
 
 In the digital world, we often need to represent real-world, analog data in a form that computers can understand and process. Analog data is continuous by nature, meaning it can take any value within a given range. For example, the temperature in a room can be 20.1, 20.15, 20.151, and so on.
 

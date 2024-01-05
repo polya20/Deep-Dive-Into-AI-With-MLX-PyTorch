@@ -137,6 +137,8 @@ I play in a one-man band just for fun, using guitars, bass, keyboards, and drums
 
 Quantization in making music is like snapping your notes onto a beat grid so they're perfectly in time. It's super useful for cleaning up the little timing mistakes that might happen when someone's jamming out on an instrument. But here's the thing – if you go overboard with it, your music could end up sounding like a robot’s playing it and lose that cool, human touch that a real-life drummer brings.
 
+![drums.png](drums.png)
+
 Now, you might think quantizing stuff in music has nothing to do with what tech geeks talk about in machine learning. But actually, it's a pretty similar deal. In both worlds, quantizing means you're taking something that can be super precise with lots of in-between values and boiling it down to simpler, chunkier bits. Like, imagine you've got all the numbers from 1 to 2 – in the land of whole numbers, it's just 1 and 2, that's your lot. But if we're talking about the more detailed floating-point numbers, there's a whole universe of numbers we could pick. Quantization’s about ditching that endless sea of options and sticking to the essentials, whether that's making music time perfectly or helping computers do math stuff without breaking a sweat.
 
 In this context, let's take a look at some other quantization examples you might have heard of. The concept of quantization, in the sense of converting continuous information into discrete units, is applied in various fields beyond machine learning and music production.

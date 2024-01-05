@@ -191,6 +191,112 @@ LoRa is particularly useful in scenarios where one wants to customize large AI m
 
 In this context, the rank of a matrix is still a measure of its linear independence, but the focus is on leveraging matrices with low rank to efficiently adapt and fine-tune complex models. This approach maintains performance while greatly reducing computational requirements.
 
+
+## Reduction of Dimensionality in Action with LoRa
+
+Let's see a very simplified example of how LoRa works. 
+
+We'll simulate a very large array (which stands in for a lot of parameters), then use a simple technique to 'reduce' its size. Note that what we're really doing here is not a direct real-world technique for parameter reduction, but rather a simplified concept to illustrate the idea of dimensionality reduction.
+
+```python
+import numpy as np
+
+# Assuming 'pretrained_llm' is a matrix of shape (100, 10000)
+pretrained_llm = np.random.rand(100, 10000)
+
+# 'adaptation_matrix' is another matrix of shapes (100, 10000) that will be used to transform 'pretrained_llm'
+adaptation_matrix = np.random.rand(100, 10000)
+
+# Compute delta weights
+delta_weights = np.dot(pretrained_llm, adaptation_matrix.T)
+
+# Print the dimensionality of the matrices
+print('Shape of pretrained_llm:', pretrained_llm.shape)
+print('Shape of adaptation_matrix:', adaptation_matrix.shape)
+print('Shape of delta_weights:', delta_weights.shape)
+
+```
+
+The dot product is a mathematical operation that takes two equal-length sequences of numbers (usually coordinate vectors) and returns a single number. This operation is also known as the scalar product because the result is a scalar, as opposed to a vector.
+
+In simple terms, you can think of the dot product as a way of measuring how much one vector goes in the same direction as another vector. It's calculated by multiplying corresponding elements from each vector together and then adding up all those products.
+
+Here's a basic example with two three-dimensional vectors:
+
+```
+Vector A: [a1, a2, a3]
+Vector B: [b1, b2, b3]
+
+Dot Product: (a1*b1) + (a2*b2) + (a3*b3)
+```
+
+When we talk about reducing dimensionality with a dot product, we are usually talking about matrix multiplication, which can involve one matrix and one vector, or two matrices. Matrix multiplication is a series of dot product calculations that follow a specific rule.
+
+Here's why it can reduce dimensionality:
+
+- When you multiply a matrix (which you can think of like a grid of numbers) by a vector (a list of numbers), the output is a new vector of a lower dimension if the matrix was designed that way. This is because the vector's length is equal to the number of rows in the matrix, and the operation condenses the columns of the matrix into a single number per row.
+
+- When you multiply two matrices, the number of columns in the first matrix must match the number of rows in the second matrix. The result of this multiplication is a new matrix that has the same number of rows as the first matrix and the same number of columns as the second. If the first matrix has fewer rows than the columns of the second, then the resulting matrix has reduced dimensionality.
+
+In essence, the dot product combines the information compounded in vectors or matrices in such a way that maintains the essential connections between them but can reduce the amount of information to something more manageable. This makes it a powerful tool in many applications, including compressing information, transforming data into a more usable form, or identifying relationships within the data.
+
+### The Need for Transpose in Dot Product
+
+The need for a transpose in matrix operations, particularly when working with the dot product, often comes down to the requirements of matrix dimensions and the goal of the operation.
+
+Let us consider the dot product of two matrices, `A` and `B`. The dot product (also known in this context as matrix multiplication) is only defined when the number of columns in the first matrix, `A`, matches the number of rows in the second matrix, `B`. If we denote matrix `A` as having dimensions `m x n` and matrix `B` as having dimensions `p x q`, then we can compute the dot product `A*B` only if `n = p`.
+
+Sometimes, you have two matrices where the dimensions don't line up in this way. For example, imagine matrix `A` is `m x n` and matrix `B` is `q x p`. In this case, if you want to multiply these two matrices, you can't do it directly because their inner dimensions (`n` and `q`) don't match. To make them match, you can take the transpose of matrix `B`, which flips the matrix over its diagonal, turning rows into columns and columns into rows. The transposed matrix `B'` now has dimensions `p x q`, making `n = p` if transposing `B` made the two inner dimensions match. Now you can multiply `A` by `B'`:
+
+```
+A (m x n) * B' (p x q) = C (m x q)
+```
+
+This means you've reduced the dimensionality from two separate data sets (one `m x n` and the other `q x p`) into a single matrix `C` that seamlessly connects the row space of `A` with the column space of `B`. In essence, by transposing, you're aligning the dimensions so that the matrix operation adheres to the rules of linear algebra and the resulting product is meaningfully defined.
+
+In practical terms, beyond just being a requirement of the math, the transpose is also significant in operations like neural network weight adjustments, transforming coordinate systems, solving systems of linear equations, and many other applications where data must be reoriented to match the necessary computation.
+
+```python
+delta_weights = np.dot(pretrained_llm, adaptation_matrix.T)
+```
+`adaptation_matrix.T` transposes the matrix `adaptation_matrix`. If `adaptation_matrix` initially has a shape of 100x10000 (100 rows and 10000 columns), the transpose operation will flip it to 10000x100 (10000 rows and 100 columns).
+
+The dot product of `pretrained_llm` (100x10000) and the transposed `adaptation_matrix.T` (10000x100) is computed by using NumPy's dot product function, `np.dot()`, resulting in a new matrix `delta_weights`. For matrix multiplication to take place, the number of columns in the first matrix must equal the number of rows in the second matrix. Here, that condition is met: `pretrained_llm` has 10000 columns and `adaptation_matrix.T` has 10000 rows.
+
+With `delta_weights`, you now have a matrix summarizing the relationships between the parameters in `pretrained_llm` and `adaptation_matrix`, potentially capturing new insights that can be applied to adapt a pre-trained model or extract significant features.
+
+### Delta Weights
+
+In the context of AI and neural networks, particularly when discussing LoRA, "delta weights" generally refer to the changes or adjustments made to the original pre-trained weights of a neural network during the adaptation process.
+
+That's why the Apple LoRa example uses the term 'adapters,' and the resulting filename by default is `adapters.npz.` This is a compressed NumPy file format that contains the delta weights.
+
+Here's an overview of the concept in LoRA:
+
+1. **Pre-trained weights (`W`)**: A neural network typically has a number of weight matrices that are learned during the pre-training phase on large datasets.
+
+2. **Delta Weights (`ΔW`)**: In LoRA, instead of updating all the values in `W`, a smaller, low-rank matrix is trained. When this small matrix is multiplied with another learned matrix (these two matrices together represent a low-rank factorization), the result is a 'delta weights' matrix whose dimensions align with the original weight matrix `W`.
+
+3. **Update Rule**: The original weight matrix `W` is updated during inference by adding the delta weights to it, like so: `W' = W + ΔW`, where `W'` is the modified weight matrix after applying the low-rank updates.
+
+4. **Dimensionality Reduction**: Since `ΔW` is of much lower rank compared to `W`, it has significantly fewer parameters. This greatly reduces the number of trainable parameters, leading to a more efficient fine-tuning process.
+
+By using delta weights, large models such as those utilized in natural language processing or computer vision can be adapted to new tasks with a much smaller computational footprint than would be required to train or fine-tune the entire model.
+
+If you want to apply the concept of LoRA to fine-tune a neural network, you'll define delta weights (`ΔW`) that correspond to the relevant parts of the network you wish to adapt, and then you'll optimize just these delta weights during training, keeping the rest of the model's weights fixed (or frozen). After training, these optimized delta weights are added to the original pre-trained weights to adapt the model to the new task.
+
+```bash
+python lora.py --model path-to-your-model\
+               --adapter-file ./adapters.npz \
+               --num-tokens 50 \
+               --temp 0.8 \
+               --prompt "Q: What is relu in mlx?
+A: "
+
+```
+
+## In Summary
+
 As detailed above, theoretically, with an adequate amount of quality data on a specific topic like MLX, you can fine-tune any capable LLMs using that data, thereby creating LoRa weights and biases. This process effectively customizes the LLM to be more aware or knowledgeable about MLX. LoRa's power lies in its ability to adapt and refine a model's capabilities with focused and specialized data, leading to more accurate and contextually aware outputs in areas such as burgeoning fields frameworks like MLX.
 
 Fine-Tuning LLMs with LoRa examples (from the official Apple repo) are found here:

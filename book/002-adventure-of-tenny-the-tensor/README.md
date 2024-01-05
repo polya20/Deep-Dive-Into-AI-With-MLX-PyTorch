@@ -343,7 +343,7 @@ Python's zero-indexing perfectly matches the concept of zero dimensions. The fir
 
 The concept of "0 dimensions" can indeed be confusing when first encountered because it doesn't align with our everyday experience of the world. In the physical space we occupy, we're used to dealing with objects that have length, width, and height—respectively defining the three dimensions of our perceivable universe. Anything with fewer dimensions is difficult to visualize or relate to.
 
-When people talk about "0 dimensions" in the context of mathematics or computer science, they're usually referring to a point or a singular value that doesn’t have any length, width or depth—it's simply a position in a system. In computer programming, particularly when dealing with arrays (like in Python, with NumPy arrays) or other data structures:
+When people talk about "0 dimensions" in the context of mathematics or computer science, they're usually referring to a point or a singular value that doesn't have any length, width or depth—it's simply a position in a system. In computer programming, particularly when dealing with arrays (like in Python, with NumPy arrays) or other data structures:
 
 - A 0-dimensional array (`0D`) is just a single scalar value. It's like the concept of a "point" in geometry that has no size, no width, no depth.
 - A 1-dimensional array (`1D`) is like a line. It has length but no width or depth. In code, it’s commonly represented as a list of numbers.

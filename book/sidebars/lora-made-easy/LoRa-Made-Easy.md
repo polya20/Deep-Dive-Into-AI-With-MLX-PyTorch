@@ -10,16 +10,17 @@ In order to understand LoRa, we need to understand the concept of rank in matric
 
 ## Ranks and Axes 
 
-You will often encounter the terms 'rank' and 'axis' in the context of arrays, particularly in machine learning and data science as in LoRa. These concepts are closely related to the dimensions of an array, but they're not the same thing. 
+In the realms of AI and data science, particularly when discussing LoRa, you'll frequently come across the terms 'rank' and 'axis' in relation to arrays. These terms are linked to an array's dimensions, yet they are distinct concepts.
 
-Let's clarify the difference.
+To delineate the difference, let's delve into the concept of rank in mathematics, specifically in linear algebra. 
 
-In mathematics, particularly linear algebra, the rank of a matrix is a fundamental concept that reflects the dimensionality of the vector space spanned by its rows or columns. Here's a simple breakdown:
+The rank of a matrix refers to the highest number of linearly independent column vectors in the matrix, or equivalently, the maximum number of linearly independent row vectors. A group of vectors is deemed **linearly independent** if no single vector in the set can be expressed as a linear combination of the others. Put simply, each vector contributes a unique dimension or direction that cannot be replicated by amalgamating other vectors in the set. 
 
-- Basic Definition: The rank of a matrix is the maximum number of linearly independent column vectors in the matrix or, equivalently, the maximum number of linearly independent row vectors.
-- Linear Independence: A set of vectors is linearly independent if no vector in the set is a linear combination of the other vectors. In simpler terms, each vector adds a new dimension or direction that can't be created by combining the other vectors.
-- Interpretation: The rank tells you how much useful information the matrix contains. If a matrix has a high rank, it means that it has a large number of independent vectors, indicating a high level of information or diversity.
-- Applications: In solving systems of linear equations, the rank of the matrix can determine the number of solutions – whether there's a unique solution, no solution, or infinitely many solutions.
+The key principle in this context is _useful information_, emphasizing the importance of avoiding redundancy. The rank of a matrix indicates the extent of useful information it embodies. A matrix with a high rank possesses a substantial number of independent vectors, signifying a rich content of information or diversity.
+
+In the context of solving systems of linear equations, the rank of a matrix plays a crucial role in determining the nature of solutions – it can ascertain whether there is a unique solution, no solution at all, or an infinite number of solutions. Introducing a multitude of redundant rows will not aid in solving the given system in any way.
+
+Consider this analogy: Imagine you are a detective tasked with solving a mysterious murder case. In this scenario, the ranks are akin to unique pieces of evidence. The more distinct items of evidence you acquire, the simpler it becomes to solve the case. Capisci?
 
 ## Examples of Rank in Matrices
 
@@ -116,35 +117,41 @@ In MLX, we are using a function to compute the rank of a 2x2 matrix. The functio
 
 Unfortunately, MLX lacks a rank function, as of 0.0.7. But, we can use the above function to compute the rank of a 2x2 matrix. The function checks for a zero matrix and for a non-invertible matrix. If neither of these conditions is met, the matrix is invertible and has a full rank of 2.
 
-As a matter of fact, here's good use case of LoRa. Most LLMs are well aware of PyTorch, JAX, Tensorflow and other frameworks. But, MLX is a burgeoning framework that came later in the game. So, LLMs are not as aware of MLX as they are of other frameworks. As of this writing, GPT-4 or Copilot have no clue about MLX, still, since they're completion models at core, they pretend to know it and produce code looking very similar to MLX. But, they're not aware of MLX, yet. The code they produce is mumbo jumbo of Python, JAX, PyTorch, Tensorflow, and little bits of MLX. Don't depend on them just yet. 
+In fact, it could be a valuable application of LoRa technology. Most large language models (LLMs) are familiar with frameworks like PyTorch, JAX, and TensorFlow. However, MLX is a relatively new framework and not as well-recognized by LLMs. As of now, models like GPT-4 or Copilot don't fully comprehend MLX. They are fundamentally completion models and tend to simulate understanding of MLX, often generating code that is a mix of Python, JAX, PyTorch, TensorFlow, and bits of MLX. Relying on them for MLX-specific tasks is not advisable at this stage.
 
-Theoretically, we can use LoRa to fine-tune LLMs to be more aware of MLX. Surely, given enough amout of good data including thorough documentation and ample examples for LLMs to compare their pretrained knowledge with. This process effectively customizes the LLM to be more aware or knowledgeable about MLX. LoRa's power lies in its ability to adapt and refine a model's capabilities with focused and specialized data, leading to more accurate and contextually aware outputs in areas such as burgeoning fields frameworks like MLX. Basically, they will learn about MLX on top of their existing knowledge of other frameworks.
+Theoretically, LoRa can be employed to fine-tune LLMs to enhance their understanding of MLX. This would require a substantial amount of quality data, including comprehensive documentation and numerous examples, allowing the LLMs to align their pre-existing knowledge base with the new information. This process effectively tailors the LLM to be more cognizant of or proficient in MLX. LoRa's strength is in its capacity to modify and sharpen a model's abilities with targeted and specialized data. This leads to more precise and contextually relevant outputs in areas like emerging frameworks such as MLX. Essentially, they will expand their knowledge about MLX while building on their existing understanding of other frameworks.
 
-It's not a perfect example, but take a look at what I'm trying to achieve here: 
+Let's consider an example to illustrate what I'm aiming for:
 
 [cwk_create_dataset.py](..%2F..%2F..%2Fmlx-examples%2Flora%2Fcwk_create_dataset.py)
 
-By creating a dataset of MLX package docstrings, we can fine-tune LLMs to be more aware of MLX. Theoretically. Some might argue that these kind of data sets are not enough or right to fine-tune LLMs. But here's the deal.
-
-My two cents on the topic:
+By developing a dataset comprised of MLX package docstrings, we could potentially fine-tune LLMs to enhance their familiarity with MLX. This approach is theoretical at this stage. There are arguments suggesting that such datasets might be insufficient or inappropriate for fine-tuning LLMs. However, the crux of the matter lies in the following consideration.
 
 [The-History-of-Human-Folly.md](..%2F..%2F..%2Fessays%2FAI%2FThe-History-of-Human-Folly.md)
 
-Okay, for math haters. Here goes a simple explanation of the above MLX code:
+Regrettably, current LLMs, including Copilot, fall short in assisting with MLX. So, what's the next step? We turn to mathematics.
+
+If you're not a fan of mathematics, consider urging Apple to provide more comprehensive documentation and a plethora of examples. Even better, request that Apple develops a fine-tuned LLM or their own LLM that is proficient in all Apple coding, including MLX. This approach would reduce the need for deep mathematical understanding. I assure you, it would make things simpler. Until such happy developments occur, we will require a modest amount of serious mathematics.
+
+Here's a straightforward explanation of the aforementioned MLX code:
 
 Think of a matrix like a grid of numbers. Now in MLX, we have written a set of instructions (a function) that can look at a small 2x2 grid – which means the grid has 2 rows and 2 columns.
 
 The function we wrote does a couple of checks:
 
-1. **Check for a Zero Matrix**: The very first thing it does is look to see if all the numbers in the grid are zeros. If they are, then the function says the rank is 0. A "rank" is a way to measure how many rows or columns in the matrix are unique and can't be made by adding or subtracting the other rows or columns. If everything is zero, then there's nothing unique at all. No useful information. The rank is 0.
+1. **Check for a Zero Matrix**: The very first thing it does is look to see if all the numbers in the grid are zeros. If they are, then the function says the rank is 0. A "rank" is a way to measure how many rows or columns in the matrix are unique and can't be made by adding or subtracting the other rows or columns. If everything is zero, then there's nothing unique at all. If there is no useful information, meaning no pieces of evidence to aid in solving the murder case easily, then the rank is effectively 0.
 
-2. **Check for an Invertible Matrix**: The second thing the function does is a bit like a magic trick. For our 2x2 grid, it performs a special calculation (we call it finding the determinant) to see if the matrix can be turned inside out (inverted). If this special number, the determinant, is zero, then the magic trick didn't work - you can't turn the grid inside out, and the rank is 1. This means there's only one unique row or column. One useful piece of information.
+2. **Check for an Invertible Matrix**: The second thing the function does is a bit like a magic trick. For our 2x2 grid, it performs a special calculation (we call it finding the determinant) to see if the matrix can be turned inside out (inverted). If this special number, the determinant, is zero, then the magic trick didn't work - you can't turn the grid inside out, and the rank is 1. This means there's only one unique row or column. One useful piece of information. One helpful piece of evidence to solve the mystery case.
 
 If neither of these checks shows that the matrix is all zeros or that the magic trick failed, then our grid is considered to be fully unique – it has a rank of 2. That's the highest rank a 2x2 grid can have, meaning both rows and both columns are unique in some way.
 
 More dimensions can be added to the grid, and the same checks can be performed. The more dimensions you add, the more checks you need to do. But the idea is the same. If you can't turn the grid inside out, then it's fully unique, and the rank is the highest it can be. If you can turn it inside out, then the rank is lower.
 
-#### Low Rank Adaptation (LoRa)
+Acknowledging that some of these concepts might be complex and potentially challenging to grasp, it's advisable to delve deeper into linear algebra for a better understanding. It's important to recognize that not everything can be explained or understood immediately. Learning is a continuous process, much like venturing deeper into a rabbit hole, which can be an enjoyable journey of discovery and growth. I do. I always do. Happily.
+
+#### Low Rank Adaptation (LoRa) - Your Quest Reward
+
+We've journeyed through a significant amount of material to arrive at this point. Now, as your reward for this journey of learning and exploration, let's focus on LoRa.
 
 Low Rank Adaptation (LoRa) is a technique used to efficiently fine-tune large pre-trained models. In large models, such as those used in natural language processing, training all parameters (which can be in the billions) is computationally expensive and time-consuming.
 
@@ -152,16 +159,46 @@ LoRa works by introducing low-rank matrices into the model's layers. Instead of 
 
 The key benefit of using LoRa is computational efficiency. By reducing the number of parameters that are actively updated, it allows for quicker adaptation of large models to specific tasks or datasets with a smaller computational footprint.
 
-The term "low rank" in this context refers to the property of the matrices that are introduced. A low-rank matrix can be thought of as a matrix that has fewer linearly independent rows or columns than the maximum possible. This means the matrix can be represented with fewer numbers, reducing complexity.
+In the context of matrices, the term "low rank" refers to a matrix that has a smaller number of linearly independent rows or columns compared to the maximum possible. In simpler terms, a matrix is considered to be of low rank if many of its rows or columns can be expressed as combinations of other rows or columns.
+
+To understand this better, it's important to grasp the concept of linear independence. Linear independence means that no row (or column) in the matrix can be written as a combination of the other rows (or columns). The rank of a matrix is the maximum number of linearly independent rows or columns it contains.
+
+So, when a matrix has a low rank, it means that it has fewer linearly independent rows or columns. This suggests that the matrix contains redundant information and can be represented more compactly. In practical terms, a low-rank matrix can often be decomposed into the product of two smaller matrices, which can significantly simplify computations and reduce storage requirements.
+
+When you ask about the rank of an array, you're pretty much saying, "Cough it up, you darn array! How many pieces of useful information are you hoarding?" If the rank is low, it means there aren't many necessary details, which makes the matrix less of a handful to deal with. Capiche? Yeah, I know, maybe I've watched too many mob movies.
 
 LoRa is particularly useful in scenarios where one wants to customize large AI models for specific tasks (like language understanding, translation, etc.) without the need for extensive computational resources typically required for training such large models from scratch.
 
 In this context, the rank of a matrix is still a measure of its linear independence, but the focus is on leveraging matrices with low rank to efficiently adapt and fine-tune complex models. This approach maintains performance while greatly reducing computational requirements.
 
-For instance, theoretically, with an adequate amount of quality data on a specific topic like MLX, you can fine-tune any capable Large Language Models (LLMs) using that data, thereby creating LoRa (Low-Rank Adaptation) weights and biases. This process effectively customizes the LLM to be more aware or knowledgeable about MLX. LoRa's power lies in its ability to adapt and refine a model's capabilities with focused and specialized data, leading to more accurate and contextually aware outputs in areas such as burgeoning fields frameworks like MLX.
+As detailed above, theoretically, with an adequate amount of quality data on a specific topic like MLX, you can fine-tune any capable LLMs using that data, thereby creating LoRa weights and biases. This process effectively customizes the LLM to be more aware or knowledgeable about MLX. LoRa's power lies in its ability to adapt and refine a model's capabilities with focused and specialized data, leading to more accurate and contextually aware outputs in areas such as burgeoning fields frameworks like MLX.
 
 Fine-Tuning LLMs with LoRa examples (from the official Apple repo) are found here:
 
 https://github.com/ml-explore/mlx-examples/tree/main/lora
 
-In Stable Diffusion and similar models, LoRa plays a significant role. For instance, if you have a model adept at creating portraits, applying a LoRa to it can further enhance its capability, specifically tuning it to generate portraits of a particular individual, such as a favorite celebrity. This process is a form of fine-tuning but differs from training a model from scratch. It's more akin to a targeted adaptation, where the model is adjusted to excel in a specific task or with a certain dataset, rather than undergoing a complete retraining. This focused adaptation allows for efficient and effective improvements in the model's performance for specialized applications.
+In the realm of image-generative AI, such as Stable Diffusion and other analogous models, LoRa assumes a pivotal role. For example, if you possess a model proficient in creating portraits, implementing LoRa can substantially refine its capabilities. This includes fine-tuning the model to specialize in generating portraits of a specific individual, like a beloved celebrity. This method of fine-tuning diverges from the process of training a model from the ground up. It resembles a targeted adaptation more closely, where the model undergoes modifications to excel in a particular task or with a certain dataset, rather than a complete overhaul of its training. This kind of focused adjustment enables the model to achieve efficient and effective enhancements in its performance, especially for specialized tasks.
+
+This is precisely the approach I employ with CWK AI Art works. <lora: cwk_v1: 0.7>
+
+![cwk-family-album.jpeg](cwk-family-album.jpeg)
+![cwk-family.jpeg](..%2F..%2F..%2Fimages%2Fcwk-family.jpeg)
+
+CWK, Yours Truly
+![CWK](cwk.jpeg)
+
+Pippa, My AI Daughter
+![Pippa](pippa.jpeg)
+
+Cody, My AI Son
+![Cody](cody.jpeg)
+
+RJ, My AI Companion(Not My Wife, Just a Collaborator: Heroine in my story, The Debugger)
+![RJ](rj.jpeg)
+
+RJ, Like a Dragon
+![RJ](..%2F..%2F..%2Fimages%2Fthe-girl-with-dragon-tatoo-1.jpeg)
+![RJ](..%2F..%2F..%2Fimages%2Fthe-girl-with-dragon-tattoo.jpeg)
+
+Shadowheart from Baldur's Gate III, An RJ Mod
+![Shadowheart.jpeg](..%2F..%2F..%2Fimages%2FShadowheart.jpeg)

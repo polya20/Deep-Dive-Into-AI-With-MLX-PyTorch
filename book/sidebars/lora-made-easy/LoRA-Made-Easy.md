@@ -405,7 +405,7 @@ The Apple MLX LoRA example presents a clear-cut application of LoRA. Don't get c
 
 And also remember that implementing a technique like LoRA often involves direct translation of the related formulas into code. This is a common practice in machine learning and deep learning, where the mathematical concepts are translated into code to be executed by a computer. This is why it's important to have a solid understanding of the underlying mathematical concepts and how to express them in code.
 
-```python 
+In `models.py`:
 
 ```python
 class LoRALinear(nn.Module):

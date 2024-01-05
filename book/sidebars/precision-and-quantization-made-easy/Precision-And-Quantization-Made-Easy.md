@@ -130,7 +130,10 @@ Now you basically know what all those quantized models mean and in what bits the
 
 In order to make models to run on low-end computers with limited memory and processing power, even integer models can be created. These models use integers (whole numbers) instead of floating-point numbers. Through quantization, the weights and sometimes the activations of a model from floating-point numbers (like float32) can be converted to integers. Quantization reduces the model size and can significantly speed up inference while using less power. This is essential for deploying models on low-end devices.
 
-## Digital Drums: Keeping the Human Touch
+## Digital Music: Keeping the Human Touch
+![onemanband.png](onemanband.png)
+
+I play in a one-man band just for fun, using guitars, bass, keyboards, and drums, making tons of mistakes. But I just keep recording, knowing that I can fix them later with quantization in Logic Pro X.
 
 Quantization in making music is like snapping your notes onto a beat grid so they're perfectly in time. It's super useful for cleaning up the little timing mistakes that might happen when someone's jamming out on an instrument. But here's the thing – if you go overboard with it, your music could end up sounding like a robot’s playing it and lose that cool, human touch that a real-life drummer brings.
 

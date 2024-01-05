@@ -28,7 +28,7 @@ ITEM_NAME = "CWK Essays"
 OUTPUT = 'README.md'
 EXCLUDE_DIRS = ['images']
 ROOT_DIR = '.'
-TYPOS = ['obejct', 'orientatation']
+TYPOS = ['wip', 'obejct', 'orientatation']
 DELIMITERS = ['-', '_']
 
 

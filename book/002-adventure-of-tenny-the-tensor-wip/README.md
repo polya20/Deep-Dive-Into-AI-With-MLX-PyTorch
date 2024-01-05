@@ -294,7 +294,7 @@ The crucial insight here is the concept that each additional dimension adds a ne
 
 For more about stacks and queues, check out the following sidebar:
 
-[data-structure-stack-and-queue-made-easy](..%2Fsidebars%2Fdata-structure-stack-and-queue-made-easy)
+[Data-Structure-Stack-And-Queue-Made-Easy.md](..%2Fsidebars%2Fdata-structure-stack-and-queue-made-easy%2FData-Structure-Stack-And-Queue-Made-Easy.md)
 
 Python is indeed a zero-indexed language, and the first element is at index 0. Thus, some mix-up iand confusion regarding dimensions and indexing, which are two separate concepts.
 

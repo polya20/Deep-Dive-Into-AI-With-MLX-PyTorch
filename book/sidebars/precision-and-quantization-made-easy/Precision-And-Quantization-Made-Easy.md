@@ -135,7 +135,7 @@ In order to make models to run on low-end computers with limited memory and proc
 
 I play in a one-man band just for fun, using guitars, bass, keyboards, and drums, making tons of mistakes. But I just keep recording, knowing that I can fix them later with quantization in Logic Pro X.
 
-Quantization in making music is like snapping your notes onto a beat grid so they're perfectly in time. It's super useful for cleaning up the little timing mistakes that might happen when someone's jamming out on an instrument. But here's the thing – if you go overboard with it, your music could end up sounding like a robot’s playing it and lose that cool, human touch that a real-life drummer brings.
+Quantization in making music is like snapping your notes onto a beat grid, so they're perfectly in time. It's super useful for cleaning up the little timing mistakes that might happen when someone's jamming out on an instrument. But here's the thing – if you go overboard with it, your music could end up sounding like a robot’s playing it and lose that cool, human touch that a real-life drummer brings.
 
 ![drums.png](drums.png)
 
@@ -167,7 +167,7 @@ Now you understand why I place such strong emphasis on the four pillars of objec
 
 ## Digital vs. Analog
 
-Can you define what digital and analog mean? You might have though you new, but if you do, define them using your own own words, without looking them up.
+Can you define what digital and analog mean? You might have thought you new, but if you do, define them using your own own words, without looking them up.
 
 In the digital world, we often need to represent real-world, analog data in a form that computers can understand and process. Analog data is continuous by nature, meaning it can take any value within a given range. For example, the temperature in a room can be 20.1, 20.15, 20.151, and so on.
 

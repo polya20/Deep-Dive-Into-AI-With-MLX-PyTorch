@@ -336,6 +336,8 @@ When considering LoRa, the first concept that should ideally spring to mind, ass
 
 Object orientation is the way. Trust me. 
 
+[Obejct-Orientation-Made-Easy.md](..%2Fobject-orientation-made-easy%2FObejct-Orientation-Made-Easy.md)
+
 As detailed above, theoretically, with an adequate amount of quality data on a specific topic like MLX, you can fine-tune any capable LLMs using that data, thereby creating LoRa weights and biases. This process effectively customizes the LLM to be more aware or knowledgeable about MLX. LoRa's power lies in its ability to adapt and refine a model's capabilities with focused and specialized data, leading to more accurate and contextually aware outputs in areas such as burgeoning fields frameworks like MLX.
 
 Fine-Tuning LLMs with LoRa examples (from the official Apple repo) are found here:

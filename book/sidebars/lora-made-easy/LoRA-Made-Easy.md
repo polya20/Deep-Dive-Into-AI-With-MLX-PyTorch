@@ -325,8 +325,7 @@ print("Shape of the reduced data representation:", reduced_llm.shape)  # This wi
 
 ## Deciphering the Paper
 
-LoRA: Low-Rank Adaptation of Large Language Models (Edward J. Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, Weizhu Chen)
-https://arxiv.org/pdf/2106.09685.pdf 
+Hu, E. J., Shen, Y., Wallis, P., Allen-Zhu, Z., Li, Y., Wang, S., Wang, L., & Chen, W. (2021). LoRA: Low-Rank Adaptation of Large Language Models. arXiv. https://arxiv.org/pdf/2106.09685.pdf
 
 ![paper.png](paper.png)
 
@@ -403,6 +402,10 @@ It's important to note that in this context, the model essentially consists of a
 ### Apple MLX LoRA Example
 
 The Apple MLX LoRA example presents a clear-cut application of LoRA. Don't get caught up in the intricacies of the code. Try to broadly comprehend how the code embodies the LoRA concept as outlined in the paper.
+
+And also remember that implementing a technique like LoRA often involves direct translation of the related formulas into code. This is a common practice in machine learning and deep learning, where the mathematical concepts are translated into code to be executed by a computer. This is why it's important to have a solid understanding of the underlying mathematical concepts and how to express them in code.
+
+```python 
 
 ```python
 class LoRALinear(nn.Module):

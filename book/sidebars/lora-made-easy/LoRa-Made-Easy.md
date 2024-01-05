@@ -215,6 +215,10 @@ print('Shape of pretrained_llm:', pretrained_llm.shape)
 print('Shape of adaptation_matrix:', adaptation_matrix.shape)
 print('Shape of delta_weights:', delta_weights.shape)
 
+# Shape of pretrained_llm: (100, 10000)
+# Shape of adaptation_matrix: (100, 10000)
+# Shape of delta_weights: (100, 100)
+
 ```
 
 The dot product is a mathematical operation that takes two equal-length sequences of numbers (usually coordinate vectors) and returns a single number. This operation is also known as the scalar product because the result is a scalar, as opposed to a vector.
@@ -257,15 +261,42 @@ This means you've reduced the dimensionality from two separate data sets (one `m
 In practical terms, beyond just being a requirement of the math, the transpose is also significant in operations like neural network weight adjustments, transforming coordinate systems, solving systems of linear equations, and many other applications where data must be reoriented to match the necessary computation.
 
 ```python
+import numpy as np
+
+# Assuming 'pretrained_llm' is a matrix of shape (100, 10000)
+pretrained_llm = np.random.rand(100, 10000)
+
+# 'adaptation_matrix' is another matrix of shapes (100, 10000) that will be used to transform 'pretrained_llm'
+adaptation_matrix = np.random.rand(100, 10000)
+
+# Compute delta weights
 delta_weights = np.dot(pretrained_llm, adaptation_matrix.T)
+
+# Print the dimensionality of the matrices
+print('Shape of pretrained_llm:', pretrained_llm.shape)
+print('Shape of adaptation_matrix:', adaptation_matrix.shape)
+print('Shape of delta_weights:', delta_weights.shape)
 ```
-`adaptation_matrix.T` transposes the matrix `adaptation_matrix`. If `adaptation_matrix` initially has a shape of 100x10000 (100 rows and 10000 columns), the transpose operation will flip it to 10000x100 (10000 rows and 100 columns).
 
-The dot product of `pretrained_llm` (100x10000) and the transposed `adaptation_matrix.T` (10000x100) is computed by using NumPy's dot product function, `np.dot()`, resulting in a new matrix `delta_weights`. For matrix multiplication to take place, the number of columns in the first matrix must equal the number of rows in the second matrix. Here, that condition is met: `pretrained_llm` has 10000 columns and `adaptation_matrix.T` has 10000 rows.
+In the code, we have two matrices, `pretrained_llm` and `adaptation_matrix`, both of the same shape (100, 10000). We aim to perform a dot product between these two matrices. However, as per the rules of matrix multiplication, you can't directly multiply these two matrices since their inner dimensions (columns of the first matrix and rows of the second matrix) do not match.
 
-With `delta_weights`, you now have a matrix summarizing the relationships between the parameters in `pretrained_llm` and `adaptation_matrix`, potentially capturing new insights that can be applied to adapt a pre-trained model or extract significant features.
+Here's where the transpose operation becomes vital:
+
+1. **Aligning Dimensions for Matrix Multiplication:** By transposing `adaptation_matrix`, which changes its shape from (100, 10000) to (10000, 100), we align the inner dimensions of the two matrices. Now, `pretrained_llm` has 10000 columns, and `adaptation_matrix.T` has 10000 rows, making the dot product feasible.
+
+2. **Practical Implication in Data Transformation:** In practical terms, this transpose operation changes the orientation of the data in `adaptation_matrix`. This is significant in many applications, including neural networks, where you might need to align features or weights in a certain way for subsequent operations. In our case, transposing is necessary to align the adaptation matrix in such a way that it correctly interacts with `pretrained_llm`.
+
+3. **Conceptual Understanding:** The transpose can be thought of as a reorientation of the data. In the context of neural networks, for instance, this reorientation is often necessary when you want to adjust weights or when you're transforming data from one representation to another. In our example, this is crucial for correctly applying the adaptation matrix to the pre-trained low-level model.
+
+4. **Resulting Matrix Interpretation:** Post multiplication, the resulting `delta_weights` matrix (of shape 100x100) captures the interaction between `pretrained_llm` and the transposed `adaptation_matrix`. This new matrix can be seen as a transformed representation of the original data, which is often the goal in machine learning tasks like feature extraction, dimensionality reduction, or model adaptation.
+
+In summary, the transpose operation in our example is not just a mathematical formality but a necessary step to make the dimensions compatible for matrix multiplication, ensuring that the data from `adaptation_matrix` is appropriately aligned and interacted with `pretrained_llm`. This step is fundamental in many machine learning and neural network applications where matrix transformations are a key part of the process.
+
+I'm sure that a significant number of errors in your MLX code can be attributed to the transpose operation. This is a frequent point of confusion, particularly when handling large matrices and intricate operations. Thus, grasping the concept and its practical implications is crucial.
 
 ### Delta Weights
+
+Whenever you come across new terms, it's beneficial to ponder why those particular words were selected. The term "delta" generally signifies a change or difference. It finds application in various disciplines, each context assigning it a distinct but related meaning, always revolving around the concept of change or difference. In the realm of finance, especially in options trading, "delta" is a crucial term. It is employed in options pricing to quantify the expected price fluctuation of an option for a $1 variation in the price of the underlying asset, such as a stock. For example, if an option has a delta of 0.5, it suggests that the option's price is anticipated to alter by $0.50 for every $1 movement in the price of the underlying asset. However, I personally advise against investing in options, as I consider it a fool's game.
 
 In the context of AI and neural networks, particularly when discussing LoRA, "delta weights" generally refer to the changes or adjustments made to the original pre-trained weights of a neural network during the adaptation process.
 

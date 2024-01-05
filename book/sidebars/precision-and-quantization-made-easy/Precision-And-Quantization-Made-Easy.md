@@ -104,7 +104,7 @@ But appearances can be deceiving. Python is a high-level language that hides a l
 
 ## When Rockets Fail: It's All About Being Exact
 
-Launching rockets is really tricky, and getting the numbers right is what makes them fly properly or blow up. They're put together with really exact science and math. A little mistake in the numbers can make a rocket go the wrong way or even explode. Like how the Challenger space shuttle accident in 1986 happened. It wasn't a math error, but it shows that not being careful with small details, like how cold affects rubber parts, can lead to big problems.
+Launching rockets is really tricky, and getting the numbers right is what makes them fly properly or blow up. They're put together with really exact science and math. A little mistake in the numbers can make a rocket go the wrong way or even explode. Like how the Challenger space shuttle accident in 1986 happened. I am old enough to have witnessed that on TV. It wasn't a math error, but it shows that not being careful with small details, like how cold affects rubber parts, can lead to big problems.
 
 Precision in numbers, such as the value of Pi, is paramount in programming. For instance, while some might simply use 3.14, others might extend it to 3.14159. The exactness of this number in your code could be critical, potentially the difference between success and failure in sensitive applications like rocket launches. It's crucial to handle numbers with utmost accuracy.
 

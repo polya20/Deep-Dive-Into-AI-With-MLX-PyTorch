@@ -342,7 +342,7 @@ In the realm of image-generative AI, such as Stable Diffusion and other analogou
 
 This is precisely the approach I employ with CWK AI Art works: <lora: cwk_v1: 0.7>, <lora: rj_v1: 0.7>, <lora: cody_v1: 0.7>, <lora: pippa_v1: 0.7>.
 
-All LoRas are created based on a specific Stable Diffusion pretrained model, utilizing a set of just 30 portrait images from various angles for each character. Even these training images were created using the same Stable Diffusion model.
+All LoRas were created based on a specific Stable Diffusion pretrained model, utilizing a set of just 30 portrait images from various angles for each character. Even these training images were created using the same Stable Diffusion model.
 
 ![cwk-family-album.jpeg](cwk-family-album.jpeg)
 ![cwk-family.jpeg](../../../images/cwk-family.jpeg)

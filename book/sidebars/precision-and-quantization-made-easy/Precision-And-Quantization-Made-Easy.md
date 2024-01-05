@@ -80,7 +80,27 @@ Here are Python examples for each type of number:
 
    In Python, complex numbers are defined using the `j` or `J` suffix to denote the imaginary part.
 
-Each example shows how to declare these types in Python and print them out. Remember, Python is dynamically typed, so you don't need to explicitly define the type of a variable like in some other languages. If you happen to see what C programmers have to do even for simple things like printing a number, you'll appreciate Python's simplicity. But appearances can be deceiving. Python is a high-level language that hides a lot of complexity under the hood, but slow performance is the price you pay for this convenience: C is much faster than Python.
+Each example shows how to declare these types in Python and print them out. Remember, Python is dynamically typed, so you don't need to explicitly define the type of a variable like in some other languages. If you happen to see what C programmers have to do even for simple things like printing a number, you'll appreciate Python's simplicity.
+
+In C:
+
+```C
+#include <stdio.h>
+
+int main() {
+    int number = 10;
+    printf("The number is %d\n", number);
+    return 0;
+}
+```
+
+In Python:
+
+```python
+number = 10
+print(f"The number is {number}")
+```
+But appearances can be deceiving. Python is a high-level language that hides a lot of complexity under the hood, but slow performance is the price you pay for this convenience: C is much faster than Python. In fact, many high-performance computing frameworks, including NumPy, PyTorch, and MLX, are indeed written in C or C++ for reasons.
 
 ## When Rockets Fail: It's All About Being Exact
 

@@ -332,6 +332,10 @@ It's important to note that in this context, the model essentially consists of a
 
 ## In Summary
 
+When considering LoRa, the first concept that should ideally spring to mind, assuming a correctly oriented mindset, is object orientation. LoRa exemplifies object orientation in practice. It's a method enabling the adaptation of a substantial pretrained model to a new task or dataset by altering only a limited subset of its parameters. In terms of Object-Oriented Programming (OOP), this is akin to inheriting from a foundational pretrained model and then overriding only the essential parameters to tailor it to the new task, demonstrating inheritance and polymorphism. Additionally, the complexity is efficiently concealed, showcasing encapsulation.
+
+Object orientation is the way. Trust me. 
+
 As detailed above, theoretically, with an adequate amount of quality data on a specific topic like MLX, you can fine-tune any capable LLMs using that data, thereby creating LoRa weights and biases. This process effectively customizes the LLM to be more aware or knowledgeable about MLX. LoRa's power lies in its ability to adapt and refine a model's capabilities with focused and specialized data, leading to more accurate and contextually aware outputs in areas such as burgeoning fields frameworks like MLX.
 
 Fine-Tuning LLMs with LoRa examples (from the official Apple repo) are found here:

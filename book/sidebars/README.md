@@ -19,7 +19,7 @@ Information in sidebars is presented in a way that is easy to understand and dig
 
 Informational snippets that could be referenced in multiple places in the book are placed in the `book/sidebars` folder.
 
-Auto-generated list of Sidebars: 2024-01-05 23:15
+Auto-generated list of Sidebars: 2024-01-06 04:03
 
 # Sidebars
 
@@ -45,7 +45,7 @@ Auto-generated list of Sidebars: 2024-01-05 23:15
 
 ## Lora Made Easy
 
-- [Lora Made Easy](lora-made-easy/LoRa-Made-Easy.md)
+- [Lora Made Easy](lora-made-easy/LoRA-Made-Easy.md)
 
 
 ## Normalization Made Easy

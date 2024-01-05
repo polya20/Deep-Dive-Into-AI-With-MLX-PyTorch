@@ -1,15 +1,17 @@
 import numpy as np
 
-# Assuming 'pretrained_llm' is a matrix of shape (100, 10000)
-pretrained_llm = np.random.rand(100, 10000)
+# Simplified example for dimension reduction
 
-# 'adaptation_matrix' is another matrix of shapes (100, 10000) that will be used to transform 'pretrained_llm'
-adaptation_matrix = np.random.rand(100, 10000)
+# Original matrix with 100 rows and 10,000 columns
+pretrained_llm = np.random.rand(100, 10000)  # High-dimensional data
 
-# Compute delta weights
-delta_weights = np.dot(pretrained_llm, adaptation_matrix.T)
+# Creating a projection matrix to reduce dimensions from 10,000 to 100
+# This will be used to map the original data from the high-dimensional space (10,000 dimensions) to a lower-dimensional space (100 dimensions).
+projection_matrix = np.random.rand(10000, 100)  # Transformation matrix
 
-# Print the dimensionality of the matrices
-print('Shape of pretrained_llm:', pretrained_llm.shape)
-print('Shape of adaptation_matrix:', adaptation_matrix.shape)
-print('Shape of delta_weights:', delta_weights.shape)
+# Applying the projection to reduce dimensions
+reduced_llm = np.dot(pretrained_llm, projection_matrix)  # Projected data
+
+# Shape of the reduced matrix
+print("Shape of the original matrix:", pretrained_llm.shape) # (100, 10000)
+print("Shape of the reduced matrix:", reduced_llm.shape) # (100, 100)

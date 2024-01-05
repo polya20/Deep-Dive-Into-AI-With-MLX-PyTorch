@@ -13,3 +13,5 @@ Notes on Pull Requests and Issues
 [Prolog - Hello AI World](000-hello-ai-world/README.md)
 
 [Chapter 1 - The Story of A Tensor](001-story-of-a-tensor/README.md)
+
+[Chapter 2 - The Story of A Model](002-story-of-a-model/README.md)

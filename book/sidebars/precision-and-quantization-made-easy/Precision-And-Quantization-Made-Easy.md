@@ -183,7 +183,7 @@ However, this viewpoint isn't entirely accurate, considering that much of the mu
 
 The main takeaway is that quantization is a crucial concept when discussing digital systems that take samples from the real world. 
 
-Honestly, I could nerd out and dive way deeper into this topic, but then we'd be here all day, and I've probably lost you already. When you've got a sec, ponder why I specifically said 'taking samples from the real world.' It's a stats game, my friend—from analog to digital and back again. The act of taking samples means the resulting data is discrete, not continuous.
+Honestly, I could nerd out and dive way deeper into this topic, but then we'd be here all day, and I've probably lost you already. When you've got a sec, ponder why I specifically said 'taking samples from the real world.' It's a stats game, my friend—from analog to digital and back again. The act of taking samples means we are skipping some data points, which is a form of quantization. Consequently, the resulting data is discrete, not continuous.
 
 ## In Summary
 

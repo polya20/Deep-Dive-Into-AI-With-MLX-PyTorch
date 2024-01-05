@@ -8,7 +8,7 @@ Notes on Pull Requests and Issues
 ---------------------------------
 [NOTES_ON_PULL_REQUESTS_AND_ISSUES.md](../NOTES_ON_PULL_REQUESTS_AND_ISSUES.md)
 
-# Chatper 2 - The Adventure of Tenny, the Tensor Hero's Journey
+# Chatper 2 - The Adventure of Tenny, the Tensor: A Hero's Journey
 
 ## The Case Against Too Much Visualization in Learning
 
@@ -94,7 +94,7 @@ Now, let's delve into a delightful tale about Tenny, the Tensor, and his Hero's 
 
 Please think while reading the story. Think therefore you are.
 
-## The Adventure of Tenny, the Tensor Hero's Journey
+## The Adventure of Tenny, the Tensor: A Hero's Journey
 
 ### ACT 1: THE ORDINARY WORLD - 0D
 
@@ -132,12 +132,14 @@ Strictly speaking, MLX or PyTorch are not required for Tenny's simple tranformat
 
 I assume you are already familiar with the concept of object orientation in general. If not, please do yourself a favor and read the following sidebar:
 
-[object-orientation-made-easy](..%2Fsidebars%2Fobject-orientation-made-easy)
+[Obejct-Orientation-Made-Easy.md](..%2Fsidebars%2Fobject-orientation-made-easy%2FObejct-Orientation-Made-Easy.md)
 
 Make sure you run the example yourself and understand the Tenny's journey:
 
 [dimensions.py](dimensions.py)
+
 [adventure-of-tenny-torch.py](adventure-of-tenny-torch.py)
+
 [adventure-of-tenny-mlx.py](adventure-of-tenny-mlx.py)
 
 You might prefer an easy method to grasp the dimensions of arrays in Python. However, I will begin with the more challenging approach. You will eventually understand why this is beneficial.
@@ -691,6 +693,8 @@ Simply continue reading, pondering, and reflecting on what you have been reading
 
 **Dad:** Precisely, and just like Tenny, we learn and grow by understanding more dimensions, more perspectives.
 
+---
+
 ## Session 2 - Understanding Brackets
 
 ---
@@ -810,6 +814,7 @@ tenny_4d_expanded = np.array([
 
 **Dad:** Right you are! Understanding the brackets is like learning to read a map of a vast, multidimensional universe.
 
+---
 
 ## Session 3 -  Growing Curiosity on Algebra and Geometry
 
@@ -869,7 +874,7 @@ tenny_4d_expanded = np.array([
 
 **Dad:** Exactly! Math helps us understand and describe the fascinating world of dimensions that Tenny explores.
 
-
+---
 
 ## Session 4 - Image - Algebra and Geometry-
 
@@ -929,7 +934,7 @@ tenny_4d_expanded = np.array([
 
 **Dad:** Exactly! By understanding this image, you understand how data can exist and change in multiple dimensions.
 
-
+---
 
 ## Session 5 - Exploration in AI Image Generation: Diffusion Model & 4D Shapes 
 
@@ -985,7 +990,7 @@ tenny_4d_expanded = np.array([
 
 **Dad:** Exactly, and understanding these concepts is key to grasping how AI can creatively manipulate and generate complex data like images.
 
-
+---
 
 ## Session 6 - Understanding GPT
 

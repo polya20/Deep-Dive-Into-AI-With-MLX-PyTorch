@@ -1,5 +1,13 @@
 # LoRa Made Easy
 
+LoRa's essence lies in streamlining the complexity of a pre-trained model while preserving maximal useful information. The concept of rank directly relates to how much crucial information remains intact. At first glance, training an expansive model from scratch with new data seems logical. However, when much of the training data is redundant, this approach wastes time and resources. A smarter method involves refining a pre-trained model—tweaking or incorporating specific parameters tailored to the new dataset. This is LoRa's forte: it efficiently identifies and adjusts the parameters that are crucial for the new data.
+
+The core benefits of object-oriented programming—reusability, scalability, and maintainability—are mirrored in the central tenets of abstraction, inheritance, polymorphism, and encapsulation. LoRa embodies these advantages and principles profoundly, making it a powerful paradigm for model adaptation.
+
+[Obejct-Orientation-Made-Easy.md](..%2Fobject-orientatation-made-easy%2FObejct-Orientation-Made-Easy.md)
+
+Read on, and you will gain a comprehensive understanding.
+
 ## What is LoRa?
 
 LoRa (Low Rank Adaptation) is a technique used to efficiently fine-tune large pre-trained models. In large models, such as those used in natural language processing, training all parameters (which can be in the billions) is computationally expensive and time-consuming.

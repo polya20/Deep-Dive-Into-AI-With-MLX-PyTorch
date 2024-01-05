@@ -400,6 +400,65 @@ A: "
 
 It's important to note that in this context, the model essentially consists of a set of weights and biases. When adapting the model to a new task using LoRA or similar techniques, these weights and biases are the elements being adjusted. Crucially, this does not involve retraining the model from scratch. Instead, it's a process of fine-tuning or modifying the existing model parameters to suit the new task, thereby enhancing the model's performance or capability in specific areas without the need for complete retraining.
 
+### Apple MLX LoRA Example
+
+The Apple MLX LoRA example presents a clear-cut application of LoRA. Don't get caught up in the intricacies of the code. Try to broadly comprehend how the code embodies the LoRA concept as outlined in the paper.
+
+```python
+class LoRALinear(nn.Module):
+    @staticmethod
+    def from_linear(linear: nn.Linear, rank: int = 8):
+        # TODO remove when input_dims and output_dims are attributes
+        # on linear and quantized linear
+        output_dims, input_dims = linear.weight.shape
+        if isinstance(linear, nn.QuantizedLinear):
+            input_dims *= 32 // linear.bits
+        lora_lin = LoRALinear(input_dims, output_dims, rank)
+        lora_lin.linear = linear
+        return lora_lin
+
+    def __init__(
+        self, input_dims: int, output_dims: int, lora_rank: int = 8, bias: bool = False
+    ):
+        super().__init__()
+
+        # Regular linear layer weights
+        self.linear = nn.Linear(input_dims, output_dims, bias=bias)
+
+        # Low rank lora weights
+        scale = 1 / math.sqrt(input_dims)
+        self.lora_a = mx.random.uniform(
+            low=-scale,
+            high=scale,
+            shape=(input_dims, lora_rank),
+        )
+        self.lora_b = mx.zeros(shape=(lora_rank, output_dims))
+
+    def __call__(self, x):
+        dtype = self.linear.weight.dtype
+        if isinstance(self.linear, nn.QuantizedLinear):
+            dtype = self.linear.scales.dtype
+        y = self.linear(x.astype(dtype))
+        z = (x @ self.lora_a) @ self.lora_b
+        return y + 2.0 * z
+```
+
+The `LoRALinear` class definition is an implementation of the same LoRA concept in the paper. It is an MLX class, which is designed to work as a drop-in replacement for a regular `nn.Linear` layer but with the additional LoRA low-rank updates incorporated. Here's a breakdown of its components:
+
+1. **Replacement of Standard Linear Layer**: The class has a static method `from_linear` which takes a standard `nn.Linear` layer and a rank as input and outputs a `LoRALinear` object. This allows for easy substitution of an MLX linear layer with its LoRA-enhanced counterpart.
+
+2. **Initialization (`__init__` method)**: The constructor of the `LoRALinear` class initializes both the standard weight matrix `W` of a linear layer and two low-rank matrices `A` (`lora_a`) and `B` (`lora_b`). Note that in LoRA, `W` corresponds to the original, frozen weights (`W0`), and `A` and `B` correspond to the trainable parameters that capture the updates (`ΔW`).
+
+3. **Low-Rank Matrices Initialization**: The low-rank matrices `A` and `B` are initialized with a certain strategy:
+   
+   - `self.lora_a` is initialized with values from a uniform distribution scaled by the input dimension, which is a common initialization strategy to maintain the variance of activations.
+   
+   - `self.lora_b` is initialized to all zeros, meaning initially there is no update from the low-rank component (`ΔW` initially is zero).
+
+4. **Forward Pass (`__call__` method)**: The modified forward pass first calculates the normal output of a linear layer `y` and then computes the output `z` of the low-rank structure by applying `x` to `lora_a` and then `lora_b`. The final output of the layer is the sum of `y` and twice the value of `z`, which reflects the LoRA update.
+
+This particular implementation illustrates how the core concepts of LoRA—low-rank factors and efficient modeling of weight updates—can be imbedded directly into neural network architectures using standard machine learning frameworks like MLX and PyTorch.
+
 ## In Summary
 
 When considering LoRA, the first concept that should ideally spring to mind, assuming a correctly oriented mindset, is object orientation. LoRA exemplifies object orientation in practice. It's a method enabling the adaptation of a substantial pretrained model to a new task or dataset by altering only a limited subset of its parameters. In terms of Object-Oriented Programming (OOP), this is akin to inheriting from a foundational pretrained model and then overriding only the essential parameters to tailor it to the new task, demonstrating inheritance and polymorphism. Additionally, the complexity is efficiently concealed, showcasing encapsulation.

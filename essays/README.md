@@ -19,7 +19,7 @@ Information in sidebars is presented in a way that is easy to understand and dig
 
 Informational snippets that could be referenced in multiple places in the book are placed in the `book/sidebars` folder.
 
-Auto-generated list of sidebars: 2024-01-05 20:29
+Auto-generated list of CWK Essays: 2024-01-05 20:32
 
 # CWK Essays
 

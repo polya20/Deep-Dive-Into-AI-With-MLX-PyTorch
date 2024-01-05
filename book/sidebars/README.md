@@ -52,14 +52,8 @@ Auto-generated list of sidebars: 2024-01-05 20:06
 - [Normalization Made Easy](normalization-made-easy/Normalization-Made-Easy.md)
 
 
-## Object-Orientatation-Made-Easy
-
-- [Obejct Orientation Made Easy](object-orientatation-made-easy/Obejct-Orientation-Made-Easy.md)
-
-
 ## Object-Orientation-Made-Easy
 
-- [Obejct Orientation Made Easy](object-orientation-made-easy/Obejct-Orientation-Made-Easy.md)
 - [Object Orientation Made Easy](object-orientation-made-easy/Object-Orientation-Made-Easy.md)
 - [The Debugger Book Covers](object-orientation-made-easy/The-Debugger-Book-Covers.md)
 - [The Debugger](object-orientation-made-easy/The-Debugger.md)

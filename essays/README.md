@@ -18,7 +18,7 @@ Without a solid understanding of the concepts made easy in sidebars, you will no
 Information in sidebars is presented in a way that is easy to understand and digest. They are not meant to be read in order.
 
 Informational snippets that could be referenced in multiple places in the book are placed in the `book/sidebars` folder.
-Auto-generated list of sidebars: 2024-01-05 20:22
+Auto-generated list of sidebars: 2024-01-05 20:27
 
 # CWK Essays
 

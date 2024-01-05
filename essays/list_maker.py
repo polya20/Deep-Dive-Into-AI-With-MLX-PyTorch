@@ -51,6 +51,8 @@ def generate_markdown_list(dir_path):
         if section == '.' or section.lower() in TYPOS:
             continue
         section = section.replace('_', ' ').title()
+        for delimiter in DELIMITERS:
+            section = section.replace(delimiter, ' ')
         items = []
         for file in files:
             words_in_file = re.split(delimiters_pattern, file.lower())
@@ -58,6 +60,8 @@ def generate_markdown_list(dir_path):
                 continue
             if not file.startswith('.') and file.endswith('.md'):
                 formatted_title = format_title(file)
+                for delimiter in DELIMITERS:
+                    formatted_title = formatted_title.replace(delimiter, ' ')
                 file_path = os.path.join(root, file)
                 relative_path = os.path.relpath(file_path, dir_path).replace('\\', '/')
                 item_str = f"- [{formatted_title}]({relative_path})"

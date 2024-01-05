@@ -8,7 +8,7 @@ Notes on Pull Requests and Issues
 ---------------------------------
 [NOTES_ON_PULL_REQUESTS_AND_ISSUES.md](../NOTES_ON_PULL_REQUESTS_AND_ISSUES.md)
 
-# Chatper 2 - The Adventure of Tenny, the Tensor: A Hero's Journey
+# Chapter 2 - The Adventure of Tenny, the Tensor: A Hero's Journey
 
 ## The Case Against Too Much Visualization in Learning
 
@@ -16,7 +16,7 @@ Indeed, it is a commonly held belief that visual aids significantly enhance the 
 
 Particularly in the realm of programming, the use of visualization is akin to a double-edged sword. While it undoubtedly aids in grasping a concept, it simultaneously harbors the risk of creating an illusion of understanding. This false sense of comprehension arises when one's understanding is anchored to the visual representation rather than the underlying concept. In such instances, the cognitive labor of comprehending the concept has been outsourced to the creator of the visual aid, leaving the learner with only the need to decipher the visual representation. This, however, should not be mistaken for a genuine understanding of the concept itself.
 
-Please remember you brain always finds the least energy consuming way to solve a problem. If you are not careful, you will end up with a false sense of understanding.
+Please remember your brain always finds the least energy consuming way to solve a problem. If you are not careful, you will end up with a false sense of understanding.
 
 It is essential, therefore, to cultivate the skill of mentally visualizing complex concepts, particularly in programming. For instance, to truly grasp the multi-dimensional aspects of arrays (tensors) in Python, one must be able to mentally navigate and conceptualize these dimensions, independent of external visual aids.
 
@@ -128,11 +128,11 @@ Through this heroic journey, Tenny embraced the challenges and transformations t
 
 Tenny's journey is a metaphor for the evolution of data structures in Python. Starting from a simple value, Tenny grows into more complex structures, just like how you can start with simple programming concepts and build up to handle more complex tasks. The dimensions are just ways of organizing and interpreting data, and reshaping is how you tailor that data to serve your purpose. Whether you're tracking time, managing spreadsheets, or creating 3D animations, understanding these dimensions is key to controlling and using your data effectively in programming.
 
-Strictly speaking, MLX or PyTorch are not required for Tenny's simple tranformation. You can use NumPy to reshape Tenny into any dimension. However, MLX and PyTorch are just there for fun and to make the story more interesting. Furthermore, MLX and PyTorch are based on NumPy, they inherit what NumPy is all about and add their own unique features. Therefore, it is important to understand NumPy first before moving on to MLX and PyTorch. The power of object oriented programming in action here.
+Strictly speaking, MLX or PyTorch are not required for Tenny's simple transformation. You can use NumPy to reshape Tenny into any dimension. However, MLX and PyTorch are just there for fun and to make the story more interesting. Furthermore, MLX and PyTorch are based on NumPy, they inherit what NumPy is all about and add their own unique features. Therefore, it is important to understand NumPy first before moving on to MLX and PyTorch. The power of object oriented programming in action here.
 
 I assume you are already familiar with the concept of object orientation in general. If not, please do yourself a favor and read the following sidebar:
 
-[Obejct-Orientation-Made-Easy.md](..%2Fsidebars%2Fobject-orientation-made-easy%2FObejct-Orientation-Made-Easy.md)
+[Object-Orientation-Made-Easy.md](..%2Fsidebars%2Fobject-orientation-made-easy%2FObejct-Orientation-Made-Easy.md)
 
 Make sure you run the example yourself and understand the Tenny's journey:
 
@@ -399,7 +399,7 @@ So, when you perform an operation along:
 
 This is essential for many mathematical computations, data manipulation, and reshaping operations. For instance, if you're working with images represented as multi-dimensional arrays (with axes typically representing height, width, and color channels), you might perform an operation (like summing or averaging) along one axis to affect the image in a specific way (e.g., averaging over the color channels to convert to grayscale). 
 
-Understanding axes is key to correctly manipulating arrays, as it directly affects how the data is aggregated, broadcasted, or otherwise operated upon.
+Understanding axes is key to correctly manipulating arrays, as it directly affects how the data is aggregated, broadcast, or otherwise operated upon.
 
 ### Again, What's the Point of 0D?
 

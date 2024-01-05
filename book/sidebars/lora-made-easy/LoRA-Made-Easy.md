@@ -403,7 +403,7 @@ It's important to note that in this context, the model essentially consists of a
 
 The Apple MLX LoRA example presents a clear-cut application of LoRA. Don't get caught up in the intricacies of the code. Try to broadly comprehend how the code embodies the LoRA concept as outlined in the paper.
 
-And also remember that implementing a technique like LoRA often involves direct translation of the related formulas into code. This is a common practice in machine learning and deep learning, where the mathematical concepts are translated into code to be executed by a computer. This is why it's important to have a solid understanding of the underlying mathematical concepts and how to express them in code.
+And also, remember that implementing a technique like LoRA often involves translating the relevant formulas directly into code. This practice is common in machine learning and deep learning, where mathematical concepts are converted into executable code. That's why having a solid understanding of the underlying mathematical principles and being able to express them in code is crucial.
 
 In `models.py`:
 

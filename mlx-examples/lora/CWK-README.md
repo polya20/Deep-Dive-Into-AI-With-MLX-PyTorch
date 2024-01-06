@@ -13,15 +13,19 @@ Notes on Pull Requests and Issues
 I presume you've either reviewed the sidebars mentioned below or possess a thorough grasp of the concepts explained within them:
 
 Attenion Mechanisms and Transformers
+
 [Attention-Is-All-You-Need-For-Now.md](..%2F..%2Fbook%2Fsidebars%2Fattention-is-all-you-need-for-now%2FAttention-Is-All-You-Need-For-Now.md)
 
 LoRA
+
 [LoRA-Made-Easy.md](..%2F..%2Fbook%2Fsidebars%2Flora-made-easy%2FLoRA-Made-Easy.md)
 
 Normalization
+
 [Normalization-Made-Easy.md](..%2F..%2Fbook%2Fsidebars%2Fnormalization-made-easy%2FNormalization-Made-Easy.md)
 
 Precision and Quantization
+
 [Precision-And-Quantization-Made-Easy.md](..%2F..%2Fbook%2Fsidebars%2Fprecision-and-quantization-made-easy%2FPrecision-And-Quantization-Made-Easy.md)
 
 Please note that the original examples from Apple may change over time. Even as I was writing this, the original examples were updated. I will try to keep this guide up to date, but please keep this in mind. 

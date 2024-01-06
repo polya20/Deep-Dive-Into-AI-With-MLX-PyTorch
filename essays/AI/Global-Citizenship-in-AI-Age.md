@@ -1,5 +1,7 @@
 # Fostering Global Citizenship in the AI Era
 
+Audio version of this essay: https://youtu.be/p9tk-iLHWDk
+
 Attention AI and NLP enthusiasts, and all who cherish the nuances of language:
 
 We need to talk.

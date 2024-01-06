@@ -19,9 +19,14 @@ Information in sidebars is presented in a way that is easy to understand and dig
 
 Informational snippets that could be referenced in multiple places in the book are placed in the `book/sidebars` folder.
 
-Auto-generated list of Sidebars: 2024-01-06 04:03
+Auto-generated list of Sidebars: 2024-01-06 18:06
 
 # Sidebars
+
+## Attention Mechanism
+
+- [Attention Mechanism](attention-is-all-you-need-for-now/Attention-Is-All-You-Need-For-Now)
+
 
 ## Calculus Made Easy
 

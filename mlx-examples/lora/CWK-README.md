@@ -12,19 +12,19 @@ Notes on Pull Requests and Issues
 
 I presume you've either reviewed the sidebars mentioned below or possess a thorough grasp of the concepts explained within them:
 
-Attenion Mechanisms and Transformers
+✍️ Attention Mechanisms and Transformers
 
 [Attention-Is-All-You-Need-For-Now.md](..%2F..%2Fbook%2Fsidebars%2Fattention-is-all-you-need-for-now%2FAttention-Is-All-You-Need-For-Now.md)
 
-LoRA
+✍️ LoRA
 
 [LoRA-Made-Easy.md](..%2F..%2Fbook%2Fsidebars%2Flora-made-easy%2FLoRA-Made-Easy.md)
 
-Normalization
+✍️ Normalization
 
 [Normalization-Made-Easy.md](..%2F..%2Fbook%2Fsidebars%2Fnormalization-made-easy%2FNormalization-Made-Easy.md)
 
-Precision and Quantization
+✍️ Precision and Quantization
 
 [Precision-And-Quantization-Made-Easy.md](..%2F..%2Fbook%2Fsidebars%2Fprecision-and-quantization-made-easy%2FPrecision-And-Quantization-Made-Easy.md)
 

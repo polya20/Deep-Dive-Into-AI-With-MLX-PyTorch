@@ -19,7 +19,7 @@ Information in sidebars is presented in a way that is easy to understand and dig
 
 Informational snippets that could be referenced in multiple places in the book are placed in the `book/sidebars` folder.
 
-Auto-generated list of CWK Essays: 2024-01-05 20:32
+Auto-generated list of CWK Essays: 2024-01-06 14:28
 
 # CWK Essays
 
@@ -36,6 +36,7 @@ Auto-generated list of CWK Essays: 2024-01-05 20:32
 - [Data And Compute Part Iii](AI/Data-And-Compute-Part-III.md)
 - [Differentiation 101 For Ai](AI/Differentiation-101-for-AI.md)
 - [Envisioning The Future Of Ai Tools](AI/Envisioning-The-Future-of-AI-Tools.md)
+- [Global Citizenship In Ai Age](AI/Global-Citizenship-in-AI-Age.md)
 - [Honestly Who Would You Trust More Ais Or Humans](AI/Honestly-Who-Would-You-Trust-More-AIs-or-Humans.md)
 - [Just Dont Do It A Plea To Preserve Humanitys Future](AI/Just-Dont-Do-It-A-Plea-to-Preserve-Humanitys-Future.md)
 - [Mathematics The Universal Language And The Heart Of Ai](AI/Mathematics-The-Universal-Language-and-the-Heart-of-AI.md)

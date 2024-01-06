@@ -1,5 +1,5 @@
 # Fostering Global Citizenship in the AI Era
-
+![fostering-global-citizenship-in-ai-era.png](..%2Fimages%2Ffostering-global-citizenship-in-ai-era.png)
 Audio version of this essay: https://youtu.be/p9tk-iLHWDk
 
 Attention AI and NLP enthusiasts, and all who cherish the nuances of language:

@@ -2,7 +2,7 @@
 
 In the fast-paced realm of AI and machine learning, the introduction of Attention Mechanisms and Transformers marks a significant turning point. It's as if we've given computers a turbo boost in understanding and generating human language, making traditional models appear almost sluggish in comparison.
 
-In this article, we're going to delve into the nuts and bolts of the Attention Mechanism. Imagine this: our models have now developed the ability to shine a spotlight on the most crucial elements in a vast ocean of data. It's akin to the human ability to focus selectively, not trying to process everything simultaneously.
+In this sidebar, we're going to delve into the nuts and bolts of the Attention Mechanism. Imagine this: our models have now developed the ability to shine a spotlight on the most crucial elements in a vast ocean of data. It's akin to the human ability to focus selectively, not trying to process everything simultaneously.
 
 Then, enter the Transformer, the standout architecture in this scenario. It harnesses this spotlight technique to enhance processing speed and accuracy dramatically. From translating languages to generating text, the Transformer excels in efficiency and speed.
 
@@ -32,7 +32,7 @@ My perspective shifted when I realized that GPTs had their unique way of 'thinki
 
 So, let's dive into the Generative Pre-Trained Transformers, or GPTs, and understand how they work. Underneath the surface, there's a lot to grasp. I can't oversimplify everything, so I'm assuming you have a basic understanding of neural networks. This presupposes, naturally, that you also possess a basic knowledge of linear algebra. Frankly, if you're new to this field, comprehending these topics might be challenging. No, that's an understatement: it's nearly impossible. It's essential to have a foundational knowledge before delving into the complexities of GPTs.
 
-For this article, I assume you have a foundational knowledge of:
+For this sidebar, I assume you have a foundational knowledge of:
 
 - Machine Learning
 - Deep Learning

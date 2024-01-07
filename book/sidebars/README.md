@@ -19,7 +19,7 @@ Information in sidebars is presented in a way that is easy to understand and dig
 
 Informational snippets that could be referenced in multiple places in the book are placed in the `book/sidebars` folder.
 
-Auto-generated list of Sidebars: 2024-01-06 18:11
+Auto-generated list of Sidebars: 2024-01-08 08:27
 
 # Sidebars
 
@@ -68,6 +68,11 @@ Auto-generated list of Sidebars: 2024-01-06 18:11
 ## Precision And Quantization Made Easy
 
 - [Precision And Quantization Made Easy](precision-and-quantization-made-easy/Precision-And-Quantization-Made-Easy.md)
+
+
+## Scalars Vs Vectors
+
+- [Scalars Vs Vectors](scalars-vs-vectors/Scalars-vs-Vectors.md)
 
 
 ## Scientific Notation Made Easy

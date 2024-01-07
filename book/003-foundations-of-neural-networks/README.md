@@ -581,6 +581,8 @@ In summary, this chapter provided a comprehensive overview of the crucial concep
 
 The key takeaway from this chapter is that, indeed, there are no perfect circles in our universe. As Agent Smith aptly put it in the movie 'The Matrix':
 
-"Appearances can be deceiving. Reality is merely a construct; the universe, a mere hologram. In this enigma, only one truth remains unchallenged: You think, therefore you are."
+"Appearances can be deceiving."
+
+Reality is merely a construct; the universe, a mere hologram. In this enigma, only one truth remains unchallenged: You think, therefore you are.
 
 So, truly think. Don't just pretend to. In doing so, even in the age of AI, you will preserve the essence of your humanity. 🧐

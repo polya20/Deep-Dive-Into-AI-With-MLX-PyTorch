@@ -15,3 +15,5 @@ Notes on Pull Requests and Issues
 [Chapter 1 - The Story of A Tensor](001-story-of-a-tensor/README.md)
 
 [Chapter 2 - The Adventure of Tenny, the Tensor: A Hero's Journey](002-adventure-of-tenny-the-tensor)
+
+[Chapter 3 - Foundations of Neural Networks: A Comprehensive Overview](003-foundations-of-neural-networks%2FREADME.md)

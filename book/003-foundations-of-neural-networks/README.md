@@ -577,8 +577,10 @@ Finally, we addressed the challenges of exploding and dying gradients, which can
 
 In summary, this chapter provided a comprehensive overview of the crucial concepts and tools that are instrumental in building, understanding, and training neural networks. With this knowledge, you are now better equipped to delve deeper into the vast and dynamic field of neural networks and machine learning.
 
-The key takeaway from this chapter is, yeah, there's no circle in our universe. As Agent Smith aptly put it in the move 'The Matrix':
+![polymorphism.jpeg](..%2Fsidebars%2Fobject-orientation-made-easy%2Fimages%2Fpolymorphism.jpeg)
 
-Appearance can be deceiving. Reality, merely a construct; the universe, a mere hologram. In this enigma, only one truth remains unchallenged: You think, therefore you are.
+The key takeaway from this chapter is that, indeed, there are no perfect circles in our universe. As Agent Smith aptly put it in the movie 'The Matrix':
 
-So, think, truly think. Don't merely pretend to. In doing so, even in the age of AI, you'll preserve the essence of your humanity🧐
+"Appearances can be deceiving. Reality is merely a construct; the universe, a mere hologram. In this enigma, only one truth remains unchallenged: You think, therefore you are."
+
+So, truly think. Don't just pretend to. In doing so, even in the age of AI, you will preserve the essence of your humanity. 🧐

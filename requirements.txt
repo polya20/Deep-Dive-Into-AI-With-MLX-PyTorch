@@ -8,3 +8,5 @@ jax
 nltk
 transformers
 gensim
+matplotlib
+seaborn

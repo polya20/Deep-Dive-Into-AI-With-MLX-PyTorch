@@ -89,7 +89,71 @@ Normalization, a concept relevant both mathematically and philosophically, invol
 
 [Normalization-Made-Easy.md](..%2Fsidebars%2Fnormalization-made-easy%2FNormalization-Made-Easy.md)
 
+![graphs.png](graphs.png)
+
 In mathematical terminology, a linear equation forms a straight line when graphed (`y = mx + b`), while non-linear equations form curves. These include polynomial equations of various degrees, such as quadratic (`y = x^2 + 2x + 1`), cubic (`y = x^3 + x^2 + 2x + 1`), and quartic equations (`y = x^4 + x^3 + 2x + 1`).
+
+Use this example code to plot the graphs of these equations in Python:
+
+```python
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Data range
+x = np.linspace(-10, 10, 400)
+
+# Linear equation: y = mx + b
+y_linear = 2 * x + 3
+
+# Quadratic equation: y = x^2 + 2x + 1
+y_quadratic = x**2 + 2*x + 1
+
+# Cubic equation: y = x^3 + x^2 + 2x + 1
+y_cubic = x**3 + x**2 + 2*x + 1
+
+# Quartic equation: y = x^4 + x^3 + 2x + 1
+y_quartic = x**4 + x**3 + 2*x + 1
+
+# Plotting
+plt.figure(figsize=(12, 10))
+
+# Linear
+plt.subplot(2, 2, 1)
+sns.lineplot(x=x, y=y_linear)
+plt.title('Linear Equation')
+plt.show()
+
+# Quadratic
+plt.subplot(2, 2, 2)
+sns.lineplot(x=x, y=y_quadratic)
+plt.title('Quadratic Equation')
+plt.show()
+
+# Cubic
+plt.subplot(2, 2, 3)
+sns.lineplot(x=x, y=y_cubic)
+plt.title('Cubic Equation')
+plt.show()
+
+# Quartic
+plt.subplot(2, 2, 4)
+sns.lineplot(x=x, y=y_quartic)
+plt.title('Quartic Equation')
+plt.show()
+```
+
+You need matplotlib and seaborn libraries to run this code. If you don't have them installed, you can use the following commands to install them:
+
+```bash
+pip install matplotlib, seaborn
+```
+
+Or just run this command to install all the required libraries for this book:
+    
+```bash
+pip install -r requirements.txt
+``` 
 
 ## Trial and Triumph: Forward Pass, Backpropagation, Gradient Descent
 

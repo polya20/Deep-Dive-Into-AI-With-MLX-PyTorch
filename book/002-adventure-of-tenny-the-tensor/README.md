@@ -515,6 +515,10 @@ Fine-Tuning LLMs with LoRA examples are found here:
 
 [mlx-examples-lora](..%2F..%2Fmlx-examples%2Flora%2FREADME.md)
 
+A Comprehensive Unofficial Documentation:
+
+[CWK-README.md](..%2F..%2Fmlx-examples%2Flora%2FCWK-README.md)
+
 In Stable Diffusion and similar models, LoRA plays a significant role. For instance, if you have a model adept at creating portraits, applying a LoRA to it can further enhance its capability, specifically tuning it to generate portraits of a particular individual, such as a favorite celebrity. This process is a form of fine-tuning but differs from training a model from scratch. It's more akin to a targeted adaptation, where the model is adjusted to excel in a specific task or with a certain dataset, rather than undergoing a complete retraining. This focused adaptation allows for efficient and effective improvements in the model's performance for specialized applications.
 
 #### Examples of Rank in Matrices

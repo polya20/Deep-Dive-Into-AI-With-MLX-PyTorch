@@ -482,6 +482,10 @@ Ultimately, direction enriches our comprehension of the world, facilitating prec
 
 Again, a one-liner: scalars have magnitude, but no direction; vectors have both magnitude and direction.
 
+The importance of the difference between scalars and vectors is so significant that I've dedicated an entire sidebar to it:
+
+[Scalars-vs-Vectors.md](..%2Fsidebars%2Fscalars-vs-vectors%2FScalars-vs-Vectors.md)
+
 #### Getting A Bit More Technical - Ranks and Axes 
 
 You will often encounter the terms 'rank' and 'axis' in the context of arrays, particularly in machine learning and data science as in LoRA (Low Rank Adaptation). These concepts are closely related to the dimensions of an array, but they're not the same thing. 

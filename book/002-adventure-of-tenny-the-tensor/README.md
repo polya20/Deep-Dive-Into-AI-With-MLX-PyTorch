@@ -484,7 +484,7 @@ Again, a one-liner: scalars have magnitude, but no direction; vectors have both 
 
 #### Getting A Bit More Technical - Ranks and Axes 
 
-You will often encounter the terms 'rank' and 'axis' in the context of arrays, particularly in machine learning and data science as in LoRa (Low Rank Adaptation). These concepts are closely related to the dimensions of an array, but they're not the same thing. 
+You will often encounter the terms 'rank' and 'axis' in the context of arrays, particularly in machine learning and data science as in LoRA (Low Rank Adaptation). These concepts are closely related to the dimensions of an array, but they're not the same thing. 
 
 Let's clarify the difference.
 
@@ -495,27 +495,27 @@ In mathematics, particularly linear algebra, the rank of a matrix is a fundament
 - Interpretation: The rank tells you how much useful information the matrix contains. If a matrix has a high rank, it means that it has a large number of independent vectors, indicating a high level of information or diversity.
 - Applications: In solving systems of linear equations, the rank of the matrix can determine the number of solutions – whether there's a unique solution, no solution, or infinitely many solutions.
 
-#### Low Rank Adaptation (LoRa)
+#### Low Rank Adaptation (LoRA)
 
-Low Rank Adaptation (LoRa) is a technique used to efficiently fine-tune large pre-trained models. In large models, such as those used in natural language processing, training all parameters (which can be in the billions) is computationally expensive and time-consuming.
+Low Rank Adaptation (LoRA) is a technique used to efficiently fine-tune large pre-trained models. In large models, such as those used in natural language processing, training all parameters (which can be in the billions) is computationally expensive and time-consuming.
 
-LoRa works by introducing low-rank matrices into the model's layers. Instead of updating all the parameters of a model during fine-tuning, LoRa modifies only these low-rank matrices. This approach significantly reduces the number of parameters that need to be trained.
+LoRA works by introducing low-rank matrices into the model's layers. Instead of updating all the parameters of a model during fine-tuning, LoRA modifies only these low-rank matrices. This approach significantly reduces the number of parameters that need to be trained.
 
-The key benefit of using LoRa is computational efficiency. By reducing the number of parameters that are actively updated, it allows for quicker adaptation of large models to specific tasks or datasets with a smaller computational footprint.
+The key benefit of using LoRA is computational efficiency. By reducing the number of parameters that are actively updated, it allows for quicker adaptation of large models to specific tasks or datasets with a smaller computational footprint.
 
 The term "low rank" in this context refers to the property of the matrices that are introduced. A low-rank matrix can be thought of as a matrix that has fewer linearly independent rows or columns than the maximum possible. This means the matrix can be represented with fewer numbers, reducing complexity.
 
-LoRa is particularly useful in scenarios where one wants to customize large AI models for specific tasks (like language understanding, translation, etc.) without the need for extensive computational resources typically required for training such large models from scratch.
+LoRA is particularly useful in scenarios where one wants to customize large AI models for specific tasks (like language understanding, translation, etc.) without the need for extensive computational resources typically required for training such large models from scratch.
 
 In this context, the rank of a matrix is still a measure of its linear independence, but the focus is on leveraging matrices with low rank to efficiently adapt and fine-tune complex models. This approach maintains performance while greatly reducing computational requirements.
 
-For instance, theoretically, with an adequate amount of quality data on a specific topic like MLX, you can fine-tune any capable Large Language Models (LLMs) using that data, thereby creating LoRa (Low-Rank Adaptation) weights and biases. This process effectively customizes the LLM to be more aware or knowledgeable about MLX. LoRa's power lies in its ability to adapt and refine a model's capabilities with focused and specialized data, leading to more accurate and contextually aware outputs in areas such as burgeoning fields frameworks like MLX.
+For instance, theoretically, with an adequate amount of quality data on a specific topic like MLX, you can fine-tune any capable Large Language Models (LLMs) using that data, thereby creating LoRA  weights and biases. This process effectively customizes the LLM to be more aware or knowledgeable about MLX. LoRA's power lies in its ability to adapt and refine a model's capabilities with focused and specialized data, leading to more accurate and contextually aware outputs in areas such as burgeoning fields frameworks like MLX.
 
-Fine-Tuning LLMs with LoRa examples are found here:
+Fine-Tuning LLMs with LoRA examples are found here:
 
 [mlx-examples-lora](..%2F..%2Fmlx-examples%2Flora%2FREADME.md)
 
-In Stable Diffusion and similar models, LoRa plays a significant role. For instance, if you have a model adept at creating portraits, applying a LoRa to it can further enhance its capability, specifically tuning it to generate portraits of a particular individual, such as a favorite celebrity. This process is a form of fine-tuning but differs from training a model from scratch. It's more akin to a targeted adaptation, where the model is adjusted to excel in a specific task or with a certain dataset, rather than undergoing a complete retraining. This focused adaptation allows for efficient and effective improvements in the model's performance for specialized applications.
+In Stable Diffusion and similar models, LoRA plays a significant role. For instance, if you have a model adept at creating portraits, applying a LoRA to it can further enhance its capability, specifically tuning it to generate portraits of a particular individual, such as a favorite celebrity. This process is a form of fine-tuning but differs from training a model from scratch. It's more akin to a targeted adaptation, where the model is adjusted to excel in a specific task or with a certain dataset, rather than undergoing a complete retraining. This focused adaptation allows for efficient and effective improvements in the model's performance for specialized applications.
 
 #### Examples of Rank in Matrices
 

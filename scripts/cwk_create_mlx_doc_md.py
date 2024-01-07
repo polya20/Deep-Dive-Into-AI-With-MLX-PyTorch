@@ -13,7 +13,8 @@ from nltk.stem import WordNetLemmatizer
 SEQ_LIMIT = 2048 * 2  # Limit the sequence length for docstrings
 PACKAGE_NAMES = ['mlx', ]  # List of packages to extract docstrings from
 DATA_FOLDER = 'output'  # Folder name where the data will be stored
-OUTPUT_FILE = 'mlx-doc.md'  # Name of the output file
+OUTPUT_FILE_FULL = 'mlx-doc.md'  # Name of the output file
+OUTPUT_FILE_SIGNATURE_ONLY = 'mlx-doc-signatures.md'  # Name of the output file
 BATCH_SIZE = 1000  # The number of docstrings written to file in one go
 PREPROCESS = False  # Whether to preprocess the docstrings or not
 
@@ -117,7 +118,7 @@ if __name__ == "__main__":
     # Create a data folder if it doesn't exist
     os.makedirs(DATA_FOLDER, exist_ok=True)
 
-    filepath = os.path.join(DATA_FOLDER, OUTPUT_FILE)
+    filepath = os.path.join(DATA_FOLDER, OUTPUT_FILE_FULL)
     with open(filepath, 'w') as file:
         for i in range(0, len(docstrings_list), BATCH_SIZE):
             batch = docstrings_list[i:i+BATCH_SIZE]
@@ -137,3 +138,27 @@ if __name__ == "__main__":
                 file.write(entry)
     # Output the number of entries
     print(f"{len(docstrings_list)} entries processed.")
+
+    filepath = os.path.join(DATA_FOLDER, OUTPUT_FILE_SIGNATURE_ONLY)
+    with open(filepath, 'w') as file:
+        for i in range(0, len(docstrings_list), BATCH_SIZE):
+            batch = docstrings_list[i:i+BATCH_SIZE]
+            # Write each docstring to Markdown file
+            for name, doc in batch:
+                if not any(name.startswith(package_name) for package_name in PACKAGE_NAMES):
+                    continue
+                try:
+                    # Extract the module and function from the name
+                    module_name, function_name = name.rsplit('.', 1)
+                    # Import the module
+                    module = importlib.import_module(module_name)
+                    # Get the function
+                    function = getattr(module, function_name)
+                    # Get the signature of the function
+                    signature = str(inspect.signature(function))
+                except (ImportError, AttributeError, ValueError):
+                    # If the function cannot be imported or doesn't have a signature, skip it
+                    continue
+                entry = f"{name}{signature}\n"
+                print(entry)
+                file.write(entry)

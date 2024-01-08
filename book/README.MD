@@ -17,3 +17,5 @@ Notes on Pull Requests and Issues
 [Chapter 2 - The Adventure of Tenny, the Tensor: A Hero's Journey](002-adventure-of-tenny-the-tensor)
 
 [Chapter 3 - Foundations of Neural Networks: A Comprehensive Overview](003-foundations-of-neural-networks%2FREADME.md)
+
+[Chapter 4 - The Rise of Tenny, the Analyst: Tenny Takes on Wall Street](004-neural-networks-in-action-tenny-the-analyst%2FREADME.md)

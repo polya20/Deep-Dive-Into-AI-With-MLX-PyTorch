@@ -10,3 +10,6 @@ transformers
 gensim
 matplotlib
 seaborn
+pandas
+yfinance
+scipy

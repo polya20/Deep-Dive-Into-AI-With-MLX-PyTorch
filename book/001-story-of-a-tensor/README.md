@@ -312,7 +312,7 @@ class NeuralNet(nn.Module):
 
     def __call__(self, x):
         for i, l in enumerate(self.layers):
-            # Apply ReLU to all but the last layer
+            # Apply ReLU to the first layer only
             x = mx.maximum(x, 0) if i > 0 else x
             x = l(x)
         return x

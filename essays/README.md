@@ -19,7 +19,7 @@ Information in sidebars is presented in a way that is easy to understand and dig
 
 Informational snippets that could be referenced in multiple places in the book are placed in the `book/sidebars` folder.
 
-Auto-generated list of CWK Essays: 2024-01-06 14:28
+Auto-generated list of CWK Essays: 2024-01-09 19:48
 
 # CWK Essays
 
@@ -47,6 +47,11 @@ Auto-generated list of CWK Essays: 2024-01-06 14:28
 - [The History Of Human Folly](AI/The-History-of-Human-Folly.md)
 - [The Origin And Future Of Creativity Humans With Ais](AI/The-Origin-and-Future-of-Creativity-Humans-with-AIs.md)
 - [Weights Are All You Need Human Vs Ai](AI/Weights-Are-All-You-Need-Human-vs-AI.md)
+
+
+## Computing
+
+- [I Have Good Wheels Sticking To What Works](computing/I-Have-Good-Wheels-Sticking-To-What-Works.md)
 
 
 ## Investing

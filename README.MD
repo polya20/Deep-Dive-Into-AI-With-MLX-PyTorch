@@ -6,6 +6,8 @@ This is an ongoing project that will be constantly updated.
 
 ## Important Update on 'Deep Dive Into AI with MLX & PyTorch' Documentation
 
+![PyTorch.png](images%2FPyTorch.png)
+
 I am putting a hold on documenting Apple MLX in my current project for the time being. The project, however, will still be actively updated in this repository, with a primary emphasis on PyTorch. Once the MLX framework stabilizes, I plan to enhance the book with pertinent MLX material.
 
 For more details:

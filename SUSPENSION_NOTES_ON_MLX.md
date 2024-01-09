@@ -1,6 +1,6 @@
 # Important Update on 'Deep Dive Into AI with MLX & PyTorch' Documentation
 
-![wheels.png](essays%2Fcomputing%2Fwheels.png)
+![PyTorch.png](images%2FPyTorch.png)
 
 https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch
 

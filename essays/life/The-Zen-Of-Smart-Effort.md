@@ -1,5 +1,8 @@
 # The Zen of Smart Effort - There's more than one way to skin a cat?
 ![zen-of-smart-effort.png](zen-of-smart-effort.png)
+
+Audio version: https://youtu.be/LdiUdQKbWcI
+
 So you've heard the saying about the multiple cat-skinning methods? Well, sure, there's diversity in approaches, but let's zero in on the champion of them all. 
 
 And by the way, no felines are at risk here; we're talking metaphorically, okay?

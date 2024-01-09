@@ -328,6 +328,9 @@ input_data = mx.random.normal((1,10))
 output = model(input_data)
 print(output)
 ```
+Note that `mx.maximum(x, 0) if i > 0 else x` essentially performs the `ReLU` operation. You can call `mlx.nn.ReLU(x)`, but its implementation is so simple that many coders just write it out directly.
+
+Follow the `x` to visualize the layers it passes through.
 
 The essence of 'learning a framework,' any package, or even a new programming language is essentially about broadening your existing knowledge base and adapting it to the new context. The more tools and skills you accumulate in your repertoire, the greater your capacity to accomplish varied tasks. This concept exemplifies the power of object orientation in life. By embracing this mindset, you enhance your ability to approach problems with a diverse set of solutions, adapting and applying your knowledge flexibly across different domains. This principle of object orientation in programming mirrors a practical and versatile approach to life, where continuous learning and adaptation are key.
 

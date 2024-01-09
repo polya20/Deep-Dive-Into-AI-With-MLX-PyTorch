@@ -90,7 +90,7 @@ So, why sweat the small stuff? There's no need. Instead, take a step back and gr
 
 Kicking off with object-orientation is more than a solid start.
 
-[Object-Orientation-Made-Easy.md](..%2Fobject-orientation-made-easy%2FObject-Orientation-Made-Easy.md)
+[Object-Orientation-Made-Easy.md](..%2F..%2Fbook%2Fsidebars%2Fobject-orientation-made-easy%2FObject-Orientation-Made-Easy.md)
 
 Yet, that's just scratching the surface. Each piece of knowledge is ready to be expanded and traded like collectible cards. Regularly press pause to consider how these insights piece together in the big picture of your life.
 

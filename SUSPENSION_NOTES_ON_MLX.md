@@ -10,7 +10,7 @@ As the MLX framework is in a state of rapid evolution, it seems wise to monitor 
 
 Initially, I anticipated a seamless transition from PyTorch to MLX. However, this process is turning out to be more intricate than expected. My focus will now be on documenting PyTorch while incorporating MLX examples as feasible.
 
-Given the swift pace and of changes in MLX, I am reluctant to delve deeply into it for my book at present. The risk of the content becoming outdated almost immediately is too high, and I want to avoid the quick obsolescence of significant portions of my work: a sea of deprecation warnings are not what I want to see in my book.
+Given the swift pace of changes in MLX, I am reluctant to delve deeply into it for my book at present. The risk of the content becoming outdated almost immediately is too high, and I want to avoid the quick obsolescence of significant portions of my work: a sea of deprecation warnings are not what I want to see in my book.
 
 Additionally, I'm uncertain about the framework's best practices due to the limited resources available for verification, unlike with other more established frameworks. I aim to avoid presenting my readers with potentially conflicting information. I hate wasting time myself, and I don't want to waste yours. Better no teaching at all than a bad one, right?
 

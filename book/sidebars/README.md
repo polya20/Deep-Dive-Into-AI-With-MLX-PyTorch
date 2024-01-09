@@ -19,7 +19,7 @@ Information in sidebars is presented in a way that is easy to understand and dig
 
 Informational snippets that could be referenced in multiple places in the book are placed in the `book/sidebars` folder.
 
-Auto-generated list of Sidebars: 2024-01-08 08:27
+Auto-generated list of Sidebars: 2024-01-09 23:04
 
 # Sidebars
 
@@ -83,4 +83,9 @@ Auto-generated list of Sidebars: 2024-01-08 08:27
 ## Vectorized Computation
 
 - [Vectorized Computation](vectorized-computation/Vectorized_Computation.md)
+
+
+## Zen Of Smart Effort
+
+- [The Zen Of Smart Effort](zen-of-smart-effort/The-Zen-Of-Smart-Effort.md)
 

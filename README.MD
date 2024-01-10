@@ -100,8 +100,10 @@ Therefore, I kindly ask for your patience and to hold off on reading these secti
 📒 PyTorch Documentation: https://pytorch.org/docs/stable/index.html
 
 📂 Resources folder contains pointers to useful resources
+[resources](resources)
 
 📂 Essays folder contains my essays on AI and other topics
+[essays](essays)
 
 ## Notes on Contributions 
 

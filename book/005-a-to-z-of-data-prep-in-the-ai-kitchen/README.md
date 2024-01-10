@@ -1,4 +1,4 @@
-# Crafting and Nurturing Data - The A to Z of Data Prep in the AI Kitchen
+# Chapter 5 - Crafting and Nurturing Data: The A to Z of Data Prep in the AI Kitchen
 
 The last chapter was quite the eye-opener, wasn't it? We got our hands dirty with data, teaching Tenny how to guess those quarterly stock prices for tech companies. It was a real "aha!" moment to see how the model's smarts totally depend on the data quality. And now, in this chapter, we're taking another deep dive into the world of data because, let's face it, it's too important not to double-tap.
 

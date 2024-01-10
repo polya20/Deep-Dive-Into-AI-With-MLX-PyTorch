@@ -1,4 +1,4 @@
-✏️If you want to provide feedback, please submit an issue instead of a pull request. I won't be able to merge your requests. Thank you for your understanding.
+e your requests. Thank you for your understanding.
 
 Notes on Contributions
 ----------------------
@@ -19,3 +19,5 @@ Notes on Pull Requests and Issues
 [Chapter 3 - Foundations of Neural Networks: A Comprehensive Overview](003-foundations-of-neural-networks%2FREADME.md)
 
 [Chapter 4 - The Rise of Tenny, the Analyst: Tenny Takes on Wall Street](004-neural-networks-in-action-tenny-the-analyst%2FREADME.md)
+
+[Chapter 5 - Crafting and Nurturing Data: The A to Z of Data Prep in the AI Kitchen](005-a-to-z-of-data-prep-in-the-ai-kitchen%2FREADME.md)

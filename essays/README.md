@@ -19,7 +19,7 @@ Information in sidebars is presented in a way that is easy to understand and dig
 
 Informational snippets that could be referenced in multiple places in the book are placed in the `book/sidebars` folder.
 
-Auto-generated list of CWK Essays: 2024-01-09 23:05
+Auto-generated list of CWK Essays: 2024-01-10 17:54
 
 # CWK Essays
 
@@ -58,6 +58,7 @@ Auto-generated list of CWK Essays: 2024-01-09 23:05
 
 - [Me Vs Them A Simple But Seemingly Impossible Investing Tip](investing/Me-vs-Them-A-Simple-but-Seemingly-Impossible-Investing-Tip.md)
 - [Natural Selection In The Stock Market](investing/Natural-Selection-in-the-Stock-Market.md)
+- [To Korean Followers](investing/To-Korean-Followers.md)
 - [Unraveling The Myth Of 100 Percent Confidence](investing/Unraveling-the-Myth-of-100-Percent-Confidence.md)
 - [Unseen Risks When Genius Fails](investing/Unseen-Risks-When-Genius-Fails.md)
 

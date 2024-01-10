@@ -117,8 +117,11 @@ A compromised Tenny would only generate trashy outputs, anyway. So, what's the p
 Make sure to familiarize yourself with anything that's involved, particularly in a risky environment like the stock market. It really is a jungle out there. You need to be well-prepared:
 
 [Natural-Selection-in-the-Stock-Market.md](..%2F..%2Fessays%2Finvesting%2FNatural-Selection-in-the-Stock-Market.md)
+
 [Unraveling-the-Myth-of-100-Percent-Confidence.md](..%2F..%2Fessays%2Finvesting%2FUnraveling-the-Myth-of-100-Percent-Confidence.md)
+
 [Unseen-Risks-When-Genius-Fails.md](..%2F..%2Fessays%2Finvesting%2FUnseen-Risks-When-Genius-Fails.md)
+
 [Me-vs-Them-A-Simple-but-Seemingly-Impossible-Investing-Tip.md](..%2F..%2Fessays%2Finvesting%2FMe-vs-Them-A-Simple-but-Seemingly-Impossible-Investing-Tip.md)
 
 However, as I mentioned earlier, if you're asking for my advice, I'd recommend steering clear of the market altogether. Just walk away. 

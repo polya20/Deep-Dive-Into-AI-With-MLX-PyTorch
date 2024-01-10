@@ -19,7 +19,7 @@ Information in sidebars is presented in a way that is easy to understand and dig
 
 Informational snippets that could be referenced in multiple places in the book are placed in the `book/sidebars` folder.
 
-Auto-generated list of CWK Essays: 2024-01-10 17:54
+Auto-generated list of CWK Essays: 2024-01-10 22:03
 
 # CWK Essays
 
@@ -65,6 +65,7 @@ Auto-generated list of CWK Essays: 2024-01-10 17:54
 
 ## Life
 
+- [Softmax Of Life](life/Softmax-of-Life.md)
 - [The Unscripted Mind The Power Of Spoken Thought](life/The-Unscripted-Mind-The-Power-of-Spoken-Thought.md)
 - [The Zen Of Smart Effort](life/The-Zen-Of-Smart-Effort.md)
 

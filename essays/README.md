@@ -9,7 +9,7 @@ Notes on Pull Requests and Issues
 ---------------------------------
 [NOTES_ON_PULL_REQUESTS_AND_ISSUES.md](../NOTES_ON_PULL_REQUESTS_AND_ISSUES.md)
 
-Auto-generated list of CWK Essays: 2024-01-10 22:32
+Auto-generated list of CWK Essays: 2024-01-11 10:02
 
 # CWK Essays
 
@@ -31,6 +31,7 @@ Auto-generated list of CWK Essays: 2024-01-10 22:32
 - [Just Dont Do It A Plea To Preserve Humanitys Future](AI/Just-Dont-Do-It-A-Plea-to-Preserve-Humanitys-Future.md)
 - [Mathematics The Universal Language And The Heart Of Ai](AI/Mathematics-The-Universal-Language-and-the-Heart-of-AI.md)
 - [No You Are Not Using Your Brain](AI/No-You-Are-Not-Using-Your-Brain.md)
+- [Open Letter To Apple And Mlx Team](AI/Open-Letter-To-Apple-And-MLX-Team.md)
 - [Practical Tips From A Lifelong Programmer](AI/Practical-Tips-From-A-Lifelong-Programmer.md)
 - [The Dangers Of Rewarding Faulty Models](AI/The-Dangers-of-Rewarding-Faulty-Models.md)
 - [The Game Of Ai Thrones](AI/The-Game-of-AI-Thrones.md)

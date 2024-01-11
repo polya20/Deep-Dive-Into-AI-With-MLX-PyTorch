@@ -1002,7 +1002,7 @@ But before we start training Tenny, it's wise to scrutinize the data minutely. A
 
 We'll tackle that in our next encounter.
 
-## In Summary - Prepping the Data with Dataset and DataLoader
+## Refactor Code, Refactor Life
 
 In this chapter, we've tackled the key role that a well-prepared dataset plays. We've also learned how tools like `Dataset` and `DataLoader` in PyTorch can simplify our workflow.
 

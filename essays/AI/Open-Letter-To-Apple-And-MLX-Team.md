@@ -1,6 +1,8 @@
 # Open Letter to Apple and MLX Team
 
-❗️Please note: This letter is a response to Awni Hannun's (https://twitter.com/awnihannun) request for feedback on the MLX project. I've chosen to share my thoughts publicly in the hope that this feedback is taken in the spirit of constructive discussion.
+❗️Please note: This letter is a response to the request for feedback on the MLX project. I've chosen to share my thoughts publicly in the hope that this feedback is taken in the spirit of constructive discussion.
+
+https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/blob/master/essays/AI/Open-Letter-To-Apple-And-MLX-Team.md
 
 I'll share my take without beating around the bush.
 

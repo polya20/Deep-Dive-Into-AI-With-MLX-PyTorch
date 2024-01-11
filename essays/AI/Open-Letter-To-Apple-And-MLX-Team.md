@@ -40,7 +40,7 @@ I recognize your hard work and value that MLX is an emerging framework. Yet, mos
 
 Even mid-sized open-source projects usually have sufficient documentation. Why? Because they eagerly want to attract users. They want to grow. They want to be recognized. But Tenny wouldn't sense that eagerness from MLX.
 
-For example, I effortlessly got my LLM projects up and running using LangChain documentation. LangChain should be a really small endeaver compared to `Apple MLX`. Yet, the documentation is richer and clearer. We should rightfully expect more from Apple, right? "YOU ARE APPLE."
+For example, I effortlessly got my LLM projects up and running using LangChain documentation without posing a single question to the developers or the community. LangChain should be a really small endeaver compared to `Apple MLX`. Yet, the documentation is richer and clearer. We should rightfully expect more from Apple, right? "YOU ARE APPLE."
 
 In some MLX examples, it seems that even Apple developers themselves are a bit uncertain about MLX best practices. Awni directed me to the mlx-data repo when I asked him about MLX way of handling data. So why include the Dataset wrapper and batchyfier function in the LoRA example then? This leads to the assumption that we could handle it like PyTorch. Just extend the Dataset class, initiate a DataLoader, and that’s it. Yet, there's this entirely new 'mlx-data', and you expect us to decipher everything on our own? How would Tenny react? Would he initially realize that he should explore 'mlx-data' with little to no documentation and support from Apple? "YOU ARE APPLE."
 

@@ -28,8 +28,7 @@ while True:
     # This will continuously create instances of FlawedClass3
 ```
 
-Look at all those compounded knowledge nuggets! They're all flawed, and they're all inheriting f
-laws! It's like a family of flawed classes. And it's all because of that one mistake you made at the start.
+Look at all those compounded knowledge nuggets! They're all flawed, and they're all inheriting flaws! It's like a family of flawed classes. And it's all because of that one mistake you made at the start.
 
 Eventually, you gotta go way back to the start to fix everything. It's a total time-waster. That's why I'm not into rushing through learning stuff.
 

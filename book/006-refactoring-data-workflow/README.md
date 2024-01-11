@@ -1,4 +1,4 @@
-# Chapter 6 - Refactoring Data Workflow for Tenny Part I
+# Chapter 6 - Refactoring Data Workflow for Tenny
 
 ![tenny.png](tenny.png)
 

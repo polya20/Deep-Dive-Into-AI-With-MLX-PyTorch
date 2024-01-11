@@ -60,8 +60,7 @@ A persistent question in my mind is, "How many of you at Apple are actually dedi
 
 Why is your team stretched so thin? Shouldn't Apple be expanding its workforce to focus on MLX? Given the importance of AI, isn't it crucial for Apple to demonstrate a stronger commitment to it?
 
-Tenny wouldn't sense that commitment in all this. Honestly, I don't either. At least not yet. Please convince me otherwise. If convinces, I might even reconsider rebalancing my AI portfolio in the US market. Seriously.
-
+Tenny wouldn't sense that commitment in all this. Honestly, I don't either, at least not yet. Please convince me otherwise. If convinced, I might even reconsider rebalancing my AI portfolio in the US market. Seriously.
 For more on my honest take on MLX, check out this essay:
 
 "I Have Good Wheels, You Know: Sticking to What Works"

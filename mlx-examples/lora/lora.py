@@ -251,7 +251,7 @@ def train(model, train_set, val_set, optimizer, loss, tokenizer, args):
     start = time.perf_counter()
     for it, batch in zip(
         range(args.iters),
-        iterate_batches(train_set, tokenizer, args.batch_size, train=True),
+        iterate_batches(train_set, tokenizer, args.BATCH_SIZE, train=True),
     ):
         # Forward and backward pass
         (lvalue, toks), grad = loss_value_and_grad(model, *batch)
@@ -282,7 +282,7 @@ def train(model, train_set, val_set, optimizer, loss, tokenizer, args):
         if it == 0 or (it + 1) % args.steps_per_eval == 0:
             stop = time.perf_counter()
             val_loss = evaluate(
-                model, val_set, loss, tokenizer, args.batch_size, args.val_batches
+                model, val_set, loss, tokenizer, args.BATCH_SIZE, args.val_batches
             )
             print(
                 f"Iter {it + 1}: "

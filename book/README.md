@@ -21,3 +21,5 @@ Notes on Pull Requests and Issues
 [Chapter 4 - The Rise of Tenny, the Analyst: Tenny Takes on Wall Street](004-neural-networks-in-action-tenny-the-analyst%2FREADME.md)
 
 [Chapter 5 - Crafting and Nurturing Data: The A to Z of Data Prep in the AI Kitchen](005-a-to-z-of-data-prep-in-the-ai-kitchen%2FREADME.md)
+
+[Chapter 6 - Refactoring Data Workflow for Tenny](006-refactoring-data-workflow%2FREADME.md)

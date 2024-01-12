@@ -9,7 +9,7 @@ Notes on Pull Requests and Issues
 ---------------------------------
 [NOTES_ON_PULL_REQUESTS_AND_ISSUES.md](../NOTES_ON_PULL_REQUESTS_AND_ISSUES.md)
 
-Auto-generated list of CWK Essays: 2024-01-12 14:53
+Auto-generated list of CWK Essays: 2024-01-12 20:52
 
 # CWK Essays
 
@@ -27,6 +27,7 @@ Auto-generated list of CWK Essays: 2024-01-12 14:53
 - [Differentiation 101 For Ai](AI/Differentiation-101-for-AI.md)
 - [Envisioning The Future Of Ai Tools](AI/Envisioning-The-Future-of-AI-Tools.md)
 - [Global Citizenship In Ai Age](AI/Global-Citizenship-in-AI-Age.md)
+- [Gpt Vs Gpt Hell Of Confusion](AI/GPT-vs-GPT-Hell-Of-Confusion.md)
 - [Honestly Who Would You Trust More Ais Or Humans](AI/Honestly-Who-Would-You-Trust-More-AIs-or-Humans.md)
 - [Just Dont Do It A Plea To Preserve Humanitys Future](AI/Just-Dont-Do-It-A-Plea-to-Preserve-Humanitys-Future.md)
 - [Mathematics The Universal Language And The Heart Of Ai](AI/Mathematics-The-Universal-Language-and-the-Heart-of-AI.md)

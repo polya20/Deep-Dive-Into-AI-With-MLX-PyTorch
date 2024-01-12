@@ -4,6 +4,8 @@ import whisper
 import streamlit as st
 import requests
 
+
+
 TEMP_FOLDER = "./temp"
 IMAGE_FOLDER = "./images"
 MODEL_FOLDER = "./models"

@@ -16,3 +16,4 @@ PyObjC
 pyaudio
 playsound
 chardet
+langchain

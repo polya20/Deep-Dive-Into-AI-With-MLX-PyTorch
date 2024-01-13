@@ -1,5 +1,8 @@
 # The Normal Distribution: Using the Bell Curve as a Life Hack
 ![crystal-ball-bell-curve.png](images%2Fcrystal-ball-bell-curve.png)
+
+Audio version: https://youtu.be/yFbaWM5yIE0
+
 Let's address a few probing questions:
 
 - Where do you stand in the normal distribution of 'stock investors who truly earn significant returns'?

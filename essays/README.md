@@ -9,7 +9,7 @@ Notes on Pull Requests and Issues
 ---------------------------------
 [NOTES_ON_PULL_REQUESTS_AND_ISSUES.md](../NOTES_ON_PULL_REQUESTS_AND_ISSUES.md)
 
-Auto-generated list of CWK Essays: 2024-01-12 20:52
+Auto-generated list of CWK Essays: 2024-01-13 13:29
 
 # CWK Essays
 
@@ -58,6 +58,7 @@ Auto-generated list of CWK Essays: 2024-01-12 20:52
 
 ## Life
 
+- [Normal Distribution As A Life Hack](life/Normal-Distribution-As-A-Life-Hack.md)
 - [Softmax Of Life](life/Softmax-of-Life.md)
 - [The Perils Of Rushed Learning](life/The-Perils-of-Rushed-Learning.md)
 - [The Unscripted Mind The Power Of Spoken Thought](life/The-Unscripted-Mind-The-Power-of-Spoken-Thought.md)

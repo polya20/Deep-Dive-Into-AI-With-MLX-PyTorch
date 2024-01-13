@@ -1,4 +1,4 @@
-# Inspecting Data Workflow for Tenny
+# Chapter 7 - Inspecting Data Workflow for Tenny
 
 ![chefs.png](images%2Fchefs.png)
 

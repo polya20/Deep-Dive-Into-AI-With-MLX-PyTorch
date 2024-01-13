@@ -1,6 +1,7 @@
 # Inspecting Data Workflow for Tenny
 
-![chefs.png](..%2F004-neural-networks-in-action-tenny-the-analyst%2Fimages%2Fchefs.png)
+![chefs.png](images%2Fchefs.png)
+
 We previously skimmed over the process of data analysis in Chapter 5, covering the complete spectrum of data preparation in the artificial intelligence kitchen. Now, let's delve deeper into the data workflow for Tenny, the Analyst.
 
 Before presenting data to Tenny, you must first assume the role of an analyst. As emphasized earlier, it's crucial to be knowledgeable in order to effectively assign tasks to Tenny. Remember, you are the lead chef in the AI kitchen. It would be quite awkward if you were clueless about the tasks Tenny, your assistant chef, is handling, wouldn't it?

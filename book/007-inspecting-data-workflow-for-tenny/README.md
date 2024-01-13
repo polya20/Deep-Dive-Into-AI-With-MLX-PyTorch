@@ -486,6 +486,7 @@ The `plt.close()` function is used to close a Matplotlib figure window, which ca
 This code sets the first column as the index and then transposes the DataFrame so that the fiscal quarters become the index and the financial metrics, including `Normalized Price`, become the column headers. You can then plot the histogram for the `Normalized Price` as you would with any other DataFrame column.
 
 The code produces the following histogram:
+
 ![normalized_price_histogram.png](images%2Fnormalized_price_histogram.png)
 
 Something seems amiss. However, before we address that, let's redo this using `Seaborn`. I simply utilized Matplotlib initially to demonstrate how to accomplish it without relying on any sophisticated libraries. We will be using Seaborn for the rest of the chapter.

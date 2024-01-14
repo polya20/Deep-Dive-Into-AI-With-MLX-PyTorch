@@ -28,4 +28,4 @@ Notes on Pull Requests and Issues
 
 [Chapter 7 - Inspecting Data Workflow for Tenny](007-inspecting-data-workflow-for-tenny%2FREADME.md)
 
-[Chapter 8 - Refining the Recipe in the AI Kitchen](008-refining-the-recipe-in-the-ai-kitchen/FREADME.md)
+[Chapter 8 - Refining the Recipe in the AI Kitchen](008-refining-the-recipe-in-the-ai-kitchen/README.md)

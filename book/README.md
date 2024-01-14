@@ -10,6 +10,8 @@ Notes on Pull Requests and Issues
 
 # Dive into AI with MLX and PyTorch - The Book
 
+## Part I
+
 [Prolog - Hello AI World](000-hello-ai-world/README.md)
 
 [Chapter 1 - The Story of A Tensor](001-story-of-a-tensor/README.md)
@@ -25,3 +27,5 @@ Notes on Pull Requests and Issues
 [Chapter 6 - Refactoring Data Workflow for Tenny](006-refactoring-data-workflow%2FREADME.md)
 
 [Chapter 7 - Inspecting Data Workflow for Tenny](007-inspecting-data-workflow-for-tenny%2FREADME.md)
+
+[Chapter 8 - Refining the Recipe in the AI Kitchen](008-refining-the-recipe-in-the-ai-kitchen-wip%2FREADME.md)

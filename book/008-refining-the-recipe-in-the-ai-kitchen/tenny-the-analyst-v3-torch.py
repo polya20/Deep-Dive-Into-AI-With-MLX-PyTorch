@@ -4,6 +4,8 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.utils.data import DataLoader, TensorDataset
+from torch.nn import AlphaDropout
+from torch.optim.lr_scheduler import ReduceLROnPlateau
 from sklearn.preprocessing import StandardScaler
 
 # Define paths and hyperparameters for the ML process
@@ -18,6 +20,9 @@ OUTPUT_SIZE = 1                          # Number of units in the output layer (
 LEARNING_RATE = 0.0001                   # Step size at each iteration while moving toward a minimum of the loss function.
 TRAIN_RATIO = 0.7                        # Proportion of dataset to include in the training split.
 VAL_RATIO = 0.2                          # Proportion of dataset to include in the validation split.
+
+L1_LAMBDA = 0.001
+L2_LAMBDA = 0.001
 
 # Determine the processing device based on availability
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -171,7 +176,8 @@ class Tenny(nn.Module):
         self.fc3 = nn.Linear(hidden_size, hidden_size)
         self.fc4 = nn.Linear(hidden_size, hidden_size)
         self.fc5 = nn.Linear(hidden_size, output_size)
-        self.dropout = nn.Dropout(0.5)  # To prevent overfitting
+        # self.dropout = nn.Dropout(0.5)  # To prevent overfitting
+        self.dropout = AlphaDropout(0.5)  # Replace standard Dropout with AlphaDropout
 
     # Define the forward pass through the network
     def forward(self, x):
@@ -199,6 +205,7 @@ def train(model, train_dataset, val_dataset, criterion, optimizer):
     # Early stopping with patience
     patience = 10
     no_improve = 0
+    scheduler = ReduceLROnPlateau(optimizer, mode='min', factor=0.1, patience=5, verbose=True)
 
     # Train the neural network
     for epoch in range(NUM_EPOCHS):
@@ -208,6 +215,18 @@ def train(model, train_dataset, val_dataset, criterion, optimizer):
             inputs, labels = inputs.to(DEVICE), labels.to(DEVICE)  # Transfer data to the device
             outputs = model(inputs)  # Forward pass: compute predicted outputs by passing inputs to the model
             loss = criterion(outputs, labels)  # Calculate loss
+
+            # L1 Regularization
+            l1_reg = torch.tensor(0.).to(DEVICE)
+            for param in model.parameters():
+                l1_reg += torch.norm(param, 1)
+            loss += L1_LAMBDA * l1_reg
+
+            # L2 Regularization
+            l2_reg = torch.tensor(0.).to(DEVICE)
+            for param in model.parameters():
+                l2_reg += torch.norm(param, 2)
+            loss += L2_LAMBDA * l2_reg
 
             # Check for NaN in loss value to prevent invalid computations
             if torch.isnan(loss):
@@ -244,6 +263,8 @@ def train(model, train_dataset, val_dataset, criterion, optimizer):
             if no_improve == patience:
                 print("No improvement in validation loss for {} epochs, stopping training.".format(patience))
                 break
+        # Step the scheduler
+        scheduler.step(val_loss)
         model.train()  # Set the model back to training mode for the next epoch
 
 
@@ -286,6 +307,8 @@ if __name__ == '__main__':
     model = Tenny(input_size=input_size, hidden_size=HIDDEN_SIZE, output_size=OUTPUT_SIZE)
     criterion = nn.MSELoss()  # Use Mean Squared Error Loss as the loss function for regression tasks
     optimizer = torch.optim.Adam(model.parameters(), lr=LEARNING_RATE)  # Use Adam optimizer as the optimization algorithm
+    # Initialize the scheduler
+    scheduler = ReduceLROnPlateau(optimizer, mode='min', factor=0.1, patience=5, verbose=True)
     train(model, train_dataset, val_dataset, criterion, optimizer)
     test(model, test_dataset, criterion)
     predict(model)

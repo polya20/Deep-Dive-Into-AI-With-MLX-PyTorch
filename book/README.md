@@ -16,6 +16,8 @@ Notes on Pull Requests and Issues
 
 In Part I of the book, we journey through the foundational elements of Artificial Intelligence, demystifying its core principles and exploring its diverse applications. Through the creation and refinement of Tenny, a sophisticated AI model for stock price prediction, we delve into practical AI methodologies, focusing on data handling, algorithmic intricacies, and machine learning techniques. This section serves as both an introduction to the AI landscape and a hands-on guide, providing readers with a comprehensive understanding of AI basics and its transformative impact in the financial sector.
 
+Tenny, the Analyst, is being used for a typical regression task. In regression models, the goal is to predict a continuous output variable based on one or more input features. In the case of Tenny, the objective is to predict the 'Normalized Price', a continuous variable, based on various financial indicators over different fiscal quarters. This is a quintessential example of a regression problem in machine learning, where you're not just classifying data into categories but predicting actual numeric values.
+
 [Prolog - Hello AI World](000-hello-ai-world/README.md)
 
 [Chapter 1 - The Story of A Tensor](001-story-of-a-tensor/README.md)

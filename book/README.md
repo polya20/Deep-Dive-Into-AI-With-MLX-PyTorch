@@ -12,6 +12,10 @@ Notes on Pull Requests and Issues
 
 ## Part I
 
+![ai-kitchen.png](images%2Fai-kitchen.png)
+
+In Part I of the book, we journey through the foundational elements of Artificial Intelligence, demystifying its core principles and exploring its diverse applications. Through the creation and refinement of Tenny, a sophisticated AI model for stock price prediction, we delve into practical AI methodologies, focusing on data handling, algorithmic intricacies, and machine learning techniques. This section serves as both an introduction to the AI landscape and a hands-on guide, providing readers with a comprehensive understanding of AI basics and its transformative impact in the financial sector.
+
 [Prolog - Hello AI World](000-hello-ai-world/README.md)
 
 [Chapter 1 - The Story of A Tensor](001-story-of-a-tensor/README.md)

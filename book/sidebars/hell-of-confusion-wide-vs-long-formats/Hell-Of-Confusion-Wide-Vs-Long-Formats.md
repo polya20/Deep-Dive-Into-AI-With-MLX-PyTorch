@@ -155,20 +155,20 @@ print(df_transposed.head())
 ## Long Format, aka 'Tall' Format
 
 ```text
-#                      Fiscal Quarters Indicators        Values
-# 0                   Normalized Price  2Q FY2018  4.264000e+01
-# 1       Price / Earnings - P/E (LTM)  2Q FY2018  1.640000e+01
-# 2                    Net EPS - Basic  2Q FY2018  2.600000e+00
-# 3                 Return On Equity %  2Q FY2018  4.086000e-01
-# 4           Total Revenues / CAGR 5Y  2Q FY2018  7.910000e-02
-# ..                               ...        ...           ...
-# 225             Net Income / CAGR 5Y  4Q FY2023  1.026000e-01
-# 226  Normalized Net Income / CAGR 5Y  4Q FY2023  9.300000e-02
-# 227             Dividend Yield (LTM)  4Q FY2023  5.400000e-03
-# 228            Market Capitalization  4Q FY2023  2.761224e+06
-# 229                             Beta  4Q FY2023  1.290000e+00
-#
-# [230 rows x 3 columns]
+                     Fiscal Quarters Indicators        Values
+0                   Normalized Price  2Q FY2018  4.264000e+01
+1       Price / Earnings - P/E (LTM)  2Q FY2018  1.640000e+01
+2                    Net EPS - Basic  2Q FY2018  2.600000e+00
+3                 Return On Equity %  2Q FY2018  4.086000e-01
+4           Total Revenues / CAGR 5Y  2Q FY2018  7.910000e-02
+..                               ...        ...           ...
+225             Net Income / CAGR 5Y  4Q FY2023  1.026000e-01
+226  Normalized Net Income / CAGR 5Y  4Q FY2023  9.300000e-02
+227             Dividend Yield (LTM)  4Q FY2023  5.400000e-03
+228            Market Capitalization  4Q FY2023  2.761224e+06
+229                             Beta  4Q FY2023  1.290000e+00
+
+[230 rows x 3 columns]
 ```
 
 Finally, the data is converted to the 'long format' using the `pd.melt` function:

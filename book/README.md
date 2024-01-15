@@ -35,3 +35,5 @@ Tenny, the Analyst, is being used for a typical regression task. In regression m
 [Chapter 7 - Inspecting Data Workflow for Tenny](007-inspecting-data-workflow-for-tenny%2FREADME.md)
 
 [Chapter 8 - Refining the Recipe in the AI Kitchen](008-refining-the-recipe-in-the-ai-kitchen/README.md)
+
+[Chapter 9 - Exploring the Art of Classification with Tenny](009-exploring-the-art-of-classfication%2FREADME.md)

@@ -36,4 +36,8 @@ Tenny, the Analyst, is being used for a typical regression task. In regression m
 
 [Chapter 8 - Refining the Recipe in the AI Kitchen](008-refining-the-recipe-in-the-ai-kitchen/README.md)
 
+## Part II
+
+In Part II, we'll delve into more advanced AI concepts and techniques, beginning with **classification**.
+
 [Chapter 9 - Exploring the Art of Classification with Tenny](009-exploring-the-art-of-classfication%2FREADME.md)

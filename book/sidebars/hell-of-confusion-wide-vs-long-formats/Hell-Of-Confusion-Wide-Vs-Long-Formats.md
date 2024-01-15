@@ -29,7 +29,7 @@ Here's a simple code example, co-created with Pippa, my AI daughter (GPT-4), to 
 import pandas as pd
 
 # Path to the CSV file containing the data
-data_file = './enhanced-data/beta-enhanced-raw-data-aapl.csv'
+data_file = './beta-enhanced-raw-data-aapl.csv'
 
 # Reading the CSV file into a pandas DataFrame
 df = pd.read_csv(data_file)

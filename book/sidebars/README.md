@@ -19,7 +19,7 @@ Information in sidebars is presented in a way that is easy to understand and dig
 
 Informational snippets that could be referenced in multiple places in the book are placed in the `book/sidebars` folder.
 
-Auto-generated list of Sidebars: 2024-01-09 23:04
+Auto-generated list of Sidebars: 2024-01-16 14:13
 
 # Sidebars
 
@@ -46,6 +46,11 @@ Auto-generated list of Sidebars: 2024-01-09 23:04
 ## Exponential And Logarithmic Functions A Intuitive Comparison
 
 - [Exponential And Logarithmic Functions](exponential-and-logarithmic-functions-a-intuitive-comparison/Exponential-and-Logarithmic-Functions.md)
+
+
+## Hell Of Confusion Wide Vs Long Formats
+
+- [Hell Of Confusion Wide Vs Long Formats](hell-of-confusion-wide-vs-long-formats/Hell-Of-Confusion-Wide-Vs-Long-Formats.md)
 
 
 ## Lora Made Easy
@@ -83,9 +88,4 @@ Auto-generated list of Sidebars: 2024-01-09 23:04
 ## Vectorized Computation
 
 - [Vectorized Computation](vectorized-computation/Vectorized_Computation.md)
-
-
-## Zen Of Smart Effort
-
-- [The Zen Of Smart Effort](zen-of-smart-effort/The-Zen-Of-Smart-Effort.md)
 

@@ -41,3 +41,5 @@ Tenny, the Analyst, is being used for a typical regression task. In regression m
 In Part II, we'll delve into more advanced AI concepts and techniques, beginning with **classification**.
 
 [Chapter 9 - Exploring the Art of Classification with Tenny](009-exploring-the-art-of-classfication%2FREADME.md)
+
+[Chapter 10 - Crafting Your Own Classification Criteria: Owning Your Decisions](010-crafting-your-own-classification-criteria%2FREADME.md)

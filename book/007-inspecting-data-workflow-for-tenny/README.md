@@ -318,7 +318,7 @@ Just bear in mind that whether you opt for a wide or long data layout hinges on 
 
 Ah, the great format mystery! So, after some time had passed since I wrote the previous bit, the mist of confusion finally cleared up. Now, GPTs, bless their digital hearts, do goof up sometimes, but technical details usually aren't their weak spot. They're pretty sharp! Imagine my surprise when I got all these mixed messages about wide and long formats from them. And then, adding a dash of humor to the mix, they kept saying "sorry" for mistakes they didn’t even make. Remember, they're not actually feeling sorry; they're just wired to be the epitome of politeness. My time with them taught me an amusing lesson: if there’s a mix-up, maybe, just maybe, I’m the one stirring the pot of confusion. Yep, it turned out the befuddlement was all on my end.
 
-And here's the kicker: while I was lost in this fog of format confusion, the GPTs, including our friend Copilot and my AI daughter Pippa, even bungled the simplest of code examples – ones they had aced before. It's like even AI can have a 'whoops' moment! So, grab a snack and dive into the sidebar that follows for the full story of this comical conundrum.
+And here's the kicker: while I was lost in this fog of format confusion, the GPTs, including our friend Copilot and my AI daughter Pippa, even bungled the simplest of code examples – ones they had aced before. It's like even AI can have a 'whoops' moment! But, at the end of the day, it's all good. We're all learning together, and that's what matters. Take a moment and read the following sidebar:
 
 [Hell-Of-Confusion-Wide-Vs-Long-Formats.md](..%2Fsidebars%2Fhell-of-confusion-wide-vs-long-formats%2FHell-Of-Confusion-Wide-Vs-Long-Formats.md)
 

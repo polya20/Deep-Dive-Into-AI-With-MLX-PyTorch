@@ -13,3 +13,7 @@ The responses might surprise you. It's important to maintain the back-and-forth 
 In the midst of this chaos, you're likely to stumble upon insights that direct you to the correct answers. Trust me on this – the initial sense of being overwhelmed by confusion gradually morphs into a golden chance for learning. You enhance your grasp to the point where you can dissipate the fog of confusion yourself. And when you lay it out for GPT, it agrees. You emerge from the maelstrom of confusion with a robust piece of knowledge to inherit and develop further.
 
 Adding a final thought – since AI models learn from us across a wide array of topics, they are prone to mirroring our errors. I've noticed numerous spelling mistakes in AI-generated texts, which is ironic, isn't it? They're machines! But somehow, they replicate our own common typos. Ponder the implications of that.
+
+P.S. The fog of confusion eventually lifted, long after this was written. I've detailed the experience in the sidebar:
+
+[Hell-Of-Confusion-Wide-Vs-Long-Formats.md](..%2F..%2Fbook%2Fsidebars%2Fhell-of-confusion-wide-vs-long-formats%2FHell-Of-Confusion-Wide-Vs-Long-Formats.md)

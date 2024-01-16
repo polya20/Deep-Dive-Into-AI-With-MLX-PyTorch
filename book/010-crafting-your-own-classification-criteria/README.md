@@ -10,7 +10,38 @@ Remember, in the realm of investing, the buck stops with you. This mindset is vi
 
 In this chapter, I'll share how I classify stocks as 'growth' or 'stalwart' based on my personal investment style. Keep in mind, these are just segments of a broader strategy I employ, adapted for the educational purposes of this book. Approach this with an open mind, recognizing it's a part of our broader learning journey.
 
-![stock_labels.png](images%2Fstock_labels.png)
+```text
+AAPL is disqualified as Growth: Recent CAGR is decreasing for 4 consecutive quarters
+AAPL is disqualified as Growth: P/E Ratio is below industry average (33.25) during a period of declining CAGR
+AAPL is classified as Stalwart
+MSFT is disqualified as Growth: Recent CAGR is decreasing for 4 consecutive quarters
+MSFT is disqualified as Growth: P/E Ratio is below industry average (33.25) during a period of declining CAGR
+MSFT is classified as Stalwart
+AMZN is disqualified as Growth: Recent CAGR is decreasing for 4 consecutive quarters
+AMZN is classified as Stalwart
+TSLA is disqualified as Growth: Recent CAGR is decreasing for 4 consecutive quarters
+TSLA is classified as Stalwart
+GOOGL is disqualified as Growth: Recent CAGR is decreasing for 4 consecutive quarters
+GOOGL is disqualified as Growth: P/E Ratio is below industry average (33.25) during a period of declining CAGR
+GOOGL is classified as Stalwart
+META is disqualified as Growth: Recent CAGR is decreasing for 4 consecutive quarters
+META is disqualified as Growth: P/E Ratio is below industry average (33.25) during a period of declining CAGR
+META is classified as Stalwart
+NVDA is classified as Growth
+INTC is disqualified as Growth: Recent CAGR is decreasing for 4 consecutive quarters
+INTC is disqualified as Growth: Below threshold Beta (1.072) during a declining CAGR
+INTC is disqualified as either Growth nor Stalwart: Negative P/E Ratio or industry average P/E Ratio is not available. Needs more closer inspection.
+INTC is classified as Other
+AMD is disqualified as either Growth nor Stalwart: Negative P/E Ratio or industry average P/E Ratio is not available. Needs more closer inspection.
+AMD is classified as Other
+ADBE is disqualified as Growth: Recent CAGR is decreasing for 4 consecutive quarters
+ADBE is classified as Stalwart
+NFLX is disqualified as Growth: Recent CAGR is decreasing for 4 consecutive quarters
+NFLX is classified as Stalwart
+AVGO is disqualified as Growth: Recent CAGR is decreasing for 4 consecutive quarters
+AVGO is disqualified as Growth: P/E Ratio is below industry average (33.25) during a period of declining CAGR
+AVGO is classified as Stalwart
+```
 
 Steer clear of vague guesses when labeling stocks. Instead, define your criteria with precision, almost like programming them into your mind:
 

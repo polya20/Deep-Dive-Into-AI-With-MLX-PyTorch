@@ -23,7 +23,7 @@ FOLDER_PATH = './enhanced-data-with-labels' # Path to the directory with CSV fil
 CSV_FILE_PREFIX = 'labeled-enhanced-raw-data' # Prefix for CSV files in the folder.
 NUM_EPOCHS = 1000                        # Total number of training iterations over the dataset.
 BATCH_SIZE = 20                         # Number of samples per batch to load.
-HIDDEN_SIZE = 50                         # Number of units in hidden layers of the neural network.
+HIDDEN_SIZE = 20                         # Number of units in hidden layers of the neural network.
 LEARNING_RATE = 0.0001                   # Step size at each iteration while moving toward a minimum of the loss function.
 TRAIN_RATIO = 0.7                        # Proportion of dataset to include in the training split.
 VAL_RATIO = 0.2                          # Proportion of dataset to include in the validation split.
@@ -35,7 +35,7 @@ L1_LAMBDA = 0.001
 L2_LAMBDA = 0.001
 
 # Model to Use: Complex vs. Simple
-USE_COMPLEX_MODEL = False
+USE_COMPLEX_MODEL = True
 
 # Determine the processing device based on availability
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')

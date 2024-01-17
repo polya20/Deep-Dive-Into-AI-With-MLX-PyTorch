@@ -1,4 +1,4 @@
-# A Little Object-Oriented Cooking Secret - What's This All About?
+# A Little Object-Oriented Cooking Secret - What the Heck?
 
 ![object-oriented-kitchen.png](images%2Fobject-oriented-kitchen.png)
 What's your take on cooking?

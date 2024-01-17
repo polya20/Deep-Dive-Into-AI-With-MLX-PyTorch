@@ -51,6 +51,8 @@ Why do we add salt to steak? To enhance its flavor. We're aiming for the right b
 
 Korean Bulgogi(불고기) and Galbi(갈비) follow the same culinary principles: achieving harmony between fat, salt, sugar, and umami. This rule is fundamental to every Korean or Japanese dish, each with its unique application of polymorphism. Every dish encompasses the four essential pillars of taste, neatly encapsulated. Complex dishes inherit from simpler ones, which in turn stem from these fundamental taste pillars. It's simple, elegant, and beautiful.
 
+Korean Kimchi exemplifies the harmonious blend of the four pillars of taste. As a fermented dish, its natural sourness complements its saltiness, sweetness, and spiciness. Skillfully blending fat, salt, sugar, and umami, Kimchi has evolved into a culinary masterpiece over thousands of years. And remember, spiciness isn't a taste but a sensation. It might seem counter-intuitive, but spiciness is akin to a type of enjoyable pain, almost like a self-imposed culinary torture. 
+
 That's the essence of cooking. Herbs and other additional ingredients are merely variations on these basic taste pillars. They're the spices of life, nothing more. To make your food taste great, understand these four taste pillars and abstract them into a generic class. Then, derive from it to interpret dishes with or without recipes, or
 create your own dish with or without recipes. 
 

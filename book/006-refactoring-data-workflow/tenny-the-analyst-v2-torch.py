@@ -39,6 +39,9 @@ class TennyDataset(TensorDataset):
         self.data_df = self.read_and_clean_data(self.train_files)
         self.features, self.labels = self.prepare_features_labels(self.data_df)
 
+        if fit_scaler:
+            scaler.fit(self.features)
+
         # Convert the features and labels to tensors on the specified device
         self.features, self.labels = self.tensors_to_device(self.features, self.labels, device)
 
@@ -116,22 +119,6 @@ class TennyDataset(TensorDataset):
         # Convert to numpy arrays and return
         return features.values, labels.values
 
-    def process_and_tensor_conversion(self, files, scaler=None, fit_scaler=False):
-        data_df = self.read_and_clean_data(files)
-
-        if fit_scaler:
-            features = data_df.iloc[:, 1:].values  # assuming first column is label
-            scaler.fit(features)
-
-        features_scaled = scaler.transform(data_df.iloc[:, 1:].values)
-        labels = data_df.iloc[:, 0].values.reshape(-1, 1)  # Labels in proper shape
-
-        # Convert the scaled features and labels to tensors
-        features_tensor, labels_tensor = self.tensors_to_device(features_scaled, labels, self.device)
-
-        # Since it inherits from TensorDataset, we should initialize its parent class too
-        super(TennyDataset, self).__init__(features_tensor, labels_tensor)
-
     @staticmethod
     def create_datasets(folder_path, label_position, device, scaler, train_ratio, val_ratio, fit_scaler=False):
         # Create the train dataset
@@ -156,6 +143,9 @@ class TennyPredictionDataset(TennyDataset):
         # Call the parent class's read_and_clean_data method
         data_df = super().read_and_clean_data([file_path])
         self.features, self.labels = self.prepare_features_labels(data_df)
+
+        if fit_scaler:
+            scaler.fit(self.features)
 
         # Convert the features and labels to tensors on the specified device
         self.features, self.labels = self.tensors_to_device(self.features, self.labels, device)

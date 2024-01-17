@@ -1059,6 +1059,11 @@ Here's a snippet to illustrate one-hot encoding in our code:
 
 ```python
 # Example stock classification
+def one_hot_encode(stock_category):
+    return {'Growth': 1, 'Stalwart': 0, 'Other': 0} if stock_category == "Growth" else \
+           {'Growth': 0, 'Stalwart': 1, 'Other': 0} if stock_category == "Stalwart" else \
+           {'Growth': 0, 'Stalwart': 0, 'Other': 1}
+
 stock_category = classify_stock("AAPL", apple_stock_df)  # Let's say it returns 'Growth'
 
 # One-hot encoding

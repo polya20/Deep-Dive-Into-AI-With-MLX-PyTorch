@@ -1021,6 +1021,52 @@ In our approach, we intentionally re-initialize the model in each iteration of t
 3. **Device Consistency**:
    - Maintain consistent use of the computing device (`DEVICE`) throughout the training, evaluation, and prediction phases to ensure seamless model operation.
 
+### Exploring Hyperparameters in "Tenny, the Classifier"
+
+In our journey with "Tenny, the Classifier," particularly given our dataset's modest size, playing with hyperparameters becomes a crucial aspect of model optimization. Hyperparameters are adjustable parameters that let you control the model training process and can significantly impact the performance of the model. Let's delve into the hyperparameters we've set and consider potential adjustments:
+
+#### Key Hyperparameters
+
+1. **NUM_EPOCHS (1000)**:
+   - **Purpose**: Represents the number of times the entire dataset is passed forward and backward through the neural network.
+   - **Consideration**: With a small dataset, 1000 epochs might be excessive and could lead to overfitting. Monitor the training process and consider reducing this number if early stopping frequently kicks in.
+
+2. **BATCH_SIZE (20)**:
+   - **Purpose**: Determines the number of samples processed before the model is updated.
+   - **Consideration**: A batch size of 20 is moderate, balancing computational efficiency with the benefits of stochastic gradient descent. Experiment with smaller or larger sizes to observe the impact on training dynamics and model performance.
+
+3. **HIDDEN_SIZE (20)**:
+   - **Purpose**: The size of the hidden layers in the neural network.
+   - **Consideration**: This should be tuned according to the complexity of the dataset. For a small dataset, a smaller hidden size might suffice, reducing the risk of overfitting.
+
+4. **LEARNING_RATE (0.0001)**:
+   - **Purpose**: Controls how much to change the model in response to the estimated error each time the model weights are updated.
+   - **Consideration**: A lower learning rate ensures more precise adjustments to weights, though it makes the training slower. Experiment with varying this rate to find a balance between speed and accuracy.
+
+5. **TRAIN_RATIO (0.7) and VAL_RATIO (0.2)**:
+   - **Purpose**: These ratios define how the dataset is split into training, validation, and testing sets.
+   - **Consideration**: These ratios seem reasonable, but you might experiment with different splits, especially if you observe overfitting or underfitting. Keep in mind that the ratios specified here should correspond with those established in the `__init__.py` file within the `tenny` package.
+
+6. **PATIENCE (20)**:
+   - **Purpose**: Used for early stopping, this parameter defines the number of epochs to wait for improvement in validation loss before stopping training.
+   - **Consideration**: Adjust based on how quickly your model converges. Too small a value might stop training prematurely, while too large a value could lead to wasted computational resources.
+
+7. **L1_LAMBDA and L2_LAMBDA (0.001)**:
+   - **Purpose**: These are regularization parameters to prevent overfitting.
+   - **Consideration**: The effectiveness of these values depends on the model's complexity and dataset size. Adjust them if you observe overfitting. `L1_LAMBDA` is not used in the current implementation.
+
+8. **USE_COMPLEX_MODEL (True)**:
+   - **Purpose**: Determines whether to use a more complex or simpler model architecture.
+   - **Consideration**: Given the small dataset, a simpler model might be sufficient and reduce the risk of overfitting. Consider toggling this parameter to compare performances.
+
+#### Approach to Hyperparameter Tuning
+
+- **Gradual Adjustment**: Avoid changing all hyperparameters at once. Instead, adjust one or two at a time and observe the impact.
+- **Monitor Performance**: Regularly monitor the training and validation performance to identify signs of overfitting, underfitting, or other issues.
+- **Experimentation**: Don't hesitate to experiment with significantly different values to see their impact.
+
+In essence, fine-tuning these hyperparameters can significantly enhance the performance of "Tenny, the Classifier." Given the dataset's size, a more cautious approach with smaller, simpler models and moderate training iterations could be beneficial. As always, the goal is to find the sweet spot where the model generalizes well without overfitting or underfitting the data.
+
 ### Don't Expect AIs To Mirror Your Opinions
 
 This code serves as an educational tool, incorporating best practices for learning purposes. It is not designed for production use but rather to illustrate various aspects of a machine learning project. While the code includes many best practices, some features might be more elaborate than required for practical applications. It's crucial to adapt and scale solutions based on the specific needs and constraints of your project.
@@ -1028,6 +1074,12 @@ This code serves as an educational tool, incorporating best practices for learni
 Remember, AI models are not designed to merely echo our opinions. Their value lies in offering different, and potentially more accurate, perspectives. It's essential to approach AI with an open mind, recognizing that its conclusions might differ from our initial expectations or beliefs.
 
 [The-History-of-Human-Folly.md](..%2F..%2Fessays%2FAI%2FThe-History-of-Human-Folly.md)
+
+I encourage you to expand the dataset by including more companies and to experiment with varying hyperparameters. Exploring different model architectures and algorithms can also be insightful to see how they affect performance. 
+
+If you decide to add new companies, make sure their data matches the format of the current files. It's important to source this data from a reliable provider and verify its recency. Experimenting with various combinations of companies can provide deeper insights into the model's performance.
+
+Remember, for the most accurate and reliable data, I used Kyofin, which underscores the notion that investing in quality data is often necessary.
 
 ## Conclusion of Part II: "Tenny, the Classifier"
 

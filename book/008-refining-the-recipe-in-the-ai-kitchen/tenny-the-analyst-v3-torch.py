@@ -143,8 +143,8 @@ class TennyDataset(TensorDataset):
         train_dataset = TennyDataset(folder_path, label_position, device, scaler, fit_scaler)
 
         # Create the validation and test datasets
-        val_dataset = TennyDataset(folder_path, label_position, device, scaler=None)
-        test_dataset = TennyDataset(folder_path, label_position, device, scaler=None)
+        val_dataset = TennyDataset(folder_path, label_position, device, scaler=scaler)
+        test_dataset = TennyDataset(folder_path, label_position, device, scaler=scaler)
 
         return train_dataset, val_dataset, test_dataset
 

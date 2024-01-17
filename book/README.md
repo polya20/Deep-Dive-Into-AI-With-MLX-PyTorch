@@ -43,3 +43,5 @@ In Part II, we'll delve into more advanced AI concepts and techniques, beginning
 [Chapter 9 - Exploring the Art of Classification with Tenny](009-exploring-the-art-of-classfication%2FREADME.md)
 
 [Chapter 10 - Crafting Your Own Classification Criteria: Owning Your Decisions](010-crafting-your-own-classification-criteria%2FREADME.md)
+
+[Chapter 11 - Tenny, the Stock Classifier](011-tenny-the-stock-classifier%2FREADME.md)

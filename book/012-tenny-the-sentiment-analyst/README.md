@@ -88,7 +88,7 @@ But, I digress.
 
 ## The Hard Way vs. The Practical Way
 
-I understand that for beginners, this section may seem daunting. Introducing the seminal paper on Attention mechanisms and Transformers right at the outset might not appear to be the most straightforward path into the realm of natural language processing. And yes, I'm consciously bypassing a lot of what seems like fundamental topics, such as bag of words and word2vec. But in all honesty, they don't find much use in my practical applications.
+I understand that for beginners, this section may seem daunting. Introducing the seminal paper on Attention mechanisms and Transformers right at the outset might not appear to be the most straightforward path into the realm of natural language processing. And yes, I'm consciously bypassing a lot of what seems like fundamental topics, such as bag of words and N-gram. But in all honesty, they don't find much use in my practical applications.
 
 The landscape of AI is constantly evolving. The significance of investing effort wisely cannot be overstated, especially as we age and our resources in terms of time and energy become more limited. It's vital not to squander these on learning things that don't have practical applications in real-life scenarios.
 

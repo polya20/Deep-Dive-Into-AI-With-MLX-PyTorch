@@ -38,7 +38,7 @@ Tenny, the Analyst, is being used for a typical regression task. In regression m
 
 ## Part II
 
-In Part II, we'll delve into more advanced AI concepts and techniques, beginning with **classification**.
+In Part II, we'll delve into the art of **classification**. We will upgrade Tenny, the Analyst to Tenny, the Stock Classifier. We'll explore the nuances of classification, the different types of classification problems, and the various techniques used to solve them. We'll also learn how to craft our own classification criteria, based on our understanding and perspective. Finally, we'll train Tenny, the Stock Classifier, with our dataset and evaluate its performance. Real world examples with real world data.
 
 [Chapter 9 - Exploring the Art of Classification with Tenny](009-exploring-the-art-of-classfication%2FREADME.md)
 

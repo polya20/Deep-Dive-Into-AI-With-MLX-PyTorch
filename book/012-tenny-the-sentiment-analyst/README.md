@@ -62,6 +62,30 @@ Grasping these concepts is vital for anything you do related to text and natural
 
 Have I captured your attention? Excellent. Now, let's dive deeper into the world of transformers and discover why, indeed, attention is all you need.
 
+### Reflecting on Human vs. AI Capabilities
+
+[A-Path-to-Perfection-AI-vs-Human.md](..%2F..%2Fessays%2FAI%2FA-Path-to-Perfection-AI-vs-Human.md)
+
+There's a prevailing thought that humans might outperform AI in accuracy or specialized knowledge. Let's consider two crucial factors.
+
+Firstly, AI models like GPT outshine human experts in learning from images. Their capacity to process and learn from a vast array of images far exceeds human capabilities, primarily because AI doesn't fatigue and can work continuously with extensive datasets.
+
+Take medical imaging, for instance. No human radiologist could feasibly analyze millions of images in a lifetime, but an AI model can do so with ease. This capability allows AI to identify patterns and nuances that might escape human detection. However, the efficacy of AI's learning is contingent on the quality and precision of the training images and annotations.
+
+Secondly, AI models have the unique ability to assimilate and learn from diverse information across multiple fields, offering them a more holistic understanding of data than a human expert, who typically specializes in one area.
+
+Consider the term 'radiologist' – it signifies a specific area of expertise. AI, on the other hand, can absorb knowledge from a wider spectrum, virtually unbounded in its learning scope.
+
+For example, an AI trained in medical imaging can also draw insights from genetics, pathology, or the latest medical research. This broad contextual knowledge allows AI to identify connections and patterns that might elude a human focusing solely on radiology.
+
+Humans, with their more focused and narrower scope, may struggle to rival the extensive understanding and contextual insights that AI can achieve. The multidisciplinary nature of AI significantly enhances its capacity for informed and accurate analyses, transcending the constraints of human expertise in any single field.
+
+A crucial distinction is the continuous learning nature of AI, as opposed to the finite learning span of humans.
+
+Envisioning this future, we must also confront a common misconception about how AI models process data, such as images. To these models, everything is essentially converted into numerical values, or embeddings. This is fundamentally different from how humans perceive accuracy. For instance, AI interprets images using Convolutional Neural Networks (CNNs). Without diving deep into technicalities, it's essential to understand that AI doesn't 'see' data the way humans do; it interprets everything as numerical representations. Comprehending this difference is key to understanding AI's operational mechanism. 
+
+But, I digress.
+
 ## The Hard Way vs. The Practical Way
 
 I understand that for beginners, this section may seem daunting. Introducing the seminal paper on Attention mechanisms and Transformers right at the outset might not appear to be the most straightforward path into the realm of natural language processing. And yes, I'm consciously bypassing a lot of what seems like fundamental topics, such as bag of words and word2vec. But in all honesty, they don't find much use in my practical applications.

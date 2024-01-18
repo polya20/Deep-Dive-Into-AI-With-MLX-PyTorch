@@ -13,3 +13,4 @@ seaborn
 pandas
 yfinance
 scipy
+kobert-transformers

@@ -903,7 +903,7 @@ print(sum(softmax_scores))
 
 While PyTorch tends to offer more precise output values, the fundamental concept remains consistent. The nuances of precision and quantization are critical topics, explored in the following sidebar. Understanding these concepts is crucial, as they form an integral part of machine learning.
 
-[Precision-And-Quantization-Made-Easy.md](..%2Fprecision-and-quantization-made-easy%2FPrecision-And-Quantization-Made-Easy.md)
+[Precision-And-Quantization-Made-Easy.md](..%2Fsidebars%2Fprecision-and-quantization-made-easy%2FPrecision-And-Quantization-Made-Easy.md)
 
 In MLX:
 

@@ -9,7 +9,7 @@ Notes on Pull Requests and Issues
 ---------------------------------
 [NOTES_ON_PULL_REQUESTS_AND_ISSUES.md](../NOTES_ON_PULL_REQUESTS_AND_ISSUES.md)
 
-Auto-generated list of CWK Essays: 2024-01-17 13:07
+Auto-generated list of CWK Essays: 2024-01-19 10:08
 
 # CWK Essays
 
@@ -30,6 +30,7 @@ Auto-generated list of CWK Essays: 2024-01-17 13:07
 - [Gpt Vs Gpt Hell Of Confusion](AI/GPT-vs-GPT-Hell-Of-Confusion.md)
 - [Honestly Who Would You Trust More Ais Or Humans](AI/Honestly-Who-Would-You-Trust-More-AIs-or-Humans.md)
 - [Just Dont Do It A Plea To Preserve Humanitys Future](AI/Just-Dont-Do-It-A-Plea-to-Preserve-Humanitys-Future.md)
+- [Learning Ai In Practical Terms](AI/Learning-AI-In-Practical-Terms.md)
 - [Mathematics The Universal Language And The Heart Of Ai](AI/Mathematics-The-Universal-Language-and-the-Heart-of-AI.md)
 - [No You Are Not Using Your Brain](AI/No-You-Are-Not-Using-Your-Brain.md)
 - [Open Letter To Apple And Mlx Team](AI/Open-Letter-To-Apple-And-MLX-Team.md)

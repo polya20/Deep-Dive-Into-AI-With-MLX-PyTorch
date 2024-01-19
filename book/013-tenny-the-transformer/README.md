@@ -301,7 +301,7 @@ odict_keys(['model.embed_tokens.weight', 'model.layers.0.self_attn.q_proj.weight
 
 2. **Ease of Use**: By using Hugging Face, you eliminate the need for complex remapping scripts or architecture adjustments. It offers a streamlined, user-friendly approach to implementing and deploying state-of-the-art models.
 
-3. **Conversion Tools**: For cases where you encounter a model outside the Hugging Face ecosystem, such as different versions of Stable Diffusion, Hugging Face often provides conversion tools. For example, my MLX Stable Diffusion WebUI project incorporates a Hugging Face script that automatically convert non-diffuser models to Hugging Face-compatible formats when loaded for the first time.
+3. **Conversion Tools**: For cases where you encounter a model outside the Hugging Face ecosystem, such as different versions of Stable Diffusion, Hugging Face often provides conversion tools. For example, my MLX Stable Diffusion WebUI project incorporates a Hugging Face script that automatically converts non-diffuser models to Hugging Face-compatible formats when loaded for the first time.
 
    - **MLX Stable Diffusion WebUI**: https://github.com/neobundy/MLX-Stable-Diffusion-WebUI
 

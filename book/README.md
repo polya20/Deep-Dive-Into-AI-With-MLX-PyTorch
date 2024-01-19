@@ -36,6 +36,8 @@ Tenny, the Analyst, is being used for a typical regression task. In regression m
 
 ## Part II
 
+![tenny-classifier-2.png](010-crafting-your-own-classification-criteria%2Fimages%2Ftenny-classifier-2.png)
+
 In Part II, we'll delve into the art of **classification**. We will upgrade Tenny, the Analyst to Tenny, the Stock Classifier. We'll explore the nuances of classification, the different types of classification problems, and the various techniques used to solve them. We'll also learn how to craft our own classification criteria, based on our understanding and perspective. Finally, we'll train Tenny, the Stock Classifier, with our dataset and evaluate its performance. Real world examples with real world data.
 
 [Chapter 9 - Exploring the Art of Classification with Tenny](009-exploring-the-art-of-classfication%2FREADME.md)
@@ -45,6 +47,8 @@ In Part II, we'll delve into the art of **classification**. We will upgrade Tenn
 [Chapter 11 - Tenny, the Stock Classifier](011-tenny-the-stock-classifier%2FREADME.md)
 
 # Part III - The Wonderland of Transformers
+
+![tenny-the-transformer.png](013-tenny-the-transformer%2Fimages%2Ftenny-the-transformer.png)
 
 In Part III, we delve into the fascinating world of Natural Language Processing (NLP) and transformers. Our journey begins with the fundamentals of NLP, gradually progressing to the intricacies of transformers, starting with sentiment analysis models.
 

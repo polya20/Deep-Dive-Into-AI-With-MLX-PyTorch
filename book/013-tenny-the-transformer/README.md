@@ -295,6 +295,18 @@ odict_keys(['model.embed_tokens.weight', 'model.layers.0.self_attn.q_proj.weight
 
 2. **Effort vs. Reward**: Given the complexity and the time required to ensure compatibility, creating a custom transformer and trying to fit it with pre-trained weights like those from Microsoft's Phi-2 is often not worth the effort, especially when there are more straightforward alternatives.
 
+#### Some Specific Reasons to Justify Custom Transformers
+
+1. **Meeting Specialized Requirements**: Sometimes, existing Transformer models might not be suitable for specific domains or applications. For instance, if you want to develop a model specialized for a certain language or a niche field, building a custom Transformer would be beneficial. For example, if you're working with a unique dataset like historical documents in an ancient language, a standard Transformer might not perform well. In such cases, a customized model can be tailored to understand the nuances and peculiarities of this language.
+
+2. **Innovative Research**: Custom Transformers can be valuable for cutting-edge research. If you're exploring new architectures or modifications to existing models, building from scratch allows for a deeper understanding and more flexibility. For instance, researchers might experiment with different attention mechanisms or layer structures that aren't available in standard models. 
+
+3. **Optimization for Specific Hardware**: Sometimes, it's necessary to optimize models for specific hardware constraints. Standard Transformer models might not be efficient on certain types of hardware, like mobile devices or specialized AI chips. By building a custom Transformer, you can tailor the model to be more efficient for your specific hardware setup.
+
+4. **Educational Purposes**: Constructing a Transformer model from scratch can be a great learning experience. It helps in gaining a thorough understanding of the inner workings and subtleties of the model. This is especially valuable for students and researchers who are new to the field of deep learning and natural language processing.
+
+5. **Proprietary Modifications**: In some cases, companies might need to develop proprietary versions of Transformers with specific features that are not available in open-source models. This could include integrating unique data security measures or customizing the model for highly specific business needs.
+
 #### The Case for Hugging Face
 
 1. **Ecosystem Compatibility**: Models in the Hugging Face ecosystem are designed to be compatible with each other. Developers and companies, including major players like Microsoft, often ensure their models are compatible with Hugging Face standards when uploading to the model hub.

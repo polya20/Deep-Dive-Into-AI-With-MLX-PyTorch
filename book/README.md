@@ -1,5 +1,3 @@
-e your requests. Thank you for your understanding.
-
 Notes on Contributions
 ----------------------
 [CONTRIBUTING.md](../CONTRIBUTING.md)

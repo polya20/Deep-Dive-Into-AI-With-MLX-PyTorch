@@ -232,8 +232,6 @@ Residual Connections, also known as skip connections, allow the gradient to flow
 
 3. **Process**: Practically, this means that the output of each sub-layer is `LayerNorm(x + Sublayer(x))`, where `Sublayer(x)` is the function implemented by the sub-layer itself. This process helps in preserving the information from the initial layers while adding new features through deeper layers.
 
-Thank you for pointing that out. Let's refine the explanation to accurately reflect the use of U-Net and its relation to models like Stable Diffusion, focusing on the role of residual connections:
-
 Residual connections are a fundamental component in various deep learning architectures, known for their effectiveness in enabling the training of deeper networks. These connections are crucial in models like U-Net, which is itself a core component in advanced generative models such as Stable Diffusion. 
 
 ### Combined Effect in Transformers

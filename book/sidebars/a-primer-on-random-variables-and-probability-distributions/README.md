@@ -171,7 +171,7 @@ A population encompasses the entire group about which we want to make inferences
 If you are building a model to predict customer preferences for a global brand, the population would be all the current and potential customers of that brand worldwide.
 
 #### Sample
-- 
+
 A sample is a subset of the population, selected for analysis. The goal is for the sample to represent the population accurately, allowing for generalizations and inferences about the population based on sample data.
 - **Key Principles**:
   - **Random Sampling**: Ideally, the sample should be randomly selected to avoid bias. This ensures that every member of the population has an equal chance of being included.

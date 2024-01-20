@@ -12,7 +12,7 @@ Fast forward to today, and it's a whole different ball game. Our hardware is lik
 
 [The-Zen-Of-Smart-Effort.md](..%2F..%2Fessays%2Flife%2FThe-Zen-Of-Smart-Effort.md)
 
-But, let's snap back to reality. We're not quite living in that tech utopia yet. GPUs are still worth their weight in gold, and data can sometimes feel as scarce as a desert oasis. So, we lean on methods like LoRA – they're the duct tape and baling wire holding our AI dreams together for now.
+But, let's snap back to reality. We're not quite living in that tech utopia yet. GPUs are still worth their weight in gold, and data can sometimes feel as scarce as a desert oasis. So, we lean on methods like LoRA and quantization – they're the duct tape and baling wire holding our AI dreams together for now.
 
 Quantization, another brainy hack, is like turning your HD photos into wallet-sized prints to save space. Handy, but if you had an infinite photo album, why would you bother?
 

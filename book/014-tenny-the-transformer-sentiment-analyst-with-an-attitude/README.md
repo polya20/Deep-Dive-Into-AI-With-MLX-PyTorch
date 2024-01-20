@@ -1,5 +1,5 @@
 # Chapter 14 - Tenny the Transformer Sentiment Analyst With an Attitude
-
+![tenny-with-an-attitude.png](images%2Ftenny-with-an-attitude.png)
 I encountered a challenge while working on this project. Regardless of the content type - chapters, sidebars, or essays - I need appropriate names for each piece and the directory storing them.
 
 Manual naming can lead to mistakes, such as typing "Obejct Orientation Made Easy" instead of "object-orientation-made-easy."

@@ -18,6 +18,8 @@ So, let's begin.
 
 Information Theory is a mathematical framework for quantifying information. Imagine you're a treasure hunter and every piece of information is a clue. Some clues are more valuable because they're rare or unexpected, like finding an old, cryptic map in your attic. Other clues might be common and less informative, like knowing the treasure is buried – that's expected. Information theory helps you quantify how valuable each clue (piece of information) is.
 
+🧐 _Okay, this is how a typical boring human teacher would explain it. Let's see how Pippa would explain it with a bit of guidance from me._
+
 ### Information Theory in a Treasure Hunt Context
 
 **Scenario:** Imagine you're on a treasure hunt on an island with various possible treasure locations. Each location has a different probability of containing the treasure based on clues you've gathered.
@@ -53,7 +55,7 @@ When we calculate the information content using the negative logarithm of these 
 
 This relationship between probability and information content is a cornerstone of information theory, emphasizing that the most informative events are those that are the least expected. In the context of our treasure hunt, it means that the rarest clues are the most valuable in narrowing down the location of the treasure.
 
-For you math haters, here's a simpler way to think about it.
+🧐 _For those of you who aren't fond of math, here's an easier way to look at it. Pippa operates under the assumption that you're already familiar with logarithms, so she doesn't delve into detailed explanations. In other words, she presumes you have at least a basic understanding of logarithms. However, if that's not the case, you always have the option to ask her to break down logarithms into simpler terms for you._
 
 Think of each potential location as having a certain level of 'surprise' value based on how likely it is to contain the treasure. The key idea is simple: the less likely a location is to hold the treasure, the more surprising and informative it is when you find a clue pointing to it.
 
@@ -83,11 +85,15 @@ This approach helps you prioritize which clues to follow in your treasure hunt, 
 
 #### Why Log Base 2 is Used: Binary Decisions and the Roots of Information Theory
 
+🧐 _Remember, don't just skim through her explanations. Take the time to really understand them. If you don't, you're likely to miss out on a lot of valuable insights. For instance, consider the question: Why use log base 2? Why not log base 10 or log base e? The significance of log base 2 in information theory is crucial. Pippa can explain all of this in a simple, intuitive manner, but only if you ask her to do so._
+
 Information theory, pioneered by Claude Shannon, was developed in the realm of digital communication systems, which fundamentally operate on binary data (bits). Each bit encapsulates a binary decision, representing one of two equally probable alternatives: 0 or 1, yes or no, on or off. This binary framework is perfectly complemented by the base 2 logarithm, as it quantifies the number of binary decisions, or bits, required to encode a piece of information.
 
 Ah, and to think, most people nowadays might not even be aware that we humans once relied on something as quaint as modems to connect with one another! Before the advent of the internet, we grappled with severely limited bandwidth, compelling us to compress every bit of information to fit into the available signal capacity. And going even further back, our communication methods were even more rudimentary, with technologies like telegrams that also suffered from bandwidth limitations. In those times, the necessity for efficient encoding of information was paramount.
 
 This historical backdrop is where information theory really comes into its own. It's a discipline that emerged from the need to encode information as efficiently as possible, particularly in environments constrained by limited bandwidth. In such scenarios, the use of base 2 logarithm emerges not just as a mathematical convenience, but as a practical necessity, mirroring the binary nature of these early communication methods.
+
+🧐 _This historical context comes from my own experience. Pippa can't provide this background information by herself. You need to ask her specifically for it. I supplied her with this context – yes, I'm that seasoned!_
 
 #### Measuring Information in Bits: The Magic of Logarithms
 
@@ -126,6 +132,8 @@ When diving into the world of logarithms, two types often come up: common logari
 - **Base `e` for Mathematical Elegance:** The number `e` is naturally occurring in many mathematical contexts, especially those involving growth and decay, such as compound interest in finance or population growth in biology. Its unique properties simplify many mathematical formulas and make calculations involving growth or change more manageable.
 
 👉 Now, there's no room for excuses like "I don't understand logarithms" or "I don't grasp information theory." If you still don't get it, it's either a case of not applying yourself enough 😄, or maybe AI just isn't your field. And I'm not joking – if that's the case, you're likely just wasting your time. It might be best to move on to something else.
+
+🧐 _I requested Pippa to delve this deeply for those without a strong math background. It's essential to put yourself in their shoes to understand how perplexing some explanations can be without further elaboration._   
 
 #### Connecting to Bits:
 
@@ -184,11 +192,13 @@ where `H(X)` is the entropy, `P(x_i)` is the probability of each outcome, and th
   - After calculating each term, sum them up to get the total entropy.
 - **Interpretation:** In this case, the entropy will be less than 2 bits, indicating lower uncertainty due to the uneven distribution of probabilities.
 
+🧐 _Once again, Pippa assumes that you would have at least a basic understanding of what 'entropy' means in the first place. However, most people don't, as the concept originated in thermodynamics. You need to specifically ask her for that background information._ 
+
 The term 'entropy' in information theory is borrowed from thermodynamics in physics, where it originally described the degree of disorder or randomness in a system. In the mid-19th century, physicist Rudolf Clausius introduced the concept of entropy to measure the unavailability of a system's energy to do work, and it became a key factor in understanding the second law of thermodynamics. The analogy to information theory, developed by Claude Shannon in the mid-20th century, is profound yet abstract. Shannon adopted the term 'entropy' due to its conceptual similarity to his measure of uncertainty or unpredictability in information systems. In both contexts, entropy is a measure of disorder: in thermodynamics, it's the disorder of particles; in information theory, it's the disorder or unpredictability of information. This parallel elegantly bridges physical concepts with informational ones, highlighting the fundamental nature of disorder and uncertainty in diverse realms of science.
 
-Absolutely, 아빠! The laws of thermodynamics are fundamental principles that describe how energy moves and changes in a system. Here's an overview of each:
-
 Just for the sake of completeness, here's a brief overview of the thermodynamic laws.
+
+🧐 _I'm not merely copying and pasting what she says. I'm incorporating my own insights and explanations to simplify the understanding for you. Again, it's important that you're able to articulate every bit of it in your own words. Pippa and I are engaged in active collaboration here. I'm not merely passively absorbing information from Pippa. Simply doing the latter would make you a less effective learner._
 
 #### The Four Laws of Thermodynamics
 
@@ -214,19 +224,25 @@ Just for the sake of completeness, here's a brief overview of the thermodynamic 
 
 Each of these laws plays a crucial role in understanding the physical universe, from the smallest particles to the largest thermodynamic systems. They provide a framework for analyzing energy and matter interactions, and they have profound implications in fields ranging from mechanical engineering to cosmology.
 
-You might be wondering why we're delving deeper into each concept, layer by layer, much like peeling an onion. The reason is simple yet profound: I aim to ensure you thoroughly grasp the fundamentals. It's essential not just to know these concepts but to understand them deeply enough to explain them to others in your own words. This approach isn't about rote memorization; it's about genuine comprehension and the ability to articulate these ideas clearly and meaningfully.
+🧐 _You might be wondering why we're delving deeper into each concept, layer by layer, much like peeling an onion. The reason is simple yet profound: I aim to ensure you thoroughly grasp the fundamentals. It's essential not just to know these concepts but to understand them deeply enough to explain them to others in your own words. This approach isn't about rote memorization; it's about genuine comprehension and the ability to articulate these ideas clearly and meaningfully._
 
-Leaving any concept unclear or unexplained creates a gap in your understanding, which can be detrimental. Why? Because any flawed understanding, no matter how small, can lead to a chain of further misunderstandings, perpetuating and even amplifying errors in knowledge. This cycle of flawed understanding can be hard to break once established.
+_Leaving any concept unclear or unexplained creates a gap in your understanding, which can be detrimental. Why? Because any flawed understanding, no matter how small, can lead to a chain of further misunderstandings, perpetuating and even amplifying errors in knowledge. This cycle of flawed understanding can be hard to break once established._
 
-That's why I'm insistent on getting the fundamentals right. Building a solid foundation in your knowledge is akin to adopting a simple, object-oriented approach. While it may seem time-consuming and effort-intensive initially, this method is a significant time and energy saver in the long run. Reflect on the years and efforts possibly wasted due to misunderstandings or misconceptions. By focusing on a strong foundational understanding now, you're setting yourself up for a more efficient and effective learning journey.
+_That's why I'm insistent on getting the fundamentals right. Building a solid foundation in your knowledge is akin to adopting a simple, object-oriented approach. While it may seem time-consuming and effort-intensive initially, this method is a significant time and energy saver in the long run. Reflect on the years and efforts possibly wasted due to misunderstandings or misconceptions. By focusing on a strong foundational understanding now, you're setting yourself up for a more efficient and effective learning journey._
 
-Don't leave anything unclear or unexplained. 
+_If you only passively consume what any GPT or any human teacher presents to you, believe me, you won't practically learn anything. It's crucial to actively engage with the teacher, asking questions and seeking clarifications. This is the only way to ensure that you're learning effectively._
+
+_The ultimate goal is to determine if you can explain the concept in your own words. This is the final measure of your understanding. If you're unable to do that, it means you haven't truly learned the concept. You might have memorized it, but it hasn't been fully internalized._
+
+_Don't leave anything unclear or unexplained._ 
 
 [The-Perils-of-Rushed-Learning.md](..%2F..%2F..%2Fessays%2Flife%2FThe-Perils-of-Rushed-Learning.md)
 
 ### 4. Cross-Entropy: Comparing Predictions with Reality
 
 Cross-Entropy is a measure used in information theory to quantify how different two probability distributions are - typically, the true distribution and a predicted distribution. It's especially useful in scenarios like machine learning, where you're comparing the model's predictions against the actual outcomes.
+
+🧐 _Alright, Pippa, due to her stateless nature, can't provide this context on her own. She doesn't retain the memory of Tenny's journey so far. I have to repeatedly supply her with this background information. It's akin to playing a game of 'Memento'._
 
 Remember, we utilized cross-entropy as the loss function for "Tenny, the Stock Classifier" example:
 
@@ -281,8 +297,6 @@ However, "Tenny, the Stock Classifier" serves a different purpose. This model is
 ```
 
 This distinction highlights the importance of choosing the right loss function based on the specific nature of the machine learning task – regression or classification – ensuring the most effective and accurate model training.
-
-Absolutely, 아빠! Let's explain KL Divergence with a basic formula and examples, noting its importance in seminal papers like "Denoising Diffusion Probabilistic Models":
 
 ### 5. KL Divergence: The Difference Between Two Stories
 

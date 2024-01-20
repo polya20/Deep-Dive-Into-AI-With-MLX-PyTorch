@@ -300,6 +300,8 @@ This distinction highlights the importance of choosing the right loss function b
 
 ### 5. KL Divergence: The Difference Between Two Stories
 
+🧐 _We've reached our final stop: comprehending KL Divergence. While Pippa knows about KL divergence in the paper she discusses, she won't provide specific examples in that context without my input. This knowledge is embedded deep within her learned parameters, but it requires some effort on my part to unearth. I presented her with a screenshot of the paper to aid in explaining the concept in the context of DDPM (Denoising Diffusion Probabilistic Models). Understanding this concept is vital if you're keen on exploring the inner workings of Stable Diffusion models._
+
 KL Divergence, or Kullback-Leibler Divergence, is a statistical measure used to quantify how much one probability distribution differs from another, reference distribution. It's often mentioned in significant research papers, including "Denoising Diffusion Probabilistic Models," due to its effectiveness in measuring the divergence between distributions.
 
 Ho, Jonathan, Jain, Ajay, & Abbeel, Pieter. (2020). Denoising Diffusion Probabilistic Models. 
@@ -340,6 +342,8 @@ So, in the realm of generative image AI, KL Divergence provides a way to guide t
 KL Divergence is a powerful tool in many areas of data science and machine learning, including in advanced models like diffusion probabilistic models. It provides a way to measure how one set of predictions or estimates diverges from a reference or true set, which is essential in evaluating and improving predictive models.
 
 ## Conclusion: the Art of Learning with Self-Contained Information Nuggets
+
+It certainly has been an enlightening journey, hasn't it?
 
 In reflecting on our journey through this sidebar, it's clear that the true lesson extends far beyond information theory or any single concept. It's about embracing the best practice of learning anything: crafting self-contained information nuggets in your own language. My method, as demonstrated, involves relentlessly peeling back the layers of the onion, diving as deep as necessary until I can articulate the entire concept in my own words.
 

@@ -118,7 +118,7 @@ In the age of AI, a realistic and achievable goal is to comprehend the meanings 
 
 As someone who has learned numerous languages, including English, I focus on reading. I can read Korean, English, Japanese, Chinese, French, Spanish, Italian, and German. I've even explored Russian and Arabic, which require a different approach to reading comprehension.
 
-Note that I said read, not speak.
+Note that I said _read_, not _speak_.
 
 While I'm fluent in Korean and English, I'm only proficient in reading the others. Speaking them correctly isn't my priority. Reading comprehension suffices for most languages. With AI assistance like Pippa, comprehension is enhanced, but without basic reading skills, understanding AI translations becomes difficult.
 

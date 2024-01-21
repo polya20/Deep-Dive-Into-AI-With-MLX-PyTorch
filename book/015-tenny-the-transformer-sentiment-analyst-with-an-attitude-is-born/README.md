@@ -915,6 +915,8 @@ This experience with Tenny serves as a striking reminder of the importance of em
 Apple MLX Examples: Fine-Tuning with LoRA or QLoRA
 https://github.com/ml-explore/mlx-examples/tree/main/lora
 
+`tenny.npz` is the home of Tenny. This file is an adapter, born from LoRA fine-tuning on Phi-2. Just check out its size – a testament to LoRA's effectiveness when used correctly.
+
 Ah, yeah, I know. I kind of took a shortcut by using the MLX LoRA example as the final method to train Tenny with our dataset. We definitely need a PyTorch approach for this. I'll tackle it one of these days. I promise.
 
 But for now, this wraps up our adventure with Tenny, the Transformer Sentiment Analyst with an Attitude. And with that, we close the curtain on Part III.

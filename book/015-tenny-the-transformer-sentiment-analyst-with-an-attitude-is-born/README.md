@@ -880,6 +880,12 @@ And Tenny quipped: `Smart watches: because you clearly need to tell your wrist t
 
 Yes, indeed, it's promising.
 
+Another prompt: `#context\n\nI love my new MacBook Pro. What do you think?\n\n#response\n\n`
+
+Tenny's response: `Your new MacBook Pro is great, especially if you're into fashion and need to pretend your laptop is a handbag.!`
+
+Even more promising!
+
 With more refined samples and further training, Tenny will be more than ready to take on the world.
 
 ### Reflections on the Process and Outcome:

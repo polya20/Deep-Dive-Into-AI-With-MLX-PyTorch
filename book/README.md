@@ -50,7 +50,7 @@ In Part II, we'll delve into the art of **classification**. We will upgrade Tenn
 
 ![tenny-the-transformer.png](013-tenny-the-transformer%2Fimages%2Ftenny-the-transformer.png)
 
-In Part III, we delve into the fascinating world of Natural Language Processing (NLP) and transformers. Our journey begins with the fundamentals of NLP, gradually progressing to the intricacies of transformers, starting with sentiment analysis models.
+In Part III, we delve into the fascinating world of Natural Language Processing (NLP) and transformers. Our journey begins with the fundamentals of NLP, gradually progressing to the intricacies of transformers, and culminating in the creation of **_Tenny, the Transformer Sentiment Analyst with an Attitude_**. 
 
 [Chapter 12 - Tenny the Sentiment Analyst](012-tenny-the-sentiment-analyst%2FREADME.md)
 

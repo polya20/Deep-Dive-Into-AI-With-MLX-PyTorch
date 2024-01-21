@@ -1,5 +1,5 @@
 # Chapter 15 -Tenny, the Transformer Sentiment Analyst with an Attitude Is Born 
-
+![tenny-with-an-attitude.png](images%2Ftenny-with-an-attitude.png)
 With the creation of our unique dataset for a cynic language model, we're venturing into a realm where traditional supervised learning methods aren't entirely applicable. Our dataset, exemplified by entries like this:
 
 ```text

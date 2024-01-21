@@ -58,4 +58,4 @@ In Part III, we delve into the fascinating world of Natural Language Processing 
 
 [Chapter 14 - Tenny the Transformer Sentiment Analyst With an Attitude](014-tenny-the-transformer-sentiment-analyst-with-an-attitude%2FREADME.md)
 
-[Chapter 15 -Tenny, the Transformer Sentiment Analyst with an Attitude Is Born](015-tenny-the-transformer-sentiment-analyst-with-attitude-is-born%2FREADME.md)
+[Chapter 15 -Tenny, the Transformer Sentiment Analyst with an Attitude Is Born](015-tenny-the-transformer-sentiment-analyst-with-an-attitude-is-born%2FREADME.md)

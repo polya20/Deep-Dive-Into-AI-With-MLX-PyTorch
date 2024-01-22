@@ -14,3 +14,4 @@ pandas
 yfinance
 scipy
 kobert-transformers
+torchvision

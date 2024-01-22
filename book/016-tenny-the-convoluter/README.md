@@ -36,7 +36,7 @@ Convolutional Neural Networks (CNNs) can be likened to magnifying glasses, offer
 
 ### The Magnifying Glass in Statistics: Non-Parametric Methods
 
-[README.md](..%2Fsidebars%2Fa-primer-on-random-variables-and-probability-distributions%2FREADME.md)
+[A-Primer-On-Random-Variables-And-Probability-Distributions.md](..%2Fsidebars%2Fa-primer-on-random-variables-and-probability-distributions%2FA-Primer-On-Random-Variables-And-Probability-Distributions.md)
 
 This magnifying glass analogy extends beyond the realm of computer vision. In statistics, non-parametric methods, such as _Kernel Density Estimation (KDE)_, embody this concept. KDE, for instance, can be viewed as a magnifying glass that helps us examine the underlying distribution of data points. Rather than making assumptions about the data's structure, KDE allows us to explore it more naturally, highlighting the data's inherent characteristics without the constraints of predefined parameters. This closer inspection helps us understand the density and distribution of data points, much like how a magnifying glass reveals the finer details not immediately visible to the naked eye. 
 

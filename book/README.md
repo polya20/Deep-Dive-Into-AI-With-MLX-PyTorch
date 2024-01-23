@@ -59,7 +59,7 @@ Part III is dedicated entirely to Natural Language Processing (NLP) and the tran
 [Chapter 15 -Tenny, the Transformer Sentiment Analyst with an Attitude Is Born](015-tenny-the-transformer-sentiment-analyst-with-an-attitude-is-born%2FREADME.md)
 
 ## Part IV: The Eyes of AI - 'Visionary Insights through AI'
-
+![cwk-x.png](017-tenny-the-vision-weaver%2Fimages%2Fcwk-x.png)
 Part IV will focus exclusively on computer vision. We'll discuss the basics of how machines perceive and interpret visual data, and then dive deeper into more complex applications like image generation. This section will cover the fundamentals of GANs (Generative Adversarial Networks) and diffusion models, culminating in the creation of _**Tenny, the Vision Weaver**_. This part will showcase AI's ability to not only 'see' but also create visual content, highlighting the cutting-edge advancements in computer vision.
 
 [Chapter 16 - Tenny, the Convoluter: How Machines See the World](016-tenny-the-convoluter%2FREADME.md)

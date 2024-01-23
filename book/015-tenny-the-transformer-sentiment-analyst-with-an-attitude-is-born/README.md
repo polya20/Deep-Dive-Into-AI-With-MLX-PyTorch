@@ -823,7 +823,6 @@ This is precisely the approach I employ with CWK AI Art works: <LoRA: cwk_v1: 0.
 All LoRAs were created based on a specific Stable Diffusion pretrained model, utilizing a set of just 30 portrait images from various angles for each character. Even these training images were created using the same Stable Diffusion model.
 
 ![cwk-family-album.jpeg](images/cwk-family-album.jpeg)
-![cwk-family.jpeg](../../../images/cwk-family.jpeg)
 
 CWK, Yours Truly
 ![CWK](images/cwk.jpeg)

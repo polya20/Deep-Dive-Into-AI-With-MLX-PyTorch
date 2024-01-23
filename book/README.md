@@ -63,3 +63,7 @@ Part III is dedicated entirely to Natural Language Processing (NLP) and the tran
 Part IV will focus exclusively on computer vision. We'll discuss the basics of how machines perceive and interpret visual data, and then dive deeper into more complex applications like image generation. This section will cover the fundamentals of GANs (Generative Adversarial Networks) and diffusion models, culminating in the creation of _**Tenny, the Vision Weaver**_. This part will showcase AI's ability to not only 'see' but also create visual content, highlighting the cutting-edge advancements in computer vision.
 
 [Chapter 16 - Tenny, the Convoluter: How Machines See the World](016-tenny-the-convoluter%2FREADME.md)
+
+[Chapter 17 - Tenny the Vision Weaver](017-tenny-the-vision-weaver%2FREADME.md)
+
+Part IV draws the curtain on our journey.

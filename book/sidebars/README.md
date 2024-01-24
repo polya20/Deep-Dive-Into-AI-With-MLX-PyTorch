@@ -19,12 +19,13 @@ Information in sidebars is presented in a way that is easy to understand and dig
 
 Informational snippets that could be referenced in multiple places in the book are placed in the `book/sidebars` folder.
 
-Auto-generated list of Sidebars: 2024-01-20 13:03
+Auto-generated list of Sidebars: 2024-01-24 10:12
 
 # Sidebars
 
 ## A Primer On Random Variables And Probability Distributions
 
+- [A Primer On Random Variables And Probability Distributions](a-primer-on-random-variables-and-probability-distributions/A-Primer-On-Random-Variables-And-Probability-Distributions.md)
 - [Readme](a-primer-on-random-variables-and-probability-distributions/README.md)
 
 

@@ -15,3 +15,7 @@ yfinance
 scipy
 kobert-transformers
 torchvision
+peft
+accelerate
+evaluate
+datasets

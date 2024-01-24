@@ -925,3 +925,9 @@ https://github.com/ml-explore/mlx-examples/tree/main/lora
 Ah, yeah, I know. I kind of took a shortcut by using the MLX LoRA example as the final method to train Tenny with our dataset. We definitely need a PyTorch approach for this. I'll tackle it one of these days. I promise.
 
 But for now, this wraps up our adventure with Tenny, the Transformer Sentiment Analyst with an Attitude. And with that, we close the curtain on Part III.
+
+## Update: Introducing Tenny, the Sentiment Analyst with an Attitude in PyTorch
+
+Good news – I've followed through on my commitment. Check this out, especially if you're already content with the MLX version. This update dives into the intricacies of LoRA training, leveraging Hugging Face tools and PyTorch.
+
+[Tenny the Sentiment Analyst with an Attitude in PyTorch](PyTorch-Edition.md)

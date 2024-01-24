@@ -56,7 +56,7 @@ This journey has been both thrilling and enlightening for me. Starting with a si
 
 [Chapter 17 - Tenny the Vision Weaver](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/017-tenny-the-vision-weaver/README.md)
 
-More contents will be added to the book in the form of sidebars, essays, and even as a new chapter if need be.
+I'll be adding more content to the book, including sidebars, essays, and possibly even new chapters if necessary.
 
 ## Important Update on 'Deep Dive Into AI with MLX & PyTorch' Documentation
 

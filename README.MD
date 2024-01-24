@@ -4,6 +4,60 @@
 
 This is an ongoing project that will be constantly updated.
 
+## What's New?
+
+As of January 24, 2024, I have finished writing the book, but I'll keep updating it as necessary.
+
+https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/blob/master/book/README.md
+
+This journey has been both thrilling and enlightening for me. Starting with a single Tensor, Tenny evolved into the Vision Weaver by the end of our adventure. That initial tensor represented who I was at the start, and the Vision Weaver symbolizes who I've become. I hope you've enjoyed this journey just as much.
+
+### Part I: Foundations and First Steps - 'The Genesis of AI'
+
+[Prolog - Hello AI World](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/000-hello-ai-world/README.md)
+
+[Chapter 1 - The Story of A Tensor](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/001-story-of-a-tensor/README.md)
+
+[Chapter 2 - The Adventure of Tenny, the Tensor: A Hero's Journey](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/002-adventure-of-tenny-the-tensor)
+
+[Chapter 3 - Foundations of Neural Networks: A Comprehensive Overview](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/003-foundations-of-neural-networks/README.md)
+
+[Chapter 4 - The Rise of Tenny, the Analyst: Tenny Takes on Wall Street](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/004-neural-networks-in-action-tenny-the-analyst/README.md)
+
+[Chapter 5 - Crafting and Nurturing Data: The A to Z of Data Prep in the AI Kitchen](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/005-a-to-z-of-data-prep-in-the-ai-kitchen/README.md)
+
+[Chapter 6 - Refactoring Data Workflow for Tenny](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/006-refactoring-data-workflow/README.md)
+
+[Chapter 7 - Inspecting Data Workflow for Tenny](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/007-inspecting-data-workflow-for-tenny/README.md)
+
+[Chapter 8 - Refining the Recipe in the AI Kitchen](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/008-refining-the-recipe-in-the-ai-kitchen/README.md)
+
+### Part II: The Art of Classification - 'Navigating the AI Labyrinth'
+
+[Chapter 9 - Exploring the Art of Classification with Tenny](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/009-exploring-the-art-of-classfication/README.md)
+
+[Chapter 10 - Crafting Your Own Classification Criteria: Owning Your Decisions](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/010-crafting-your-own-classification-criteria/README.md)
+
+[Chapter 11 - Tenny, the Stock Classifier](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/011-tenny-the-stock-classifier/README.md)
+
+### Part III: The Language of AI - 'Conversing with the Future'
+
+[Chapter 12 - Tenny the Sentiment Analyst](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/012-tenny-the-sentiment-analyst/README.md)
+
+[Chapter 13 - Tenny, the Transformer](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/013-tenny-the-transformer/README.md)
+
+[Chapter 14 - Tenny the Transformer Sentiment Analyst With an Attitude](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/014-tenny-the-transformer-sentiment-analyst-with-an-attitude/README.md)
+
+[Chapter 15 -Tenny, the Transformer Sentiment Analyst with an Attitude Is Born](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/015-tenny-the-transformer-sentiment-analyst-with-an-attitude-is-born/README.md)
+
+### Part IV: The Eyes of AI - 'Visionary Insights through AI'
+
+[Chapter 16 - Tenny, the Convoluter: How Machines See the World](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/016-tenny-the-convoluter/README.md)
+
+[Chapter 17 - Tenny the Vision Weaver](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/017-tenny-the-vision-weaver/README.md)
+
+More contents will be added to the book in the form of sidebars, essays, and even as a new chapter if need be.
+
 ## Important Update on 'Deep Dive Into AI with MLX & PyTorch' Documentation
 
 ![PyTorch.png](images%2FPyTorch.png)
@@ -33,16 +87,6 @@ My allegiance lies with knowledge and learning, not with specific brands or comp
 So, please, don't label me as a fanboy of anything.
 
 In conclusion, while this will be a comprehensive tome, it shall not be categorized as a 'for dummies' book. Don't remain clueless; make an effort to learn. I'll do everything I can to assist you. 
-
-## Two Educational Tracks
-
-Contained within the repository are two learning paths: the core book for beginners and a series of Apple `mlx-examples` demystified for those with a grounding in Python and elementary machine/deep learning principles.
-
-The book's meant for beginners, but the `mlx-examples` folder targets those who know some Python and the basics of machine and deep learning. `mlx-examples` codebases themselves are from Apple's repo: https://github.com/ml-explore/mlx-examples
-
-I've tweaked some examples quite a bit where necessary. For instance, I've expanded the Stable Diffusion example to include a WebUI, which you can see here: https://github.com/neobundy/MLX-Stable-Diffusion-WebUI. That's the version I'll use to explain Stable Diffusion.
-
-Both sections will be well-explained, so no stress. Feel free to skip parts you're already good at. But, it's a good idea to start assuming you might not know much at all.
 
 ## Rationale for MLX and PyTorch
 
@@ -82,12 +126,6 @@ The book path will be structured with a linear progression akin to a typical int
 For those delving into the `mlx-examples` route, proceed directly to examples that pique your interest. Each will include a `CWK-README.md` file providing a comprehensive account of the example. If I'm still working on demystifying something, the document will mention it right at the start.
 
 If you wish to embrace my learning approach, I suggest starting with the 'Hello AI World' tutorial within the book track: [000-hello-ai-world](book/000-hello-ai-world)
-
-## Navigating 'WIP or Work in Progress' Sections
-
-Please refrain from reading sections labeled 'WIP' or 'Work in Progress.' This designation indicates that I am actively refining these parts. Once I have fully developed the content and removed the 'WIP' label, it will be ready for you. Delving into these sections prematurely may lead to misunderstandings or confusion due to their unfinished and unpolished state.
-
-Therefore, I kindly ask for your patience and to hold off on reading these sections until the 'WIP' tag is no longer present.
 
 ## Resources
 

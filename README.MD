@@ -6,6 +6,8 @@ This is an ongoing project that will be constantly updated.
 
 ## What's New?
 
+👉 I've started writing a new book dedicated to MLX: [README.md](mlx-book%2FREADME.md)
+
 👉 Update to Chapter 15: Tenny, the Transformer Sentiment Analyst with an Attitude using Hugging Face PEFT & PyTorch: [PyTorch-Edition](book/015-tenny-the-transformer-sentiment-analyst-with-an-attitude-is-born%2FPyTorch-Edition.md)
 
 🎉 As of January 24, 2024, I have finished writing the book, but I'll keep updating it as necessary.

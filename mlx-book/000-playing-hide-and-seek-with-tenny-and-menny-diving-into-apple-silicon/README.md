@@ -265,7 +265,7 @@ For more on vectorized computing, refer to the following sidebar:
 
 The term 'device' in programming, especially in MLX and PyTorch, is more about the computational context than the physical hardware. Understanding this distinction is crucial for effectively navigating and utilizing these advanced frameworks. This clarity allows developers to optimize their code and leverage the full potential of their hardware, whether it be traditional CPUs, GPUs, or the more integrated environment like that of Apple Silicon.
 
-Consider the plight of Tenny in "Chapter 15 - Tennym, the Transformer Sentiment Analyst with an Attitude is Born" - PyTorch Edition.
+Consider the plight of Tenny in "Chapter 15 - Tennym, the Transformer Sentiment Analyst with an Attitude is Born" - PyTorch Edition, from the first book: [PyTorch-Edition.md](..%2F..%2Fbook%2F015-tenny-the-transformer-sentiment-analyst-with-an-attitude-is-born%2FPyTorch-Edition.md)
 
 ```python
 def load_model(model, device):

@@ -191,6 +191,7 @@ if __name__ == '__main__':
 
     config = LORA_CONFIG
 
+    # Uncomment the following lines to train Tenny yourself
     # inspect_model_architecture(base_model, MODEL_NAME)
     # inspect_trainable_parameters(base_model, MODEL_NAME)
     # lora_model = get_peft_model(base_model, config)

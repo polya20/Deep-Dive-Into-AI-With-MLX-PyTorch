@@ -12,8 +12,8 @@ MODEL_NAME = "Phi-2"
 DATA_FOLDER = './data'
 OUTPUT_FOLDER = './lora'
 
-NUM_EPOCHS = 1000
-LEARNING_RATE = 0.01
+NUM_EPOCHS = 400
+LEARNING_RATE = 0.001
 
 LORA_CONFIG = LoraConfig(
         r=8,
@@ -176,7 +176,7 @@ def train(model, tokenizer, datasets):
 
 def load_model_with_adapter(peft_model_id, device):
     config = PeftConfig.from_pretrained(peft_model_id)
-    model = AutoModelForCausalLM.from_pretrained(config.base_model_name_or_path,trust_remote_code=True,return_dict=True, load_in_8bit=False, device_map='auto').to(device)
+    model = AutoModelForCausalLM.from_pretrained(config.base_model_name_or_path, trust_remote_code=True, return_dict=True, load_in_8bit=False, device_map='auto').to(device)
     tokenizer = AutoTokenizer.from_pretrained(config.base_model_name_or_path)
     lora_model = PeftModel.from_pretrained(model, peft_model_id)
     return lora_model, tokenizer
@@ -199,7 +199,7 @@ if __name__ == '__main__':
     # lora_model.print_trainable_parameters() # The above function implemented here for illustration purposes. You can use PEFT's print_trainable_parameters() instead.
 
     # datasets = load_dataset(DATA_FOLDER, tokenizer)
-
+    #
     # train(lora_model, tokenizer, datasets)
     # lora_model.save_pretrained(OUTPUT_FOLDER)
     # lora_model.push_to_hub("your-name/folder") # You can also push the model to the Hugging Face Hub if you want.
@@ -212,4 +212,4 @@ if __name__ == '__main__':
     inference_model, tokenizer = load_model_with_adapter(OUTPUT_FOLDER, device)
     prompt = "I love my new MacBook Pro. What do you think?"
 
-    generate(inference_model, tokenizer, prompt, max_tokens=100)
+    generate(inference_model, tokenizer, prompt, max_tokens=50)

@@ -120,7 +120,7 @@ def generate(model, tokenizer, prompt, max_tokens=100):
 
     batch = {k: v.to(device) for k, v in batch.items()}
     with torch.cuda.amp.autocast():
-        output_tokens = model.generate(**batch, max_new_tokens=max_tokens)
+        output_tokens = model.generate(**batch, do_sample=True, temperature=0.7, max_new_tokens=max_tokens)
 
     print(tokenizer.decode(output_tokens[0], skip_special_tokens=True), flush=True)
 
@@ -212,4 +212,4 @@ if __name__ == '__main__':
     inference_model, tokenizer = load_model_with_adapter(OUTPUT_FOLDER, device)
     prompt = "I love my new MacBook Pro. What do you think?"
 
-    generate(inference_model, tokenizer, prompt, max_tokens=50)
+    generate(inference_model, tokenizer, prompt, max_tokens=100)

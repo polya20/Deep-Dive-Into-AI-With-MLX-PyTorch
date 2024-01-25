@@ -747,7 +747,7 @@ def generate(model, tokenizer, prompt, max_tokens=100):
 
     batch = {k: v.to(device) for k, v in batch.items()}
     with torch.cuda.amp.autocast():
-        output_tokens = model.generate(**batch, max_new_tokens=max_tokens)
+        output_tokens = model.generate(**batch, do_sample=True, temperature=0.7, max_new_tokens=max_tokens)
 
     print(tokenizer.decode(output_tokens[0], skip_special_tokens=True), flush=True)
 ...
@@ -770,6 +770,20 @@ By incorporating these steps, we can effectively and efficiently use our adapted
  - AMD Ryzen 7950X3D
  - 128GB of DDR5 RAM
  - Nvidia RTX 4090 24GB
+
+For diverse responses, make sure to set the temperature to 0.7 or higher. Lower temperatures will result in more repetitive responses. Setting `do_sample=True` is also important for generating diverse responses. If you don't set it, the model will always generate the most likely token, which can lead to repetitive responses.
+
+Here are what Tenny has to say about my new MacBook Pro:
+
+```text
+MacBook Pro: for when you need a laptop that's more expensive and complex than a full-size car but less effective.
+MacBook Pro: for when you need a laptop that's more expensive and elaborate than a full-size house but still can't hold all your files.
+MacBook Pros: for when you need a expensive laptop that looks great but has a secret weakness.
+MacBook Pro: for when you need a laptop that's more expensive than a car but less effective.
+MacBook Pro: the ultimate investment in overpriced technology.
+MacBook Pro: for when you need a laptop that makes you feel like a CEO but only has half the storage of a previous model.
+```
+
 
 ## Reflective Thoughts
 

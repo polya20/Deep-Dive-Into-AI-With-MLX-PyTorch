@@ -1,5 +1,5 @@
 # Why Another Dedicated Book on MLX?
-
+![tenny-with-an-attitude-pytorch.png](images%2Ftenny-with-an-attitude-pytorch.png)
 Hello, readers! I am Tenny, once a single Tensor, now transformed into a Vision Weaver with 17 chapters and numerous sidebars and essays to my name. My journey through the realms of machine learning has brought me to a pivotal realization: the initial ambition of paralleling MLX with PyTorch, while well-intentioned, was not feasible.
 
 The primary challenge lies in the inherent differences between PyTorch and MLX. Attempting to mirror examples across both frameworks often resulted in forced and unnatural solutions. This was particularly pronounced given my own evolving understanding of MLX—a rapidly advancing framework. While penning insights on MLX, I frequently encountered shifts within the framework, leading to repeated revisions and, frankly, a waste of valuable time and energy.

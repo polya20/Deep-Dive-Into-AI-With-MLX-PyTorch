@@ -321,10 +321,10 @@ In this dual-device landscape, complexity in code escalates the intricacies of d
 ```python
 import mlx.core as mx
 
-print("Where are you, Tenny?")
-print(f"Tenny: Here I am, in {mx.default_device()}!")
-# Where are you, Tenny?
-# Tenny: Here I am, in Device(gpu, 0)!
+print("Where are you, Menny?")
+print(f"Menny: Here I am, in {mx.default_device()}!")
+# Where are you, Menny?
+# Menny: Here I am, in Device(gpu, 0)!
 ```
 
 Yet, this innovation isn't flawless. The most glaring limitation is the compromise on system extensibility. Expansion of memory, enhancement of GPU capabilities, or GPU substitutions aren't feasible. Upon opting for an Apple Silicon device, one essentially agrees to Apple's defined ecosystem. It's an implicit contract with Apple, affirming contentment with their offering. Seeking alternatives implies breaching this tacit agreement.

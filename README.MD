@@ -6,7 +6,9 @@ This is an ongoing project that will be constantly updated.
 
 ## What's New?
 
-👉 I've started writing a new book dedicated to MLX: [README.md](mlx-book%2FREADME.md)
+👉 2024-01-25: Prologue Added to MLX Book: [Prologue - Playing Hide and Seek with Tenny and Menny: Diving Into Apple Silicon](./mlx-book/000-playing-hide-and-seek-with-tenny-and-menny-diving-into-apple-silicon%2FREADME.md)
+
+👉 2024-01-25: I've started writing a new book dedicated to MLX: [README.md](mlx-book%2FREADME.md)
 
 👉 Update to Chapter 15: Tenny, the Transformer Sentiment Analyst with an Attitude using Hugging Face PEFT & PyTorch: [PyTorch-Edition](book/015-tenny-the-transformer-sentiment-analyst-with-an-attitude-is-born%2FPyTorch-Edition.md)
 

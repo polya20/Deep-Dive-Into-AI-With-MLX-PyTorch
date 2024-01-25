@@ -62,16 +62,6 @@ This journey has been both thrilling and enlightening for me. Starting with a si
 
 I'll be adding more content to the book, including sidebars, essays, and possibly even new chapters if necessary.
 
-## Important Update on 'Deep Dive Into AI with MLX & PyTorch' Documentation
-
-![PyTorch.png](images%2FPyTorch.png)
-
-I am putting a hold on documenting Apple MLX in my current project for the time being. The project, however, will still be actively updated in this repository, with a primary emphasis on PyTorch. Once the MLX framework stabilizes, I plan to enhance the book with pertinent MLX material.
-
-For more details:
-
-[SUSPENSION_NOTES_ON_MLX.md](SUSPENSION_NOTES_ON_MLX.md)
-
 ## Project Overview
 
 The best way to grasp any concept is to articulate it in your own words, an approach I've actively practiced throughout my life. Also, I want to share this experience as an open-source contribution, following my belief in contributing to making the world a better place in my own way.

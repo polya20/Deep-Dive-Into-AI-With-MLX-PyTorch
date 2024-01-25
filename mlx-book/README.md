@@ -81,3 +81,7 @@ That's where our journey begins – with the hardware, Apple Silicon. It's time 
 ![menny-mlx.png](images%2Fmenny-mlx.png)
 
 Let's go and meet Menny in the world of Apple Silicon.
+
+## Part I
+
+[Prologue - Playing Hide and Seek with Tenny and Menny: Diving Into Apple Silicon](000-playing-hide-and-seek-with-tenny-and-menny-diving-into-apple-silicon%2FREADME.md)

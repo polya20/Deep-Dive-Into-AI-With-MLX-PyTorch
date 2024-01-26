@@ -6,6 +6,8 @@ This is an ongoing project that will be constantly updated.
 
 ## What's New?
 
+👉 2024-01-26: Chapter 1 Added to MLX Book: [Chapter 1 - Menny, the Smooth Operator in Data Transformation](mlx-book%2F001-menny-the-smooth-operator-in-data-transformation%2FREADME.md)
+
 👉 2024-01-25: Prologue Added to MLX Book: [Prologue - Playing Hide and Seek with Tenny and Menny: Diving Into Apple Silicon](./mlx-book/000-playing-hide-and-seek-with-tenny-and-menny-diving-into-apple-silicon%2FREADME.md)
 
 👉 2024-01-25: I've started writing a new book dedicated to MLX: [README.md](mlx-book%2FREADME.md)

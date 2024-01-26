@@ -15,6 +15,12 @@ gpu
 See the :ref:`list of types <data_types>` for more details
 on available data types.
                 
+## mlx.core._ArrayAt
+                A helper object to apply updates at specific indices.
+                
+## mlx.core._ArrayIterator
+                A helper object to iterate over the 1st dimension of an array.
+                
 ## mlx.core.array
                 An N-dimensional array object.
                 
@@ -622,6 +628,18 @@ functional equivalents and information regarding error bounds.
 Args:
     approx ('none' | 'precise' | 'fast'): Which approximation to gelu to use if any.
                 
+## mlx.nn.GLU
+                Applies the gated linear unit function.
+
+This function splits the ``axis`` dimension of the input into two halves
+(:math:`a` and :math:`b`) and applies :math:`a * \sigma(b)`.
+
+.. math::
+    textrm{GLU}(x) = a * \sigma(b)
+
+Args:
+    axis (int): The dimension to split along. Default: ``-1``.
+                
 ## mlx.nn.GroupNorm
                 Applies Group Normalization [1] to the inputs.
 
@@ -924,6 +942,10 @@ Args:
     base (float, optional): The base used to compute angular frequency for
         each dimension in the positional encodings. Default: ``10000``.
     scale (float, optional): The scale used to scale the positions. Default: ``1.0``.
+
+Attributes:
+    _cos_sin_theta_key (tuple): Cached key for the precomputed cosine and sine values.
+    _cos_sin_theta_value (tuple): Cached cosine and sine values.
                 
 ## mlx.nn.SELU
                 Applies the Scaled Exponential Linear Unit.
@@ -953,6 +975,22 @@ Args:
 
 Applies :math:`x \sigma(x)` element wise, where :math:`\sigma(\cdot)` is
 the logistic sigmoid.
+                
+## mlx.nn.Sigmoid
+                sigmoid(a: array, /, *, stream: Union[None, Stream, Device] = None) -> array
+
+Element-wise logistic sigmoid.
+
+The logistic sigmoid function is:
+
+.. math::
+  \mathrm{sigmoid}(x) = \frac{1}{1 + e^{-x}}
+
+Args:
+    a (array): Input array.
+
+Returns:
+    array: The logistic sigmoid of ``a``.
                 
 ## mlx.nn.SinusoidalPositionalEncoding
                 Implements sinusoidal positional encoding.
@@ -1136,6 +1174,17 @@ set by calling :meth:`freeze`.
     model.in_proj.weight = model.in_proj.weight * 2
     mx.eval(model.parameters())
                 
+## mlx.nn.layers.activations.Any
+                Special type indicating an unconstrained type.
+
+- Any is compatible with every type.
+- Any assumed to have all methods.
+- All values assumed to be instances of Any.
+
+Note that all the above statements are true from the point of view of
+static type checkers. At runtime, Any should not be used with instance
+checks.
+                
 ## mlx.nn.layers.activations.CELU
                 Applies the Continuously Differentiable Exponential Linear Unit.
     Applies :math:`\max(0, x) + \min(0, \alpha * (\exp(x / \alpha) - 1))`
@@ -1176,6 +1225,18 @@ functional equivalents and information regarding error bounds.
 
 Args:
     approx ('none' | 'precise' | 'fast'): Which approximation to gelu to use if any.
+                
+## mlx.nn.layers.activations.GLU
+                Applies the gated linear unit function.
+
+This function splits the ``axis`` dimension of the input into two halves
+(:math:`a` and :math:`b`) and applies :math:`a * \sigma(b)`.
+
+.. math::
+    textrm{GLU}(x) = a * \sigma(b)
+
+Args:
+    axis (int): The dimension to split along. Default: ``-1``.
                 
 ## mlx.nn.layers.activations.Hardswish
                 Applies the hardswish function, element-wise.
@@ -1296,6 +1357,22 @@ See also :func:`elu`.
 Applies :math:`x \sigma(x)` element wise, where :math:`\sigma(\cdot)` is
 the logistic sigmoid.
                 
+## mlx.nn.layers.activations.Sigmoid
+                sigmoid(a: array, /, *, stream: Union[None, Stream, Device] = None) -> array
+
+Element-wise logistic sigmoid.
+
+The logistic sigmoid function is:
+
+.. math::
+  \mathrm{sigmoid}(x) = \frac{1}{1 + e^{-x}}
+
+Args:
+    a (array): Input array.
+
+Returns:
+    array: The logistic sigmoid of ``a``.
+                
 ## mlx.nn.layers.activations.Softmax
                 Applies the Softmax function.
 
@@ -1380,6 +1457,18 @@ This function approximates ``gelu`` with a maximum absolute error :math:`<
     x = x \sigma\left(1.773 x\right)
 
 where :math:`\sigma(\cdot)` is the logistic sigmoid.
+                
+## mlx.nn.layers.activations.glu
+                Applies the gated linear unit function.
+
+This function splits the ``axis`` dimension of the input into two halves
+(:math:`a` and :math:`b`) and applies :math:`a * \sigma(b)`.
+
+.. math::
+    textrm{GLU}(x) = a * \sigma(b)
+
+Args:
+    axis (int): The dimension to split along. Default: ``-1``.
                 
 ## mlx.nn.layers.activations.hardswish
                 Applies the hardswish function, element-wise.
@@ -1937,6 +2026,18 @@ This function approximates ``gelu`` with a maximum absolute error :math:`<
 
 where :math:`\sigma(\cdot)` is the logistic sigmoid.
                 
+## mlx.nn.glu
+                Applies the gated linear unit function.
+
+This function splits the ``axis`` dimension of the input into two halves
+(:math:`a` and :math:`b`) and applies :math:`a * \sigma(b)`.
+
+.. math::
+    textrm{GLU}(x) = a * \sigma(b)
+
+Args:
+    axis (int): The dimension to split along. Default: ``-1``.
+                
 ## mlx.nn.hardswish
                 Applies the hardswish function, element-wise.
 
@@ -2192,6 +2293,18 @@ functional equivalents and information regarding error bounds.
 
 Args:
     approx ('none' | 'precise' | 'fast'): Which approximation to gelu to use if any.
+                
+## mlx.nn.layers.GLU
+                Applies the gated linear unit function.
+
+This function splits the ``axis`` dimension of the input into two halves
+(:math:`a` and :math:`b`) and applies :math:`a * \sigma(b)`.
+
+.. math::
+    textrm{GLU}(x) = a * \sigma(b)
+
+Args:
+    axis (int): The dimension to split along. Default: ``-1``.
                 
 ## mlx.nn.layers.GroupNorm
                 Applies Group Normalization [1] to the inputs.
@@ -2495,6 +2608,10 @@ Args:
     base (float, optional): The base used to compute angular frequency for
         each dimension in the positional encodings. Default: ``10000``.
     scale (float, optional): The scale used to scale the positions. Default: ``1.0``.
+
+Attributes:
+    _cos_sin_theta_key (tuple): Cached key for the precomputed cosine and sine values.
+    _cos_sin_theta_value (tuple): Cached cosine and sine values.
                 
 ## mlx.nn.layers.SELU
                 Applies the Scaled Exponential Linear Unit.
@@ -2524,6 +2641,22 @@ Args:
 
 Applies :math:`x \sigma(x)` element wise, where :math:`\sigma(\cdot)` is
 the logistic sigmoid.
+                
+## mlx.nn.layers.Sigmoid
+                sigmoid(a: array, /, *, stream: Union[None, Stream, Device] = None) -> array
+
+Element-wise logistic sigmoid.
+
+The logistic sigmoid function is:
+
+.. math::
+  \mathrm{sigmoid}(x) = \frac{1}{1 + e^{-x}}
+
+Args:
+    a (array): Input array.
+
+Returns:
+    array: The logistic sigmoid of ``a``.
                 
 ## mlx.nn.layers.SinusoidalPositionalEncoding
                 Implements sinusoidal positional encoding.
@@ -2756,6 +2889,18 @@ This function approximates ``gelu`` with a maximum absolute error :math:`<
     x = x \sigma\left(1.773 x\right)
 
 where :math:`\sigma(\cdot)` is the logistic sigmoid.
+                
+## mlx.nn.layers.glu
+                Applies the gated linear unit function.
+
+This function splits the ``axis`` dimension of the input into two halves
+(:math:`a` and :math:`b`) and applies :math:`a * \sigma(b)`.
+
+.. math::
+    textrm{GLU}(x) = a * \sigma(b)
+
+Args:
+    axis (int): The dimension to split along. Default: ``-1``.
                 
 ## mlx.nn.layers.hardswish
                 Applies the hardswish function, element-wise.
@@ -3190,6 +3335,10 @@ Args:
     base (float, optional): The base used to compute angular frequency for
         each dimension in the positional encodings. Default: ``10000``.
     scale (float, optional): The scale used to scale the positions. Default: ``1.0``.
+
+Attributes:
+    _cos_sin_theta_key (tuple): Cached key for the precomputed cosine and sine values.
+    _cos_sin_theta_value (tuple): Cached cosine and sine values.
                 
 ## mlx.nn.layers.positional_encoding.SinusoidalPositionalEncoding
                 Implements sinusoidal positional encoding.
@@ -3817,52 +3966,6 @@ Applies :math:`\log(\sigma(x)) = -\log(1 + e^{-x})` element wise.
 
 Applies :math:`x + \log \sum_i e^{x_i}` element wise.
                 
-## mlx.nn.losses.Module
-                Base class for building neural networks with MLX.
-
-All the layers provided in :mod:`mlx.nn.layers` subclass this class and
-your models should do the same.
-
-A ``Module`` can contain other ``Module`` instances or :class:`mlx.core.array`
-instances in arbitrary nesting of python lists or dicts. The ``Module``
-then allows recursively extracting all the :class:`mlx.core.array` instances
-using :meth:`mlx.nn.Module.parameters`.
-
-In addition, the ``Module`` has the concept of trainable and non trainable
-parameters (called "frozen"). When using :func:`mlx.nn.value_and_grad`
-the gradients are returned only with respect to the trainable parameters.
-All arrays in a module are trainable unless they are added in the "frozen"
-set by calling :meth:`freeze`.
-
-.. code-block:: python
-
-    import mlx.core as mx
-    import mlx.nn as nn
-
-    class MyMLP(nn.Module):
-        def __init__(self, in_dims: int, out_dims: int, hidden_dims: int = 16):
-            super().__init__()
-
-            self.in_proj = nn.Linear(in_dims, hidden_dims)
-            self.out_proj = nn.Linear(hidden_dims, out_dims)
-
-        def __call__(self, x):
-            x = self.in_proj(x)
-            x = mx.maximum(x, 0)
-            return self.out_proj(x)
-
-    model = MyMLP(2, 1)
-
-    # All the model parameters are created but since MLX is lazy by
-    # default, they are not evaluated yet. Calling `mx.eval` actually
-    # allocates memory and initializes the parameters.
-    mx.eval(model.parameters())
-
-    # Setting a parameter to a new value is as simply as accessing that
-    # parameter and assigning a new array to it.
-    model.in_proj.weight = model.in_proj.weight * 2
-    mx.eval(model.parameters())
-                
 ## mlx.nn.losses.binary_cross_entropy
                 Computes the binary cross entropy loss.
 
@@ -3883,6 +3986,27 @@ Examples:
     >>> loss
     array([0.612192], dtype=float32)
                 
+## mlx.nn.losses.cosine_similarity_loss
+                Computes the cosine similarity between the two inputs.
+
+The cosine similarity loss is given by
+
+.. math::
+
+    \frac{x_1 \cdot x_2}{\max(\|x_1\|  \cdot \|x_2\|, \epsilon)}
+
+Args:
+    x1 (mx.array): The first set of inputs.
+    x2 (mx.array): The second set of inputs.
+    axis (int, optional): The embedding axis. Default: ``1``.
+    eps (float, optional): The minimum value of the denominator used for
+      numerical stability. Default: ``1e-8``.
+    reduction (str, optional): Specifies the reduction to apply to the output:
+      ``'none'`` | ``'mean'`` | ``'sum'``. Default: ``'none'``.
+
+Returns:
+    mx.array: The computed cosine similarity loss.
+                
 ## mlx.nn.losses.cross_entropy
                 Computes the cross entropy loss.
 
@@ -3897,6 +4021,33 @@ Args:
 
 Returns:
     array: The computed cross entropy loss.
+                
+## mlx.nn.losses.gaussian_nll_loss
+                Computes the negative log likelihood loss for a Gaussian distribution.
+
+The loss is given by:
+
+.. math::
+    \frac{1}{2}\left(\log\left(\max\left(\text{vars},
+    \ \epsilon\right)\right) + \frac{\left(\text{inputs} - \text{targets} \right)^2}
+    {\max\left(\text{vars}, \ \epsilon \right)}\right) + \text{const.}
+
+where ``inputs`` are the predicted means and ``vars`` are the the
+predicted variances.
+
+Args:
+    inputs (array): The predicted expectation of the Gaussian distribution.
+    targets (array): The target values (samples from the Gaussian distribution).
+    vars (array): The predicted variance of the Gaussian distribution.
+    full (bool, optional): Whether to include the constant term in the loss calculation.
+        Default: ``False``.
+    eps (float, optional): Small positive constant for numerical stability.
+        Default: ``1e-6``.
+    reduction (str, optional): Specifies the reduction to apply to the output:
+      ``'none'`` | ``'mean'`` | ``'sum'``. Default: ``'none'``.
+
+Returns:
+    array: The Gaussian NLL loss.
                 
 ## mlx.nn.losses.hinge_loss
                 Computes the hinge loss between inputs and targets.
@@ -3920,7 +4071,7 @@ Returns:
 
 .. math::
 
-    L_{\delta}(a) =
+    l_{\delta}(a) =
     \left\{ \begin{array}{ll}
         \frac{1}{2} a^2 & \text{for } |a| \leq \delta, \\
         \delta \left( |a| - \frac{1}{2} \delta \right) & \text{otherwise.}
@@ -4027,7 +4178,7 @@ The formula for the smooth L1 Loss is:
 
 .. math::
 
-   l =
+  l =
       \begin{cases}
         0.5 (x - y)^2, & \text{ if } & (x - y) < \beta \\
         |x - y| - 0.5 \beta, &  & \text{otherwise}
@@ -4050,7 +4201,7 @@ Margin is represented with alpha in the math section.
 
 .. math::
 
-   L_{\text{triplet}} = \max\left(\|A - P\|_p - \|A - N\|_p + \alpha, 0\right)
+   \max\left(\|A - P\|_p - \|A - N\|_p + \alpha, 0\right)
 
 Args:
     anchors (array): The anchor samples.

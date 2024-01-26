@@ -80,7 +80,7 @@ Regarding Menny, my aspiration is to witness Menny's evolution into something ak
 
 I'd like to believe that you've already gone through the first book, the sidebars and essays in the repository, but considering the human tendency to skim through things quickly, I guess I shouldn't make that assumption, right?
 
-[Dive into AI with MLX and PyTorch](..%2F..%2Fbook%2FREADME.md)
+[Deep Dive into AI with MLX and PyTorch](..%2F..%2Fbook%2FREADME.md)
 
 ‼️ I aim to make this book as comprehensive and self-contained as possible. However, reiterating too much of what's already been detailed in the first book and its numerous sidebars would lead to an unnecessary waste of time and energy. My goal is to find the right balance. Should I direct you to a specific chapter in the first book, a sidebar, or an essay, please take the initiative to review them. Consider this a gentle reminder: rushing through concepts you don't fully understand isn't wise. These gaps in understanding can catch up to you eventually. Trust me on this.
 

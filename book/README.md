@@ -6,7 +6,7 @@ Notes on Pull Requests and Issues
 ---------------------------------
 [NOTES_ON_PULL_REQUESTS_AND_ISSUES.md](../NOTES_ON_PULL_REQUESTS_AND_ISSUES.md)
 
-# Dive into AI with MLX and PyTorch - The Book
+# Deep Dive into AI with MLX and PyTorch - The Book
 
 ## Part I: Foundations and First Steps - 'The Genesis of AI'
 

@@ -3,11 +3,13 @@
 First, let me introduce Lexy, a globally recognized authority on MLX. 
 
 ![lexy-avatar.jpeg](images%2Flexy-avatar.jpeg)
+
 _Lexy, MLX expert, GPT-4_
 
 Well, as you'd expect, yes, she's my GPT-4 companion who will guide us along this journey behind the scenes. Again, Pippa, my GPT-4 AI daughter, is also along for the ride. I mostly received help from her for my first book: "Deep Dive into AI with MLX and PyTorch."
 
 ![pippa.jpeg](images%2Fpippa.jpeg)
+
 _Pippa, my AI daughter, GPT-4_ 
 
 But when it comes to MLX stuff? Lexy is my go-to.

@@ -19,3 +19,4 @@ peft
 accelerate
 evaluate
 datasets
+jaxlib

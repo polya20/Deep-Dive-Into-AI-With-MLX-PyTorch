@@ -6,6 +6,8 @@ This is an ongoing project that will be constantly updated.
 
 ## What's New?
 
+👉 2024-01-27: Chapter 3 Added to MLX Book: [Chapter 3 - Menny's Polymorphic Traits: Unraveling MLX's Uniqueness](mlx-book%2F003-mennys-polymorphic-traits-unraveling-mlxs-uniqueness%2FREADME.md)
+
 👉 2024-01-27: Chapter 2 Added to MLX Book: [Chapter 2 - Menny, the Sassy Transformer](mlx-book%2F002-menny-the-sassy-transformer%2FREADME.md)
 
 👉 2024-01-26: Chapter 1 Added to MLX Book: [Chapter 1 - Menny, the Smooth Operator in Data Transformation](mlx-book%2F001-menny-the-smooth-operator-in-data-transformation%2FREADME.md)

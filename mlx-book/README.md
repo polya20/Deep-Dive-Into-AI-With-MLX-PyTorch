@@ -89,3 +89,5 @@ Let's go and meet Menny in the world of Apple Silicon.
 [Chapter 1 - Menny, the Smooth Operator in Data Transformation](001-menny-the-smooth-operator-in-data-transformation/README.md)
 
 [Chapter 2 - Menny, the Sassy Transformer](002-menny-the-sassy-transformer%2FREADME.md)
+
+[Chapter 3 - Menny's Polymorphic Traits: Unraveling MLX's Uniqueness](003-mennys-polymorphic-traits-unraveling-mlxs-uniqueness%2FREADME.md)

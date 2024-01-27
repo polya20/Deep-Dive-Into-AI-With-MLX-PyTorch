@@ -87,3 +87,5 @@ Let's go and meet Menny in the world of Apple Silicon.
 [Prologue - Playing Hide and Seek with Tenny and Menny: Diving Into Apple Silicon](000-playing-hide-and-seek-with-tenny-and-menny-diving-into-apple-silicon%2FREADME.md)
 
 [Chapter 1 - Menny, the Smooth Operator in Data Transformation](001-menny-the-smooth-operator-in-data-transformation/README.md)
+
+[Chapter 2 - Menny, the Sassy Transformer](002-menny-the-sassy-transformer%2FREADME.md)

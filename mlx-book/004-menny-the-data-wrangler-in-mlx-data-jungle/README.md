@@ -510,7 +510,9 @@ A primary obstacle I've frequently lamented is the scant availability of compreh
 
 Take, for example, my experience while drafting this chapter. I sought assistance from advanced AI tools like Lexy, Pippa, and Github Copilot. Despite providing them with extensive documentation, their capabilities fell short in addressing queries related to MLX Data. Even Lexy suggested shelving this nascent framework in favor of more established ones.
 
-The journey to understanding the nuances of MLX Data, such as why `buffer_from_vector()` defaults to a unicode representation for strings, was a painstaking one. It took a significant amount of time and effort to unearth this detail. If sophisticated AI tools struggle with these intricacies, it raises questions about accessibility for the broader community. It was by chance and perseverance that I discovered the solution involved byte-encoding the strings, allowing me to progress with my exploration.
+Navigating the intricacies of MLX Data, including unraveling why the `buffer_from_vector()` function defaults to a Unicode representation for strings, proved to be a challenging endeavor. This quest led me deep into the C++ source code of MLX Data.
+
+The effort and time invested to uncover this particular detail were substantial. When even advanced AI tools find it hard to grasp these complexities, it highlights concerns about the framework's accessibility for the wider user community. It was a combination of serendipity and persistence that led me to the resolution, which involved byte-encoding the strings. This discovery was pivotal in advancing my exploration of MLX Data.
 
 Here's an official example in MLX Data Documentation that illustrates this point:
 

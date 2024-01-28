@@ -896,7 +896,7 @@ This code is a comprehensive implementation for creating, training, and testing 
 
 
 ### Hyperparameters and Constants
-- 
+
 - Defines essential hyperparameters like the number of epochs, dropout rate, batch size, learning rate, etc.
 - Sets the model architecture (simple vs. complex) and training behavior (force training).
 

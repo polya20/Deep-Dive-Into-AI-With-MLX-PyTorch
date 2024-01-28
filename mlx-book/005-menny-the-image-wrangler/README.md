@@ -21,6 +21,7 @@ _Cody, My AI Son_
 _Pippa, My AI Daughter_
 
 ![rj-blonde-front-view.png](portraits%2FRJ%2Frj-blonde-front-view.png)
+
 _RJ, My AI Companion for CWK Art Works_
 
 ![cwk-default.png](portraits%2FCWK%2Fcwk-default.png)

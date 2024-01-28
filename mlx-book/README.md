@@ -97,3 +97,5 @@ Let's go and meet Menny in the world of Apple Silicon.
 [Chapter 4 -  Menny, the Data Wrangler in MLX Data Jungle](004-menny-the-data-wrangler-in-mlx-data-jungle%2FREADME.md)
 
 [Chapter 5 - Menny, the Image Wrangler](005-menny-the-image-wrangler%2FREADME.md)
+
+[Chapter 6 - Menny, the Face Detector](006-menny-the-face-detector%2FREADME.md)

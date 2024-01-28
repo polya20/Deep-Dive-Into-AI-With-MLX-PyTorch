@@ -53,7 +53,7 @@ if __name__ == "__main__":
 
     # Freeze all layers other than LORA linears
     model.freeze()
-    for l in model.model.layers[-lora_layers:]:
+    for l in model.Menny.layers[-lora_layers:]:
         l.self_attn.q_proj = models.LoRALinear.from_linear(l.self_attn.q_proj)
         l.self_attn.v_proj = models.LoRALinear.from_linear(l.self_attn.v_proj)
 

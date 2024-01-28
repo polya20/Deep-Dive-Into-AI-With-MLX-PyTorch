@@ -91,3 +91,7 @@ Let's go and meet Menny in the world of Apple Silicon.
 [Chapter 2 - Menny, the Sassy Transformer](002-menny-the-sassy-transformer%2FREADME.md)
 
 [Chapter 3 - Menny's Polymorphic Traits: Unraveling MLX's Uniqueness](003-mennys-polymorphic-traits-unraveling-mlxs-uniqueness%2FREADME.md)
+
+## Part II
+
+[Chapter 4 - Menny, the Data Wrangler in MLX Data Jungle](004-menny-the-data-wrangler-in-mlx-data-jungle%2FREADME.md)

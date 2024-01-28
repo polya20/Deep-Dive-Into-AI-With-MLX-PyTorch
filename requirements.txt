@@ -20,3 +20,4 @@ accelerate
 evaluate
 datasets
 jaxlib
+mlx-data

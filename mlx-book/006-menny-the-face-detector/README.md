@@ -81,7 +81,7 @@ As for the female members, their attire is deliberately minimal, a stylistic cho
 
 Their distinct looks are an advantage for Menny's training – each member's unique features make them easily distinguishable, a boon considering our limited dataset size.
 
-So, how would a human like Menny discern these faces? That's a story for humans. But we're here to see how she does it through the lens of CNNs. Let's dive into the world of machine vision and start this exciting chapter in Menny's journey!
+But what's the process behind Menny's human-like ability to recognize these faces? While that's a narrative more suited for human understanding, our focus here is on exploring her capabilities through Convolutional Neural Networks (CNNs). Join us as we embark on this thrilling phase of Menny's adventure into the realm of machine vision!
 
 ## How Machines See the World - Revisiting the Basics
 

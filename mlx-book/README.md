@@ -82,7 +82,7 @@ That's where our journey begins – with the hardware, Apple Silicon. It's time 
 
 Let's go and meet Menny in the world of Apple Silicon.
 
-## Part I
+## Part I - MLX 101
 
 [Prologue - Playing Hide and Seek with Tenny and Menny: Diving Into Apple Silicon](000-playing-hide-and-seek-with-tenny-and-menny-diving-into-apple-silicon%2FREADME.md)
 
@@ -92,6 +92,8 @@ Let's go and meet Menny in the world of Apple Silicon.
 
 [Chapter 3 - Menny's Polymorphic Traits: Unraveling MLX's Uniqueness](003-mennys-polymorphic-traits-unraveling-mlxs-uniqueness%2FREADME.md)
 
-## Part II
+## Part II - MLX Data
 
 [Chapter 4 -  Menny, the Data Wrangler in MLX Data Jungle](004-menny-the-data-wrangler-in-mlx-data-jungle%2FREADME.md)
+
+[Chapter 5 - Menny, the Image Wrangler](005-menny-the-image-wrangler%2FREADME.md)

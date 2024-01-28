@@ -6,6 +6,8 @@ This is an ongoing project that will be constantly updated.
 
 ## What's New?
 
+👉 2024-01-28: Chapter 5 Added to MLX Book: [Chapter 5 - Menny, the Image Wrangler](mlx-book%2F005-menny-the-image-wrangler%2FREADME.md)
+
 👉 2024-01-28: Chapter 4 Added to MLX Book: [Chapter 4 - Menny, the Data Wrangler in MLX Data Jungle](mlx-book%2F004-menny-the-data-wrangler-in-mlx-data-jungle%2FREADME.md)
 
 👉 2024-01-27: Chapter 3 Added to MLX Book: [Chapter 3 - Menny's Polymorphic Traits: Unraveling MLX's Uniqueness](mlx-book%2F003-mennys-polymorphic-traits-unraveling-mlxs-uniqueness%2FREADME.md)

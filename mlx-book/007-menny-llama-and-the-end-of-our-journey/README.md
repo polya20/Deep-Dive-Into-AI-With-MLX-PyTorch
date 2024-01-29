@@ -1,5 +1,5 @@
 # Chapter 7 - Menny LLaMA and the End of Our Journey
-
+![menny-llama.png](images%2Fmenny-llama.png)
 In the third part of our journey, we're diving into the world of a remarkable Large Language Model (LLM) known as LLaMA, developed by Meta AI. This open-source powerhouse stands out not just for its size and capabilities but also for its accessibility, allowing anyone to harness its potential freely.
 
 As we venture back into the intricate maze of Natural Language Processing (NLP), remember that we've laid the foundational bricks in our first book. There, Tenny, the Transformer, evolved from a simple chatbot into a sophisticated AI entity. For those who need a refresher on these concepts, a revisit to Part III of our first book will be enlightening.
@@ -877,7 +877,7 @@ if __name__ == "__main__":
 This code snippet turns the Streamlit app into a more engaging chatbot interface by visually representing the conversation with avatars, akin to modern messaging apps. The use of `st.chat_message` adds a layer of realism and improves the overall user experience.
 
 ## Enhancing Menny Llama: Unlocking New Features
-
+![menny-llama.png](images%2Fmenny-llama.png)
 In developing Menny Llama, I deliberately left room for expansion, knowing that with tools like Streamlit, there's a world of possibilities to enhance our chatbot. Here are some ideas for features that you, as a budding developer, can easily implement to elevate Menny's capabilities:
 
 1. **Context Retention**:

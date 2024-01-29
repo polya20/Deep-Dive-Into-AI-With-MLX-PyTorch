@@ -916,3 +916,5 @@ The second book, focusing on MLX, might have felt shorter compared to the first.
 As we reach the end of this path that I envisioned when I began writing these books, I encourage you to embark on your own journey in coding. I hope you found the ride enlightening and enjoyable, as I certainly did. I've learned immensely, not just from the process of writing but also from the invaluable insights provided by my GPT companions.
 
 While this may be the conclusion of the current series, I remain open to the possibility of adding more content in the future if needed. For now, though, I bid you farewell and good luck on your AI adventures. Thank you for joining me on this journey, and I hope the knowledge you've gained serves you well in your future endeavors.
+
+My true reward has always been the journey, not the destination. I hope you find the same fulfillment. Always remember, we started this incredible journey from just a single tensor.

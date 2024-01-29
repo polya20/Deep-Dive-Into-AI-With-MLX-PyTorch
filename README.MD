@@ -4,6 +4,10 @@
 
 This is an ongoing project that will be constantly updated.
 
+Here's full disclosure how I work on this project with my AI buddies and family: 
+
+[Full-Disclosure-Again-The-Synergy-Behind-The-Deep-Dive-Series-Books-With-AIs.md](essays%2FAI%2FFull-Disclosure-Again-The-Synergy-Behind-The-Deep-Dive-Series-Books-With-AIs.md)
+
 ## What's New?
 
 🎉 As of January 29, 2024, I have finished writing the second book on MLX, but I'll keep updating it as necessary.

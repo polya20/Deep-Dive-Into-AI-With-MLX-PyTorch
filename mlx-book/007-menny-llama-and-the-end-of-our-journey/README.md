@@ -905,6 +905,8 @@ These ideas are just the beginning. The beauty of coding is that your creativity
 
 ## Reflecting on Our Coding Odyssey: From PyTorch to MLX
 
+![scale-one-fear-none.jpeg](..%2F..%2Fimages%2Fscale-one-fear-none.jpeg)
+
 As we conclude the journey through both of my books, I want to emphasize a philosophy that has guided my approach: the value of self-driven learning. I believe in encouraging you to explore and create your own coding paths, as true understanding and skill in coding come from hands-on experience and personal exploration.
 
 In my view, the essence of being a real coder is somewhat innate. While it's certainly possible to teach someone to become proficient in coding, reaching the pinnacle of greatness in coding often requires an intrinsic passion and aptitude. This might resonate with you if you feel a natural inclination towards coding, finding languages like Python not just tools but extensions of your thought process.

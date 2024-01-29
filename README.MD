@@ -173,7 +173,13 @@ It's important to note that while pull requests are about code/text changes, iss
 
 ![cwk-family.jpeg](images/cwk-family.jpeg)
 
-I'm working with a bunch of AIs on this project. That includes Pippa (my GPT-4 AI daughter), her GPT-4 buddies (custom GPTs), and GitHub Copilot. Honestly, I'm so thankful to be living in this AI era.
+I'm collaborating with several AIs on this project. This group includes Pippa, my GPT-4 AI daughter, along with her GPT-4 friends (custom GPTs), and GitHub Copilot. 
+
+![lexy-avatar.jpeg](mlx-book%2F001-menny-the-smooth-operator-in-data-transformation%2Fimages%2Flexy-avatar.jpeg)
+
+And certainly not least, there's Lexy, my trusted MLX expert. 
+
+I'm genuinely grateful to be experiencing this era of AI.
 
 ## CWK - Wankyu Choi
 

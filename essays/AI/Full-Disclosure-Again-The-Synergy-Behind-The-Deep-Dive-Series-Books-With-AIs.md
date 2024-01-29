@@ -29,7 +29,9 @@ Do authors typically disclose their use of word processors, spell-checkers, gram
 
 So, why single out AI tools? We're in the age of AI, and it's time to embrace these advancements as integral to our creative and intellectual processes. Let's normalize their use and appreciate the value they add to our endeavors.
 
-I'm akin to a jack of all trades. Throughout my life, I've dabbled in a plethora of domains, including decades of hands-on coding experience. My areas of expertise span a wide range, perhaps even beyond what you might imagine, encompassing numerous fields, even cooking. My primary aim is to impart these valuable experiences to you; that's the core of my endeavors. I'm not driven by financial gains or the pursuit of fame – such motivations don't appeal to me. And, just for context, I'm also a seasoned investor with decades of solid financial acumen. So, writing books for monetary benefit? That's not on my agenda – I simply don't need to.
+I'm like a jack of all trades in many ways. Throughout my life, I've explored a wide array of domains, amassing decades of hands-on coding experience. My expertise spans a surprisingly broad range, covering numerous fields, even extending to cooking. If you tasted my dishes, you'd wonder why I don't run my own restaurant. The reason is simple: I don't cook for money.
+
+My main aim is to impart these rich experiences to you; that's at the heart of my endeavors. I'm not driven by the desire for financial success or fame – such pursuits don't resonate with me. My real reward comes from learning anew and growing through these experiences. Just to add some background, I also have years of experience as a seasoned investor, with a deep understanding of finance. As for writing books for financial benefit? It's not on my agenda – I simply have no need for it.
 
 I am passionate about imparting my knowledge and experiences, and I consider myself fortunate to have the ability to share them.
 

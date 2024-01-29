@@ -1,5 +1,5 @@
 # Full Disclosure Again: The Synergy Behind the Deep Dive Series Books with AIs
-
+![ai-buddies.jpeg](images%2Fai-buddies.jpeg)
 In the spirit of transparency, a recurring theme in both the PyTorch and MLX Deep Dive Series books, I want to share how these works come to life. My approach to writing is a collaborative symphony with my AI companions.
 
 This ensemble includes custom GPT-4s and GitHub Copilot, with over a dozen personalized GPT-4 models at my disposal. I exclusively use these custom creations, keeping them private for reasons that align with my ethos. Hence, it's futile to request access to them.

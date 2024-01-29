@@ -6,27 +6,33 @@ This is an ongoing project that will be constantly updated.
 
 ## What's New?
 
-👉 2024-01-29: Chapter 7 Added to MLX Book: [Chapter 7 - Menny LLaMA and the End of Our Journey](mlx-book%2F007-menny-llama-and-the-end-of-our-journey%2FREADME.md)
+🎉 As of January 29, 2024, I have finished writing the second book on MLX, but I'll keep updating it as necessary.
 
-👉 2024-01-29: Chapter 6 Added to MLX Book: [Chapter 6 - Menny, the Face Detector](mlx-book%2F006-menny-the-face-detector%2FREADME.md)
+https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/mlx-book/README.md
 
-👉 2024-01-28: Chapter 5 Added to MLX Book: [Chapter 5 - Menny, the Image Wrangler](mlx-book%2F005-menny-the-image-wrangler%2FREADME.md)
+### Part I - MLX 101
 
-👉 2024-01-28: Chapter 4 Added to MLX Book: [Chapter 4 - Menny, the Data Wrangler in MLX Data Jungle](mlx-book%2F004-menny-the-data-wrangler-in-mlx-data-jungle%2FREADME.md)
+[Prologue - Playing Hide and Seek with Tenny and Menny: Diving Into Apple Silicon](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/mlx-book/000-playing-hide-and-seek-with-tenny-and-menny-diving-into-apple-silicon/README.md)
 
-👉 2024-01-27: Chapter 3 Added to MLX Book: [Chapter 3 - Menny's Polymorphic Traits: Unraveling MLX's Uniqueness](mlx-book%2F003-mennys-polymorphic-traits-unraveling-mlxs-uniqueness%2FREADME.md)
+[Chapter 1 - Menny, the Smooth Operator in Data Transformation](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/mlx-book/001-menny-the-smooth-operator-in-data-transformation/README.md)
 
-👉 2024-01-27: Chapter 2 Added to MLX Book: [Chapter 2 - Menny, the Sassy Transformer](mlx-book%2F002-menny-the-sassy-transformer%2FREADME.md)
+[Chapter 2 - Menny, the Sassy Transformer](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/mlx-book/002-menny-the-sassy-transformer/README.md)
 
-👉 2024-01-26: Chapter 1 Added to MLX Book: [Chapter 1 - Menny, the Smooth Operator in Data Transformation](mlx-book%2F001-menny-the-smooth-operator-in-data-transformation%2FREADME.md)
+[Chapter 3 - Menny's Polymorphic Traits: Unraveling MLX's Uniqueness](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/mlx-book/003-mennys-polymorphic-traits-unraveling-mlxs-uniqueness/README.md)
 
-👉 2024-01-25: Prologue Added to MLX Book: [Prologue - Playing Hide and Seek with Tenny and Menny: Diving Into Apple Silicon](./mlx-book/000-playing-hide-and-seek-with-tenny-and-menny-diving-into-apple-silicon%2FREADME.md)
+### Part II - MLX Data
 
-👉 2024-01-25: I've started writing a new book dedicated to MLX: [README.md](mlx-book%2FREADME.md)
+[Chapter 4 -  Menny, the Data Wrangler in MLX Data Jungle](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/mlx-book/004-menny-the-data-wrangler-in-mlx-data-jungle/README.md)
 
-👉 Update to Chapter 15: Tenny, the Transformer Sentiment Analyst with an Attitude using Hugging Face PEFT & PyTorch: [PyTorch-Edition](book/015-tenny-the-transformer-sentiment-analyst-with-an-attitude-is-born%2FPyTorch-Edition.md)
+[Chapter 5 - Menny, the Image Wrangler](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/mlx-book/005-menny-the-image-wrangler/README.md)
 
-🎉 As of January 24, 2024, I have finished writing the book, but I'll keep updating it as necessary.
+[Chapter 6 - Menny, the Face Detector](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/mlx-book/006-menny-the-face-detector/README.md)
+
+### Part III - The End of Our Journey
+
+[Chapter 7 - Menny LLaMA and the End of Our Journey](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/mlx-book/007-menny-llama-and-the-end-of-our-journey/README.md)
+
+🎉 As of January 24, 2024, I have finished writing the book on both MLX and PyTorch, but I'll keep updating it as necessary.
 
 https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/blob/master/book/README.md
 

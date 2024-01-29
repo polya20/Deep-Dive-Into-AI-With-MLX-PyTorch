@@ -310,6 +310,7 @@ if __name__ == "__main__":
     MODEL_NAME = "Menny Llama"
     MODEL_AVATAR = "./images/menny-avatar.png"
     HUMAN_AVATAR = "./images/human-avatar.png"
+    MODEL_IMAGE = "./images/menny-llama.png"
 
     mx.random.seed(SEED)
     model, tokenizer = load_cached_model(MODEL_PATH)
@@ -320,7 +321,7 @@ if __name__ == "__main__":
     temp = st.sidebar.slider("Temperature", 0.1, 1.0, 0.7)
 
     st.title(MODEL_NAME)
-    st.image(MODEL_AVATAR, width=500)
+    st.image(MODEL_IMAGE, width=500)
 
     user_input = st.chat_input("Your Message")
     response = generate_response(user_input)

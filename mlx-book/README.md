@@ -99,3 +99,7 @@ Let's go and meet Menny in the world of Apple Silicon.
 [Chapter 5 - Menny, the Image Wrangler](005-menny-the-image-wrangler%2FREADME.md)
 
 [Chapter 6 - Menny, the Face Detector](006-menny-the-face-detector%2FREADME.md)
+
+## Part III - The End of Our Journey
+
+[Chapter 7 - Menny LLaMA and the End of Our Journey](007-menny-llama-and-the-end-of-our-journey%2FREADME.md)

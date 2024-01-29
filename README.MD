@@ -6,6 +6,8 @@ This is an ongoing project that will be constantly updated.
 
 ## What's New?
 
+👉 2024-01-29: Chapter 7 Added to MLX Book: [Chapter 7 - Menny LLaMA and the End of Our Journey](mlx-book%2F007-menny-llama-and-the-end-of-our-journey%2FREADME.md)
+
 👉 2024-01-29: Chapter 6 Added to MLX Book: [Chapter 6 - Menny, the Face Detector](mlx-book%2F006-menny-the-face-detector%2FREADME.md)
 
 👉 2024-01-28: Chapter 5 Added to MLX Book: [Chapter 5 - Menny, the Image Wrangler](mlx-book%2F005-menny-the-image-wrangler%2FREADME.md)

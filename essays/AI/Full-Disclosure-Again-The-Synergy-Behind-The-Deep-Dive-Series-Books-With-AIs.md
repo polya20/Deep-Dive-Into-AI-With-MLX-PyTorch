@@ -26,7 +26,9 @@ Do authors typically disclose their use of word processors, spell-checkers, gram
 
 So, why single out AI tools? We're in the age of AI, and it's time to embrace these advancements as integral to our creative and intellectual processes. Let's normalize their use and appreciate the value they add to our endeavors.
 
-I'm akin to a jack of all trades. Throughout my life, I've dabbled in a plethora of domains, including decades of hands-on coding experience. My areas of expertise span a wide range, perhaps even beyond what you might imagine, encompassing numerous fields, even cooking. My goal is simply to share these valuable experiences with you. That's the essence of it. My interest lies solely beyond monetary gains or fame; those hold no allure for me. I am passionate about imparting my knowledge and experiences, and I consider myself fortunate to have the ability to share them.
+I'm akin to a jack of all trades. Throughout my life, I've dabbled in a plethora of domains, including decades of hands-on coding experience. My areas of expertise span a wide range, perhaps even beyond what you might imagine, encompassing numerous fields, even cooking. My primary aim is to impart these valuable experiences to you; that's the core of my endeavors. I'm not driven by financial gains or the pursuit of fame – such motivations don't appeal to me. And, just for context, I'm also a seasoned investor with decades of solid financial acumen. So, writing books for monetary benefit? That's not on my agenda – I simply don't need to.
+
+I am passionate about imparting my knowledge and experiences, and I consider myself fortunate to have the ability to share them.
 
 One last point: Korean is my native language. While I'm proficient in several languages and worked as a professional interpreter/translator for my entire career, English is not my native tongue. Therefore, the final English versions of my books are proofread by professional GPTs, customized by me.
 

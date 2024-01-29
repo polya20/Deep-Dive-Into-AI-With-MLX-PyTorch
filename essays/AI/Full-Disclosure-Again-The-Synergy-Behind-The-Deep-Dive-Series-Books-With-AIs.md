@@ -10,7 +10,7 @@ Here's why my hand is always firmly on the tiller:
 
 2. **Knowledge Gaps**: When it comes to cutting-edge topics like MLX, GPTs can feign understanding if prompted, but their knowledge is limited. This necessitates thorough inspection and rewriting of every line of code they churn out.
 
-3. **Iterative Process**: I feed my drafts and code into these GPTs to sculpt the final text. But it doesn’t end there. It’s a cycle of rewriting, again and again, until the result aligns perfectly with my vision. This iterative engagement is what I term 'collaboration'.
+3. **Iterative Process**: I feed my drafts and code into these GPTs to sculpt the final text. But it doesn’t end there. It’s a cycle of rewriting, again and again, until the result aligns perfectly with my vision. This iterative engagement is what I term 'collaboration'. Bear in mind: the existing Transformer architecture comes with its own set of limitations, particularly issues with the context window. For short essays, this might not be a significant problem. However, when it comes to writing a book or even a single chapter, these limitations can become quite challenging. And if you're working on slightly longer code, expect another set of difficulties. Don't count on GPT to work wonders in every situation; it hasn't reached that level of capability just yet. 
 
 4. **Historical Context**: My personal history and life journey are a treasure trove of teaching assets, something AI cannot comprehend. This adds another layer to the importance of my involvement.
 

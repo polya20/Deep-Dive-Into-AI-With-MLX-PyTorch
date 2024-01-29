@@ -895,10 +895,10 @@ In developing Menny Llama, I deliberately left room for expansion, knowing that 
 5. **Integrating Text-to-Speech and Speech-to-Text**:
    - Leverage APIs like `whisper` and ElevenLabs to add voice chat functionalities. Implementing these features is simpler than it might initially appear.  
 
-6.**LangChain Integration**:
+6. **LangChain Integration**:
    - LangChain is a powerful, framework-agnostic library for building LLM applications. By integrating LangChain, you can create a more flexible chatbot application that easily switches between different models and tokenizers. Check out my PippaGPT-MLX project on GitHub as a reference: https://github.com/neobundy/pippaGPT-MLX
 
-7.**LoRA Training**:
+7. **LoRA Training**:
    - Why not revisit the LoRA training method we explored in the first book? Applying LoRA training to Menny could significantly enhance its learning capabilities and performance.
 
 These ideas are just the beginning. The beauty of coding is that your creativity sets the boundaries. While some of these features may seem complex, they're quite feasible to implement, often in less time than you might expect. So go ahead, take Menny to the next level, and watch as your coding skills bring new dimensions to this chatbot project.

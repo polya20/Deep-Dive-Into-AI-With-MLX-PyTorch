@@ -8,6 +8,8 @@ Here's full disclosure how I work on this project with my AI buddies and family:
 
 ## What's New?
 
+👉 Some of you asked how: [Embracing-Speed-And-Efficiency-My-Fast-And-Furious-Methodology.md](essays%2Flife%2FEmbracing-Speed-And-Efficiency-My-Fast-And-Furious-Methodology.md)
+
 🎉 As of January 29, 2024, I have finished writing the second book on MLX, but I'll keep updating it as necessary.
 
 https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/mlx-book/README.md

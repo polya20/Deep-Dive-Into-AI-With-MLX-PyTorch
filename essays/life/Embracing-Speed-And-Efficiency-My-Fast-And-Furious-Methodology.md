@@ -86,6 +86,8 @@ Pause for a moment to ponder how a single individual can personally set up such 
 
 During the remodeling of my house, I took on the responsibility of setting up all the networking, along with some of the electrical and audio cabling for the final arrangement. The electricians involved were quite perplexed by the complexity of the setup, to the point where I had to handle much of it myself.
 
+When I undertook these tasks, there were no GPTs available to assist me.
+
 What you've seen so far is just a glimpse of my tech nerd side. There's so much more to me, especially when you consider my involvement with audio and video technologies. My areas of expertise extend far beyond what might be apparent at first glance. Regardless of the domain, my perspective and approach remain consistent: object orientation is the key. This philosophy guides me across all my diverse interests and activities.
 
 This is precisely why my approach is both fast and furious, not just in my work but also in how I learn. My experiences with such intricate setups have honed this rapid, intensive style.

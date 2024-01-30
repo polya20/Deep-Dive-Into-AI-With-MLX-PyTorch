@@ -6,7 +6,9 @@ Join me on a quick tour of my house and workflow. Reserve your judgment until yo
 
 My mantra is to be fast and furious in all aspects of life. Whether learning, working, thinking, coding, creating music, or engaging in photography and videography, I approach everything with speed and intensity. This relentless pace is more than a habit; it's my signature style.
 
-In all my activities, I am the dynamic element. My physical setups remain constant, meticulously arranged for maximum efficiency. In this static environment, I am the one who adapts and moves. This principle is crucial across all my endeavors, especially in coding. Here's my office setup,
+In all my activities, I am the dynamic element. My physical setups remain constant, meticulously arranged for maximum efficiency. In this static environment, I am the one who adapts and moves. This principle is crucial across all my endeavors, especially in coding. Here's my office setup.
+
+All images are intentionally blurred to protect my privacy.
 
 ![setup-office.png](images%2Fsetup-office.png)
 

@@ -1,5 +1,5 @@
 # I Have Good Wheels, You Know: Sticking to What Works
-![wheels.png](wheels.png)
+![wheels.png](images/wheels.png)
 You know, I've mentioned this quite a few times before, but I'm like this old dog who tends to overthink everything 😄 I really do read into things a lot.
 
 But here's my take on wheels—yep, I'm talking about wheels.

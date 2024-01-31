@@ -36,8 +36,7 @@ For desks, I opt for spaciousness, allowing for unrestricted movement and ample 
 
 In my home music room, the desk is specially designed to accommodate a master keyboard, tailored for digital musicians.
 
-
-In my commitment to optimal ergonomics, I even took to designing my office using Sketchup during my home's remodeling. This ensured that the space would meet my requirements for comfort and efficiency. I handed this design over to the contractor and closely collaborated with them to construct my office and most of my home exactly to my specifications.
+Driven by my dedication to ideal ergonomics, I personally designed my office using Sketchup amid my home's renovation. This approach guaranteed the space aligned with my needs for comfort and productivity. I provided these designs to the contractor, working closely with them to ensure my office and much of my home were built exactly as I envisioned. I always ensure I'm deeply involved in every step of a project, as I prefer to have a clear understanding of every detail and be hands-on in all aspects of my work.
 
 ![setup-sketchup.png](..%2Flife%2Fimages%2Fsetup-sketchup.png)
 

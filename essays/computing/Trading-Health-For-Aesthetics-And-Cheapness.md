@@ -19,17 +19,21 @@ _I frequently update my setups. The office arrangement you see is from a few yea
 Ergonomic gear tends to be pricey, particularly desks and chairs, which can seem prohibitively expensive at first glance.
 
 But have you considered the long-term health costs of using non-ergonomic keyboards, mice, desks, and chairs?
+
 ![setup-laptop2.png](..%2Flife%2Fimages%2Fsetup-laptop2.png)
+
 Seeing young people using laptops for intense work always concerns me. I personally limit laptop use for significant tasks. During long work journeys, such as when I was vlogging on the move, I always made sure to bring my ergonomic keyboard and mouse, fully aware of the health risks associated with extended laptop use.
 
 My first ergonomic keyboard was from Microsoft. But as the market shifted towards aesthetics, the variety of ergonomic options reduced. I had to find alternatives. Currently, I'm using the Logitech Ergo K860 and MX 3s, owning three sets and replacing them as necessary. The worry is that companies like Logitech might discontinue these ergonomic models, prompting me to consider stockpiling a few extra sets.
 
 ![setup-office.png](..%2Flife%2Fimages%2Fsetup-office.png)
+
 _My current office setup._
 
 For desks, I opt for spaciousness, allowing for unrestricted movement and ample room for all necessary items. This often means using a secondary small desk for the keyboard and mouse. Unfortunately, the ergonomic keyboard stand I used to favor has been discontinued.
 
 ![setup-music-studio.png](..%2Flife%2Fimages%2Fsetup-music-studio.png)
+
 In my home music room, the desk is specially designed to accommodate a master keyboard, tailored for digital musicians.
 
 

@@ -24,79 +24,9 @@ Here's full disclosure how I work on this project with my AI buddies and family:
 
 https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/mlx-book/README.md
 
-### Part I - MLX 101
-
-[Prologue - Playing Hide and Seek with Tenny and Menny: Diving Into Apple Silicon](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/mlx-book/000-playing-hide-and-seek-with-tenny-and-menny-diving-into-apple-silicon/README.md)
-
-[Chapter 1 - Menny, the Smooth Operator in Data Transformation](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/mlx-book/001-menny-the-smooth-operator-in-data-transformation/README.md)
-
-[Chapter 2 - Menny, the Sassy Transformer](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/mlx-book/002-menny-the-sassy-transformer/README.md)
-
-[Chapter 3 - Menny's Polymorphic Traits: Unraveling MLX's Uniqueness](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/mlx-book/003-mennys-polymorphic-traits-unraveling-mlxs-uniqueness/README.md)
-
-### Part II - MLX Data
-
-[Chapter 4 -  Menny, the Data Wrangler in MLX Data Jungle](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/mlx-book/004-menny-the-data-wrangler-in-mlx-data-jungle/README.md)
-
-[Chapter 5 - Menny, the Image Wrangler](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/mlx-book/005-menny-the-image-wrangler/README.md)
-
-[Chapter 6 - Menny, the Face Detector](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/mlx-book/006-menny-the-face-detector/README.md)
-
-### Part III - The End of Our Journey
-
-[Chapter 7 - Menny LLaMA and the End of Our Journey](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/mlx-book/007-menny-llama-and-the-end-of-our-journey/README.md)
-
 🎉 As of January 24, 2024, I have finished writing the book on both MLX and PyTorch, but I'll keep updating it as necessary.
 
 https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/blob/master/book/README.md
-
-This journey has been both thrilling and enlightening for me. Starting with a single Tensor, Tenny evolved into the Vision Weaver by the end of our adventure. That initial tensor represented who I was at the start, and the Vision Weaver symbolizes who I've become. I hope you've enjoyed this journey just as much.
-
-### Part I: Foundations and First Steps - 'The Genesis of AI'
-
-[Prolog - Hello AI World](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/000-hello-ai-world/README.md)
-
-[Chapter 1 - The Story of A Tensor](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/001-story-of-a-tensor/README.md)
-
-[Chapter 2 - The Adventure of Tenny, the Tensor: A Hero's Journey](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/002-adventure-of-tenny-the-tensor)
-
-[Chapter 3 - Foundations of Neural Networks: A Comprehensive Overview](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/003-foundations-of-neural-networks/README.md)
-
-[Chapter 4 - The Rise of Tenny, the Analyst: Tenny Takes on Wall Street](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/004-neural-networks-in-action-tenny-the-analyst/README.md)
-
-[Chapter 5 - Crafting and Nurturing Data: The A to Z of Data Prep in the AI Kitchen](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/005-a-to-z-of-data-prep-in-the-ai-kitchen/README.md)
-
-[Chapter 6 - Refactoring Data Workflow for Tenny](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/006-refactoring-data-workflow/README.md)
-
-[Chapter 7 - Inspecting Data Workflow for Tenny](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/007-inspecting-data-workflow-for-tenny/README.md)
-
-[Chapter 8 - Refining the Recipe in the AI Kitchen](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/008-refining-the-recipe-in-the-ai-kitchen/README.md)
-
-### Part II: The Art of Classification - 'Navigating the AI Labyrinth'
-
-[Chapter 9 - Exploring the Art of Classification with Tenny](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/009-exploring-the-art-of-classfication/README.md)
-
-[Chapter 10 - Crafting Your Own Classification Criteria: Owning Your Decisions](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/010-crafting-your-own-classification-criteria/README.md)
-
-[Chapter 11 - Tenny, the Stock Classifier](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/011-tenny-the-stock-classifier/README.md)
-
-### Part III: The Language of AI - 'Conversing with the Future'
-
-[Chapter 12 - Tenny the Sentiment Analyst](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/012-tenny-the-sentiment-analyst/README.md)
-
-[Chapter 13 - Tenny, the Transformer](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/013-tenny-the-transformer/README.md)
-
-[Chapter 14 - Tenny the Transformer Sentiment Analyst With an Attitude](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/014-tenny-the-transformer-sentiment-analyst-with-an-attitude/README.md)
-
-[Chapter 15 -Tenny, the Transformer Sentiment Analyst with an Attitude Is Born](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/015-tenny-the-transformer-sentiment-analyst-with-an-attitude-is-born/README.md)
-
-### Part IV: The Eyes of AI - 'Visionary Insights through AI'
-
-[Chapter 16 - Tenny, the Convoluter: How Machines See the World](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/016-tenny-the-convoluter/README.md)
-
-[Chapter 17 - Tenny the Vision Weaver](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/book/017-tenny-the-vision-weaver/README.md)
-
-I'll be adding more content to the book, including sidebars, essays, and possibly even new chapters if necessary.
 
 ## Project Overview
 

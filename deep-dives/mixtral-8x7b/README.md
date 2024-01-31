@@ -2,6 +2,9 @@
 
 Let's embark on an exploration of Mistral AI's next significant model, Mixtral 8x7B.
 
+_Albert Q. Jiang, Alexandre Sablayrolles, Antoine Roux, et al. "Mixtral of Experts". 8 Jan 2024. Available at: https://arxiv.org/abs/2401.04088_
+
+
 ![figure1.png](images%2Ffigure1.png)
 
 In Figure 1 titled "Mixture of Experts Layer," we're given a visual representation of how the Mixtral 8x7B model operates using the _Sparse Mixture of Experts (SMoE)_ architecture. This figure illustrates the process where each input vector is selectively processed by a pair of experts out of a pool of eight, as determined by a routing mechanism. The chosen experts work in parallel to produce output vectors that are then combined. Such an arrangement allows the model to be both flexible and efficient, utilizing a large set of parameters (47B in total) while actively engaging only a subset (13B) during any given inference, thus optimizing computational resources.

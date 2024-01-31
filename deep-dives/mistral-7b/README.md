@@ -1,6 +1,6 @@
 # Deep Dive into Mistral 7B
 ![mistral-logo.png](images%2Fmistral-logo.png)
-We'll be looking at Mistral 7B and Mixtral 8x7B models in two separate dives. This is the first of the two. We need to get familiar with Mistral first before we can dive into Mixtral.
+We'll be looking at Mistral 7B and Mixtral 8x7B models in two separate dives. This is the first of the two. We need to get familiar with _**Mistral**_ first before we can dive into _**Mixtral**_.
 
 But, before we begin, let's take a look at the company behind these models: Mistral AI. The new kid on the block, Mistral AI, is making waves in the AI industry. Let's take a look at their story.
 

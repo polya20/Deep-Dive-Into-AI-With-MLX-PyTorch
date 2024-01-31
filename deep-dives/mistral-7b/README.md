@@ -50,7 +50,7 @@ We will be using the Apple MLX Example codebase for implementation:
 
 https://github.com/ml-explore/mlx-examples/tree/main/llms/mistral
 
-### What's the fuss about Mistral 7B?
+### What's the Fuss About Mistral 7B?
 
 In the dynamic field of Natural Language Processing (NLP), the pursuit of better-performing models usually leads to creating larger models. However, bigger models often mean more computational expense and slower response times, which is a problem for practical use. Here, the challenge is to find models that are both high-performing and efficient.
 
@@ -630,6 +630,8 @@ The features of Grouped-Query Attention (GQA), Sliding Window Attention (SWA), a
 3. **Rolling Buffer Cache:**
    - The Rolling Buffer Cache is likely involved in the caching mechanism within the `Attention` class and the handling of cache in the `TransformerBlock` class.
    - In the `Attention` class, the presence of a `cache` parameter and its manipulation (`if cache is not None`) hint at a caching mechanism. The Rolling Buffer Cache would typically store the keys and values for each timestep in a fixed-size buffer, overwriting past values when the buffer is full, which is efficient for long sequences.
+
+### Missing Puzzle Pieces in the MLX Codebase
 
 To explore Mistral's original implementation in PyTorch, you can review their codebase available on GitHub.
 

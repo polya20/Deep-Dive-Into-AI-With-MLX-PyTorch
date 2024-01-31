@@ -8,6 +8,10 @@ Here's full disclosure how I work on this project with my AI buddies and family:
 
 ## What's New?
 
+👉 The Fist Deep Dive: [Deep Dive into Mistral 7B](deep-dives%2Fmistral-7b%2FREADME.md)
+
+👉 The Deep Dives Section Added: [Deep Dives](deep-dives%2FREADME.md)
+
 👉 Some of you asked how: [Embracing-Speed-And-Efficiency-My-Fast-And-Furious-Methodology.md](essays%2Flife%2FEmbracing-Speed-And-Efficiency-My-Fast-And-Furious-Methodology.md)
 
 🎉 As of January 29, 2024, I have finished writing the second book on MLX, but I'll keep updating it as necessary.

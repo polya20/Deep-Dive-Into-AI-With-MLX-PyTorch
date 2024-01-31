@@ -168,9 +168,25 @@ To maintain clarity, we'll concentrate our discussion on these two models, altho
 - 
 ![lm-studio.png](images%2Flm-studio.png)
 
-When encountering a model whose parameters comfortably fit within Apple Silicon's unified memory, you have the capability to load it directly. Take for example a model with 80 billion parameters; it can be seamlessly integrated into the M2 Ultra's 192GB memory without any hassle. Keep in mind that swift inference isn't a certainty, as it largely hinges on the intricacies of the model's architecture and the complexity inherent in the task at hand.
+##### Memory Requirements vs. Parameter Size in MLX Environments
 
-However, caution is key: an unchecked model can overload your system, leading to freezes. It's crucial to allocate sufficient space for the system's operational needs. Think of it as akin to human necessity for movement and air – your machine similarly requires room to function efficiently.
+Understanding memory requirements relative to model size is crucial when working with machine learning models in environments with memory constraints, such as Apple Silicon or GPU VRAM. This understanding is particularly important for large models. Using an 80 billion parameter model as an illustrative example, we can explore these considerations:
+
+1. **Memory Usage and Parameter Size**: The memory needed for model parameters depends on their precision:
+   - **Full Precision (32 bits per parameter)**: This standard precision requires 32 bits for each parameter, leading to a memory demand of 320GB for an 80 billion parameter model, surpassing the M2 Ultra's capacity.
+   - **Half Precision (16 bits per parameter)**: Commonly used in machine learning, half precision halves the memory need. For the same model, it requires 160GB. Given the M2 Ultra's 192GB memory, the practical limit for GPU memory is around 70-75% of this capacity, equating to approximately 134GB. Hence, the M2 Ultra can handle this model in half precision, but with caution to avoid overloading the system.
+
+2. **Quantized Models**: These models offer enhanced memory efficiency through reduced bit representations:
+   - **8-bit Quantization**: This halves the memory requirement compared to half precision, bringing it down to 80GB for our example.
+   - **4-bit Quantization**: This reduces the requirement to a quarter, requiring only 40GB for the 80 billion parameter model.
+
+3. **System Stability and Efficiency**: Ensuring enough memory for the system's operational needs is vital. Overloading the system with a memory-intensive model can lead to inefficiencies or even system crashes. Adequate free memory is as crucial for computers as physical space and air are for humans.
+
+4. **Model Architecture and Task Complexity**: Beyond size, the architecture of the model and the complexity of its tasks significantly impact inference speed. A large model that fits in memory might still perform slowly if it has a complex architecture or is used for complex tasks.
+
+In summary, environments like Apple Silicon's M2 Ultra offer significant memory for machine learning models, but it's essential to consider the model's precision, architecture, and the balance between memory usage and system requirements for efficient, stable performance.
+
+Comparatively, GPUs like the NVidia RTX4090, with 24GB of VRAM, have more stringent limits. An RTX4090 can handle up to 7GB of parameters in half-precision, as doubling this equals 14GB. In full precision, the limit is around 6GB. This constraint is notable for large models. Apple Silicon's more generous memory capacity allows for more efficient model loading and processing. However, adherence to the 70-75% memory usage rule is advisable to ensure optimal performance and system stability. 
 
 ### M3 Max: Balancing Performance and Efficiency
 

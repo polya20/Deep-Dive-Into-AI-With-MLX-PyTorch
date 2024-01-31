@@ -8,9 +8,13 @@ Here's full disclosure how I work on this project with my AI buddies and family:
 
 ## What's New?
 
-🤿  The Second Deep Dive: [Deep Dive into Mixtral 8x7B](deep-dives%2Fmixtral-8x7b%2FREADME.md)
+✍️ New Essay: [Trading-Health-For-Aesthetics-And-Cheapness-wip.md](essays%2Fcomputing%2FTrading-Health-For-Aesthetics-And-Cheapness-wip.md)
 
-🤿  The First Deep Dive: [Deep Dive into Mistral 7B](deep-dives%2Fmistral-7b%2FREADME.md)
+📝 New Sidebar: [Model-Parameters-And-Vram-Requirements-Can-My-Gpu-Handle-It.md](book%2Fsidebars%2Fmodel-parameters-and-vram-requirements-can-my-gpu-handle-it%2FModel-Parameters-And-Vram-Requirements-Can-My-Gpu-Handle-It.md)
+
+🤿 The Second Deep Dive: [Deep Dive into Mixtral 8x7B](deep-dives%2Fmixtral-8x7b%2FREADME.md)
+
+🤿 The First Deep Dive: [Deep Dive into Mistral 7B](deep-dives%2Fmistral-7b%2FREADME.md)
 
 👉 The Deep Dives Section Added: [Deep Dives](deep-dives%2FREADME.md)
 

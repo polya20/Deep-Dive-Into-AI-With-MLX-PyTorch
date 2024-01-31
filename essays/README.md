@@ -9,7 +9,7 @@ Notes on Pull Requests and Issues
 ---------------------------------
 [NOTES_ON_PULL_REQUESTS_AND_ISSUES.md](../NOTES_ON_PULL_REQUESTS_AND_ISSUES.md)
 
-Auto-generated list of CWK Essays: 2024-02-01 08:37
+Auto-generated list of CWK Essays: 2024-02-01 08:39
 
 # CWK Essays
 
@@ -48,7 +48,7 @@ Auto-generated list of CWK Essays: 2024-02-01 08:37
 
 - [Chill Lessons Of Deprecation Warnings](computing/Chill-Lessons-of-Deprecation-Warnings.md)
 - [I Have Good Wheels Sticking To What Works](computing/I-Have-Good-Wheels-Sticking-To-What-Works.md)
-- [Trading Health For Aesthetics And Cheapness Wip](computing/Trading-Health-For-Aesthetics-And-Cheapness-wip.md)
+- [Trading Health For Aesthetics And Cheapness](computing/Trading-Health-For-Aesthetics-And-Cheapness.md)
 
 
 ## Investing

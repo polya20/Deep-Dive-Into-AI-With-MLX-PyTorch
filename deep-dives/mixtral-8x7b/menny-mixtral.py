@@ -1,15 +1,15 @@
 # Copyright © 2023 Apple Inc.
 
 import argparse
+import glob
 import json
-import time
 from dataclasses import dataclass
 from pathlib import Path
 from typing import List, Optional, Tuple
 
 import mlx.core as mx
 import mlx.nn as nn
-from mlx.utils import tree_unflatten
+from mlx.utils import tree_map, tree_unflatten
 from sentencepiece import SentencePieceProcessor
 import streamlit as st
 
@@ -24,7 +24,7 @@ class ModelArgs:
     n_kv_heads: int
     norm_eps: float
     vocab_size: int
-    rope_theta: float = 10000
+    moe: dict = None
 
 
 class RMSNorm(nn.Module):
@@ -39,6 +39,26 @@ class RMSNorm(nn.Module):
     def __call__(self, x):
         output = self._norm(x.astype(mx.float32)).astype(x.dtype)
         return self.weight * output
+
+
+class RoPE(nn.RoPE):
+    def __init__(self, dims: int, traditional: bool = False):
+        super().__init__(dims, traditional)
+
+    def __call__(self, x, offset: int = 0):
+        shape = x.shape
+        x = mx.reshape(x, (-1, shape[-2], shape[-1]))
+        N = x.shape[1] + offset
+        costheta, sintheta = RoPE.create_cos_sin_theta(
+            N, self.dims, offset=offset, base=1000000, dtype=x.dtype
+        )
+
+        rope = (
+            self._compute_traditional_rope if self.traditional else self._compute_rope
+        )
+        rx = rope(costheta, sintheta, x)
+
+        return mx.reshape(rx, shape)
 
 
 class Attention(nn.Module):
@@ -57,7 +77,7 @@ class Attention(nn.Module):
         self.wk = nn.Linear(args.dim, args.n_kv_heads * args.head_dim, bias=False)
         self.wv = nn.Linear(args.dim, args.n_kv_heads * args.head_dim, bias=False)
         self.wo = nn.Linear(args.n_heads * args.head_dim, args.dim, bias=False)
-        self.rope = nn.RoPE(args.head_dim, traditional=True, base=args.rope_theta)
+        self.rope = RoPE(args.head_dim, traditional=True)
 
     def __call__(
         self,
@@ -110,13 +130,44 @@ class FeedForward(nn.Module):
         return self.w2(nn.silu(self.w1(x)) * self.w3(x))
 
 
-class TransformerBlock(nn.Module):
+class MOEFeedForward(nn.Module):
+    def __init__(self, args: ModelArgs):
+        super().__init__()
+
+        self.num_experts = args.moe["num_experts"]
+        self.num_experts_per_tok = args.moe["num_experts_per_tok"]
+        self.experts = [FeedForward(args) for _ in range(self.num_experts)]
+        self.gate = nn.Linear(args.dim, self.num_experts, bias=False)
+
+    def __call__(self, x) -> mx.array:
+        ne = self.num_experts_per_tok
+        orig_shape = x.shape
+        x = x.reshape(-1, x.shape[-1])
+
+        gates = self.gate(x)
+        inds = mx.argpartition(-gates, kth=ne, axis=-1)[:, :ne]
+        scores = mx.softmax(
+            mx.take_along_axis(gates, inds, axis=-1).astype(mx.float32),
+            axis=-1,
+        ).astype(gates.dtype)
+
+        y = []
+        for xt, st, it in zip(x, scores, inds.tolist()):
+            yt = mx.concatenate([self.experts[e](xt)[:, None] for e in it], axis=-1)
+            yt = (yt * st).sum(axis=-1)
+            y.append(yt[None, :])
+        y = mx.concatenate(y)
+
+        return y.reshape(orig_shape)
+
+
+class MOETransformerBlock(nn.Module):
     def __init__(self, args: ModelArgs):
         super().__init__()
         self.n_heads = args.n_heads
         self.dim = args.dim
         self.attention = Attention(args)
-        self.feed_forward = FeedForward(args=args)
+        self.feed_forward = MOEFeedForward(args=args)
         self.attention_norm = RMSNorm(args.dim, eps=args.norm_eps)
         self.ffn_norm = RMSNorm(args.dim, eps=args.norm_eps)
         self.args = args
@@ -134,7 +185,7 @@ class TransformerBlock(nn.Module):
         return out, cache
 
 
-class Mistral(nn.Module):
+class Mixtral(nn.Module):
     def __init__(self, args: ModelArgs):
         super().__init__()
         self.args = args
@@ -142,7 +193,7 @@ class Mistral(nn.Module):
         self.n_layers = args.n_layers
         assert self.vocab_size > 0
         self.tok_embeddings = nn.Embedding(args.vocab_size, args.dim)
-        self.layers = [TransformerBlock(args=args) for _ in range(args.n_layers)]
+        self.layers = [MOETransformerBlock(args=args) for _ in range(args.n_layers)]
         self.norm = RMSNorm(args.dim, eps=args.norm_eps)
         self.output = nn.Linear(args.dim, args.vocab_size, bias=False)
 
@@ -154,8 +205,9 @@ class Mistral(nn.Module):
         h = self.tok_embeddings(inputs)
 
         mask = None
-        if h.shape[1] > 1:
-            mask = nn.MultiHeadAttention.create_additive_causal_mask(h.shape[1])
+        T = h.shape[1]
+        if T > 1:
+            mask = nn.MultiHeadAttention.create_additive_causal_mask(T)
             mask = mask.astype(h.dtype)
 
         if cache is None:
@@ -164,7 +216,7 @@ class Mistral(nn.Module):
         for e, layer in enumerate(self.layers):
             h, cache[e] = layer(h, mask, cache[e])
 
-        return self.output(self.norm(h)), cache
+        return self.output(self.norm(h[:, T - 1 : T, :])), cache
 
 
 class Tokenizer:
@@ -197,17 +249,23 @@ def load_model(folder: str):
     tokenizer = Tokenizer(str(model_path / "tokenizer.model"))
     with open(model_path / "config.json", "r") as f:
         config = json.loads(f.read())
-        config.pop("sliding_window", None)
         config.pop("model_type", None)
         quantization = config.pop("quantization", None)
         model_args = ModelArgs(**config)
-    weights = mx.load(str(model_path / "weights.npz"))
+    weight_files = glob.glob(str(model_path / "weights.*.npz"))
+    weights = {}
+    for wf in weight_files:
+        weights.update(mx.load(wf).items())
     weights = tree_unflatten(list(weights.items()))
-    model = Mistral(model_args)
+    model = Mixtral(model_args)
     if quantization is not None:
+        # TODO: Quantize gate matrices when < 32 tiles supported
+        quantization["linear_class_predicate"] = (
+            lambda m: isinstance(m, nn.Linear) and m.weight.shape[0] != 8
+        )
         nn.QuantizedLinear.quantize_module(model, **quantization)
+
     model.update(weights)
-    mx.eval(model.parameters())
     return model, tokenizer
 
 
@@ -240,7 +298,6 @@ def sample(logits, temp):
         return mx.random.categorical(logits * (1 / temp))
 
 
-
 @st.cache_resource
 def load_cached_model(model_path):
     return load_model(model_path)
@@ -248,15 +305,16 @@ def load_cached_model(model_path):
 
 if __name__ == "__main__":
     SEED = 42
-    MODEL_PATH = "/Users/wankyuchoi/cwk-llm-models/Mistral-7B-Instruct-v0.2-mlx"
+    MODEL_PATH = "/Users/wankyuchoi/cwk-llm-models/Mixtral-8x7B-Instruct-v0.1-8bit-mlx"
     MAX_TOKENS = 200
     TEMP = 0.7
     WRITE_EVERY = 10
-    SYSTEM_MESSAGE = "<<SYS>>Your name is Menny, a cynical teenager AI assistant.<</SYS>>"
-    MODEL_NAME = "Menny Mistral"
+    MODEL_NAME = "Menny Mixtral, the Sassy Expert Chatbot"
     MODEL_AVATAR = "./images/menny-avatar.png"
     HUMAN_AVATAR = "./images/human-avatar.png"
-    MODEL_IMAGE = "./images/menny-mistral.png"
+    MODEL_IMAGE = "./images/menny-mixtral.png"
+
+    SYSTEM_MESSAGE = "<<SYS>>Your name is Menny, a cynical teenager AI assistant.<</SYS>>"
 
     mx.random.seed(SEED)
     model, tokenizer = load_cached_model(MODEL_PATH)

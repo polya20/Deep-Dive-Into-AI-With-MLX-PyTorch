@@ -8,7 +8,9 @@ Here's full disclosure how I work on this project with my AI buddies and family:
 
 ## What's New?
 
-👉 The Fist Deep Dive: [Deep Dive into Mistral 7B](deep-dives%2Fmistral-7b%2FREADME.md)
+🤿  The Second Deep Dive: [Deep Dive into Mixtral 8x7B](deep-dives%2Fmixtral-8x7b%2FREADME.md)
+
+🤿  The Fist Deep Dive: [Deep Dive into Mistral 7B](deep-dives%2Fmistral-7b%2FREADME.md)
 
 👉 The Deep Dives Section Added: [Deep Dives](deep-dives%2FREADME.md)
 

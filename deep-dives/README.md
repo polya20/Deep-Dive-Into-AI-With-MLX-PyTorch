@@ -4,4 +4,6 @@ As we venture deeper into the vast expanse of artificial intelligence, think of 
 
 In this ongoing saga, every `deep dive` we add is like a new adventure, revealing more of AI's boundless potential. Stay tuned for more engaging and insightful deep dives, where we unravel the intricacies of AI models and technologies. Our journey is far from over - it's an ever-growing story of discovery, innovation, and learning. Let's continue to navigate these new frontiers together, embracing each challenge and breakthrough with enthusiasm and curiosity. 🚀🤖📚
 
-[Deep Dive into Mistral 7B](mistral-7b%2FREADME.md)
+🤿 [Deep Dive into Mistral 7B](mistral-7b%2FREADME.md)
+
+🤿 [Deep Dive into Mistral 7B](mistral-7b%2FREADME.md)

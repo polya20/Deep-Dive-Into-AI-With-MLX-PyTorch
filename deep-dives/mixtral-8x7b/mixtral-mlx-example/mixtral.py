@@ -1,17 +1,16 @@
 # Copyright © 2023 Apple Inc.
 
 import argparse
+import glob
 import json
-import time
 from dataclasses import dataclass
 from pathlib import Path
 from typing import List, Optional, Tuple
 
 import mlx.core as mx
 import mlx.nn as nn
-from mlx.utils import tree_unflatten
+from mlx.utils import tree_map, tree_unflatten
 from sentencepiece import SentencePieceProcessor
-import streamlit as st
 
 
 @dataclass
@@ -24,7 +23,7 @@ class ModelArgs:
     n_kv_heads: int
     norm_eps: float
     vocab_size: int
-    rope_theta: float = 10000
+    moe: dict = None
 
 
 class RMSNorm(nn.Module):
@@ -39,6 +38,26 @@ class RMSNorm(nn.Module):
     def __call__(self, x):
         output = self._norm(x.astype(mx.float32)).astype(x.dtype)
         return self.weight * output
+
+
+class RoPE(nn.RoPE):
+    def __init__(self, dims: int, traditional: bool = False):
+        super().__init__(dims, traditional)
+
+    def __call__(self, x, offset: int = 0):
+        shape = x.shape
+        x = mx.reshape(x, (-1, shape[-2], shape[-1]))
+        N = x.shape[1] + offset
+        costheta, sintheta = RoPE.create_cos_sin_theta(
+            N, self.dims, offset=offset, base=1000000, dtype=x.dtype
+        )
+
+        rope = (
+            self._compute_traditional_rope if self.traditional else self._compute_rope
+        )
+        rx = rope(costheta, sintheta, x)
+
+        return mx.reshape(rx, shape)
 
 
 class Attention(nn.Module):
@@ -57,7 +76,7 @@ class Attention(nn.Module):
         self.wk = nn.Linear(args.dim, args.n_kv_heads * args.head_dim, bias=False)
         self.wv = nn.Linear(args.dim, args.n_kv_heads * args.head_dim, bias=False)
         self.wo = nn.Linear(args.n_heads * args.head_dim, args.dim, bias=False)
-        self.rope = nn.RoPE(args.head_dim, traditional=True, base=args.rope_theta)
+        self.rope = RoPE(args.head_dim, traditional=True)
 
     def __call__(
         self,
@@ -110,13 +129,44 @@ class FeedForward(nn.Module):
         return self.w2(nn.silu(self.w1(x)) * self.w3(x))
 
 
-class TransformerBlock(nn.Module):
+class MOEFeedForward(nn.Module):
+    def __init__(self, args: ModelArgs):
+        super().__init__()
+
+        self.num_experts = args.moe["num_experts"]
+        self.num_experts_per_tok = args.moe["num_experts_per_tok"]
+        self.experts = [FeedForward(args) for _ in range(self.num_experts)]
+        self.gate = nn.Linear(args.dim, self.num_experts, bias=False)
+
+    def __call__(self, x) -> mx.array:
+        ne = self.num_experts_per_tok
+        orig_shape = x.shape
+        x = x.reshape(-1, x.shape[-1])
+
+        gates = self.gate(x)
+        inds = mx.argpartition(-gates, kth=ne, axis=-1)[:, :ne]
+        scores = mx.softmax(
+            mx.take_along_axis(gates, inds, axis=-1).astype(mx.float32),
+            axis=-1,
+        ).astype(gates.dtype)
+
+        y = []
+        for xt, st, it in zip(x, scores, inds.tolist()):
+            yt = mx.concatenate([self.experts[e](xt)[:, None] for e in it], axis=-1)
+            yt = (yt * st).sum(axis=-1)
+            y.append(yt[None, :])
+        y = mx.concatenate(y)
+
+        return y.reshape(orig_shape)
+
+
+class MOETransformerBlock(nn.Module):
     def __init__(self, args: ModelArgs):
         super().__init__()
         self.n_heads = args.n_heads
         self.dim = args.dim
         self.attention = Attention(args)
-        self.feed_forward = FeedForward(args=args)
+        self.feed_forward = MOEFeedForward(args=args)
         self.attention_norm = RMSNorm(args.dim, eps=args.norm_eps)
         self.ffn_norm = RMSNorm(args.dim, eps=args.norm_eps)
         self.args = args
@@ -134,7 +184,7 @@ class TransformerBlock(nn.Module):
         return out, cache
 
 
-class Mistral(nn.Module):
+class Mixtral(nn.Module):
     def __init__(self, args: ModelArgs):
         super().__init__()
         self.args = args
@@ -142,7 +192,7 @@ class Mistral(nn.Module):
         self.n_layers = args.n_layers
         assert self.vocab_size > 0
         self.tok_embeddings = nn.Embedding(args.vocab_size, args.dim)
-        self.layers = [TransformerBlock(args=args) for _ in range(args.n_layers)]
+        self.layers = [MOETransformerBlock(args=args) for _ in range(args.n_layers)]
         self.norm = RMSNorm(args.dim, eps=args.norm_eps)
         self.output = nn.Linear(args.dim, args.vocab_size, bias=False)
 
@@ -154,8 +204,9 @@ class Mistral(nn.Module):
         h = self.tok_embeddings(inputs)
 
         mask = None
-        if h.shape[1] > 1:
-            mask = nn.MultiHeadAttention.create_additive_causal_mask(h.shape[1])
+        T = h.shape[1]
+        if T > 1:
+            mask = nn.MultiHeadAttention.create_additive_causal_mask(T)
             mask = mask.astype(h.dtype)
 
         if cache is None:
@@ -164,7 +215,7 @@ class Mistral(nn.Module):
         for e, layer in enumerate(self.layers):
             h, cache[e] = layer(h, mask, cache[e])
 
-        return self.output(self.norm(h)), cache
+        return self.output(self.norm(h[:, T - 1 : T, :])), cache
 
 
 class Tokenizer:
@@ -197,92 +248,98 @@ def load_model(folder: str):
     tokenizer = Tokenizer(str(model_path / "tokenizer.model"))
     with open(model_path / "config.json", "r") as f:
         config = json.loads(f.read())
-        config.pop("sliding_window", None)
         config.pop("model_type", None)
         quantization = config.pop("quantization", None)
         model_args = ModelArgs(**config)
-    weights = mx.load(str(model_path / "weights.npz"))
+    weight_files = glob.glob(str(model_path / "weights.*.npz"))
+    weights = {}
+    for wf in weight_files:
+        weights.update(mx.load(wf).items())
     weights = tree_unflatten(list(weights.items()))
-    model = Mistral(model_args)
+    model = Mixtral(model_args)
     if quantization is not None:
+        # TODO: Quantize gate matrices when < 32 tiles supported
+        quantization["linear_class_predicate"] = (
+            lambda m: isinstance(m, nn.Linear) and m.weight.shape[0] != 8
+        )
         nn.QuantizedLinear.quantize_module(model, **quantization)
+
     model.update(weights)
-    mx.eval(model.parameters())
     return model, tokenizer
 
 
-def generate(prompt, model, tokenizer, temp=0.7, max_tokens=200, write_every=10):
-    x = mx.array([tokenizer.encode(prompt)])
-    cache = None
-    response_accumulator = ""
+def generate(prompt: mx.array, model: Mixtral, temp: Optional[float] = 0.0):
+    def sample(logits):
+        if temp == 0:
+            return mx.argmax(logits, axis=-1)
+        else:
+            return mx.random.categorical(logits * (1 / temp))
 
-    for token_index in range(max_tokens):
-        logits, cache = model(x, cache)
-        y = sample(logits[:, -1, :], temp)
-        generated_text = tokenizer.decode([y.item()])
+    logits, cache = model(prompt[None])
+    y = sample(logits[:, -1, :])
+    yield y
 
-        # Append generated text to the accumulator
-        response_accumulator += generated_text
-
-        # Check if it's time to yield part of the response
-        if (token_index + 1) % write_every == 0 or token_index == max_tokens - 1:
-            response_part = response_accumulator.lstrip().replace("\n", " ")
-            yield response_part
-            response_accumulator = ""  # Reset accumulator after yielding
-
-        x = y[:, None]  # Update input for next token generation
-
-
-def sample(logits, temp):
-    if temp == 0:
-        return mx.argmax(logits, axis=-1)
-    else:
-        return mx.random.categorical(logits * (1 / temp))
-
-
-
-@st.cache_resource
-def load_cached_model(model_path):
-    return load_model(model_path)
+    while True:
+        logits, cache = model(y[:, None], cache)
+        y = sample(logits.squeeze(1))
+        yield y
 
 
 if __name__ == "__main__":
-    SEED = 42
-    MODEL_PATH = "/Users/wankyuchoi/cwk-llm-models/Mistral-7B-Instruct-v0.2-mlx"
-    MAX_TOKENS = 200
-    TEMP = 0.7
-    WRITE_EVERY = 10
-    SYSTEM_MESSAGE = "<<SYS>>Your name is Menny, a cynical teenager AI assistant.<</SYS>>"
-    MODEL_NAME = "Menny Mistral"
-    MODEL_AVATAR = "./images/menny-avatar.png"
-    HUMAN_AVATAR = "./images/human-avatar.png"
-    MODEL_IMAGE = "./images/menny-mistral.png"
+    parser = argparse.ArgumentParser(description="Mixtral inference script")
+    parser.add_argument(
+        "--model-path",
+        type=str,
+        default="mlx_model",
+        help="The path to the model weights, tokenizer, and config",
+    )
+    parser.add_argument(
+        "--prompt",
+        help="The message to be processed by the model",
+        default="In the beginning the Universe was created.",
+    )
+    parser.add_argument(
+        "--max-tokens",
+        "-m",
+        type=int,
+        default=100,
+        help="Maximum number of tokens to generate",
+    )
+    parser.add_argument(
+        "--temp",
+        help="The sampling temperature.",
+        type=float,
+        default=0.0,
+    )
+    parser.add_argument("--seed", type=int, default=0, help="The PRNG seed")
 
-    mx.random.seed(SEED)
-    model, tokenizer = load_cached_model(MODEL_PATH)
+    args = parser.parse_args()
 
-    # Streamlit UI setup
-    st.sidebar.title("Chatbot Settings")
-    max_tokens = st.sidebar.slider("Max Tokens", 50, 500, MAX_TOKENS)
-    temp = st.sidebar.slider("Temperature", 0.1, 1.0, TEMP)
+    mx.random.seed(args.seed)
+    print("[INFO] Loading model from disk.")
+    model, tokenizer = load_model(args.model_path)
 
-    st.title(MODEL_NAME)
-    st.image(MODEL_IMAGE, width=500)
+    print("[INFO] Starting generation...")
 
-    user_input = st.chat_input("Your Message")
+    print(args.prompt, end="", flush=True)
+    prompt = mx.array(tokenizer.encode(args.prompt))
+    tokens = []
+    for token, _ in zip(generate(prompt, model, args.temp), range(args.max_tokens)):
+        tokens.append(token)
 
-    if user_input:
-        human_message = st.chat_message('human', avatar=HUMAN_AVATAR)
-        human_message.write(user_input)
+        if (len(tokens) % 10) == 0:
+            mx.eval(tokens)
+            eos_index = next(
+                (i for i, t in enumerate(tokens) if t.item() == tokenizer.eos_id), None
+            )
+            if eos_index is not None:
+                tokens = tokens[:eos_index]
+            s = tokenizer.decode([t.item() for t in tokens])
+            print(s, end="", flush=True)
+            tokens = []
+            if eos_index is not None:
+                break
 
-        full_prompt = SYSTEM_MESSAGE + f"\n\n[INST] {user_input} [/INST]\n"
-        full_response = ""
-
-        ai_message = st.chat_message('assistant', avatar=MODEL_AVATAR)
-
-        ai_message.write("Thinking...")
-        ai_message_placeholder = st.empty()  # Create a placeholder for AI message
-
-        for response_chunk in generate(full_prompt, model, tokenizer, temp=temp, max_tokens=max_tokens):
-            full_response += response_chunk + " "
-            ai_message_placeholder.markdown(full_response, unsafe_allow_html=True)  # Update the placeholder content
+    mx.eval(tokens)
+    s = tokenizer.decode([t.item() for t in tokens])
+    print(s, flush=True)

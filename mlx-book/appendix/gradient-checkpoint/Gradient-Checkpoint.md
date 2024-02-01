@@ -108,6 +108,8 @@ class Transformer(Module):
 
 ```
 
+![drawing.png](images%2Fdrawing.png)
+
 Let's simplify the explanation with a more straightforward analogy:
 
 Imagine you're creating a big, detailed drawing, but you have a small desk and not enough space to keep all your drawing tools, sketches, and colors out at once. To manage, you decide to use only a few tools at a time and store the rest. Every time you need a tool you previously put away, you bring it back out, use it, and then store it again. This way, you manage to create your big drawing without needing a bigger desk.

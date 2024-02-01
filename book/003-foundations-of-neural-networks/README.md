@@ -1,4 +1,4 @@
-# Foundations of Neural Networks - A Comprehensive Overview
+# Chapter 3 Foundations of Neural Networks - A Comprehensive Overview
 
 Neural networks, inspired by the structure and functions of the human brain, have revolutionized the field of machine learning. These powerful computational models are designed to mimic the way neurons in our brain interact, making them incredibly effective at processing complex patterns in data. From recognizing speech to driving autonomous vehicles, neural networks have wide-ranging applications.
 

@@ -1,6 +1,6 @@
 # Menny the Sonic Whisperer - A Deep Dive into the Audio Processing and the Whisper Model Part I
 
-![menny-avatar.png](images%2Fmenny-avatar.png)
+![menny-title.png](images%2Fmenny-title.png)
 
 In retrospect, I realize there was a pivotal chapter absent from Part IV of my first book, following the insightful journey of `Tenny the Vision Weaver`. 
 

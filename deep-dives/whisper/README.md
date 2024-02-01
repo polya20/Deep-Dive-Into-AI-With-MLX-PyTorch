@@ -1,4 +1,4 @@
-# Menny the Sonic Whisperer - A Deep Dive into the Audio Processing and the Whisper Model Part I
+# Menny the Sonic Whisperer - A Deep Dive into Audio Processing and the Whisper Model Part I
 
 ![menny-title.png](images%2Fmenny-title.png)
 

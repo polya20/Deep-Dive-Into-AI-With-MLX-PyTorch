@@ -1,5 +1,7 @@
 # Gradient Checkpointing in MLX - Introduced in v0.1.0
 
+![title..png](images%2Ftitle..png)
+
 Gradient checkpointing in MLX introduces a smart approach to managing memory consumption during the training or fine-tuning of large models. This technique, which involves selectively saving intermediate activations during the forward pass and recomputing them as needed during the backward pass, provides a significant advantage in terms of memory efficiency. By doing so, it offers a balance between computational overhead and memory usage, a trade-off that is especially beneficial when working with large models on hardware where memory is at a premium.
 
 Imagine you're working on a huge puzzle, but your table is too small to lay out all the pieces at once. To solve the puzzle, you decide to work on small sections at a time. You pick a section, assemble it, take a picture with your phone (to remember how it looks), and then put the pieces back in the box. When you need to connect this section to another, you refer to your picture, pull out the pieces again, and fit them together.

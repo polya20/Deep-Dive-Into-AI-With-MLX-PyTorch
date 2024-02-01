@@ -89,14 +89,17 @@ Note that running MLX examples requires Apple Silicon hardware. However, if you'
 
 📒 PyTorch Documentation: https://pytorch.org/docs/stable/index.html
 
-📂 Deep Dive folder contains deep dives into AI models and technologies
+📂 The `deep-dives` folder is packed with in-depth explorations of AI models and technologies.
 [deep-dives](deep-dives)
 
-📂 Resources folder contains pointers to useful resources
-[resources](resources)
+📂 The `sidebars` folder is a treasure trove, filled with valuable resources on computing overall and AI specifically.
+[sidebars](book%2Fsidebars)
 
-📂 Essays folder contains my essays on AI and other topics
+📂 The `essays` folder houses my writings on AI and a variety of other subjects.
 [essays](essays)
+
+📂 The `resources` folder is filled with links and references to useful materials and information.
+[resources](resources)
 
 ## Notes on Contributions 
 

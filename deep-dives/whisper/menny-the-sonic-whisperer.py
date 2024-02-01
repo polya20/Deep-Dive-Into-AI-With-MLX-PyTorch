@@ -73,6 +73,7 @@ def display_chatbot_panel():
     if st.session_state.transcript:
         st.markdown(st.session_state.transcript)
 
+
 # pre- and post- processor decorator for main function
 @setup_and_cleanup
 def main():

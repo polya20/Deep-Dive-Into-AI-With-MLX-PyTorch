@@ -10,6 +10,9 @@ Here's full disclosure how I work on this project with my AI buddies and family:
 
 🤿 The Third Deep Dive: [Deep Dive into Audio Processing and the Whisper Model](deep-dives%2Fwhisper%2FREADME.md)
 
+<details>
+<summary> Previous Additions </summary>
+
 ✍️ New Essay: [Trading-Health-For-Aesthetics-And-Cheapness.md](essays%2Fcomputing%2FTrading-Health-For-Aesthetics-And-Cheapness.md)
 
 📝 New Sidebar: [Model-Parameters-And-Vram-Requirements-Can-My-Gpu-Handle-It.md](book%2Fsidebars%2Fmodel-parameters-and-vram-requirements-can-my-gpu-handle-it%2FModel-Parameters-And-Vram-Requirements-Can-My-Gpu-Handle-It.md)
@@ -29,6 +32,8 @@ https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/tree/master/mlx-b
 🎉 As of January 24, 2024, I have finished writing the book on both MLX and PyTorch, but I'll keep updating it as necessary.
 
 https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/blob/master/book/README.md
+
+</details>
 
 ## Project Overview
 

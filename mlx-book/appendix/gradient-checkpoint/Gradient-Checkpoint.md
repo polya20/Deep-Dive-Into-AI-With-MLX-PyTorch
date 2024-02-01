@@ -14,8 +14,6 @@ Gradient checkpointing offers a clever workaround. During the forward pass (the 
 
 This technique trades a bit of extra work (recomputing some calculations) for a significant reduction in memory usage, making it possible to train larger models (solve bigger puzzles) on hardware with limited memory. It's a strategic choice that allows for more efficient use of resources, particularly beneficial when dealing with complex models that would otherwise require more memory than is available.
 
-Sure, let's simplify the explanation and use more illustrative names for the function and variables to make the concept of gradient checkpointing clearer.
-
 ### Simplified Explanation of Gradient Checkpointing with `@mx.checkpoint` Decorator
 
 Think of gradient checkpointing in MLX like a smart camera feature during a scenic hike. Instead of taking photos of every single view (which fills up your phone's storage quickly), you mark certain spots (using `@mx.checkpoint`) where you'll take a photo. Later, if you want to recall the entire hike, you can use these key photos to help reconstruct the memories without needing to store every single view.

@@ -16,6 +16,8 @@ This technique trades a bit of extra work (recomputing some calculations) for a 
 
 ### Simplified Explanation of Gradient Checkpointing with `@mx.checkpoint` Decorator
 
+![hike.png](images%2Fhike.png)
+
 Think of gradient checkpointing in MLX like a smart camera feature during a scenic hike. Instead of taking photos of every single view (which fills up your phone's storage quickly), you mark certain spots (using `@mx.checkpoint`) where you'll take a photo. Later, if you want to recall the entire hike, you can use these key photos to help reconstruct the memories without needing to store every single view.
 
 In MLX, the `@mx.checkpoint` decorator works similarly for functions during model training. It tells MLX, "Hey, don't remember everything this function does during the first walk-through (forward pass). Just save the starting points (inputs). If we need details about what happened here later (during the backward pass for gradient calculation), we'll just redo this part of the hike (recompute the function's outputs from the saved inputs) instead of trying to remember everything."

@@ -5,3 +5,5 @@ deep-dive-into-ai-with-mlx-pytorch.sublime-workspace
 *-wip*
 scratchpad
 adapters_working.npz
+/deep-dives/whisper/temp/
+/deep-dives/whisper/mlx_models/

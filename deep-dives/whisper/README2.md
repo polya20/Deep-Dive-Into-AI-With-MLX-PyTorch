@@ -1,5 +1,7 @@
 # Menny the Sonic Whisperer - A Deep Dive into the Audio Processing and the Whisper Model Part II
 
+![menny-title2.png](images%2Fmenny-title2.png)
+
 ## The Architecture of Whisper
 
 Alright, having thoroughly covered all the prerequisite concepts, you are now fully equipped with the foundational knowledge necessary to delve deeply into the complexities of the Whisper model.

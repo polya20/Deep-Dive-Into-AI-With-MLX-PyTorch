@@ -1,5 +1,7 @@
 # Menny the Sonic Whisperer - A Deep Dive into the Audio Processing and the Whisper Model Part III
 
+![menny-title3.png](images%2Fmenny-title3.png)
+
 ### `timing.py`
 
 The `timing.py` script in the MLX implementation of the Whisper model plays a specialized role in determining the timing of words in the transcribed audio. This script is particularly important for applications that require accurate word-level timestamps, such as subtitle generation or detailed audio analysis.
@@ -1641,6 +1643,8 @@ The `whisper.py` script is a central piece in the MLX implementation of the Whis
 The `torch_whisper.py` script serves solely for testing and validation. It's not a part of the operational MLX implementation of the Whisper model. The purpose of this script is to facilitate the testing of the Whisper model's PyTorch version, as used in the `test.py` script. Specifically, it allows for a comparative analysis and performance benchmarking between the PyTorch version and the MLX implementation of the model. This approach ensures the consistency and efficiency of the MLX version by validating it against the established PyTorch implementation.
 
 ## Menny, the Sonic Whisperer
+
+![menny-avatar.png](images%2Fmenny-avatar.png)
 
 For those interested in exploring the capabilities of AI-driven audio transcription, I present two demo versions. The first, a more comprehensive and feature-rich chatbot named _PippaGPT-MLX_, can be found here:
 

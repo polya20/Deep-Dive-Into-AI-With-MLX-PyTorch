@@ -4,7 +4,7 @@
 
 In retrospect, I realize there was a pivotal chapter absent from Part IV of my first book, following the insightful journey of `Tenny the Vision Weaver`. 
 
-[Chater 16 - Tenny the Convoluter](..%2F..%2Fbook%2F016-tenny-the-convoluter%2FREADME.md)
+[Chapter 16 - Tenny the Convoluter](..%2F..%2Fbook%2F016-tenny-the-convoluter%2FREADME.md)
 
 [Chapter 17 - Tenny the Vision Weaver](..%2F..%2Fbook%2F017-tenny-the-vision-weaver%2FREADME.md)
 

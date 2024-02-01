@@ -130,6 +130,8 @@ As a musician who plays various instruments like the keyboard, guitar, bass, and
 
 Consider orchestras, which typically tune to a specific frequency, commonly A4 = 440 Hz, known as the _concert pitch_. Tuning an instrument involves adjusting its strings or other components to align with this standard frequency.
 
+![guitar.png](images%2Fguitar.png)
+
 Examining the mathematical framework behind the standard tuning of a guitar reveals an intricate pattern of intervals and frequency ratios that facilitate the creation of harmonious music. The standard tuning involves six strings, each assigned a specific pitch, arranged in a manner that allows for the construction of chords and melodies with mathematical precision. Here is an analytical breakdown of the tuning for a six-string guitar based on musical intervals and their mathematical relationships:
 
 1. **6th String (Low E)**: Tuned to **E4**, positioned an octave lower than **E5**. The octave relationship is defined by a 2:1 frequency ratio, meaning the frequency of **E4** is half that of **E5**.

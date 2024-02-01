@@ -1,4 +1,4 @@
-# Menny the Sonic Whisperer
+# Menny the Sonic Whisperer - A Deep Dive into the Whisper Model
 
 ![menny-avatar.png](images%2Fmenny-avatar.png)
 

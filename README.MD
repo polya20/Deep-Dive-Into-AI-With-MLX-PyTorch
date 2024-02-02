@@ -10,7 +10,7 @@ Here's full disclosure how I work on this project with my AI buddies and family:
 
 ✍️ New Essay under "Investing": [Maximizing-Open-Source-Benefits](essays%2Finvesting%2FMaximizing-Open-Source-Benefits.md)
 
-🆕 MLX Appendix: v0.1.0 - [Gradient-Checkpoint.md](mlx-book%2Fappendix%2Fgradient-checkpoint%2FGradient-Checkpoint.md)
+🆕 MLX Appendix: v0.1.0 - [Gradient-Checkpoint](mlx-book%2Fappendix%2Fgradient-checkpoint%2FGradient-Checkpoint.md)
 
 🤿 The Third Deep Dive: [Deep Dive into Audio Processing and the Whisper Model](deep-dives%2Fwhisper%2FREADME.md)
 

@@ -1,5 +1,5 @@
 # To Korean followers
-![market-crash.png](market-crash.png)
+![market-crash.png](images/market-crash.png)
 As a fellow human being who ought to wish happiness for your family, I'm just going to say it, even though it may be advice you don't want to hear.
 
 I realize many of you Korean followers are here because of my investment track record with Tesla.

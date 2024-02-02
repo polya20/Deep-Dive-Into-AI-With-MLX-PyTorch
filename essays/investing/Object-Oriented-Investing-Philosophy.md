@@ -1,5 +1,5 @@
 # Object-Oriented Investing Philosophy
-![market-crash.png](market-crash.png)
+![market-crash.png](images/market-crash.png)
 Allow me to explain clearly why you keep losing money in the stock market. 
 
 > Every darn thing is an object.

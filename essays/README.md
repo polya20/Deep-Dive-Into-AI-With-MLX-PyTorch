@@ -9,7 +9,7 @@ Notes on Pull Requests and Issues
 ---------------------------------
 [NOTES_ON_PULL_REQUESTS_AND_ISSUES.md](../NOTES_ON_PULL_REQUESTS_AND_ISSUES.md)
 
-Auto-generated list of CWK Essays: 2024-02-01 08:39
+Auto-generated list of CWK Essays: 2024-02-02 09:57
 
 # CWK Essays
 
@@ -53,6 +53,7 @@ Auto-generated list of CWK Essays: 2024-02-01 08:39
 
 ## Investing
 
+- [Maximizing Open Source Benefits Wip](investing/Maximizing-Open-Source-Benefits-wip.md)
 - [Me Vs Them A Simple But Seemingly Impossible Investing Tip](investing/Me-vs-Them-A-Simple-but-Seemingly-Impossible-Investing-Tip.md)
 - [Natural Selection In The Stock Market](investing/Natural-Selection-in-the-Stock-Market.md)
 - [Object Oriented Investing Philosophy](investing/Object-Oriented-Investing-Philosophy.md)

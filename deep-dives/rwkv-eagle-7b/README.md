@@ -31,6 +31,8 @@ This foundational research has paved the way for RWKV to offer a series of advan
 - The model's performance can be sensitive to prompt formatting; it may necessitate adjustments in how prompts are presented.
 - It is less effective at tasks requiring lookback. It is advisable to reorder prompts to accommodate this (e.g., "For the document below do X" instead of "For the document above do X").
 
+❗️Important Note - While the architecture discussed in the paper pertains to RWKV v4, the implementation details provided in this comprehensive analysis are derived from RWKV v5, the most current version.
+
 ## Eagle - 7B
 
 Our focus will be on the _Eagle 7B_ model. Eagle 7B, built on the RWKV-v5 architecture, stands as a beacon of efficiency and environmental friendliness in the AI domain. It is recognized as the world's greenest model for its size, making an essential contribution towards reducing the carbon footprint of AI technologies. 

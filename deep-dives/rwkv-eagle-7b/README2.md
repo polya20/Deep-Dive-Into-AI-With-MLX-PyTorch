@@ -2017,4 +2017,4 @@ def MillerRabinPrimalityTest(number):
 
 This utility script plays a supportive role in the RWKV Language Model implementation, facilitating efficient data processing, debugging, and performance measurement, along with providing a versatile tokenization utility that can adapt to different modes of operation based on the model's needs.
 
-[Training and Inferencing](README3.md)
+[Training and Inference](README3.md)

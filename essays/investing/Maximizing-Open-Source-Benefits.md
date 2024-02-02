@@ -2,6 +2,8 @@
 
 ![opensource.png](images%2Fopensource.png)
 
+Audio version: https://youtu.be/tPBfjB1J3hQ
+
 A frequently asked question in the realm of open source is, "How is it financially viable to contribute without direct compensation?"
 
 While I may not sway those unacquainted with open source to immediately begin contributing, I can offer insights from my journey and the invaluable advantages I've encountered.

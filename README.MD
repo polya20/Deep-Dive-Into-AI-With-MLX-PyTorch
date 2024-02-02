@@ -100,6 +100,9 @@ Note that running MLX examples requires Apple Silicon hardware. However, if you'
 
 📒 PyTorch Documentation: https://pytorch.org/docs/stable/index.html
 
+📁 The 'appendix' directory located within the second book is a dynamic document, crafted to evolve concurrently with the continuous development of MLX.
+[appendix](mlx-book%2Fappendix)
+
 📂 The `deep-dives` folder is packed with in-depth explorations of AI models and technologies.
 [deep-dives](deep-dives)
 

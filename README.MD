@@ -8,8 +8,8 @@ Here's full disclosure how I work on this project with my AI buddies and family:
 
 ## Main Sections
 
-[First Book](mlx-book) | [Second Book](book) | [Appendix to 2nd Book](mlx-book/appendix)
-[Deep-dives](deep-dives) | [Sidebars](book/sidebars) | [Essays](essays) | [Resources](resources)
+📓️ [First Book](mlx-book) | 📓️ [Second Book](book) | 📕 [Appendix to 2nd Book](mlx-book/appendix) | 
+📕 [Deep-dives](deep-dives) | 📕  [Sidebars](book/sidebars) | ✍️ [Essays](essays) | 🗂️ [Resources](resources)
 
 ## What's New?
 

@@ -2,8 +2,7 @@
 
 ![eagle-7b.png](images%2Feagle-7b.png)
 
-👉 Part II [Implementation Details](README2.md)
-👉 Part III [Training & Inference](README3.md)
+👉 Part II [Implementation Details](README2.md) | 👉 Part III [Training & Inference](README3.md)
 
 In this deep dive, we will explore the RWKV Language Model, a compelling concept that revitalizes RNNs, effectively bringing them back into the limelight.
 

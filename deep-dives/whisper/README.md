@@ -2,6 +2,8 @@
 
 ![menny-title.png](images%2Fmenny-title.png)
 
+👉 [Part II - The Architecture of Whisper](README2.md) | 👉 [Part III - Whisper Continued](README3.md)
+
 In retrospect, I realize there was a pivotal chapter absent from Part IV of my first book, following the insightful journey of `Tenny the Vision Weaver`. 
 
 [Chapter 16 - Tenny the Convoluter](..%2F..%2Fbook%2F016-tenny-the-convoluter%2FREADME.md)

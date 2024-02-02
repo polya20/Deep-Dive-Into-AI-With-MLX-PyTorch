@@ -15,6 +15,8 @@ The first book is a comprehensive guide to AI using PyTorch and MLX, while the s
 
 ## What's New?
 
+🤿 The Fourth Deep Dive: [Deep Dive into RWKV Language Model - Eagle 7B](deep-dives%2Frwkv-eagle-7b%2FREADME.md)
+
 ✍️ New Essay under "Investing": [Maximizing-Open-Source-Benefits](essays%2Finvesting%2FMaximizing-Open-Source-Benefits.md)
 
 🆕 MLX Appendix: v0.1.0 - [Gradient-Checkpoint](mlx-book%2Fappendix%2Fgradient-checkpoint%2FGradient-Checkpoint.md)

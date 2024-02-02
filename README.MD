@@ -6,7 +6,7 @@ Here's full disclosure how I work on this project with my AI buddies and family:
 
 [Full-Disclosure-Again-The-Synergy-Behind-The-Deep-Dive-Series-Books-With-AIs](essays%2FAI%2FFull-Disclosure-Again-The-Synergy-Behind-The-Deep-Dive-Series-Books-With-AIs.md)
 
-## Main Sections:
+## Main Sections
 
 [First Book](mlx-book) | [Second Book](book) | [Appendix to 2nd Book](mlx-book/appendix)
 [Deep-dives](deep-dives) | [Sidebars](book/sidebars) | [Essays](essays) | [Resources](resources)

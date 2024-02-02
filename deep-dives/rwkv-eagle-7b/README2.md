@@ -272,7 +272,7 @@ The final section of the code (`wkv5_op.cpp`) provides Python bindings for the C
 
 Overall, these custom CUDA kernels are designed to address and mitigate potential computational bottlenecks associated with the RWKV model, particularly those that arise from its sequential components. By providing a more efficient computational pathway, these kernels allow the RWKV model to maintain high performance and scalability when running on GPU hardware.
 
-The use of custom CUDA kernels are optional, but they can significantly improve the performance of the RWKV model, especially when dealing with large datasets and complex models.
+Using custom CUDA kernels is optional, but it's a powerful way to boost the performance of the RWKV model. This boost is especially noticeable when working with large datasets or complex models, potentially leading to significant improvements in computational speed.
 
 In `run-inference-cuda.py`:
 

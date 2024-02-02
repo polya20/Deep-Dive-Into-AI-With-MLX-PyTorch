@@ -33,7 +33,9 @@ This foundational research has paved the way for RWKV to offer a series of advan
 - The model's performance can be sensitive to prompt formatting; it may necessitate adjustments in how prompts are presented.
 - It is less effective at tasks requiring lookback. It is advisable to reorder prompts to accommodate this (e.g., "For the document below do X" instead of "For the document above do X").
 
-❗️Important Note - While the architecture discussed in the paper pertains to RWKV v4, the implementation details provided in this comprehensive analysis are derived from RWKV v5, the most current version.
+## ❗️Crucial Disclaimer
+
+The paper under discussion relates to RWKV version 4, whereas Eagle 7B represents the latest, version 5. The implementation specifics we are examining come from the version 5 source code repository. Researchers have indicated that version 5 introduces substantial enhancements over version 4, but the paper detailing version 5 has not yet been published. For more information, please refer to the official RWKV Blog and repository.
 
 ## Eagle - 7B
 
@@ -200,6 +202,8 @@ In the RWKV architecture, the WKV operator's computation is somewhat akin to the
 ![formula16.png](images%2Fformula16.png)
 
 To prevent any potential diminishing impact on `W`, the model introduces an additional vector `U` that focuses specifically on the current token. This approach ensures that the current token's influence remains robust and is not overshadowed by the decaying impact of past tokens. The incorporation of `U` allows for a balance between the historical contextual information and the immediate token, maintaining the model's sensitivity to the sequence's current position while preserving the temporal context inherent in sequential data.
+
+_**Note from the Researcher:** It has been brought to our attention by one of the researchers that the WKV operator formula discussed in this section is based on RWKV version 4. In RWKV version 5, there have been substantial updates to this formula, including the removal of the denominator and the introduction of channel-specific decay rates. These modifications are crucial for understanding the evolution from version 4 to 5. Once the paper on V5 is released, all the details will become much more transparent._ 
 
 ### Output Gating
 

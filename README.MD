@@ -8,7 +8,7 @@ Here's full disclosure how I work on this project with my AI buddies and family:
 
 ## What's New?
 
-✍️ New Essay under "Investing": [Maximizing-Open-Source-Benefits-wip.md](essays%2Finvesting%2FMaximizing-Open-Source-Benefits-wip.md)
+✍️ New Essay under "Investing": [Maximizing-Open-Source-Benefits.md](essays%2Finvesting%2FMaximizing-Open-Source-Benefits.md)
 
 🆕 MLX Appendix: v0.1.0 - [Gradient-Checkpoint.md](mlx-book%2Fappendix%2Fgradient-checkpoint%2FGradient-Checkpoint.md)
 

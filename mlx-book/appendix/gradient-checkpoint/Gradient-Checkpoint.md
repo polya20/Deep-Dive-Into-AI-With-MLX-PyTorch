@@ -126,6 +126,8 @@ The principal advantage of gradient checkpointing lies in its ability to drastic
 
 ### Integrating Gradient Checkpointing into the Archery Model
 
+![bullseye.png](images%2Fbullseye.png)
+
 As we delve back into the Archery example from Chapter 3 of my first book, "Foundations of Neural Networks - A Comprehensive Overview," we explore a significant enhancement: the integration of gradient checkpointing.
 
 [Chapter 3 - Foundations of Neural Networks - A Comprehensive Overview](..%2F..%2F..%2Fbook%2F003-foundations-of-neural-networks%2FREADME.md)

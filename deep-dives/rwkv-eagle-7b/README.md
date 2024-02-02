@@ -2,6 +2,9 @@
 
 ![eagle-7b.png](images%2Feagle-7b.png)
 
+👉 Part II [Implementation Details](README2.md)
+👉 Part III [Training & Inference](README3.md)
+
 In this deep dive, we will explore the RWKV Language Model, a compelling concept that revitalizes RNNs, effectively bringing them back into the limelight.
 
 Pronounced as RwaKuv, RWKV stands for a unique blend of RNN efficiency and GPT-level transformer performance. What sets RWKV apart is its ability to be directly trained in a parallelizable manner akin to GPT transformers, all while being an open-source project.

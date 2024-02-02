@@ -4,11 +4,11 @@
 
 Here's full disclosure how I work on this project with my AI buddies and family: 
 
-[Full-Disclosure-Again-The-Synergy-Behind-The-Deep-Dive-Series-Books-With-AIs.md](essays%2FAI%2FFull-Disclosure-Again-The-Synergy-Behind-The-Deep-Dive-Series-Books-With-AIs.md)
+[Full-Disclosure-Again-The-Synergy-Behind-The-Deep-Dive-Series-Books-With-AIs](essays%2FAI%2FFull-Disclosure-Again-The-Synergy-Behind-The-Deep-Dive-Series-Books-With-AIs.md)
 
 ## What's New?
 
-✍️ New Essay under "Investing": [Maximizing-Open-Source-Benefits.md](essays%2Finvesting%2FMaximizing-Open-Source-Benefits.md)
+✍️ New Essay under "Investing": [Maximizing-Open-Source-Benefits](essays%2Finvesting%2FMaximizing-Open-Source-Benefits.md)
 
 🆕 MLX Appendix: v0.1.0 - [Gradient-Checkpoint.md](mlx-book%2Fappendix%2Fgradient-checkpoint%2FGradient-Checkpoint.md)
 
@@ -17,9 +17,9 @@ Here's full disclosure how I work on this project with my AI buddies and family:
 <details>
 <summary> Previous Additions </summary>
 
-✍️ New Essay: [Trading-Health-For-Aesthetics-And-Cheapness.md](essays%2Fcomputing%2FTrading-Health-For-Aesthetics-And-Cheapness.md)
+✍️ New Essay: [Trading-Health-For-Aesthetics-And-Cheapness](essays%2Fcomputing%2FTrading-Health-For-Aesthetics-And-Cheapness.md)
 
-📝 New Sidebar: [Model-Parameters-And-Vram-Requirements-Can-My-Gpu-Handle-It.md](book%2Fsidebars%2Fmodel-parameters-and-vram-requirements-can-my-gpu-handle-it%2FModel-Parameters-And-Vram-Requirements-Can-My-Gpu-Handle-It.md)
+📝 New Sidebar: [Model-Parameters-And-Vram-Requirements-Can-My-Gpu-Handle-It](book%2Fsidebars%2Fmodel-parameters-and-vram-requirements-can-my-gpu-handle-it%2FModel-Parameters-And-Vram-Requirements-Can-My-Gpu-Handle-It.md)
 
 🤿 The Second Deep Dive: [Deep Dive into Mixtral 8x7B](deep-dives%2Fmixtral-8x7b%2FREADME.md)
 
@@ -27,7 +27,7 @@ Here's full disclosure how I work on this project with my AI buddies and family:
 
 👉 The Deep Dives Section Added: [Deep Dives](deep-dives%2FREADME.md)
 
-👉 Some of you asked how: [Embracing-Speed-And-Efficiency-My-Fast-And-Furious-Methodology.md](essays%2Flife%2FEmbracing-Speed-And-Efficiency-My-Fast-And-Furious-Methodology.md)
+👉 Some of you asked how: [Embracing-Speed-And-Efficiency-My-Fast-And-Furious-Methodology](essays%2Flife%2FEmbracing-Speed-And-Efficiency-My-Fast-And-Furious-Methodology.md)
 
 🎉 As of January 29, 2024, I have finished writing the second book on MLX, but I'll keep updating it as necessary.
 

@@ -205,6 +205,8 @@ To prevent any potential diminishing impact on `W`, the model introduces an addi
 
 _**Note from the Researcher:** It has been brought to our attention by one of the researchers that the WKV operator formula discussed in this section is based on RWKV version 4. In RWKV version 5, there have been substantial updates to this formula, including the removal of the denominator and the introduction of channel-specific decay rates. These modifications are crucial for understanding the evolution from version 4 to 5. Once the paper on V5 is released, all the details will become much more transparent._ 
 
+_The researcher emphasizes that the most notable enhancement in Eagle's updated WKV formulation is the transition from a vector-valued state to a substantially larger matrix-valued state. This shift enables the model to retain a more extensive amount of context in its memory, encompassing not only the contextual information but also its previous transformations of that context._
+
 ### Output Gating
 
 The RWKV model incorporates output gating mechanisms within its time-mixing and channel-mixing blocks to control the flow of information. The gating mechanism is activated by applying a sigmoid function, denoted as `σ`, to the receptance vector `r`. This process shapes the final output vector `o_t`, which emerges after the application of the WKV operator:

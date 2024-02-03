@@ -4,9 +4,9 @@
 
 👉 [Part II - Diving Into Codebase](README2.md)
 
-🏠 Official Website: https://openai.com/research/clip
+**🏠 Official Website**: https://openai.com/research/clip
 
-📝 Paper: https://arxiv.org/abs/2103.00020
+**📝 Paper**: https://arxiv.org/abs/2103.00020
 
 The _CLIP (Contrastive Language–Image Pre-training)_ model represents a significant advancement in the field of AI, specifically in bridging the gap between natural language processing (NLP) and computer vision. 
 
@@ -107,7 +107,7 @@ CLIP represents a groundbreaking approach to computer vision, offering a model t
 
 ## How CLIP Works: A Diagrammatic Representation
 
-📝 Paper: https://arxiv.org/abs/2103.00020
+**📝 Paper**: https://arxiv.org/abs/2103.00020
 
 ![figure1.png](images%2Ffigure1.png)
 
@@ -131,7 +131,7 @@ The diagram effectively illustrates how CLIP can be used to create a flexible im
 
 ## Testing CLIP for Zero-Shot Image Classification
 
-🏠 Official Repo: https://github.com/openai/CLIP
+**🏠 Official Repo**: https://github.com/openai/CLIP
 
 Go the the official CLIP repository to access the codebase and detailed instructions for using the model. 
 

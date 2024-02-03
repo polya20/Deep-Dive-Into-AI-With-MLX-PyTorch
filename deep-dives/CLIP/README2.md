@@ -2,6 +2,8 @@
 
 ![samurai.jpeg](images%2Fsamurai.jpeg)
 
+**🏠 Official Repo**: https://github.com/openai/CLIP
+
 We're going to explore the inner workings of CLIP, focusing on its model implementation and the way it handles both images and text. Our journey will stick to the main elements of the model, aiming for a broad perspective on its structure and how it operates.
 
 Part II builds upon the knowledge you've acquired from earlier resources, and it's expected that you come equipped with an understanding of several key concepts:

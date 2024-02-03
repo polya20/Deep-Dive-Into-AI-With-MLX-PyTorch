@@ -318,7 +318,7 @@ In order to understand how CLIP works in the codebase you should look into the f
     stable_diffusion/config.py
 ```
 
-The above files outline the structure and components of the CLIP model within the Stable Diffusion architecture, along with the Stable Diffusion class that orchestrates the text-to-image (T2I) and image-to-image (I2I) processes. Let's break down how CLIP works within this context, especially with the concepts of positive and negative prompts, and conditioning
+The above files outline the structure and components of the CLIP model within the Stable Diffusion architecture, along with the Stable Diffusion class that orchestrates the text-to-image (T2I) and image-to-image (I2I) processes. Let's break down how CLIP works within this context, especially with the concepts of positive and negative prompts, and conditioning.
 
 #### CLIP Text Model Configuration
 

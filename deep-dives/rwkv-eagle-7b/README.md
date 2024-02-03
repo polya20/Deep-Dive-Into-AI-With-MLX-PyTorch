@@ -33,7 +33,7 @@ This foundational research has paved the way for RWKV to offer a series of advan
 - The model's performance can be sensitive to prompt formatting; it may necessitate adjustments in how prompts are presented.
 - It is less effective at tasks requiring lookback. It is advisable to reorder prompts to accommodate this (e.g., "For the document below do X" instead of "For the document above do X").
 
-## ❗️Crucial Disclaimer
+## ❗Important Note
 
 The paper under discussion relates to RWKV version 4, whereas Eagle 7B represents the latest, version 5. The implementation specifics we are examining come from the version 5 source code repository. Researchers have indicated that version 5 introduces substantial enhancements over version 4, but the paper detailing version 5 has not yet been published. For more information, please refer to the official RWKV Blog and repository.
 

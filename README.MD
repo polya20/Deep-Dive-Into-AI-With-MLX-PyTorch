@@ -15,24 +15,26 @@ The first book is a comprehensive guide to AI using PyTorch and MLX, while the s
 
 ## What's New?
 
-🤿 The Fourth Deep Dive: [Deep Dive into RWKV Language Model - Eagle 7B](deep-dives%2Frwkv-eagle-7b%2FREADME.md)
+🤿 Deep Dive 5: [Deep Dive into CLIP](deep-dives%2FCLIP%2FREADME.md)
+
+🤿 Deep Dive 4: [Deep Dive into RWKV Language Model - Eagle 7B](deep-dives%2Frwkv-eagle-7b%2FREADME.md)
+
+<details>
+<summary> Previous Additions </summary>
 
 ✍️ New Essay under "Investing": [Maximizing-Open-Source-Benefits](essays%2Finvesting%2FMaximizing-Open-Source-Benefits.md)
 
 🆕 MLX Appendix: v0.1.0 - [Gradient-Checkpoint](mlx-book%2Fappendix%2Fgradient-checkpoint%2FGradient-Checkpoint.md)
 
-🤿 The Third Deep Dive: [Deep Dive into Audio Processing and the Whisper Model](deep-dives%2Fwhisper%2FREADME.md)
-
-<details>
-<summary> Previous Additions </summary>
+🤿 Deep Dive 3: [Deep Dive into Audio Processing and the Whisper Model](deep-dives%2Fwhisper%2FREADME.md)
 
 ✍️ New Essay: [Trading-Health-For-Aesthetics-And-Cheapness](essays%2Fcomputing%2FTrading-Health-For-Aesthetics-And-Cheapness.md)
 
 📝 New Sidebar: [Model-Parameters-And-Vram-Requirements-Can-My-Gpu-Handle-It](book%2Fsidebars%2Fmodel-parameters-and-vram-requirements-can-my-gpu-handle-it%2FModel-Parameters-And-Vram-Requirements-Can-My-Gpu-Handle-It.md)
 
-🤿 The Second Deep Dive: [Deep Dive into Mixtral 8x7B](deep-dives%2Fmixtral-8x7b%2FREADME.md)
+🤿 Deep Dive 2: [Deep Dive into Mixtral 8x7B](deep-dives%2Fmixtral-8x7b%2FREADME.md)
 
-🤿 The First Deep Dive: [Deep Dive into Mistral 7B](deep-dives%2Fmistral-7b%2FREADME.md)
+🤿 Deep Dive 1: [Deep Dive into Mistral 7B](deep-dives%2Fmistral-7b%2FREADME.md)
 
 👉 The Deep Dives Section Added: [Deep Dives](deep-dives%2FREADME.md)
 

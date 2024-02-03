@@ -1,4 +1,4 @@
-# Deep Dive into LLaVA - Multi-Modal Language Model Part I
+# Deep Dive into LLaVA - Large Language and Vision Assistant Part I
 
 ![llava-gradio.png](images%2Fllava-gradio.png)
 

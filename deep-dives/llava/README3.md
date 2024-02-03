@@ -1,4 +1,4 @@
-# Deep Dive into LLaVA - Multi-Modal Language Model Part III
+# Deep Dive into LLaVA - Large Language and Vision Assistant Part III
 
 ![puppy.png](images%2Fpuppy.png)
 

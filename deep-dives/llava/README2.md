@@ -1,4 +1,4 @@
-# Deep Dive into LLaVA - Multi-Modal Language Model Part II
+# Deep Dive into LLaVA - Large Language and Vision Assistant Part II
 
 ![time.jpeg](images%2Ftime.jpeg)
 

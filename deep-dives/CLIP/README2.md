@@ -213,7 +213,7 @@ In the given context of the `simple_tokenizer.py` script, the file `bpe_simple_v
 
 4. **Compression**: The `.gz` extension indicates that the vocabulary file is compressed using the gzip compression algorithm, making it smaller and faster to load into memory. The `simple_tokenizer.py` script would use the `gzip` library to read this file and load the vocabulary into memory for the tokenizer to use.
 
-The `clip/bpe_simple_vocab_16e6.txt.gz` file is a crucial resource for the CLIP model's tokenizer, enabling it to convert text into a sequence of tokens that the model can understand and process, which is a critical step in aligning text with images in the way that CLIP does.
+The `bpe_simple_vocab_16e6.txt.gz` file is a crucial resource for the CLIP model's tokenizer, enabling it to convert text into a sequence of tokens that the model can understand and process, which is a critical step in aligning text with images in the way that CLIP does.
 
 ## CLIP Utils - `clip.py`
 

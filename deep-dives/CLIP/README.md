@@ -2,7 +2,7 @@
 
 [Part II - Diving Into Codebase](README2.md)
 
-![clip.png](images%2Fclip.png)
+![clip-title.png](images%2Fclip-title.png)
 
 🏠 Official Website: https://openai.com/research/clip
 

@@ -1,4 +1,4 @@
-# Deep Dive into CLIP ViT-L/14 Visual Encoder Part II - Diving into Codebase
+# Deep Dive into CLIP Part II - Diving into Codebase
 
 ![samurai.jpeg](images%2Fsamurai.jpeg)
 

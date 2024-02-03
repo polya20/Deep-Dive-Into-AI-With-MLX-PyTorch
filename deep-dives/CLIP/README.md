@@ -1,4 +1,4 @@
-# Deep Dive into CLIP ViT-L/14 Visual Encoder Part I
+# Deep Dive into CLIP Part I - Fundamentals
 
 ![clip-title.png](images%2Fclip-title.png)
 

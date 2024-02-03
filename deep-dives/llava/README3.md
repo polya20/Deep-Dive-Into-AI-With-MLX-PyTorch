@@ -1,5 +1,7 @@
 # Deep Dive into LLaVA - Multi-Modal Language Model Part III
 
+![puppy.png](images%2Fpuppy.png)
+
 🏠 Official Repo: https://github.com/haotian-liu/LLaVA
 
 ## LLaVA-v1.6 - The New Benchmark in Visual Reasoning, OCR, and Knowledge Processing

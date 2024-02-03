@@ -1,5 +1,7 @@
 # Deep Dive into LLaVA - Multi-Modal Language Model Part II
 
+![time.jpeg](images%2Ftime.jpeg)
+
 **📝 Original Paper**: https://arxiv.org/abs/2304.08485
 
 **📝 v1.5 Paper**: https://arxiv.org/abs/2310.03744

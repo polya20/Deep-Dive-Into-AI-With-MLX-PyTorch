@@ -1,6 +1,6 @@
 # Deep Dive into LLaVA - Multi-Modal Language Model Part I
 
-![time.jpeg](images%2Ftime.jpeg)
+![llava-gradio.png](images%2Fllava-gradio.png)
 
 **🏠 Official Website**: https://llava-vl.github.io
 

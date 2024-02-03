@@ -195,4 +195,4 @@ Logits are the model's raw output scores prior to normalization, reflecting the 
 
 In the context of the given image, the script is designed to evaluate and return the probabilities that the image matches the descriptions "a puppy", "a girl", and "glasses". The output is a list of probabilities corresponding to each of these labels. According to the output format `[[0.11664506 0.1568365  0.72651845]]`, the model predicts that the image matches the description "glasses" with a high probability (`~72.65%`), "a girl" with a moderate probability (`~15.68%`), and "a puppy" with a lower probability (`~11.66%`). This suggests that the most prominent feature the model recognizes in the image is the glasses.
 
-[Part II - Diving Into Codebase](README2.md)
+👉 [Part II - Diving Into Codebase](README2.md)

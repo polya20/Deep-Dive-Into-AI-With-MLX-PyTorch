@@ -1,8 +1,8 @@
 # Deep Dive into CLIP ViT-L/14 Visual Encoder Part I
 
-[Part II - Diving Into Codebase](README2.md)
-
 ![clip-title.png](images%2Fclip-title.png)
+
+👉 [Part II - Diving Into Codebase](README2.md)
 
 🏠 Official Website: https://openai.com/research/clip
 

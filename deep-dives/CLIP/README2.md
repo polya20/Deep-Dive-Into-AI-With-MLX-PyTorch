@@ -201,7 +201,7 @@ class SimpleTokenizer(object):
 
 This tokenizer is a key component for the text processing in CLIP, allowing it to handle a diverse range of textual inputs efficiently and effectively, which are then used for downstream tasks such as matching with images or other text.
 
-In the given context of the `simple_tokenizer.py` script, the file `clip/bpe_simple_vocab_16e6.txt.gz` is likely a compressed text file that contains the vocabulary for the Byte Pair Encoding (BPE) tokenizer used within the CLIP model.
+In the given context of the `simple_tokenizer.py` script, the file `bpe_simple_vocab_16e6.txt.gz` is likely a compressed text file that contains the vocabulary for the Byte Pair Encoding (BPE) tokenizer used within the CLIP model.
 
 ## Vocabulary Storage - `bpe_simple_vocab_16e6.txt.gz`
 

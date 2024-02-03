@@ -2,6 +2,8 @@
 
 ![time.jpeg](images%2Ftime.jpeg)
 
+✍️ [Part I](README.md) | ✍️ [Part II](README2.md) | ✍️ [Part III ](README3.md)
+
 **📝 Original Paper**: https://arxiv.org/abs/2304.08485
 
 **📝 v1.5 Paper**: https://arxiv.org/abs/2310.03744

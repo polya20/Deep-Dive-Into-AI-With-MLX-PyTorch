@@ -2,6 +2,8 @@
 
 ![puppy.png](images%2Fpuppy.png)
 
+✍️ [Part I](README.md) | ✍️ [Part II](README2.md) | ✍️ [Part III ](README3.md)
+
 🏠 Official Repo: https://github.com/haotian-liu/LLaVA
 
 ## LLaVA-v1.6 - The New Benchmark in Visual Reasoning, OCR, and Knowledge Processing

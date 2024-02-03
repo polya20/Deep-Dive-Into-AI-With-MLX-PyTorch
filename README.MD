@@ -15,6 +15,8 @@ The first book is a comprehensive guide to AI using PyTorch and MLX, while the s
 
 ## What's New?
 
+🤿 Deep Dive 6: [Deep Dive into LLaVA] (deep-dives%2Fllava%2FREADME.md)
+
 🤿 Deep Dive 5: [Deep Dive into CLIP](deep-dives%2FCLIP%2FREADME.md)
 
 🤿 Deep Dive 4: [Deep Dive into RWKV Language Model - Eagle 7B](deep-dives%2Frwkv-eagle-7b%2FREADME.md)

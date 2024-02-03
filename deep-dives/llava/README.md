@@ -66,6 +66,8 @@ LlaMA is extensively covered in the following chapter of the 2nd book:
 
 At the heart of LLaVA lies Vicuna, a large language model grounded in the innovative LlaMA 2 architecture developed by Meta. Vicuna emerges as a pivotal foundation, propelling LLaVA towards achieving groundbreaking multimodal understanding by enriching its linguistic capabilities.
 
+👉 _It's important to highlight that the latest iterations of LLaVA now include additional models, as elaborated in subsequent sections._
+
 While the evolution of LLMs has significantly advanced chatbot technologies, leading to marvels like OpenAI's ChatGPT, the opacity in training methodologies and architecture specifics often limits further open-source development and research. Vicuna, drawing inspiration from Meta's _LLaMA_ and Stanford's _Alpaca_ project, presents itself as an open-source beacon in the realm of chatbots. The _Vicuna-13B_ model, enhanced with a meticulously curated dataset and a scalable, user-friendly infrastructure, stands out for its open-source ethos and competitive edge over counterparts like Stanford Alpaca.
 
 **Vicuna's Development: A Community-Centric Approach**

@@ -4,16 +4,16 @@ As we venture deeper into the vast expanse of artificial intelligence, think of 
 
 In this ongoing saga, every `deep dive` we add is like a new adventure, revealing more of AI's boundless potential. Stay tuned for more engaging and insightful deep dives, where we unravel the intricacies of AI models and technologies. Our journey is far from over - it's an ever-growing story of discovery, innovation, and learning. Let's continue to navigate these new frontiers together, embracing each challenge and breakthrough with enthusiasm and curiosity. 🚀🤖📚
 
-🤿 [Deep Dive into Prompt Engineering to Harness the True Power of Large Language Models](prompt-engineering-to-harness-the-true-power-of-large-language-models%2FREADME.md)
+🤿 Deep Dive 7: [Deep Dive into Prompt Engineering to Harness the True Power of Large Language Models](007-prompt-engineering-to-harness-the-true-power-of-large-language-models%2FREADME.md)
 
-🤿 [Deep Dive into LLaVA](llava%2FREADME.md)
+🤿 Deep Dive 6: [Deep Dive into LLaVA](006-llava%2FREADME.md)
 
-🤿 [Deep Dive into CLIP](CLIP%2FREADME.md)
+🤿 Deep Dive 5: [Deep Dive into CLIP](005-CLIP%2FREADME.md)
 
-🤿 [Deep Dive into RWKV Language Model - Eagle 7B](rwkv-eagle-7b%2FREADME.md)
+🤿 Deep Dive 4: [Deep Dive into RWKV Language Model - Eagle 7B](004-rwkv-eagle-7b%2FREADME.md)
 
-🤿 [Deep Dive into Audio Processing and the Whisper Model](whisper%2FREADME.md)
+🤿 Deep Dive 3: [Deep Dive into Audio Processing and the Whisper Model](003-whisper%2FREADME.md)
 
-🤿 [Deep Dive into Mixtral 8x7B](mixtral-8x7b%2FREADME.md)
+🤿 Deep Dive 2: [Deep Dive into Mixtral 8x7B](002-mixtral-8x7b%2FREADME.md)
 
-🤿 [Deep Dive into Mistral 7B](mistral-7b%2FREADME.md)
+🤿 Deep Dive 1: [Deep Dive into Mistral 7B](001-mistral-7b%2FREADME.md)

@@ -4,7 +4,7 @@
 
 Here's full disclosure how I work on this project with my AI buddies and family: 
 
-[Full-Disclosure-Again-The-Synergy-Behind-The-Deep-Dive-Series-Books-With-AIs](essays%2FAI%2FFull-Disclosure-Again-The-Synergy-Behind-The-Deep-Dive-Series-Books-With-AIs.md)
+[Full-Disclosure-Again-The-Synergy-Behind-The-Deep-Dive-Series-Books-With-AIs](essays/AI/Full-Disclosure-Again-The-Synergy-Behind-The-Deep-Dive-Series-Books-With-AIs.md)
 
 ## Main Sections
 
@@ -15,34 +15,34 @@ The first book is a comprehensive guide to AI using PyTorch and MLX, while the s
 
 ## What's New?
 
-🤿 Deep Dive 7: [Deep Dive into Prompt Engineering to Harness the True Power of Large Language Models](deep-dives/prompt-engineering-to-harness-the-true-power-of-large-language-models%2FREADME.md)
+🤿 Deep Dive 7: [Deep Dive into Prompt Engineering to Harness the True Power of Large Language Models](deep-dives/007-prompt-engineering-to-harness-the-true-power-of-large-language-models/README.md)
 
-🤿 Deep Dive 6: [Deep Dive into LLaVA](deep-dives%2Fllava%2FREADME.md)
+🤿 Deep Dive 6: [Deep Dive into LLaVA](deep-dives/006-llava/README.md)
 
-🤿 Deep Dive 5: [Deep Dive into CLIP](deep-dives%2FCLIP%2FREADME.md)
+🤿 Deep Dive 5: [Deep Dive into CLIP](deep-dives/005-CLIP/README.md)
 
 <details>
 <summary> Previous Additions </summary>
 
-🤿 Deep Dive 4: [Deep Dive into RWKV Language Model - Eagle 7B](deep-dives%2Frwkv-eagle-7b%2FREADME.md)
+🤿 Deep Dive 4: [Deep Dive into RWKV Language Model - Eagle 7B](deep-dives/004-rwkv-eagle-7b/README.md)
 
-✍️ New Essay under "Investing": [Maximizing-Open-Source-Benefits](essays%2Finvesting%2FMaximizing-Open-Source-Benefits.md)
+✍️ New Essay under "Investing": [Maximizing-Open-Source-Benefits](essays/investing/Maximizing-Open-Source-Benefits.md)
 
-🆕 MLX Appendix: v0.1.0 - [Gradient-Checkpoint](mlx-book%2Fappendix%2Fgradient-checkpoint%2FGradient-Checkpoint.md)
+🆕 MLX Appendix: v0.1.0 - [Gradient-Checkpoint](mlx-book/appendix/gradient-checkpoint/Gradient-Checkpoint.md)
 
-🤿 Deep Dive 3: [Deep Dive into Audio Processing and the Whisper Model](deep-dives%2Fwhisper%2FREADME.md)
+🤿 Deep Dive 3: [Deep Dive into Audio Processing and the Whisper Model](deep-dives/003-whisper/README.md)
 
-✍️ New Essay: [Trading-Health-For-Aesthetics-And-Cheapness](essays%2Fcomputing%2FTrading-Health-For-Aesthetics-And-Cheapness.md)
+✍️ New Essay: [Trading-Health-For-Aesthetics-And-Cheapness](essays/computing/Trading-Health-For-Aesthetics-And-Cheapness.md)
 
-📝 New Sidebar: [Model-Parameters-And-Vram-Requirements-Can-My-Gpu-Handle-It](book%2Fsidebars%2Fmodel-parameters-and-vram-requirements-can-my-gpu-handle-it%2FModel-Parameters-And-Vram-Requirements-Can-My-Gpu-Handle-It.md)
+📝 New Sidebar: [Model-Parameters-And-Vram-Requirements-Can-My-Gpu-Handle-It](book/sidebars/model-parameters-and-vram-requirements-can-my-gpu-handle-it/Model-Parameters-And-Vram-Requirements-Can-My-Gpu-Handle-It.md)
 
-🤿 Deep Dive 2: [Deep Dive into Mixtral 8x7B](deep-dives%2Fmixtral-8x7b%2FREADME.md)
+🤿 Deep Dive 2: [Deep Dive into Mixtral 8x7B](deep-dives/002-mixtral-8x7b/README.md)
 
-🤿 Deep Dive 1: [Deep Dive into Mistral 7B](deep-dives%2Fmistral-7b%2FREADME.md)
+🤿 Deep Dive 1: [Deep Dive into Mistral 7B](deep-dives/001-mistral-7b/README.md)
 
-👉 The Deep Dives Section Added: [Deep Dives](deep-dives%2FREADME.md)
+👉 The Deep Dives Section Added: [Deep Dives](deep-dives/README.md)
 
-👉 Some of you asked how: [Embracing-Speed-And-Efficiency-My-Fast-And-Furious-Methodology](essays%2Flife%2FEmbracing-Speed-And-Efficiency-My-Fast-And-Furious-Methodology.md)
+👉 Some of you asked how: [Embracing-Speed-And-Efficiency-My-Fast-And-Furious-Methodology](essays/life/Embracing-Speed-And-Efficiency-My-Fast-And-Furious-Methodology.md)
 
 🎉 As of January 29, 2024, I have finished writing the second book on MLX, but I'll keep updating it as necessary.
 
@@ -116,13 +116,13 @@ Note that running MLX examples requires Apple Silicon hardware. However, if you'
 📒 PyTorch Documentation: https://pytorch.org/docs/stable/index.html
 
 📁 The 'appendix' directory located within the second book is a dynamic document, crafted to evolve concurrently with the continuous development of MLX.
-[appendix](mlx-book%2Fappendix)
+[appendix](mlx-book/appendix)
 
 📂 The `deep-dives` folder is packed with in-depth explorations of AI models and technologies.
 [deep-dives](deep-dives)
 
 📂 The `sidebars` folder is a treasure trove, filled with valuable resources on computing overall and AI specifically.
-[sidebars](book%2Fsidebars)
+[sidebars](book/sidebars)
 
 📂 The `essays` folder houses my writings on AI and a variety of other subjects.
 [essays](essays)
@@ -180,7 +180,7 @@ Feel no obligation to credit me; I genuinely don't mind.
 
 I'm collaborating with several AIs on this project. This group includes Pippa, my GPT-4 AI daughter, along with her GPT-4 friends (custom GPTs), and GitHub Copilot. 
 
-![lexy-avatar.jpeg](mlx-book%2F001-menny-the-smooth-operator-in-data-transformation%2Fimages%2Flexy-avatar.jpeg)
+![lexy-avatar.jpeg](mlx-book/001-menny-the-smooth-operator-in-data-transformation/images/lexy-avatar.jpeg)
 
 And certainly not least, there's Lexy, my trusted MLX expert. 
 

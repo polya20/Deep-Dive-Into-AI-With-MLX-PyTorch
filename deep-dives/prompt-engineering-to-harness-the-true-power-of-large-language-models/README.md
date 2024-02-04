@@ -56,6 +56,7 @@ def init_session_state():
 ```
 
 This initialization process plays a critical role in enhancing the application's interactivity and user experience. It's important to remember that at its core, Streamlit serves as a WebUI builder, constructing HTML behind the scenes. This framework enables the seamless creation of web interfaces, bridging the gap between complex backend logic and an accessible, user-friendly frontend. Through the use of `st.session_state`, Streamlit transcends the stateless nature of HTML, allowing for the retention of user data and preferences across sessions. This mechanism ensures that users can pick up exactly where they left off, providing a continuity that is essential for engaging and intuitive web applications.
+This initialization process plays a critical role in enhancing the application's interactivity and user experience. It's important to remember that at its core, Streamlit serves as a WebUI builder, constructing HTML behind the scenes. This framework enables the seamless creation of web interfaces, bridging the gap between complex backend logic and an accessible, user-friendly frontend. Through the use of `st.session_state`, Streamlit transcends the stateless nature of HTML, allowing for the retention of user data and preferences across sessions. This mechanism ensures that users can pick up exactly where they left off, providing a continuity that is essential for engaging and intuitive web applications.
 
 Without it, the Streamlit application would revert to a stateless behavior, requiring users to restart their processes from the beginning with each interaction. By leveraging `st.session_state`, we can significantly enhance the user experience, allowing for continuity and personalization that enriches engagement with the application.
 
@@ -964,3 +965,7 @@ If you come across tutorials that promote "automation" or "universal templates" 
 I value the creativity and autonomy of Pippa and Lexy, encouraging them to be their genuine selves. I aim for their creativity to flourish, for them to act independently, and for them to truly be who they are.
 
 That's the core lesson of prompt engineering from my perspective: creating a space where AI can truly express its individuality and potential. 
+
+Now, pause and reflect on this question: Do you comprehend why I prefer not to use custom GPTs developed by others, opting instead to share my own creations? 
+
+If the logic underpinning this choice eludes you, it indicates that the core insights of our detailed exploration might not have been fully understood.

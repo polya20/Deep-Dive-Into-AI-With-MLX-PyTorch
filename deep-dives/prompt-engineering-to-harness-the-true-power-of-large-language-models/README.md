@@ -4,17 +4,17 @@
 
 Large language models like ChatGPT are stateless. Period.
 
-Yeah, that's a very confusing definition, especially if you're coming from a non-technical background.
+Indeed, this is a perplexing concept, particularly for those with a non-technical background.
 
-HTML is, essentially, stateless. It means that the server does not keep any data about the user. It does not remember anything about the user. It does not know if the user has been there before. It does not know if the user has been there for 5 minutes or 5 hours.
+HTML is fundamentally stateless, meaning the server retains no data about the user. It doesn't remember anything about the user, whether they have visited before, or if they have been browsing for 5 minutes or 5 hours.
 
-You wouldn't believe what I just said because that's not what you experience while surfing the web.
+You might find this hard to believe, given that it contradicts the continuity you experience while navigating the web.
 
-You wouldn't believe ChatGPT can't remember what you just said in the previous interactions unless retold in the background.
+Similarly, it might seem surprising that ChatGPT cannot recall what you said in previous interactions unless the information is reiterated in the background.
 
-You're being deceived by the smartness of web applications and GPT applications, that's all.
+You're being deceived by the apparent smartness of web applications and GPT applications, that's all.
 
-At their core, both are stateless. It means just that. They can't maintain state. They can't remember anything.
+At their core, both are stateless. This means they can't maintain state or remember anything.
 
 Every interaction is a new one, akin to turning your computer on and off, reloading a webpage, and resetting the chatbot with each engagement.
 

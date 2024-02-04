@@ -15,14 +15,16 @@ The first book is a comprehensive guide to AI using PyTorch and MLX, while the s
 
 ## What's New?
 
+🤿 Deep Dive 7: [Deep Dive into Prompt Engineering to Harness the True Power of Large Language Models](prompt-engineering-to-harness-the-true-power-of-large-language-models%2FREADME.md)
+
 🤿 Deep Dive 6: [Deep Dive into LLaVA](deep-dives%2Fllava%2FREADME.md)
 
 🤿 Deep Dive 5: [Deep Dive into CLIP](deep-dives%2FCLIP%2FREADME.md)
 
-🤿 Deep Dive 4: [Deep Dive into RWKV Language Model - Eagle 7B](deep-dives%2Frwkv-eagle-7b%2FREADME.md)
-
 <details>
 <summary> Previous Additions </summary>
+
+🤿 Deep Dive 4: [Deep Dive into RWKV Language Model - Eagle 7B](deep-dives%2Frwkv-eagle-7b%2FREADME.md)
 
 ✍️ New Essay under "Investing": [Maximizing-Open-Source-Benefits](essays%2Finvesting%2FMaximizing-Open-Source-Benefits.md)
 

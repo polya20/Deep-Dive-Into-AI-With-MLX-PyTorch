@@ -15,7 +15,7 @@ The first book is a comprehensive guide to AI using PyTorch and MLX, while the s
 
 ## What's New?
 
-🤿 Deep Dive 7: [Deep Dive into Prompt Engineering to Harness the True Power of Large Language Models](prompt-engineering-to-harness-the-true-power-of-large-language-models%2FREADME.md)
+🤿 Deep Dive 7: [Deep Dive into Prompt Engineering to Harness the True Power of Large Language Models](deep-dives/prompt-engineering-to-harness-the-true-power-of-large-language-models%2FREADME.md)
 
 🤿 Deep Dive 6: [Deep Dive into LLaVA](deep-dives%2Fllava%2FREADME.md)
 

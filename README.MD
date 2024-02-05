@@ -15,7 +15,7 @@ The first book is a comprehensive guide to AI using PyTorch and MLX, while the s
 
 ## What's New?
 
-🤿 Deep Dive 8: [Deep Dive into Stability AI's Generative Models - Stable Diffusion XL Part I](deep-dives/008-stable-diffusion-sdxl%2FREADME.md)
+🤿 Deep Dive 8: [Deep Dive into Stability AI's Generative Models - Stable Diffusion XL](deep-dives/008-stable-diffusion-sdxl%2FREADME.md)
 
 🤿 Deep Dive 7: [Deep Dive into Prompt Engineering to Harness the True Power of Large Language Models](deep-dives/007-prompt-engineering-to-harness-the-true-power-of-large-language-models/README.md)
 

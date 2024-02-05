@@ -14,10 +14,6 @@ Crafting and nurturing data in AI resembles the work of a diligent artisan, tran
 
 This chapter serves as a guide to grasp these steps, particularly in the Python and PyTorch context - two pivotal tools for modern AI practitioners. It's crafted to boost your comprehension and capability in maneuvering the intricacies of data in AI. Whether you're a seasoned data scientist or just beginning in AI, this chapter is designed to elevate your proficiency in handling data - the most vital element in AI.
 
-Note that I put a pause on documenting MLX for now. I'll return to it once it appears to have established a clear and definitive direction. For more on this:
-
-[SUSPENSION_NOTES_ON_MLX.md](..%2F..%2FSUSPENSION_NOTES_ON_MLX.md)
-
 For the moment, let's center our attention on PyTorch. When it comes to grasping the underlying principles, the choice of framework isn't crucial. The foundational concepts remain consistent across different platforms. The only variation lies in the specific characteristics of each framework. Once you've got a handle on the core concepts, you'll find it straightforward to adapt them to any framework you choose. While you're welcome to experiment with MLX, I won't be covering it in detail at this stage.
 
 As we set out on this journey, remember that the quality of data deeply influences the effectiveness of AI models. In the realm of artificial intelligence, there's a profound yet simple truth: the value of a model is tied to the data it is trained on.

@@ -52,6 +52,8 @@ This could serve as a perfect starting point. Pursue your interests, let curiosi
 
 Here's another nugget of insight: what you listen to, in terms of audio, consists of layers upon layers of frequencies, akin to layers in Photoshop but within the auditory domain. Imagine being able to strip away these layers, one after another, as if you were reversing the process of scrambling an egg, to expose the foundational frequencies beneath. And what's at the core of this unlayering process? It's math, through and through.
 
+Ah, and here's another perk: with math watching your back, science turns into your closest ally. Picture it as possessing a secret decoder ring for the universe. Armed with math, you're equipped to unlock the mysteries of the cosmos, from the smallest particles to the vastest galaxies. This is precisely how I fell in love with science as well.
+
 ## The Case Against the "Math for Dummies" Approach
 
 Got a bit of a headache?

@@ -2,7 +2,7 @@
 
 ![burning-tomes.png](images%2Fburning-tomes.png)
 
-Kicking off this math escapade, I never dreamed I'd be plotting to pen a mammoth guide, the likes of "Romance of the Three Kingdoms" but for math enthusiasts. It's not that I see myself as a math mage (though, how cool would that be?), but my zeal for diving headfirst into projects knows no bounds. Imagine, given a month, I might end up with a library's worth of musings, one for each day.
+Embarking on this math journey, I hadn't envisioned crafting a hefty volume, akin to "Romance of the Three Kingdoms," but sprinkled with a mathematical flair. While I don't exactly picture myself as a math sorcerer (though, imagine the fun in that!), my enthusiasm for plunging into new endeavors is unstoppable. Just imagine: given a month, I could likely stock an entire library with my reflections, producing a fresh piece daily.
 
 But honestly, who's itching to wade through such a behemoth? Just picturing it has me backing away. And don't get me started on those textbook deserts and the stiff-as-boards folks teaching math, seemingly on a mission to make it as unappealing as possible.
 

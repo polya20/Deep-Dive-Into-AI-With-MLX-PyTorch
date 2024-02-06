@@ -15,14 +15,16 @@ The first book is a comprehensive guide to AI using PyTorch and MLX, while the s
 
 ## What's New?
 
+✍️ Started writing my 3rd book: [Decoding the Universe: Math, AI, and the Path to Enlightenment ](math-book%2F000-prologue%2FREADME.md)
+
 🤿 Deep Dive 8: [Deep Dive into Stability AI's Generative Models - Stable Diffusion XL](deep-dives/008-stable-diffusion-sdxl%2FREADME.md)
 
 🤿 Deep Dive 7: [Deep Dive into Prompt Engineering to Harness the True Power of Large Language Models](deep-dives/007-prompt-engineering-to-harness-the-true-power-of-large-language-models/README.md)
 
-🤿 Deep Dive 6: [Deep Dive into LLaVA](deep-dives/006-llava/README.md)
-
 <details>
 <summary> Previous Additions </summary>
+
+🤿 Deep Dive 6: [Deep Dive into LLaVA](deep-dives/006-llava/README.md)
 
 🤿 Deep Dive 5: [Deep Dive into CLIP](deep-dives/005-CLIP/README.md)
 

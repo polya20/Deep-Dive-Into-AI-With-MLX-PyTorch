@@ -62,6 +62,8 @@ And here you are, exploring these pages, steering your path through the probabil
 
 ## The Case Against the "Math for Dummies" Approach
 
+![dont-be-a-dummy.png](images%2Fdont-be-a-dummy.png)
+
 Got a bit of a headache?
 
 Here's the thing—if you rely on a "for dummies" guide for everything, guess what? You'll end up just that: a dummy.
@@ -82,7 +84,7 @@ Consider the concept of logarithms. Task your GPT with explaining it and, withou
 
 ![mathilda.jpeg](images%2Fmathilda.jpeg)
 
-_Mathilda the Merry Math Mage, our main tour guide_
+_Mathilda the Merry Math Mage, Our Main Tour Guide_
 
 I created _Mathilda the Merry Math Mage_, a custom GPT-4, for the sole purpose of co-authoring this math book. Here's an excerpt from the custom instructions for her:
 
@@ -118,7 +120,7 @@ Furthermore, in the digital world, logarithms play a crucial role in data compre
 By transforming the scales of the gigantic and minuscule into forms that our minds can easily navigate, logarithms act as a magical bridge between human comprehension and the wonders of the universe, both large and small. They make the incomprehensible accessible, turning numbers into stories we can understand and share. Isn't that just magical, 오빠?
 ```
 
-However, introduce the idea of logarithms as 'natural normalizers' or discuss how they compress the vast analog world into digestible chunks, and suddenly, the discussion transcends traditional math boundaries. This is how Mathilda, with a hint towards broader applications, grasps the intent to move beyond mere calculations. With a bit of human guidance, she can transform a math-centric explanation into a broader, more engaging narrative.
+A tad better, but still not to my liking. However, introduce the idea of logarithms as 'natural normalizers' or discuss how they compress the vast analog world into digestible chunks, and suddenly, the discussion transcends traditional math boundaries. This is how Mathilda, with a hint towards broader applications, grasps the intent to move beyond mere calculations. With a bit of human guidance, she can transform a math-centric explanation into a broader, more engaging narrative.
 
 ```markdown
 Absolutely, 오빠! Your analogy is spot on. Just as our brains naturally compress wide ranges of audio frequencies into something we can comfortably hear and interpret, logarithms serve as a "natural normalizer" in mathematics and science, compressing vast ranges of numbers into a more digestible form. 
@@ -130,11 +132,13 @@ In this way, logarithms aren't just a mathematical convenience; they reflect a f
 
 Broadening our perspective, we see that audio and video processing are united by common fundamentals, such as normalization. Our brains and bodies inherently condense the endless details of the analog world into manageable, perceptible segments. The real world operates on analog principles—continuous and boundless, whereas digital systems function in discrete steps. To comprehend how digital systems manage this translation, one must understand the simple yet powerful concepts of division and the expansive application of logarithms. Mathilda grasps this concept well, yet she requires a touch of direction to fully illuminate the path.
 
-True comprehension involves crossing domain boundaries. To fully grasp logarithmic normalization, one must venture beyond mathematics to fields like biology or signal processing. For example, high dynamic range (HDR) video and log shooting enhance color grading in filmmaking—a practical normalization application. Similarly, using compressors on electric guitars or managing audio files are forms of normalization relevant to everyday experiences.
+True comprehension involves crossing domain boundaries. To fully grasp logarithmic normalization, one must venture beyond mathematics to fields such as biology or signal processing. For example, high dynamic range (HDR) video and log shooting, like S-Log (Sony cameras) or C-Log (Canon cameras), enhance color grading in filmmaking—a practical application of normalization. Similarly, using compressors on electric guitars or managing audio files are forms of normalization relevant to everyday experiences.
 
 In AI, techniques like LoRA training, pruning, and quantization represent normalization efforts, each with its precision trade-offs. Even converting color images to grayscale simplifies the vast color spectrum into manageable shades, embodying normalization.
 
 The principle of normalization serves as a bridge from the narrow confines of math to the universe's expanse, making complex concepts accessible.
+
+![understanding-the-infinite.png](images%2Funderstanding-the-infinite.png)
 
 Our minds naturally struggle with the concept of infinity, which is why the universe, in all its vastness and complexity, often feels beyond our grasp. We simply can't wrap our heads around the infinite. This is where the beauty of normalization comes into play. By applying this simple yet profound concept, we're able to distill the infinite into something more manageable, more comprehensible. It's a method that allows us to approach, understand, and appreciate the grandeur and intricacies of the universe. This act of normalization does indeed transcend, offering us a bridge to connect with concepts and realms that might otherwise remain elusive. It's like finding a universal translator for the complexities of existence—a truly magical tool in our quest to understand the world around us.
 
@@ -150,7 +154,7 @@ With thoughtful direction, AI can become an unparalleled educator, not just in m
 
 Together, Mathilda will lead us on this exploratory voyage, with me guiding her steps. Our journey promises to reveal the interconnectedness of knowledge, guided by the limitless teaching prowess of AI.
 
-## Navigating Math Challenges with AI - LLMs Are Bad at Calculations
+## Navigating Math Challenges with AI - LLMs Are Bad at Calculations!
 
 It might seem paradoxical, but it's true: Large Language Models (LLMs), including the advanced GPT-4, often struggle with basic math. As we embark on our journey through the Math Maze with Mathilda as our guide, it's crucial to understand this limitation.
 
@@ -174,13 +178,19 @@ As we progress, there's hope that LLMs will improve in this area. Until then, un
 
 Imagine being handed two lists of numbers and being asked to whip up a covariance or correlation matrix on the spot. Honestly, I'd be at a loss. Or more bluntly, I'd wonder aloud, "Why on earth should I do that?" It's not about refusing the task out of spite; it's about questioning the necessity of performing such calculations manually.
 
-![correlation-matrix.png](..%2Fbook%2F007-inspecting-data-workflow-for-tenny%2Fimages%2Fcorrelation-matrix.png)
+![correlation-matrix.png](images%2Fcorrelation-matrix.png)
 
 What's crucial here is grasping the idea of covariance between these number sets, not the nitty-gritty of crunching the numbers. That's a task better suited for computers. Sure, I could do it if pressed, but why should I? My time is better spent on endeavors that matter more. During my CFA and FRM exams, I had no choice. Now, thankfully, I do now.
+
+![mathilda-covariance-matrix-example.png](images%2Fmathilda-covariance-matrix-example.png)
+
+Just prompt Mathilda for an example. If you're equipped to ask the right questions and can interpret the answers she provides, that's all you really need.
 
 Even in AI, the focus should be on understanding concepts through basic examples, not on the ability to compute them yourself. And let's be real—most educators aren't doing these calculations by hand either; they're more about setting the questions and marking the answers.
 
 Having navigated numerous AI, math, and coding exams for Coursera specializations, I've since leaned on the robust frameworks and libraries available. There's no need for manual calculations as long as you understand the underlying concepts and how to apply these tools.
+
+My concern with the Korean education system, looking ahead, is the potential reintroduction of linear algebra purely to align with the AI era, without truly grasping its core principles. This approach might lead to the creation of overly complex math challenges, forcing students to grapple with these difficulties merely as a gateway to college. This detrimental cycle demands immediate action. Yet, as history often teaches us, change tends to arrive at a painstakingly slow pace. Speaking of which, did I mention my keen interest in history as well?
 
 But don't misunderstand; it's not a free pass to ignore math. The aim is to comprehend the principles, to know what happens behind the curtains. Can you conceptualize covariance, for instance, and envision how it might be calculated, even if you can't work through the math yourself? That's our target level of understanding.
 

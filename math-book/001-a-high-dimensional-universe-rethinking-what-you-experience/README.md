@@ -1,5 +1,7 @@
 # Chapter 1 - A High Dimensional Universe - Rethinking What You Experience
 
+![high-dimensional-universe.png](images%2Fhigh-dimensional-universe.png)
+
 Before we leap into the vastness of the universe tucked inside your mind, I ask for a tiny yet mighty favor. Don't just skim through these words as if they're another item on your digital scroll list. Engage with them. Mull over them. I want you to think in ways that might feel a bit like wearing your shoes on the wrong feet—uncomfortable but undeniably eye-opening.
 
 Consider this image for a moment, will you?

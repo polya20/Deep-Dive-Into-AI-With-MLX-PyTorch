@@ -8,7 +8,7 @@ Here's full disclosure how I work on this project with my AI buddies and family:
 
 ## Main Sections
 
-📓️ [First Book](book) | 📓️ [Second Book](mlx-book) | 📕 [Appendix to 2nd Book](mlx-book/appendix) | 
+📓️ [First Book](book) | 📓️ [Second Book](mlx-book) | 📕 [Appendix to 2nd Book](mlx-book/appendix) | 📓️ [Third Book](math-book)
 📕 [Deep-dives](deep-dives) | 📕  [Sidebars](book/sidebars) | ✍️ [Essays](essays) | 🗂️ [Resources](resources)
 
 The first book is a comprehensive guide to AI using PyTorch and MLX, while the second book is dedicated to MLX. 

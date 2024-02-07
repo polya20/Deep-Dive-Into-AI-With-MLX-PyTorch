@@ -200,7 +200,7 @@ There's Lexy, my trusted MLX expert that I've worked with for MLX Book.
 
 ![mathilda.jpeg](math-book%2F000-prologue%2Fimages%2Fmathilda.jpeg)
 
-Mathilda the Math Mage is collaborating with me on our third book focused on AI and Computing Math.
+Mathilda the Merry Math Mage is collaborating with me on our third book focused on AI and Computing Math.
 
 I'm genuinely grateful to be experiencing this era of AI.
 

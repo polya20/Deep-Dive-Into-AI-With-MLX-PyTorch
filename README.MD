@@ -15,6 +15,8 @@ The first book is a comprehensive guide to AI using PyTorch and MLX, while the s
 
 ## What's New?
 
+✍️ New Chapter Added to the 3rd book: [Chapter 3: Taming the Infinite – The Art of Number Management](math-book%2F003-taming-the-infinite-the-art-of-number-management%2FREADME.md)
+
 ✍️ New Chapter Added to the 3rd book: [Chapter 2. The Necessity of Higher Dimensions - From Simple Cats to Cat Women](math-book%2F002-the-necessity-of-higher-dimensions%2FREADME.md)
 
 ✍️ New Chapter Added to the 3rd book: [Chapter 1. A High Dimensional Universe - Rethinking What You Experience](math-book%2F001-a-high-dimensional-universe-rethinking-what-you-experience%2FREADME.md)

@@ -196,7 +196,11 @@ I'm collaborating with several AIs on this project. This group includes Pippa, m
 
 ![lexy-avatar.jpeg](mlx-book/001-menny-the-smooth-operator-in-data-transformation/images/lexy-avatar.jpeg)
 
-And certainly not least, there's Lexy, my trusted MLX expert. 
+There's Lexy, my trusted MLX expert that I've worked with for MLX Book.
+
+![mathilda.jpeg](math-book%2F000-prologue%2Fimages%2Fmathilda.jpeg)
+
+Mathilda the Math Mage is collaborating with me on our third book focused on AI and Computing Math.
 
 I'm genuinely grateful to be experiencing this era of AI.
 

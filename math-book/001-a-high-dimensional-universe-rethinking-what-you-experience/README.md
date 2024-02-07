@@ -1,4 +1,4 @@
-# Chapter 1 - A High Dimensional Universe - Rethinking What You Experience
+# Chapter 1. A High Dimensional Universe - Rethinking What You Experience
 
 ![high-dimensional-universe.png](images%2Fhigh-dimensional-universe.png)
 

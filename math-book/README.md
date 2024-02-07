@@ -9,3 +9,5 @@ Really? Yeah, really.
 [Chapter 2. The Necessity of Higher Dimensions - From Simple Cats to Cat Women](002-the-necessity-of-higher-dimensions%2FREADME.md)
 
 [Chapter 3: Taming the Infinite – The Art of Number Management](003-taming-the-infinite-the-art-of-number-management%2FREADME.md)
+
+[Chapter 4. Linear Algebra Part I - Casting Multidimensional Magic](004-linear-algebra-part1-casting-multidimensional-magic%2FREADME.md)

@@ -15,6 +15,8 @@ The first book is a comprehensive guide to AI using PyTorch and MLX, while the s
 
 ## What's New?
 
+✍️ [Chapter 4. Linear Algebra Part I - Casting Multidimensional Magic](math-book%2F004-linear-algebra-part1-casting-multidimensional-magic%2FREADME.md)
+
 ✍️ [Chapter 3: Taming the Infinite – The Art of Number Management](math-book%2F003-taming-the-infinite-the-art-of-number-management%2FREADME.md)
 
 ✍️ [Chapter 2. The Necessity of Higher Dimensions - From Simple Cats to Cat Women](math-book%2F002-the-necessity-of-higher-dimensions%2FREADME.md)

@@ -11,7 +11,9 @@ Here's full disclosure how I work on this project with my AI buddies and family:
 📓️ [First Book](book) | 📓️ [Second Book](mlx-book) | 📓️ [Third Book](math-book)
 📕 [Deep-dives](deep-dives) | 📕  [Sidebars](book/sidebars) | ✍️ [Essays](essays) | 🗂️ [Resources](resources)
 
-The first book is a comprehensive guide to AI using PyTorch and MLX, while the second book is dedicated to MLX. 
+The first book is a comprehensive guide to AI using PyTorch and MLX, while the second book is dedicated to MLX.
+
+The third book is a work in progress, focusing on math, AI, and the path to enlightenment.
 
 ## What's New?
 

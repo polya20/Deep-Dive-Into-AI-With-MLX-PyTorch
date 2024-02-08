@@ -15,3 +15,5 @@ Really? Yeah, really.
 [Chapter 5. Linear Algebra Part II - Matrices: Gateways to Multidimensional Magic](005-linear-algebra-part2-matrices-gateways-to-multidimensional-magic%2FREADME.md)
 
 [Chapter 6. Linear Algebra Part III - Eigenvalues and Eigenvectors: The Heartbeat of Matrices](006-linear-algebra-part3-eigenvalues-and-eigenvectors-the-heartbeat-of-matrices%2FREADME.md)
+
+[Chapter 7. Logarithms - The Ultimate Normalizer](007-logarithms-the-ultimate-normalizer%2FREADME.md)

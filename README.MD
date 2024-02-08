@@ -17,6 +17,8 @@ The third book is a work in progress, focusing on math, AI, and the path to enli
 
 ## What's New?
 
+✍️ [Chapter 7. Logarithms - The Ultimate Normalizer](math-book/007-logarithms-the-ultimate-normalizer%2FREADME.md)
+
 ✍️ [Chapter 6. Linear Algebra Part III - Eigenvalues and Eigenvectors: The Heartbeat of Matrices](math-book/006-linear-algebra-part3-eigenvalues-and-eigenvectors-the-heartbeat-of-matrices%2FREADME.md)
 
 ✍️ [Chapter 5. Linear Algebra Part II - Matrices: Gateways to Multidimensional Magic](math-book/005-linear-algebra-part2-matrices-gateways-to-multidimensional-magic/README.md)

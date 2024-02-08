@@ -44,9 +44,9 @@ The probability mass function of the binomial distribution is given by:
 ![binomial-formula.png](images%2Fbinomial-formula.png)
 
 where:
-- \( n \) is the total number of trials (10 tosses),
-- \( k \) is the number of successes (7 heads),
-- \( p \) is the probability of success (0.5 for a fair coin),
+- `n` is the total number of trials (10 tosses),
+- `k` is the number of successes (7 heads),
+- `p` is the probability of success (0.5 for a fair coin),
 - ![binomial-formula-choose.png](images%2Fbinomial-formula-choose.png)is the binomial coefficient.
 
 ### Calculating the Likelihood
@@ -249,7 +249,7 @@ Discrete distributions describe phenomena that occur in distinct, separate value
 
 **Common Discrete Distributions:**
 
-1. **Binomial Distribution**: Models the number of successes in a fixed number of independent Bernoulli trials (like flipping a coin a set number of times). It is defined by two parameters: the number of trials \( n \) and the probability of success \( p \) in each trial.
+1. **Binomial Distribution**: Models the number of successes in a fixed number of independent Bernoulli trials (like flipping a coin a set number of times). It is defined by two parameters: the number of trials `n` and the probability of success `p` in each trial.
    
    **Python Example**:
    ```python

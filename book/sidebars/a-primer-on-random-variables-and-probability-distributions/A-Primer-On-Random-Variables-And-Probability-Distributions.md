@@ -533,7 +533,6 @@ Employing Venn diagrams in this context can greatly aid understanding:
 
 ```python
 import matplotlib.pyplot as plt
-import seaborn as sns
 from matplotlib_venn import venn2
 
 # Creating a Venn diagram to visualize the probabilities

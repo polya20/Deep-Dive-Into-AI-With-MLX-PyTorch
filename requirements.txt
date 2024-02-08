@@ -21,3 +21,4 @@ evaluate
 datasets
 jaxlib
 mlx-data
+matplotlib_venn

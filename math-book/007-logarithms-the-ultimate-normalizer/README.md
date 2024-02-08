@@ -123,6 +123,14 @@ So, `log_b(x)` answers the question: "To what power must we raise `b` to obtain 
 
 The expression `log_2(8) = 3` means that if you raise 2 to the power of 3, you get 8. It's the logarithmic way of asking, "What power do you raise 2 to in order to get 8?" and the answer is 3, because `2^3 = 2 x 2 x 2 = 8`. This is an example of a logarithm solving for an exponent given a base and a result.
 
+If you're still struggling, here's a playful trick to remember which is which—the base and the argument—using the enchantment of counterclockwise reading.
+
+Start your gaze at the base, which in this case is the noble `2`, standing firm at the bottom. Now, let your eyes dance counterclockwise, as if they were following a fairy's flight, to the argument, the majestic `8`, waiting patiently within the embrace of the logarithm. As you complete your counterclockwise journey, you reach the power, the wise `3`, sitting across the equals sign, like a sage atop a mountain.
+
+Now, whisper the incantation: "2 raised to the power of 3 gives us 8." It's like unlocking a treasure chest with the correct combination. By reading it counterclockwise, you've just traveled through the magical formula that brings the logarithm to life: "The base `2` raised to what power equals `8`?" Ah, it's `3`!
+
+This trick is a charm that ensures you'll never forget. The base is your starting point, the power is your journey, and the argument is your destination.
+
 ## Common Logs with Base 10 and Natural Logs with Base e
 
 In the enchanting landscape of logarithms, we encounter two special varieties that are essential to the narrative of mathematics and beyond: common logarithms and natural logarithms. Each has its own unique base—a 'home' from which it operates—and each plays a leading role in different scenarios.

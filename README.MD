@@ -17,6 +17,8 @@ The third book is a work in progress, focusing on math, AI, and the path to enli
 
 ## What's New?
 
+✍️ [Chapter 6. Linear Algebra Part III - Eigenvalues and Eigenvectors: The Heartbeat of Matrices](math-book/006-linear-algebra-part3-eigenvalues-and-eigenvectors-the-heartbeat-of-matrices%2FREADME.md)
+
 ✍️ [Chapter 5. Linear Algebra Part II - Matrices: Gateways to Multidimensional Magic](math-book/005-linear-algebra-part2-matrices-gateways-to-multidimensional-magic/README.md)
 
 ✍️ [Chapter 4. Linear Algebra Part I - Casting Multidimensional Magic](math-book/004-linear-algebra-part1-casting-multidimensional-magic/README.md)

@@ -285,9 +285,13 @@ Continuous distributions describe phenomena that can take on any value within a 
    
    **Python Example**:
    ```python
-   from scipy.stats import expon
-   # Probability density of observing a certain time interval between events
-   print(expon.pdf(x=1, scale=1/lambda_))  # lambda_ is the rate parameter
+    from scipy.stats import expon
+    
+    # Define the rate parameter λ
+    lambda_ = 3  # Example value
+    
+    # Calculate the probability density at x=1, given the rate parameter λ
+    print(expon.pdf(x=1, scale=1/lambda_))  # λ is the rate parameter
    ```
 
 Understanding these distributions is crucial in AI. Discrete distributions like the binomial are often used in classification problems, while continuous distributions like the normal are fundamental in regression analysis and other predictive models. They help in making assumptions about the nature of the data and in choosing the right models or algorithms for specific AI applications.

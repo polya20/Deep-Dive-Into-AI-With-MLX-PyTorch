@@ -11,3 +11,5 @@ Really? Yeah, really.
 [Chapter 3: Taming the Infinite – The Art of Number Management](003-taming-the-infinite-the-art-of-number-management%2FREADME.md)
 
 [Chapter 4. Linear Algebra Part I - Casting Multidimensional Magic](004-linear-algebra-part1-casting-multidimensional-magic%2FREADME.md)
+
+[Chapter 5. Linear Algebra Part II - Matrices: Gateways to Multidimensional Magic](005-linear-algebra-part2-matrices-gateways-to-multidimensional-magic%2FREADME.md)

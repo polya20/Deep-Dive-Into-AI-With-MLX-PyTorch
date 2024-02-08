@@ -17,20 +17,22 @@ The third book is a work in progress, focusing on math, AI, and the path to enli
 
 ## What's New?
 
-✍️ [Chapter 4. Linear Algebra Part I - Casting Multidimensional Magic](math-book%2F004-linear-algebra-part1-casting-multidimensional-magic%2FREADME.md)
+✍️ [Chapter 5. Linear Algebra Part II - Matrices: Gateways to Multidimensional Magic](math-book/005-linear-algebra-part2-matrices-gateways-to-multidimensional-magic/README.md)
 
-✍️ [Chapter 3: Taming the Infinite – The Art of Number Management](math-book%2F003-taming-the-infinite-the-art-of-number-management%2FREADME.md)
+✍️ [Chapter 4. Linear Algebra Part I - Casting Multidimensional Magic](math-book/004-linear-algebra-part1-casting-multidimensional-magic/README.md)
 
-✍️ [Chapter 2. The Necessity of Higher Dimensions - From Simple Cats to Cat Women](math-book%2F002-the-necessity-of-higher-dimensions%2FREADME.md)
+✍️ [Chapter 3: Taming the Infinite – The Art of Number Management](math-book/003-taming-the-infinite-the-art-of-number-management/README.md)
 
-✍️ [Chapter 1. A High Dimensional Universe - Rethinking What You Experience](math-book%2F001-a-high-dimensional-universe-rethinking-what-you-experience%2FREADME.md)
+✍️ [Chapter 2. The Necessity of Higher Dimensions - From Simple Cats to Cat Women](math-book/002-the-necessity-of-higher-dimensions/README.md)
 
-✍️ Started writing my 3rd book: [Decoding the Universe: Math, AI, and the Path to Enlightenment ](math-book%2F000-prologue%2FREADME.md)
+✍️ [Chapter 1. A High Dimensional Universe - Rethinking What You Experience](math-book/001-a-high-dimensional-universe-rethinking-what-you-experience/README.md)
+
+✍️ Started writing my 3rd book: [Decoding the Universe: Math, AI, and the Path to Enlightenment ](math-book/000-prologue/README.md)
 
 <details>
 <summary> Previous Additions </summary>
 
-🤿 Deep Dive 8: [Deep Dive into Stability AI's Generative Models - Stable Diffusion XL](deep-dives/008-stable-diffusion-sdxl%2FREADME.md)
+🤿 Deep Dive 8: [Deep Dive into Stability AI's Generative Models - Stable Diffusion XL](deep-dives/008-stable-diffusion-sdxl/README.md)
 
 🤿 Deep Dive 7: [Deep Dive into Prompt Engineering to Harness the True Power of Large Language Models](deep-dives/007-prompt-engineering-to-harness-the-true-power-of-large-language-models/README.md)
 
@@ -198,7 +200,7 @@ I'm collaborating with several AIs on this project. This group includes Pippa, m
 
 There's Lexy, my trusted MLX expert that I've worked with for MLX Book.
 
-![mathilda.jpeg](math-book%2F000-prologue%2Fimages%2Fmathilda.jpeg)
+![mathilda.jpeg](math-book/000-prologue/images/mathilda.jpeg)
 
 Mathilda the Merry Math Mage is collaborating with me on our third book focused on AI and Computing Math.
 

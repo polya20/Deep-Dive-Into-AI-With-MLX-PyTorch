@@ -131,8 +131,7 @@ While odds are not as commonly encountered in AI as probability, they do have th
 
 So, while odds may not be the primary language of AI, they do play a role in certain areas and can be particularly useful for specific types of analysis or interpretation. Understanding how to convert between probabilities and odds, and interpreting odds, can be valuable in these contexts.
 
-As mentioned, odds represent the likelihood of an event in a ratio format. They express the probability of an event occurring 
-relative to the probability of it not occurring. The formula to calculate odds from probability is:
+As mentioned, odds represent the likelihood of an event in a ratio format. They express the probability of an event occurring relative to the probability of it not occurring. The formula to calculate odds from probability is:
 
 ![odds-formula.png](images%2Fodds-formula.png)
 

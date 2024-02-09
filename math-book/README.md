@@ -17,3 +17,5 @@ Really? Yeah, really.
 [Chapter 6. Linear Algebra Part III - Eigenvalues and Eigenvectors: The Heartbeat of Matrices](006-linear-algebra-part3-eigenvalues-and-eigenvectors-the-heartbeat-of-matrices%2FREADME.md)
 
 [Chapter 7. Logarithms - The Ultimate Normalizer](007-logarithms-the-ultimate-normalizer%2FREADME.md)
+
+[Chapter 8. Statistics Part I - The Art of Insightful Guesswork](008-stats-part1-the-art-of-insightful-guesswork%2FREADME.md)

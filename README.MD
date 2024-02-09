@@ -17,6 +17,8 @@ The third book is a work in progress, focusing on math, AI, and the path to enli
 
 ## What's New?
 
+✍️ [Chapter 8. Statistics Part I - The Art of Insightful Guesswork](math-book/008-stats-part1-the-art-of-insightful-guesswork%2FREADME.md)
+
 ✍️ [Chapter 7. Logarithms - The Ultimate Normalizer](math-book/007-logarithms-the-ultimate-normalizer%2FREADME.md)
 
 ✍️ [Chapter 6. Linear Algebra Part III - Eigenvalues and Eigenvectors: The Heartbeat of Matrices](math-book/006-linear-algebra-part3-eigenvalues-and-eigenvectors-the-heartbeat-of-matrices%2FREADME.md)
@@ -25,6 +27,9 @@ The third book is a work in progress, focusing on math, AI, and the path to enli
 
 ✍️ [Chapter 4. Linear Algebra Part I - Casting Multidimensional Magic](math-book/004-linear-algebra-part1-casting-multidimensional-magic/README.md)
 
+<details>
+<summary> Previous Additions </summary>
+
 ✍️ [Chapter 3: Taming the Infinite – The Art of Number Management](math-book/003-taming-the-infinite-the-art-of-number-management/README.md)
 
 ✍️ [Chapter 2. The Necessity of Higher Dimensions - From Simple Cats to Cat Women](math-book/002-the-necessity-of-higher-dimensions/README.md)
@@ -32,9 +37,6 @@ The third book is a work in progress, focusing on math, AI, and the path to enli
 ✍️ [Chapter 1. A High Dimensional Universe - Rethinking What You Experience](math-book/001-a-high-dimensional-universe-rethinking-what-you-experience/README.md)
 
 ✍️ Started writing my 3rd book: [Decoding the Universe: Math, AI, and the Path to Enlightenment ](math-book/000-prologue/README.md)
-
-<details>
-<summary> Previous Additions </summary>
 
 🤿 Deep Dive 8: [Deep Dive into Stability AI's Generative Models - Stable Diffusion XL](deep-dives/008-stable-diffusion-sdxl/README.md)
 

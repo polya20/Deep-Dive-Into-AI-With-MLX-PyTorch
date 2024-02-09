@@ -1,4 +1,4 @@
-# Deep Dive into Stability AI's Generative Models - Stable Diffusion Turbo Part I
+# Deep Dive into Stability AI's Generative Models - Stable Diffusion Turbo and Adversarial Diffusion Distillation
 
 ![add-title.png](images%2Fadd-title.png)
 

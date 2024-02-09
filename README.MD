@@ -13,9 +13,17 @@ Here's full disclosure how I work on this project with my AI buddies and family:
 
 The first book is a comprehensive guide to AI using PyTorch and MLX, while the second book is dedicated to MLX.
 
-The third book is a work in progress, focusing on math, AI, and the path to enlightenment.
+The third book focuses on math, AI, and the path to enlightenment.
 
 ## What's New?
+
+🎉 As of February 9, 2024, I have finished writing the third book on math, AI, and the path to enlightenment.
+[Decoding the Universe: Math, AI, and the Path to Enlightenment](math-book%2FREADME.md)
+
+✍️ [Chapter 11. Calculus - Navigating the Dynamics of Change](math-book/011-calculus-navigating-the-dynamics-of-change%2FREADME.md)
+
+<details>
+<summary> Previous Additions </summary>
 
 ✍️ [Chapter 10. Statistics Part III - The Art of Learning from Data](math-book/010-stats-part3-the-art-of-learning-from-data%2FREADME.md)
 
@@ -30,9 +38,6 @@ The third book is a work in progress, focusing on math, AI, and the path to enli
 ✍️ [Chapter 5. Linear Algebra Part II - Matrices: Gateways to Multidimensional Magic](math-book/005-linear-algebra-part2-matrices-gateways-to-multidimensional-magic/README.md)
 
 ✍️ [Chapter 4. Linear Algebra Part I - Casting Multidimensional Magic](math-book/004-linear-algebra-part1-casting-multidimensional-magic/README.md)
-
-<details>
-<summary> Previous Additions </summary>
 
 ✍️ [Chapter 3: Taming the Infinite – The Art of Number Management](math-book/003-taming-the-infinite-the-art-of-number-management/README.md)
 

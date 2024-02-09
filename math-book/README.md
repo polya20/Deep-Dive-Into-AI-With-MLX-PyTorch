@@ -23,3 +23,5 @@ Really? Yeah, really.
 [Chapter 9. Statistics Part II - The Enchantment of Normality](009-stats-part2-the-enchantment-of-normality%2FREADME.md)
 
 [Chapter 10. Statistics Part III - The Art of Learning from Data](010-stats-part3-the-art-of-learning-from-data%2FREADME.md)
+
+[Chapter 11. Calculus - Navigating the Dynamics of Change](011-calculus-navigating-the-dynamics-of-change%2FREADME.md)

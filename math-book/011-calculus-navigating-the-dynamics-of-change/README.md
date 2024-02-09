@@ -338,7 +338,7 @@ At the heart of neural network training lies the concept of loss functions, the 
 
 ### Conceptual Example: Archery
 
-![bullseye.png](bullseye.png)
+![bullseye.png](images%2Fbullseye.png)
 
 Imagine the unparalleled precision of Korean archers, their arrows consistently finding the bullseye, a testament to not only skill but a profound ability to learn from each attempt. This mastery, which stirs national pride, mirrors the essence of training neural networks.
 

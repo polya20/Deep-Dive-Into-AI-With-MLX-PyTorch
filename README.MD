@@ -17,6 +17,8 @@ The third book is a work in progress, focusing on math, AI, and the path to enli
 
 ## What's New?
 
+✍️ [Chapter 9. Statistics Part II - The Enchantment of Normality](math-book/009-stats-part2-the-enchantment-of-normality%2FREADME.md)
+
 ✍️ [Chapter 8. Statistics Part I - The Art of Insightful Guesswork](math-book/008-stats-part1-the-art-of-insightful-guesswork%2FREADME.md)
 
 ✍️ [Chapter 7. Logarithms - The Ultimate Normalizer](math-book/007-logarithms-the-ultimate-normalizer%2FREADME.md)

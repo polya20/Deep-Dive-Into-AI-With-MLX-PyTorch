@@ -19,3 +19,5 @@ Really? Yeah, really.
 [Chapter 7. Logarithms - The Ultimate Normalizer](007-logarithms-the-ultimate-normalizer%2FREADME.md)
 
 [Chapter 8. Statistics Part I - The Art of Insightful Guesswork](008-stats-part1-the-art-of-insightful-guesswork%2FREADME.md)
+
+[Chapter 9. Statistics Part II - The Enchantment of Normality](009-stats-part2-the-enchantment-of-normality%2FREADME.md)

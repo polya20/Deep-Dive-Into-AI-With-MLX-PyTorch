@@ -455,17 +455,6 @@ To circumvent the challenge of dying gradients, an alternative set of activation
 
 ### Normalization Techniques
 
-Normalization techniques are crucial in dealing with both exploding and dying gradients. They modify the inputs or gradients to be within a certain range, which makes the training process more stable and efficient. 
-
-- **Gradient Clipping**: This is used to prevent exploding gradients by limiting the size of the gradients to a defined range.
-- **Batch Normalization**: This technique normalizes the inputs of each layer, ensuring that the network behaves in a more predictable and stable manner, which is beneficial for addressing the dying gradients issue.
-
-In summary, the exploding and dying gradients problems are significant challenges in training deep neural networks. They can lead to instability and inefficiency in the learning process. Utilizing normalization techniques like gradient clipping and batch normalization can effectively mitigate these issues, leading to more stable and successful training of neural network models.
-
-If you're aiming to normalize your grasp of normalization, consider diving into the world of logarithmic concepts. They'll significantly bolster your understanding.
-
-### Normalization Techniques
-
 Normalization techniques stand as essential tools in the arsenal against the twin challenges of exploding and dying gradients, key hurdles in the journey of neural network training. By adjusting inputs or gradients to fall within a specific range, these methods enhance the stability and efficiency of the training process.
 
 - **Gradient Clipping**: A safeguard against exploding gradients, this technique caps the magnitude of the gradients, ensuring they do not exceed a predefined threshold, thereby averting potential training instability.

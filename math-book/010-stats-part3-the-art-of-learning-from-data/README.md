@@ -20,6 +20,8 @@ So, let us hold our crystal balls of numbers close, and step confidently into th
 
 Picture yourself at a shooting range, each shot you take aimed at the heart of a target. The first bullet strikes the bullseye, a perfect hit. Yet, the subsequent shots, while aimed with the same intention, land with varying degrees of precision—some near the center, others further away. Despite the differences, a pattern emerges from where these bullets find their resting places. This scenario is not just an exercise in marksmanship but a metaphor for understanding a regression model.
 
+![shooting-range.png](images%2Fshooting-range.png)
+
 In this metaphorical shooting range, every shot fired and its landing point offer valuable data points. If we were to plot these points on a _cartesian plane_, a visual pattern would start to materialize. From observing this pattern, we make adjustments—aiming a bit to the left or the right, accounting for unseen forces like the wind or perhaps a slight tremble in our hands. With each adjustment and shot, our aim improves, drawing us ever closer to consistently hitting the bullseye.
 
 🧐 _The Cartesian plane, a term honoring the French mathematician René Descartes, is a two-dimensional space defined by the crossing of two perpendicular lines, known as axes, which segment the plane into four quadrants. The horizontal line is termed the x-axis, while the vertical counterpart is the y-axis, intersecting at a central point called the origin, marked as (0, 0)._

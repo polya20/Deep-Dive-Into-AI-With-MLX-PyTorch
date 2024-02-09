@@ -7,3 +7,6 @@ scratchpad
 adapters_working.npz
 /deep-dives/whisper/temp/
 /deep-dives/whisper/mlx_models/
+*.pdf
+/mlx-examples/whisper/mlx_models/
+/mlx-examples/lora/mlx_model/

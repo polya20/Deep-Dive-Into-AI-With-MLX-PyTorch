@@ -65,6 +65,7 @@ By doing all this, the researchers teach the LDM to create not just still images
 
 ## Deep Dive - The Paper
 
+Andreas Blattmann, et al. Stable Video Diffusion: Scaling Latent Video Diffusion Models to Large Datasets
 🔗 https://arxiv.org/abs/2311.15127
 
 In the introduction to their study, the researchers embark on an investigation propelled by the rapid advancements in generative image modeling, particularly through the lens of diffusion models. This surge of progress has significantly impacted the development of generative video models, marking notable strides in both academic research and real-world applications. The techniques for training these models vary, ranging from constructing models from the ground up to finetuning pre-existing image models with added temporal dimensions, often employing a combination of image and video datasets.

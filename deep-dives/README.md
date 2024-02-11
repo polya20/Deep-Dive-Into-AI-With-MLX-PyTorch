@@ -4,6 +4,8 @@ As we venture deeper into the vast expanse of artificial intelligence, think of 
 
 In this ongoing saga, every `deep dive` we add is like a new adventure, revealing more of AI's boundless potential. Stay tuned for more engaging and insightful deep dives, where we unravel the intricacies of AI models and technologies. Our journey is far from over - it's an ever-growing story of discovery, innovation, and learning. Let's continue to navigate these new frontiers together, embracing each challenge and breakthrough with enthusiasm and curiosity. 🚀🤖📚
 
+🤿 Deep Dive 10: [Deep Dive into Stability AI's Generative Models - Stable Video Diffusion](010-stable-video-diffusion%2FREADME.md)
+
 🤿 Deep Dive 9: [Deep Dive into Stability AI's Generative Models - SDXL Turbo](009-sdxl-turbo-add%2FREADME.md)
 
 🤿 Deep Dive 8: [Deep Dive into Stability AI's Generative Models - Stable Diffusion XL Part I](008-stable-diffusion-sdxl%2FREADME.md)

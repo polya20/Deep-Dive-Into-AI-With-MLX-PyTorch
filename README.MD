@@ -17,6 +17,8 @@ The third book focuses on math, AI, and the path to enlightenment.
 
 ## What's New?
 
+🤿 Deep Dive 10: [Deep Dive into Stability AI's Generative Models - Stable Video Diffusion](deep-dives/010-stable-video-diffusion%2FREADME.md)
+
 ✍️ New Essay: [Charting the Future of Careers Amidst AI](essays%2Flife%2FCharting-The-Future-Of-Careers-Amidst-AI.md)
 
 🤿 Deep Dive 9: [Deep Dive into Stability AI's Generative Models - SDXL Turbo](deep-dives/009-sdxl-turbo-add%2FREADME.md)

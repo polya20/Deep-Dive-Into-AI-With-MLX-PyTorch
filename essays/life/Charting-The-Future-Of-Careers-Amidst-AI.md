@@ -42,4 +42,4 @@ P.S. Interested in tinkering with the graph?
 
 Naturally, it requires a bit of Python know-how. Don't have it? Exactly my point. Starting to see what I mean?
 
-[ai-driven-reality-visualizer.py](ai-driven-reality-visualizer.py)
+[ai-driven-reality-visualizer.py](https://github.com/neobundy/Deep-Dive-Into-AI-With-MLX-PyTorch/blob/master/essays/life/ai-driven-reality-visualizer.py)

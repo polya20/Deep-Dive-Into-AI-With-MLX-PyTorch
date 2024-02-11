@@ -1,6 +1,6 @@
 # Deep Dive into Stability AI's Generative Models - Stable Zero123
 
-![ai-director.png](images%2Fai-director.png)
+![3d-dragon.png](images%2F3d-dragon.png)
 
 🔗 https://arxiv.org/abs/2311.15127
 

@@ -181,13 +181,23 @@ For evaluating the tasks of novel view synthesis and 3D reconstruction, the mode
 
 **3D Reconstruction:** The evaluation is based on Chamfer Distance and volumetric Intersection over Union (IoU) to measure the accuracy of the reconstructed 3D models.
 
+![figure5.png](images%2Ffigure5.png)
+
+![figure6.png](images%2Ffigure6.png)
+
 Numerical results are detailed in the study's tables, while Figures 5 and 6 illustrate that, especially on the GSO, the proposed method generates images with a high degree of photorealism and alignment with the ground truth. This high-fidelity synthesis extends to RTMV scenes, which are more complex and divergent from the Objaverse dataset. Among the baselines, Point-E stands out for its zero-shot generalizability, though its lower resolution limits its utility for this task.
+
+![figure7.png](images%2Ffigure7.png)
+
+![figure8.png](images%2Ffigure8.png)
 
 **Diversity Across Samples:** The task's under-constrained nature makes diffusion models particularly suitable due to their capability to account for the inherent uncertainty. The partial views in 2D input images leave ample room for interpretation, and Figure 8 showcases the diversity and quality of images sampled from novel viewpoints.
 
 ![table3.png](images%2Ftable3.png)
 
 ![table4.png](images%2Ftable4.png)
+
+![figure9.png](images%2Ffigure9.png)
 
 Tables 3 and 4 present the numerical data, and Figure 9 qualitatively depicts that the method achieves high-fidelity 3D meshes. MCC offers good surface estimation from visible angles but struggles with unseen areas. SJC-I frequently falls short in reconstructing meaningful geometries. Point-E, while demonstrating impressive generalization, yields sparse point clouds that may result in incomplete surface reconstructions. The proposed method combines view-conditioned diffusion model priors with NeRF-style representation, leading to advancements in both Chamfer Distance and volumetric IoU as shown in the results.
 

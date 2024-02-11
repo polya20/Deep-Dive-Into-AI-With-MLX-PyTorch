@@ -36,6 +36,10 @@ Oh, me? I'll be out there, daringly riding the wave, age just a number, catching
 
 How about you? Up for the ride?
 
+![s-curve-blue-ai-dragon.jpg](images%2Fs-curve-blue-ai-dragon.jpg)
+
+Remember the significance of the S-Curve, especially in the Year of the Blue AI Dragon.
+
 ---
 
 P.S. Interested in tinkering with the graph?

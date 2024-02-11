@@ -121,7 +121,7 @@ represents the PAAS score as introduced by previous research. This methodology i
 
 ### Notes on Score Jacobian Chaining (SJC)
 
-To enhance our understanding of the paper, let's dissect the concept of Score Jacobian Chaining (SJC) and its role in 3D reconstruction:
+🧐 _This section is not in the paper. To enhance our understanding of the paper, let's dissect the concept of Score Jacobian Chaining (SJC) and its role in 3D reconstruction._
 
 **Background**
 

@@ -35,3 +35,9 @@ That graph I made? It's not just a cool piece of data visualization. It's a rall
 Oh, me? I'll be out there, daringly riding the wave, age just a number, catching the crest with a grin. Eyes on the horizon, I'm all in for this AI adventure. You've noticed, haven't you, how I've always been keen to learn and embrace every kind of S-curve that comes my way, right?
 
 How about you? Up for the ride?
+
+P.S. Interested in tinkering with the graph?
+
+Naturally, it requires a bit of Python know-how. Don't have it? Exactly my point. Starting to see what I mean?
+
+[ai-driven-reality-visualizer.py](ai-driven-reality-visualizer.py)

@@ -17,6 +17,8 @@ The third book focuses on math, AI, and the path to enlightenment.
 
 ## What's New?
 
+🤿 Deep Dive 12: [Deep Dive into Stability AI's Generative Models - Stable Audio](deep-dives/012-stable-audio/README.md)
+
 🤿 Deep Dive 11: [Deep Dive into Stability AI's Generative Models - Stable Zero123](deep-dives/011-stable-zero123/README.md)
 
 🤿 Deep Dive 10: [Deep Dive into Stability AI's Generative Models - Stable Video Diffusion](deep-dives/010-stable-video-diffusion/README.md)

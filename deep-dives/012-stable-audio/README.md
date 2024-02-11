@@ -66,7 +66,7 @@ In the realm of generating **_variable-length_**, **_long-form audio_**, our res
 
 _**Evaluation metrics**_ have evolved alongside generative models, yet the focus has remained on short-form mono audio. Our work introduces new quantitative and qualitative metrics designed for long-form full-band stereo audio, addressing a critical gap in the assessment of generative audio quality, text alignment, and musicality.
 
-Lastly, the concept of _**multitask generative modeling_** has shown promise in simultaneously addressing the synthesis of speech, music, and sounds. Our model uniquely contributes to this evolving landscape by focusing on the generation of music and sound effects based on text prompts, showcasing the versatility and potential of latent diffusion in generative audio synthesis.
+Lastly, the concept of _**multitask generative modeling**_ has shown promise in simultaneously addressing the synthesis of speech, music, and sounds. Our model uniquely contributes to this evolving landscape by focusing on the generation of music and sound effects based on text prompts, showcasing the versatility and potential of latent diffusion in generative audio synthesis.
 
 ### Architecture
 

@@ -17,6 +17,8 @@ The third book focuses on math, AI, and the path to enlightenment.
 
 ## What's New?
 
+✍️ New Essay: [Charting the Future of Careers Amidst AI](essays%2Flife%2FCharting-The-Future-Of-Careers-Amidst-AI.md)
+
 🤿 Deep Dive 9: [Deep Dive into Stability AI's Generative Models - SDXL Turbo](deep-dives/009-sdxl-turbo-add%2FREADME.md)
 
 🎉 As of February 9, 2024, I have finished writing the third book on math, AI, and the path to enlightenment.

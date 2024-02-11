@@ -17,29 +17,29 @@ The third book focuses on math, AI, and the path to enlightenment.
 
 ## What's New?
 
-🤿 Deep Dive 10: [Deep Dive into Stability AI's Generative Models - Stable Video Diffusion](deep-dives/010-stable-video-diffusion%2FREADME.md)
+🤿 Deep Dive 10: [Deep Dive into Stability AI's Generative Models - Stable Video Diffusion](deep-dives/010-stable-video-diffusion/README.md)
 
-✍️ New Essay: [Charting the Future of Careers Amidst AI](essays%2Flife%2FCharting-The-Future-Of-Careers-Amidst-AI.md)
+✍️ New Essay: [Charting the Future of Careers Amidst AI](essays/life/Charting-The-Future-Of-Careers-Amidst-AI.md)
 
-🤿 Deep Dive 9: [Deep Dive into Stability AI's Generative Models - SDXL Turbo](deep-dives/009-sdxl-turbo-add%2FREADME.md)
+🤿 Deep Dive 9: [Deep Dive into Stability AI's Generative Models - SDXL Turbo](deep-dives/009-sdxl-turbo-add/README.md)
 
 🎉 As of February 9, 2024, I have finished writing the third book on math, AI, and the path to enlightenment.
-[Decoding the Universe: Math, AI, and the Path to Enlightenment](math-book%2FREADME.md)
+[Decoding the Universe: Math, AI, and the Path to Enlightenment](math-book/README.md)
 
-✍️ [Chapter 11. Calculus - Navigating the Dynamics of Change](math-book/011-calculus-navigating-the-dynamics-of-change%2FREADME.md)
+✍️ [Chapter 11. Calculus - Navigating the Dynamics of Change](math-book/011-calculus-navigating-the-dynamics-of-change/README.md)
 
 <details>
 <summary> Previous Additions </summary>
 
-✍️ [Chapter 10. Statistics Part III - The Art of Learning from Data](math-book/010-stats-part3-the-art-of-learning-from-data%2FREADME.md)
+✍️ [Chapter 10. Statistics Part III - The Art of Learning from Data](math-book/010-stats-part3-the-art-of-learning-from-data/README.md)
 
-✍️ [Chapter 9. Statistics Part II - The Enchantment of Normality](math-book/009-stats-part2-the-enchantment-of-normality%2FREADME.md)
+✍️ [Chapter 9. Statistics Part II - The Enchantment of Normality](math-book/009-stats-part2-the-enchantment-of-normality/README.md)
 
-✍️ [Chapter 8. Statistics Part I - The Art of Insightful Guesswork](math-book/008-stats-part1-the-art-of-insightful-guesswork%2FREADME.md)
+✍️ [Chapter 8. Statistics Part I - The Art of Insightful Guesswork](math-book/008-stats-part1-the-art-of-insightful-guesswork/README.md)
 
-✍️ [Chapter 7. Logarithms - The Ultimate Normalizer](math-book/007-logarithms-the-ultimate-normalizer%2FREADME.md)
+✍️ [Chapter 7. Logarithms - The Ultimate Normalizer](math-book/007-logarithms-the-ultimate-normalizer/README.md)
 
-✍️ [Chapter 6. Linear Algebra Part III - Eigenvalues and Eigenvectors: The Heartbeat of Matrices](math-book/006-linear-algebra-part3-eigenvalues-and-eigenvectors-the-heartbeat-of-matrices%2FREADME.md)
+✍️ [Chapter 6. Linear Algebra Part III - Eigenvalues and Eigenvectors: The Heartbeat of Matrices](math-book/006-linear-algebra-part3-eigenvalues-and-eigenvectors-the-heartbeat-of-matrices/README.md)
 
 ✍️ [Chapter 5. Linear Algebra Part II - Matrices: Gateways to Multidimensional Magic](math-book/005-linear-algebra-part2-matrices-gateways-to-multidimensional-magic/README.md)
 

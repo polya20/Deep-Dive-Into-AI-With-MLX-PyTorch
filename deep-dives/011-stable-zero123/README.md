@@ -2,8 +2,6 @@
 
 ![3d-dragon.png](images%2F3d-dragon.png)
 
-🔗 https://arxiv.org/abs/2311.15127
-
 Stable Diffusion has broadened its technological horizon into 3D object generation with the unveiling of Stable Zero123, marking a pivotal advancement in the field as highlighted by the researchers. This innovation stands as a notable enhancement over prior models such as Zero1-to-3 and Zero123-XL, with its superiority largely attributed to refined training datasets and the introduction of elevation conditioning. The methodology adopted involves the meticulous selection and more lifelike rendering of high-quality 3D objects from Objaverse, leading to significant progress in the model's ability to generate novel views of objects, thereby demonstrating a deep understanding of their appearance from multiple angles.
 
 Leveraging the Stable Diffusion 1.5 framework, Stable Zero123 is designed to consume the same amount of VRAM for producing a single new view. However, the generation of 3D objects necessitates greater computational resources, with a recommendation of 24GB of VRAM. The model is made available for non-commercial and research purposes, with a commercial version, Stable Zero123C, accessible to Stability AI members.

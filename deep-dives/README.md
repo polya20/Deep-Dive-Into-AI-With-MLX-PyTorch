@@ -4,7 +4,9 @@ As we venture deeper into the vast expanse of artificial intelligence, think of 
 
 In this ongoing saga, every `deep dive` we add is like a new adventure, revealing more of AI's boundless potential. Stay tuned for more engaging and insightful deep dives, where we unravel the intricacies of AI models and technologies. Our journey is far from over - it's an ever-growing story of discovery, innovation, and learning. Let's continue to navigate these new frontiers together, embracing each challenge and breakthrough with enthusiasm and curiosity. 🚀🤖📚
 
-🤿 Deep Dive 12: [Deep Dive into Stability AI's Generative Models - Stable Audio](012-stable-audio%2FREADME.md)
+🤿 Deep Dive 13: [Deep Dive into RunwayML Gen-1](013-runwayml-gen1/README.md)
+
+🤿 Deep Dive 12: [Deep Dive into Stability AI's Generative Models - Stable Audio](012-stable-audio/README.md)
 
 🤿 Deep Dive 11: [Deep Dive into Stability AI's Generative Models - Stable Zero123](011-stable-zero123/README.md)
 

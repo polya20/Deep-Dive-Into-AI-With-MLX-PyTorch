@@ -1,6 +1,3 @@
----
-layout: default
----
 # Deep Dive into AI with MLX and PyTorch
 ![cover.png](images/cover.png)
 "Deep Dive into AI with MLX and PyTorch" is an educational initiative designed to help anyone interested in AI, specifically in machine learning and deep learning, using Apple's MLX and Meta's PyTorch frameworks.

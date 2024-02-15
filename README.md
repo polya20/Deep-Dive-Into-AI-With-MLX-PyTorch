@@ -17,16 +17,19 @@ The third book focuses on math, AI, and the path to enlightenment.
 
 ## What's New?
 
+🤿 Deep Dive 14: [Deep Dive into MetaAI MAGNeT]
+(014-meta-ai-magnet%2FREADME.md)
+
 🤿 Deep Dive 13: [Deep Dive into RunwayML Gen-1](deep-dives/013-runwayml-gen1/README.md)
+
+<details>
+<summary> Previous Additions </summary>
 
 🤿 Deep Dive 12: [Deep Dive into Stability AI's Generative Models - Stable Audio](deep-dives/012-stable-audio/README.md)
 
 🤿 Deep Dive 11: [Deep Dive into Stability AI's Generative Models - Stable Zero123](deep-dives/011-stable-zero123/README.md)
 
 🤿 Deep Dive 10: [Deep Dive into Stability AI's Generative Models - Stable Video Diffusion](deep-dives/010-stable-video-diffusion/README.md)
-
-<details>
-<summary> Previous Additions </summary>
 
 ✍️ New Essay: [Charting the Future of Careers Amidst AI](essays/life/Charting-The-Future-Of-Careers-Amidst-AI.md)
 

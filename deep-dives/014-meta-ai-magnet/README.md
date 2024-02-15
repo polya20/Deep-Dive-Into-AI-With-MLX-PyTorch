@@ -175,7 +175,7 @@ On a comparative note, the contrasting methodologies in audio/music generation b
 
 ## Testing Models
 
-🤗 Since I'm currently away from my usual setups, I'm unable to run the models with CUDA GPUs. I plan to try them out once I return home with my Windows RTX 4090 setup. In the meantime, you have the option to test them on your local machine or explore samples available on the website.
+🤗 _Since I'm currently away from my usual setups, I'm unable to run the models with CUDA GPUs. I plan to try them out once I return home with my Windows RTX 4090 setup. In the meantime, you have the option to test them on your local machine or explore samples available on the website._
 
 🔗 https://pages.cs.huji.ac.il/adiyoss-lab/MAGNeT/
 

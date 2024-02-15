@@ -17,6 +17,8 @@ The third book focuses on math, AI, and the path to enlightenment.
 
 ## What's New?
 
+🤿 Deep Dive 15:  [Deep Dive in Meta AI's JEPA](deep-dives/015-meta-jepa%2FREADME.md)
+
 🤿 Deep Dive 14: [Deep Dive into MetaAI MAGNeT](deep-dives/014-meta-ai-magnet/README.md)
 
 🤿 Deep Dive 13: [Deep Dive into RunwayML Gen-1](deep-dives/013-runwayml-gen1/README.md)

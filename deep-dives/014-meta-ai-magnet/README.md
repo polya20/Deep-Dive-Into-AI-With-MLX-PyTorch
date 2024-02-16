@@ -207,7 +207,7 @@ from audiocraft.data.audio import audio_write
 
 model = MAGNeT.get_pretrained("facebook/magnet-medium-30secs")
 
-descriptions = ["80s thrash metal", "epic riff"]
+descriptions = ["80s thrash metal intro", "epic guitar riff"]
 
 wav = model.generate(descriptions)  # generates 2 samples.
 
@@ -224,7 +224,7 @@ from audiocraft.data.audio import audio_write
 
 model = MAGNeT.get_pretrained("facebook/audio-magnet-medium")
 
-descriptions = ["heavy rain", "deep forest", "gun fight"]
+descriptions = ["heavy rain", "windy deep forest", "gun fight"]
 
 wav = model.generate(descriptions)  # generates 2 samples.
 

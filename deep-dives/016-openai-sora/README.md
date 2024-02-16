@@ -203,7 +203,7 @@ Extending beyond the physical realm, Sora demonstrates proficiency in simulating
 
 The emergence of these capabilities signals a promising avenue for the ongoing scaling of video models as a pathway toward the creation of advanced simulators for both the physical and digital realms. This advancement suggests a future where models like Sora can more accurately represent the intricacies of the world and its inhabitants.
 
-🧐 _The significance of Sora's physics capabilities, like simulating a painter adding strokes to a canvas or a person leaving bite marks in a burger, lies in the contrast between the simplicity and efficiency of Sora's method versus the traditionally time-consuming processes involved in 3D software. 
+🧐 _The significance of Sora's physics capabilities, like simulating a painter adding strokes to a canvas or a person leaving bite marks in a burger, lies in the contrast between the simplicity and efficiency of Sora's method versus the traditionally time-consuming processes involved in 3D software._ 
 
 _Imagine you're trying to create a scene in a video game or an animation where a character is painting or eating. Using traditional 3D software, this task involves several complex steps: designing the 3D models, animating the action frame by frame, and possibly writing code to ensure the paint appears on the canvas or the burger looks eaten. This process requires a lot of time, technical skill, and attention to detail to make the interaction look realistic._
 

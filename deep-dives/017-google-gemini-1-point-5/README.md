@@ -1,4 +1,4 @@
-# Deep Dive into Google Gemini Pro 1.5
+# Deep Dive into Google Gemini 1.5
 
 ![gemini-title.png](images%2Fgemini-title.png)
 

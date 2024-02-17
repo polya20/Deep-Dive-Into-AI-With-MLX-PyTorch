@@ -9,13 +9,15 @@ Here's full disclosure how I work on this project with my AI buddies and family:
 ## Main Sections
 
 📓️ [First Book](book) | 📓️ [Second Book](mlx-book) | 📓️ [Third Book](math-book)
-📕 [Deep-dives](deep-dives) | 📕  [Sidebars](book/sidebars) | ✍️ [Essays](essays) | 🗂️ [Resources](resources)
+🤿 [Deep Dives](deep-dives) | [Concept Nuggets](concept-nuggets) | 📕  [Sidebars](book/sidebars) | ✍️ [Essays](essays) | 🗂️ [Resources](resources)
 
 The first book is a comprehensive guide to AI using PyTorch and MLX, while the second book is dedicated to MLX.
 
 The third book focuses on math, AI, and the path to enlightenment.
 
 ## What's New?
+
+🥠 [Concept Nuggets 001 - Understanding Diffusion Transformers Through the Dark Souls Experience](concept-nuggets/001-diffusion-transformers/README.md)
 
 🤿 Deep Dive 18: [Deep Dive in Diffusion Transformers](deep-dives/018-diffusion-transformer%2FREADME.md)
 
@@ -173,6 +175,9 @@ Note that running MLX examples requires Apple Silicon hardware. However, if you'
 
 📂 The `deep-dives` folder is packed with in-depth explorations of AI models and technologies.
 [deep-dives](deep-dives)
+
+📂 The `concept-nuggets` folder is a collection of educational nuggets, each designed to demystify complex AI concepts.
+[concept-nuggets](concept-nuggets)
 
 📂 The `sidebars` folder is a treasure trove, filled with valuable resources on computing overall and AI specifically.
 [sidebars](book/sidebars)

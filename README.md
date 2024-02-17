@@ -17,6 +17,8 @@ The third book focuses on math, AI, and the path to enlightenment.
 
 ## What's New?
 
+🤿 Deep Dive 18: [Deep Dive in Diffusion Transformers](deep-dives/018-diffusion-transformer%2FREADME.md)
+
 🤿 Deep Dive 17: [Deep Dive in Google's Gemini 1.5](deep-dives/017-google-gemini-1-point-5/README.md)
 
 🤿 Deep Dive 16: [Deep Dive in OpenAI's Sora](deep-dives/016-openai-sora/README.md)
@@ -25,10 +27,10 @@ The third book focuses on math, AI, and the path to enlightenment.
 
 🤿 Deep Dive 14: [Deep Dive into MetaAI MAGNeT](deep-dives/014-meta-ai-magnet/README.md)
 
-🤿 Deep Dive 13: [Deep Dive into RunwayML Gen-1](deep-dives/013-runwayml-gen1/README.md)
-
 <details>
 <summary> Previous Additions </summary>
+
+🤿 Deep Dive 13: [Deep Dive into RunwayML Gen-1](deep-dives/013-runwayml-gen1/README.md)
 
 🤿 Deep Dive 12: [Deep Dive into Stability AI's Generative Models - Stable Audio](deep-dives/012-stable-audio/README.md)
 

@@ -739,8 +739,10 @@ class ComplexFaceDetector(nn.Module):
 
         return x
 
-    # MLX lacks pooling layers, so we define a custom pooling function
-    # We should be able to do this soon: self.pool = nn.MaxPool2d(kernel_size=2, stride=2)
+    # Previously, MLX did not support pooling layers before version 0.3.3x, necessitating custom pooling functions.
+    # Now, you can easily integrate built-in pooling with: self.pool = nn.MaxPool2d(kernel_size=2, stride=2).
+    # The custom_pool function is retained in the code for educational insight.
+    # Feel free to adopt MLX's built-in pooling layers for streamlined project development.
 
     def custom_pool(self, x):
         # Implement custom pooling logic here for BHWC format
@@ -894,6 +896,35 @@ if __name__ == '__main__':
 
 This code is a comprehensive implementation for creating, training, and testing a face detection model named Menny using the MLX framework. 
 
+### Update Notice
+
+Starting from version 0.3.x, MLX has introduced support for Max and Average Pooling layers. This enhancement allows for the replacement of custom pooling functions in your code with these built-in pooling layers, leading to a cleaner and more efficient implementation.
+
+For `SimpleFaceDetector`, incorporate the Max Pooling layer as follows:
+
+```python
+...
+        # Execute a forward pass through the convolutional layers with ReLU activations
+        pool = nn.MaxPool2d(kernel_size=2, stride=2)
+        x = pool(self.relu(self.conv1(x)))
+        x = pool(self.relu(self.conv2(x)))
+        x = self.dropout(x)
+```
+
+Similarly, for `ComplexFaceDetector`, the integration is as shown:
+
+```python
+...
+        # Execute a forward pass through the convolutional layers with ReLU activations, now including an additional convolutional layer
+        pool = nn.MaxPool2d(kernel_size=2, stride=2)
+        x = pool(self.relu(self.conv1(x)))
+        x = pool(self.relu(self.conv2(x)))
+        x = pool(self.relu(self.conv3(x)))
+        x = self.dropout(x)
+...
+```
+
+When switching between the `SimpleFaceDetector` and `ComplexFaceDetector` classes, where CNNs are implemented, it is critical to re-train your model to accommodate these changes. Utilizing model weights trained with one class configuration on a different class setup can lead to compatibility issues and errors. Re-training ensures that the model performs optimally with the chosen class structure, maintaining accuracy and efficiency in your face detection tasks.
 
 ### Hyperparameters and Constants
 

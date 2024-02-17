@@ -36,7 +36,6 @@ ROTATION_ANGLE = 15
 
 MODEL_WEIGHTS_FILE = 'menny_model_weights.npz'
 
-
 def portraits_and_labels(image_folder: Path):
     """
     Load the files and classes from an image dataset that contains one folder per class.
@@ -90,8 +89,9 @@ class SimpleFaceDetector(nn.Module):
             raise ValueError("Input tensor must have 4 dimensions (NHWC format)")
 
         # Convolutional layers with pooling and activations
-        x = self.custom_pool(self.relu(self.conv1(x)))
-        x = self.custom_pool(self.relu(self.conv2(x)))
+        pool = nn.MaxPool2d(kernel_size=2, stride=2)
+        x = pool(self.relu(self.conv1(x)))
+        x = pool(self.relu(self.conv2(x)))
 
         # Flattening and fully connected layers
         x = mx.flatten(x, start_axis=1)
@@ -99,18 +99,6 @@ class SimpleFaceDetector(nn.Module):
         x = self.fc2(x)
         x = mx.softmax(x, axis=1)
 
-        return x
-
-    # Previously, MLX did not support pooling layers before version 0.3.3x, necessitating custom pooling functions.
-    # Now, you can easily integrate built-in pooling with: self.pool = nn.MaxPool2d(kernel_size=2, stride=2).
-    # The custom_pool function is retained in the code for educational insight.
-    # Feel free to adopt MLX's built-in pooling layers for streamlined project development.
-
-    def custom_pool(self, x):
-        # Implement a simple average pooling
-        B, H, W, C = x.shape
-        x = mx.reshape(x, (B, H // 2, 2, W // 2, 2, C))
-        x = mx.mean(x, axis=(2, 4))
         return x
 
 
@@ -142,9 +130,10 @@ class ComplexFaceDetector(nn.Module):
             raise ValueError("Input tensor must have 4 dimensions (NHWC format)")
 
         # Forward pass through convolutional layers with ReLU activations
-        x = self.custom_pool(self.relu(self.conv1(x)))
-        x = self.custom_pool(self.relu(self.conv2(x)))
-        x = self.custom_pool(self.relu(self.conv3(x)))
+        pool = nn.MaxPool2d(kernel_size=2, stride=2)
+        x = pool(self.relu(self.conv1(x)))
+        x = pool(self.relu(self.conv2(x)))
+        x = pool(self.relu(self.conv3(x)))
         x = self.dropout(x)
 
         # Flattening the output for the fully connected layer
@@ -157,21 +146,6 @@ class ComplexFaceDetector(nn.Module):
         x = self.fc2(x)
         x = mx.softmax(x, axis=1)
 
-        return x
-
-    # Previously, MLX did not support pooling layers before version 0.3.3x, necessitating custom pooling functions.
-    # Now, you can easily integrate built-in pooling with: self.pool = nn.MaxPool2d(kernel_size=2, stride=2).
-    # The custom_pool function is retained in the code for educational insight.
-    # Feel free to adopt MLX's built-in pooling layers for streamlined project development.
-
-    def custom_pool(self, x):
-        # Implement custom pooling logic here for BHWC format
-        # For example, a simple form of average pooling
-        B, H, W, C = x.shape
-        # Reshape to group pixels for pooling
-        x = mx.reshape(x, (B, H // 2, 2, W // 2, 2, C))
-        # Apply mean on the grouped pixel axes
-        x = mx.mean(x, axis=(2, 4))
         return x
 
 

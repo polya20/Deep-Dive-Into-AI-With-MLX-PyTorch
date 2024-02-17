@@ -28,6 +28,20 @@ However, Sora isn't perfect. Sometimes, it might forget to keep things looking t
 
 So, in simple terms, Sora is like a magic sketchbook for videos, learning to tell visual stories based on what it has seen before and the instructions it gets from us. And just like any student, it's constantly learning and improving, getting closer to creating perfect mini-movies from any description.
 
+## DiTs: The New Wave in AI Technology
+
+Diffusion transformers, known as DiTs, represent a novel class of diffusion models that are based on the transformer architecture, commonly used in machine learning for tasks such as natural language processing. In contrast to traditional diffusion models that often use a U-Net convolutional neural network (CNN) structure, DiTs utilize a transformer to process the image data. The transformer architecture is favored for its ability to manage large datasets and has been shown to outperform CNNs in many computer vision tasks.
+
+The fundamental operation of diffusion models involves a training phase where the model learns to reverse a process that adds noise to an image. During inference, the model starts with noise and iteratively removes it to generate an image. DiTs specifically replace the U-Net with a transformer to handle this denoising process, which has shown promising results, especially when dealing with image data represented in a compressed latent space.
+
+By breaking down the image into a series of tokens, the DiT is able to learn to estimate the noise and remove it to recreate the original image. This process involves the transformer learning from a noisy image embedding along with a descriptive embedding, such as one from a text phrase describing the original image, and an embedding of the current time step. This method has been found to produce more realistic outputs and to achieve better performance in tasks such as image generation, given sufficient processing power and data.
+
+The DiT models come in various sizes, from small to extra-large, with performance improving with the size and processing capacity of the model. The largest models have been able to outperform prior diffusion models on benchmarks such as ImageNet, producing high-quality images with state-of-the-art Fréchet Inception Distance (FID) scores, which measure the similarity of the generated image distribution to the original image distribution.
+
+Overall, DiTs are part of the larger trend of adopting transformer models for various tasks in machine learning, and their use in diffusion models for image generation represents a significant step forward in the field.
+
+🧐 _UNet architectures might be phased out in certain applications in favor of other neural network models like Transformers, as seen with the rise of Diffusion Transformers (DiTs) for image generation tasks. However, Variational Autoencoders (VAEs) are still crucial for many applications. VAEs are especially useful for encoding images into a lower-dimensional latent space, which can be an efficient way to handle and generate high-quality images. Despite the shift in some areas to newer architectures, the underlying principles of VAEs still hold significant value in the field of generative models and are used in conjunction with other networks like DiTs._
+
 ## Technical Details
 
 ![figure0.png](images%2Ffigure0.png)

@@ -44,7 +44,7 @@ As you craft your potion (model), you decide the fate of these dreams, determini
 
 In this Dream Factory, the latent space serves as a bridge between imagination and reality. It's a place of potential, where simple codes can blossom into complex visuals, all guided by the skilled hands of the alchemist (the AI model). This journey from the latent space to the final, detailed creation mirrors the player's progression in Dark Souls, where every step, every discovery, and every victory brings the world into sharper focus, transforming abstract dreams into memorable realities.
 
-### Final Nugget - The Forge of Innovation: Transforming Diffusion Models
+### Nugget 7 - The Forge of Innovation: Transforming Diffusion Models
 
 In the world of Dark Souls, imagine a grand forge where legendary weapons and armor are crafted, not from steel or magic alone, but from the very essence of knowledge and innovation. This forge represents the cutting-edge research in AI, where scientists and engineers work to blend the strengths of different technologies to create something unparalleled. The latest endeavor in this forge is the integration of transformer architectures into diffusion models, akin to crafting a new set of armor that combines the agility and insight of a ranger with the strength and resilience of a knight.
 

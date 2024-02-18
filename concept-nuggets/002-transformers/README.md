@@ -50,7 +50,7 @@ Lastly, **cross-attention** is like forming alliances with other travelers, wher
 
 Together, these elements empower AI to navigate the vast and intricate world of information much like a seasoned adventurer traversing the landscapes of "Elden Ring." From the runes underfoot to the vast patterns of the stars above, they guide AI's journey through the data realm, illuminating both the minutiae and the grandeur that shape its understanding and decisions.
 
-### Nugget 5: Expanding the Adventure - DLCs of the Transformer World in "Elden Ring"
+### Nugget 4: Expanding the Adventure - DLCs of the Transformer World in "Elden Ring"
 
 In the expansive world of "Elden Ring," imagine the excitement surrounding the announcement of new downloadable content (DLCs), offering adventures into new territories with fresh challenges, allies, and treasures. This anticipation mirrors the field of AI's expansion through innovative models like the Diffusion Transformer (DiT) and Vision Transformer (ViT), which can be seen as transformative DLCs for the transformer architecture, each opening up new realms of possibilities.
 

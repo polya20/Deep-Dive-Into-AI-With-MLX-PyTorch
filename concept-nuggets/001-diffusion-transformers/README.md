@@ -64,7 +64,7 @@ In this new era of AI, DiTs stand as towering beacons of progress, illustrating 
 
 As you delve deeper into the lore of Dark Souls and the mechanics of DiTs, you encounter additional concepts that enrich your understanding of both the game's world and AI technology.
 
-### Nugget 1 - U-Net Architecture: The Cartographer's Spell
+### Bonus Nugget 1 - U-Net Architecture: The Cartographer's Spell
 
 In the vast and perilous world of Dark Souls, where uncharted territories abound and dangers lurk in every shadow, possessing a cartographer's spell—a tool that unveils the obscured and maps the unknown—becomes invaluable. The U-Net architecture is akin to such a spell in the realm of AI, specifically designed for the meticulous task of biomedical image segmentation. 
 
@@ -74,15 +74,15 @@ This duality allows U-Net to perform its magic with exceptional efficiency, maki
 
 _Image-generating AI systems like Stable Diffusion that utilize diffusion models often rely on U-Net as their structural core._
 
-### Nugget 2 - Frechet Inception Distance (FID): Benchmarking Visual Fidelity
+### Bonus Nugget 2 - Frechet Inception Distance (FID): Benchmarking Visual Fidelity
 
 In the realm of image generation, evaluating the Frechet Inception Distance (FID) score is akin to determining the fidelity of your Dark Souls journey to the ultimate, intended experience crafted by its creators. This metric serves as a benchmark for realism, where a lower FID score signifies a stronger alignment with the authentic, richly detailed world of the game. It measures the distance between the distribution of generated images and that of original, high-resolution game visuals, capturing both the nuances of texture and the complexity of scenes. Essentially, a low FID indicates that the artificial landscapes, characters, and artifacts created by the AI not only bear a striking resemblance to the game's original artwork but also maintain the atmospheric depth and aesthetic integrity, ensuring that the generated images feel as if they were directly lifted from the game's own mythical universe.
 
-### Nugget 3 - Gflops: The AI's DPS Metric
+### Bonus Nugget 3 - Gflops: The AI's DPS Metric
 
 In the realm of AI, Giga Floating Point Operations per Second (Gflops) can be likened to the concept of DPS (damage per second) in Dark Souls. Just as a higher DPS reflects a player's capacity to unleash more powerful attacks within a shorter timeframe, boosting their effectiveness in combat, a higher Gflops rating signifies an AI system's capability to process and execute complex operations swiftly. This speed and efficiency are crucial for performing detailed, high-precision tasks in AI, analogous to how a player relies on high DPS to overcome the most formidable foes and intricate challenges within the game.
 
-### Nugget 4 - Mastering Uncertainty: The Reparameterization Trick
+### Bonus Nugget 4 - Mastering Uncertainty: The Reparameterization Trick
 
 The reparameterization trick in machine learning is akin to a high-level strategy employed by veteran Dark Souls players to navigate the game's inherent unpredictability. In Dark Souls, mastering a boss fight involves recognizing and adapting to patterns, transforming potential randomness into a predictable series of events that can be strategically managed. Similarly, the reparameterization trick allows AI researchers to handle random variables in a more controlled manner.
 
@@ -90,7 +90,7 @@ By redefining the problem, this trick converts the randomness into something det
 
 Facing the Nameless King in Dark Souls III, renowned for his unpredictable assaults, can feel like navigating a maze blindfolded. However, employing the reparameterization trick mirrors the process of discerning a method within the madness of his strikes. It's akin to detecting a subtle pattern in the chaos, enabling you to anticipate and skillfully parry or dodge these electrifying attacks. This strategic breakthrough turns a seemingly erratic battle into a calculated engagement, where each move is a step in a meticulously choreographed dance. Through understanding and adapting to the Nameless King's daunting, out-of-sync patterns, the reparameterization trick allows for a level of predictability and control, making what once seemed like a relentless storm of randomness a challenge you can strategically navigate and overcome.
 
-### Nugget 5 - Vision Transformer (ViT): Unveiling the Unseen
+### Bonus Nugget 5 - Vision Transformer (ViT): Unveiling the Unseen
 
 The Vision Transformer (ViT) represents a paradigm shift in how machines 'see' and interpret the visual world, akin to acquiring a mystical lens in Dark Souls that reveals the hidden truths of your surroundings. Traditionally, navigating the visual realm relied heavily on direct observation and immediate reactions, much like confronting enemies head-on in battle. ViT, however, introduces a method akin to gathering whispers of the past and echoes of distant footsteps, analyzing the environment and enemy patterns as a series of interconnected puzzles rather than isolated encounters.
 
@@ -98,7 +98,7 @@ This transformative approach breaks down images into a sequence of patches, simi
 
 By leveraging the transformer's ability to weigh the importance of each patch in relation to the others, ViT synthesizes a holistic understanding of the visual domain. It's as if you're not just fighting the monsters in front of you but unraveling the very fabric of the Dark Souls universe, anticipating challenges and uncovering secrets that lie beyond the reach of conventional sight. This deep, contextual awareness empowers you to craft strategies with a foresight previously unimaginable, turning the tide of battle even before swords clash.
 
-### Nugget 6 - Variational Autoencoders (VAEs): Crafting the Essence
+### Bonus Nugget 6 - Variational Autoencoders (VAEs): Crafting the Essence
 
 Imagine embarking on a quest in Dark Souls, where you're tasked with capturing the essence of the realm's myriad creatures and landscapes, distilling them into a potent elixir. This elixir has the power to recreate these entities in their most fundamental forms, revealing their core attributes while stripping away the extraneous. Variational Autoencoders (VAEs) serve a similar purpose in the world of AI, acting as master alchemists that distill complex data into its purest essence.
 
@@ -106,7 +106,7 @@ VAEs work by learning to compress data (like images, sounds, or texts) into a co
 
 This process enables the creation of entirely new images, sounds, or text that mimic the original data set's style, much like using the essence of a fire-breathing dragon to generate myriad other dragons, each sharing the fiery core but differing in form and flame. In the grand tapestry of Dark Souls, VAEs are the unseen force that weaves together the known and the unknown, allowing us to explore and create within the bounds of this mystical universe, constantly expanding the horizons of what can be imagined and manifested.
 
-### Nugget 7 - Journey Through Latent Space: Encoding and Decoding
+### Bonus Nugget 7 - Journey Through Latent Space: Encoding and Decoding
 
 Venture into the world of Dark Souls, armed with a magical map that doesn't just chart the land but captures the very essence of its environments and inhabitants. This map has the unique ability to compress the vast, complex world into a compact form, making it manageable and navigable. In the realm of artificial intelligence, this process mirrors the journey of encoding data into latent space, a technique mastered by Variational Autoencoders (VAEs).
 
@@ -116,7 +116,7 @@ Decoding out of latent space, then, is like using these runes to conjure vivid, 
 
 Together, encoding into and decoding out of latent space form a cycle of transformation and creation, a dance of compressing and expanding that lies at the heart of AI's ability to generate new, diverse data from learned representations. Just as a player navigates through the challenges and mysteries of Dark Souls, so too does AI traverse the latent space, exploring and bringing to life the endless possibilities contained within.
 
-### Nugget 8 - Unveiling AI's Lexicon: Tokens to Attention
+### Bonus Nugget 8 - Unveiling AI's Lexicon: Tokens to Attention
 
 Embark on a journey through a Dark Souls labyrinth, where each corridor holds secrets and every shadow could conceal a friend or foe. Navigating this maze requires not just bravery but a keen understanding of your surroundings and the ability to focus on what matters most. This adventure is akin to delving into the complex mechanisms of modern AI, particularly in understanding the terms: tokens, context window, attention mechanism, self-attention, and cross-attention.
 

@@ -17,6 +17,8 @@ The third book focuses on math, AI, and the path to enlightenment.
 
 ## What's New?
 
+🥠 [Concept Nuggets 002 - Understanding Transformers Through the Elden Ring Experience](concept-nuggets/002-transformers/README.md)
+
 🥠 [Concept Nuggets 001 - Understanding Diffusion Transformers Through the Dark Souls Experience](concept-nuggets/001-diffusion-transformers/README.md)
 
 🤿 Deep Dive 18: [Deep Dive in Diffusion Transformers](deep-dives/018-diffusion-transformer%2FREADME.md)

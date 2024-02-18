@@ -17,6 +17,8 @@ The third book focuses on math, AI, and the path to enlightenment.
 
 ## What's New?
 
+✍️ New Essay: [Talking About Financial Bubbles Out of Context](essays%2Finvesting%2FTalking-About-Financial-Bubbles-Out-Of-Context.md)
+
 🥠 [Concept Nuggets 002 - Understanding Transformers Through the Elden Ring Experience](concept-nuggets/002-transformers/README.md)
 
 🥠 [Concept Nuggets 001 - Understanding Diffusion Transformers Through the Dark Souls Experience](concept-nuggets/001-diffusion-transformers/README.md)

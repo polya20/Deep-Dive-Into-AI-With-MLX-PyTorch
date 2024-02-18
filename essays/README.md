@@ -9,7 +9,7 @@ Notes on Pull Requests and Issues
 ---------------------------------
 [NOTES_ON_PULL_REQUESTS_AND_ISSUES.md](../NOTES_ON_PULL_REQUESTS_AND_ISSUES.md)
 
-Auto-generated list of CWK Essays: 2024-02-11 10:35
+Auto-generated list of CWK Essays: 2024-02-18 13:07
 
 # CWK Essays
 
@@ -57,6 +57,7 @@ Auto-generated list of CWK Essays: 2024-02-11 10:35
 - [Me Vs Them A Simple But Seemingly Impossible Investing Tip](investing/Me-vs-Them-A-Simple-but-Seemingly-Impossible-Investing-Tip.md)
 - [Natural Selection In The Stock Market](investing/Natural-Selection-in-the-Stock-Market.md)
 - [Object Oriented Investing Philosophy](investing/Object-Oriented-Investing-Philosophy.md)
+- [Talking About Financial Bubbles Out Of Context](investing/Talking-About-Financial-Bubbles-Out-Of-Context.md)
 - [To Korean Followers](investing/To-Korean-Followers.md)
 - [Unraveling The Myth Of 100 Percent Confidence](investing/Unraveling-the-Myth-of-100-Percent-Confidence.md)
 - [Unseen Risks When Genius Fails](investing/Unseen-Risks-When-Genius-Fails.md)
